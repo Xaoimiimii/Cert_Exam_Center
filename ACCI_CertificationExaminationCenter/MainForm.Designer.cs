@@ -49,7 +49,7 @@
             payment_register_menu_pictureBox = new PictureBox();
             payment_register_menu_label = new Label();
             payment_extension_menu_flowLayoutPanel = new FlowLayoutPanel();
-            payment_extension_menu_pictureBox = new PictureBox();
+            payment_extensive_menu_pictureBox = new PictureBox();
             payment_extension_menu_label = new Label();
             extensive_menu_flowLayoutPanel = new FlowLayoutPanel();
             extensive_menu_pictureBox = new PictureBox();
@@ -84,7 +84,7 @@
             payment_register_menu_flowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)payment_register_menu_pictureBox).BeginInit();
             payment_extension_menu_flowLayoutPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)payment_extension_menu_pictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)payment_extensive_menu_pictureBox).BeginInit();
             extensive_menu_flowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)extensive_menu_pictureBox).BeginInit();
             results_menu_flowLayoutPanel.SuspendLayout();
@@ -298,12 +298,12 @@
             // payment_register_menu_pictureBox
             // 
             payment_register_menu_pictureBox.Image = Properties.Resources.receipt_white;
-            payment_register_menu_pictureBox.Location = new Point(60, 24);
-            payment_register_menu_pictureBox.Margin = new Padding(60, 24, 3, 3);
+            payment_register_menu_pictureBox.Location = new Point(76, 24);
+            payment_register_menu_pictureBox.Margin = new Padding(76, 24, 3, 3);
             payment_register_menu_pictureBox.Name = "payment_register_menu_pictureBox";
             payment_register_menu_pictureBox.Size = new Size(32, 32);
             payment_register_menu_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
-            payment_register_menu_pictureBox.TabIndex = 0;
+            payment_register_menu_pictureBox.TabIndex = 1;
             payment_register_menu_pictureBox.TabStop = false;
             // 
             // payment_register_menu_label
@@ -311,8 +311,8 @@
             payment_register_menu_label.AutoSize = true;
             payment_register_menu_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             payment_register_menu_label.ForeColor = Color.White;
-            payment_register_menu_label.Location = new Point(145, 24);
-            payment_register_menu_label.Margin = new Padding(50, 24, 3, 0);
+            payment_register_menu_label.Location = new Point(143, 24);
+            payment_register_menu_label.Margin = new Padding(32, 24, 0, 0);
             payment_register_menu_label.Name = "payment_register_menu_label";
             payment_register_menu_label.Size = new Size(117, 37);
             payment_register_menu_label.TabIndex = 1;
@@ -321,7 +321,7 @@
             // payment_extension_menu_flowLayoutPanel
             // 
             payment_extension_menu_flowLayoutPanel.BackColor = Color.Transparent;
-            payment_extension_menu_flowLayoutPanel.Controls.Add(payment_extension_menu_pictureBox);
+            payment_extension_menu_flowLayoutPanel.Controls.Add(payment_extensive_menu_pictureBox);
             payment_extension_menu_flowLayoutPanel.Controls.Add(payment_extension_menu_label);
             payment_extension_menu_flowLayoutPanel.Location = new Point(0, 160);
             payment_extension_menu_flowLayoutPanel.Margin = new Padding(0);
@@ -330,24 +330,24 @@
             payment_extension_menu_flowLayoutPanel.TabIndex = 11;
             payment_extension_menu_flowLayoutPanel.WrapContents = false;
             // 
-            // payment_extension_menu_pictureBox
+            // payment_extensive_menu_pictureBox
             // 
-            payment_extension_menu_pictureBox.Image = Properties.Resources.extend_white;
-            payment_extension_menu_pictureBox.Location = new Point(60, 24);
-            payment_extension_menu_pictureBox.Margin = new Padding(60, 24, 3, 3);
-            payment_extension_menu_pictureBox.Name = "payment_extension_menu_pictureBox";
-            payment_extension_menu_pictureBox.Size = new Size(32, 32);
-            payment_extension_menu_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
-            payment_extension_menu_pictureBox.TabIndex = 0;
-            payment_extension_menu_pictureBox.TabStop = false;
+            payment_extensive_menu_pictureBox.Image = Properties.Resources.extend_white;
+            payment_extensive_menu_pictureBox.Location = new Point(76, 24);
+            payment_extensive_menu_pictureBox.Margin = new Padding(76, 24, 3, 3);
+            payment_extensive_menu_pictureBox.Name = "payment_extensive_menu_pictureBox";
+            payment_extensive_menu_pictureBox.Size = new Size(32, 32);
+            payment_extensive_menu_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
+            payment_extensive_menu_pictureBox.TabIndex = 2;
+            payment_extensive_menu_pictureBox.TabStop = false;
             // 
             // payment_extension_menu_label
             // 
             payment_extension_menu_label.AutoSize = true;
             payment_extension_menu_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             payment_extension_menu_label.ForeColor = Color.White;
-            payment_extension_menu_label.Location = new Point(145, 24);
-            payment_extension_menu_label.Margin = new Padding(50, 24, 3, 0);
+            payment_extension_menu_label.Location = new Point(143, 24);
+            payment_extension_menu_label.Margin = new Padding(32, 24, 0, 0);
             payment_extension_menu_label.Name = "payment_extension_menu_label";
             payment_extension_menu_label.Size = new Size(110, 37);
             payment_extension_menu_label.TabIndex = 1;
@@ -553,7 +553,7 @@
             main_panel.Size = new Size(1620, 1209);
             main_panel.TabIndex = 1;
             // 
-            // Dashboard
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -561,7 +561,7 @@
             ClientSize = new Size(1724, 1209);
             Controls.Add(nav_drawer_flowLayoutPanel);
             Controls.Add(main_panel);
-            Name = "Dashboard";
+            Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang chủ";
             nav_drawer_flowLayoutPanel.ResumeLayout(false);
@@ -585,7 +585,7 @@
             ((System.ComponentModel.ISupportInitialize)payment_register_menu_pictureBox).EndInit();
             payment_extension_menu_flowLayoutPanel.ResumeLayout(false);
             payment_extension_menu_flowLayoutPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)payment_extension_menu_pictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)payment_extensive_menu_pictureBox).EndInit();
             extensive_menu_flowLayoutPanel.ResumeLayout(false);
             extensive_menu_flowLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)extensive_menu_pictureBox).EndInit();
@@ -637,14 +637,14 @@
         private PictureBox certificate_menu_pictureBox;
         private Label certificate_menu_label;
         private FlowLayoutPanel payment_register_menu_flowLayoutPanel;
-        private PictureBox payment_register_menu_pictureBox;
         private Label payment_register_menu_label;
         private FlowLayoutPanel payment_extension_menu_flowLayoutPanel;
-        private PictureBox payment_extension_menu_pictureBox;
         private Label payment_extension_menu_label;
         private FlowLayoutPanel payment_menu_group_flowLayoutPanel;
         private System.Windows.Forms.Timer menuTransition;
         private System.Windows.Forms.Timer paymentTransition;
         private Panel main_panel;
+        private PictureBox payment_register_menu_pictureBox;
+        private PictureBox payment_extensive_menu_pictureBox;
     }
 }

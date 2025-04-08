@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            monthCalendar = new MonthCalendar();
             SuspendLayout();
             // 
             // label1
@@ -41,10 +42,27 @@
             label1.TabIndex = 1;
             label1.Text = "Tra cứu lịch thi";
             // 
+            // monthCalendar
+            // 
+            monthCalendar.BackColor = Color.White;
+            monthCalendar.ForeColor = Color.PaleTurquoise;
+            monthCalendar.Location = new Point(25, 158);
+            monthCalendar.MaxDate = new DateTime(2026, 12, 31, 0, 0, 0, 0);
+            monthCalendar.MaxSelectionCount = 1;
+            monthCalendar.MinDate = new DateTime(2025, 1, 1, 0, 0, 0, 0);
+            monthCalendar.Name = "monthCalendar";
+            monthCalendar.ShowToday = false;
+            monthCalendar.ShowTodayCircle = false;
+            monthCalendar.TabIndex = 2;
+            monthCalendar.TitleBackColor = Color.PaleTurquoise;
+            monthCalendar.TrailingForeColor = Color.MediumTurquoise;
+            // 
             // SelectExamControl
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            Controls.Add(monthCalendar);
             Controls.Add(label1);
             Margin = new Padding(0);
             Name = "SelectExamControl";
@@ -56,5 +74,6 @@
         #endregion
 
         private Label label1;
+        private MonthCalendar monthCalendar;
     }
 }

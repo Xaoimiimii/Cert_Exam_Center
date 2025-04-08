@@ -90,16 +90,15 @@ namespace ACCI_CertificationExaminationCenter
             {
                 if (menuExpand)
                 {
-                    payment_register_menu_pictureBox.Margin = new Padding(60, 24, 3, 3);
-                    payment_extension_menu_pictureBox.Margin = new Padding(60, 24, 3, 3);
+                    payment_register_menu_pictureBox.Margin = new Padding(76, 24, 3, 3);
+                    payment_extensive_menu_pictureBox.Margin = new Padding(76, 24, 3, 3);
                 }
                 else
                 {
                     payment_register_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
-                    payment_extension_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
+                    payment_extensive_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
                 }
-
-                payment_menu_group_flowLayoutPanel.Height += 10;
+                    payment_menu_group_flowLayoutPanel.Height += 10;
                 if (payment_menu_group_flowLayoutPanel.Height >= 240)
                 {
                     paymentTransition.Stop();
