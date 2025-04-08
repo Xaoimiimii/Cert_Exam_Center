@@ -1,6 +1,6 @@
 ﻿namespace ACCI_CertificationExaminationCenter
 {
-    partial class Form1
+    partial class Dashboard
     {
         /// <summary>
         ///  Required designer variable.
@@ -106,7 +106,7 @@
             nav_drawer_flowLayoutPanel.Dock = DockStyle.Left;
             nav_drawer_flowLayoutPanel.Location = new Point(0, 0);
             nav_drawer_flowLayoutPanel.Name = "nav_drawer_flowLayoutPanel";
-            nav_drawer_flowLayoutPanel.Size = new Size(96, 1209);
+            nav_drawer_flowLayoutPanel.Size = new Size(100, 1209);
             nav_drawer_flowLayoutPanel.TabIndex = 0;
             // 
             // menu_group_panel
@@ -114,7 +114,7 @@
             menu_group_panel.Controls.Add(close_menu_pictureBox);
             menu_group_panel.Controls.Add(show_menu_pictureBox);
             menu_group_panel.Location = new Point(3, 3);
-            menu_group_panel.Margin = new Padding(3, 3, 3, 32);
+            menu_group_panel.Margin = new Padding(3, 3, 3, 64);
             menu_group_panel.Name = "menu_group_panel";
             menu_group_panel.Size = new Size(312, 61);
             menu_group_panel.TabIndex = 2;
@@ -133,7 +133,7 @@
             // show_menu_pictureBox
             // 
             show_menu_pictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            show_menu_pictureBox.Image = Properties.Resources.menu__3_;
+            show_menu_pictureBox.Image = Properties.Resources.menu_icon;
             show_menu_pictureBox.Location = new Point(28, 19);
             show_menu_pictureBox.Margin = new Padding(0);
             show_menu_pictureBox.Name = "show_menu_pictureBox";
@@ -151,8 +151,8 @@
             dashboard_menu_group_flowLayoutPanel.Controls.Add(extensive_menu_flowLayoutPanel);
             dashboard_menu_group_flowLayoutPanel.Controls.Add(results_menu_flowLayoutPanel);
             dashboard_menu_group_flowLayoutPanel.Controls.Add(certificate_menu_flowLayoutPanel);
-            dashboard_menu_group_flowLayoutPanel.Location = new Point(0, 96);
-            dashboard_menu_group_flowLayoutPanel.Margin = new Padding(0);
+            dashboard_menu_group_flowLayoutPanel.Location = new Point(0, 128);
+            dashboard_menu_group_flowLayoutPanel.Margin = new Padding(0, 0, 0, 40);
             dashboard_menu_group_flowLayoutPanel.Name = "dashboard_menu_group_flowLayoutPanel";
             dashboard_menu_group_flowLayoutPanel.Size = new Size(318, 800);
             dashboard_menu_group_flowLayoutPanel.TabIndex = 4;
@@ -171,7 +171,7 @@
             // 
             // dashboard_menu_pictureBox
             // 
-            dashboard_menu_pictureBox.Image = Properties.Resources.dashboard;
+            dashboard_menu_pictureBox.Image = Properties.Resources.dashboard_white;
             dashboard_menu_pictureBox.Location = new Point(32, 24);
             dashboard_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
             dashboard_menu_pictureBox.Name = "dashboard_menu_pictureBox";
@@ -206,7 +206,7 @@
             // 
             // register_menu_pictureBox
             // 
-            register_menu_pictureBox.Image = Properties.Resources.registered_document;
+            register_menu_pictureBox.Image = Properties.Resources.register_white;
             register_menu_pictureBox.Location = new Point(32, 24);
             register_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
             register_menu_pictureBox.Name = "register_menu_pictureBox";
@@ -253,7 +253,7 @@
             // 
             // payment_menu_pictureBox
             // 
-            payment_menu_pictureBox.Image = Properties.Resources.credit_card;
+            payment_menu_pictureBox.Image = Properties.Resources.pay_white;
             payment_menu_pictureBox.Location = new Point(32, 24);
             payment_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
             payment_menu_pictureBox.Name = "payment_menu_pictureBox";
@@ -290,7 +290,7 @@
             // 
             // payment_register_menu_pictureBox
             // 
-            payment_register_menu_pictureBox.Image = Properties.Resources.bill;
+            payment_register_menu_pictureBox.Image = Properties.Resources.receipt_white;
             payment_register_menu_pictureBox.Location = new Point(60, 24);
             payment_register_menu_pictureBox.Margin = new Padding(60, 24, 3, 3);
             payment_register_menu_pictureBox.Name = "payment_register_menu_pictureBox";
@@ -325,7 +325,7 @@
             // 
             // payment_extension_menu_pictureBox
             // 
-            payment_extension_menu_pictureBox.Image = Properties.Resources.working_hours;
+            payment_extension_menu_pictureBox.Image = Properties.Resources.extend_white;
             payment_extension_menu_pictureBox.Location = new Point(60, 24);
             payment_extension_menu_pictureBox.Margin = new Padding(60, 24, 3, 3);
             payment_extension_menu_pictureBox.Name = "payment_extension_menu_pictureBox";
@@ -360,7 +360,7 @@
             // 
             // extensive_menu_pictureBox
             // 
-            extensive_menu_pictureBox.Image = Properties.Resources.deadline;
+            extensive_menu_pictureBox.Image = Properties.Resources.calen_white;
             extensive_menu_pictureBox.Location = new Point(32, 24);
             extensive_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
             extensive_menu_pictureBox.Name = "extensive_menu_pictureBox";
@@ -395,7 +395,7 @@
             // 
             // results_menu_pictureBox
             // 
-            results_menu_pictureBox.Image = Properties.Resources.report_card;
+            results_menu_pictureBox.Image = Properties.Resources.grade_white;
             results_menu_pictureBox.Location = new Point(32, 24);
             results_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
             results_menu_pictureBox.Name = "results_menu_pictureBox";
@@ -430,7 +430,7 @@
             // 
             // certificate_menu_pictureBox
             // 
-            certificate_menu_pictureBox.Image = Properties.Resources.certificate;
+            certificate_menu_pictureBox.Image = Properties.Resources.cert_white;
             certificate_menu_pictureBox.Location = new Point(32, 24);
             certificate_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
             certificate_menu_pictureBox.Name = "certificate_menu_pictureBox";
@@ -455,7 +455,7 @@
             // 
             setting_menu_flowLayoutPanel.Controls.Add(setting_menu_pictureBox);
             setting_menu_flowLayoutPanel.Controls.Add(setting_menu_label);
-            setting_menu_flowLayoutPanel.Location = new Point(0, 896);
+            setting_menu_flowLayoutPanel.Location = new Point(0, 968);
             setting_menu_flowLayoutPanel.Margin = new Padding(0);
             setting_menu_flowLayoutPanel.Name = "setting_menu_flowLayoutPanel";
             setting_menu_flowLayoutPanel.Size = new Size(318, 80);
@@ -464,7 +464,7 @@
             // 
             // setting_menu_pictureBox
             // 
-            setting_menu_pictureBox.Image = Properties.Resources.settings__1_;
+            setting_menu_pictureBox.Image = Properties.Resources.setting_whitee;
             setting_menu_pictureBox.Location = new Point(32, 24);
             setting_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
             setting_menu_pictureBox.Name = "setting_menu_pictureBox";
@@ -489,7 +489,7 @@
             // 
             out_menu_flowLayoutPanel.Controls.Add(out_menu_pictureBox);
             out_menu_flowLayoutPanel.Controls.Add(out_menu_label);
-            out_menu_flowLayoutPanel.Location = new Point(0, 976);
+            out_menu_flowLayoutPanel.Location = new Point(0, 1048);
             out_menu_flowLayoutPanel.Margin = new Padding(0);
             out_menu_flowLayoutPanel.Name = "out_menu_flowLayoutPanel";
             out_menu_flowLayoutPanel.Size = new Size(318, 80);
@@ -498,7 +498,7 @@
             // 
             // out_menu_pictureBox
             // 
-            out_menu_pictureBox.Image = Properties.Resources._out;
+            out_menu_pictureBox.Image = Properties.Resources.out_whitee;
             out_menu_pictureBox.Location = new Point(32, 24);
             out_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
             out_menu_pictureBox.Name = "out_menu_pictureBox";
@@ -529,15 +529,15 @@
             paymentTransition.Interval = 10;
             paymentTransition.Tick += paymentTransition_Tick;
             // 
-            // Form1
+            // Dashboard
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1724, 1209);
             Controls.Add(nav_drawer_flowLayoutPanel);
-            Name = "Form1";
+            Name = "Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Trang chủ";
             nav_drawer_flowLayoutPanel.ResumeLayout(false);
             menu_group_panel.ResumeLayout(false);
             menu_group_panel.PerformLayout();

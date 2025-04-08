@@ -63,9 +63,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _out {
+        internal static System.Drawing.Bitmap calen_green {
             get {
-                object obj = ResourceManager.GetObject("out", resourceCulture);
+                object obj = ResourceManager.GetObject("calen_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bill {
+        internal static System.Drawing.Bitmap calen_white {
             get {
-                object obj = ResourceManager.GetObject("bill", resourceCulture);
+                object obj = ResourceManager.GetObject("calen_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap certificate {
+        internal static System.Drawing.Bitmap cert_green {
             get {
-                object obj = ResourceManager.GetObject("certificate", resourceCulture);
+                object obj = ResourceManager.GetObject("cert_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap close {
+        internal static System.Drawing.Bitmap cert_white {
             get {
-                object obj = ResourceManager.GetObject("close", resourceCulture);
+                object obj = ResourceManager.GetObject("cert_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap credit_card {
+        internal static System.Drawing.Bitmap dashboard_green {
             get {
-                object obj = ResourceManager.GetObject("credit-card", resourceCulture);
+                object obj = ResourceManager.GetObject("dashboard_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dashboard {
+        internal static System.Drawing.Bitmap dashboard_white {
             get {
-                object obj = ResourceManager.GetObject("dashboard", resourceCulture);
+                object obj = ResourceManager.GetObject("dashboard_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap deadline {
+        internal static System.Drawing.Bitmap extend_white {
             get {
-                object obj = ResourceManager.GetObject("deadline", resourceCulture);
+                object obj = ResourceManager.GetObject("extend_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap menu__3_ {
+        internal static System.Drawing.Bitmap grade_green {
             get {
-                object obj = ResourceManager.GetObject("menu (3)", resourceCulture);
+                object obj = ResourceManager.GetObject("grade_green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap registered_document {
+        internal static System.Drawing.Bitmap grade_white {
             get {
-                object obj = ResourceManager.GetObject("registered-document", resourceCulture);
+                object obj = ResourceManager.GetObject("grade_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap report_card {
+        internal static System.Drawing.Bitmap menu_icon {
             get {
-                object obj = ResourceManager.GetObject("report-card", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap settings__1_ {
+        internal static System.Drawing.Bitmap out_whitee {
             get {
-                object obj = ResourceManager.GetObject("settings (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("out_whitee", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +183,79 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap working_hours {
+        internal static System.Drawing.Bitmap pay_green {
             get {
-                object obj = ResourceManager.GetObject("working-hours", resourceCulture);
+                object obj = ResourceManager.GetObject("pay_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pay_white {
+            get {
+                object obj = ResourceManager.GetObject("pay_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap receipt_green {
+            get {
+                object obj = ResourceManager.GetObject("receipt_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap receipt_white {
+            get {
+                object obj = ResourceManager.GetObject("receipt_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap register_green {
+            get {
+                object obj = ResourceManager.GetObject("register_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap register_white {
+            get {
+                object obj = ResourceManager.GetObject("register_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setting_greenn {
+            get {
+                object obj = ResourceManager.GetObject("setting_greenn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setting_whitee {
+            get {
+                object obj = ResourceManager.GetObject("setting_whitee", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
