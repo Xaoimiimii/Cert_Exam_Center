@@ -1,6 +1,6 @@
 ﻿namespace ACCI_CertificationExaminationCenter
 {
-    partial class Dashboard
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -68,6 +68,7 @@
             out_menu_label = new Label();
             menuTransition = new System.Windows.Forms.Timer(components);
             paymentTransition = new System.Windows.Forms.Timer(components);
+            main_panel = new Panel();
             nav_drawer_flowLayoutPanel.SuspendLayout();
             menu_group_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)close_menu_pictureBox).BeginInit();
@@ -134,7 +135,7 @@
             // 
             show_menu_pictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             show_menu_pictureBox.Image = Properties.Resources.menu_icon;
-            show_menu_pictureBox.Location = new Point(28, 19);
+            show_menu_pictureBox.Location = new Point(25, 19);
             show_menu_pictureBox.Margin = new Padding(0);
             show_menu_pictureBox.Name = "show_menu_pictureBox";
             show_menu_pictureBox.Size = new Size(32, 32);
@@ -168,6 +169,7 @@
             dashboard_menu_flowLayoutPanel.Size = new Size(318, 80);
             dashboard_menu_flowLayoutPanel.TabIndex = 1;
             dashboard_menu_flowLayoutPanel.WrapContents = false;
+            dashboard_menu_flowLayoutPanel.Click += dashboard_menu_flowLayoutPanel_Click;
             // 
             // dashboard_menu_pictureBox
             // 
@@ -179,6 +181,7 @@
             dashboard_menu_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
             dashboard_menu_pictureBox.TabIndex = 0;
             dashboard_menu_pictureBox.TabStop = false;
+            dashboard_menu_pictureBox.Click += dashboard_menu_pictureBox_Click;
             // 
             // dashboard_menu_label
             // 
@@ -191,6 +194,7 @@
             dashboard_menu_label.Size = new Size(138, 37);
             dashboard_menu_label.TabIndex = 1;
             dashboard_menu_label.Text = "Trang chủ";
+            dashboard_menu_label.Click += dashboard_menu_label_Click;
             // 
             // register_menu_flowLayoutPanel
             // 
@@ -203,6 +207,7 @@
             register_menu_flowLayoutPanel.Size = new Size(318, 80);
             register_menu_flowLayoutPanel.TabIndex = 5;
             register_menu_flowLayoutPanel.WrapContents = false;
+            register_menu_flowLayoutPanel.Click += register_menu_flowLayoutPanel_Click;
             // 
             // register_menu_pictureBox
             // 
@@ -214,6 +219,7 @@
             register_menu_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
             register_menu_pictureBox.TabIndex = 0;
             register_menu_pictureBox.TabStop = false;
+            register_menu_pictureBox.Click += register_menu_pictureBox_Click;
             // 
             // register_menu_label
             // 
@@ -226,6 +232,7 @@
             register_menu_label.Size = new Size(157, 37);
             register_menu_label.TabIndex = 1;
             register_menu_label.Text = "Đăng ký thi";
+            register_menu_label.Click += register_menu_label_Click;
             // 
             // payment_menu_group_flowLayoutPanel
             // 
@@ -392,6 +399,7 @@
             results_menu_flowLayoutPanel.Size = new Size(318, 80);
             results_menu_flowLayoutPanel.TabIndex = 8;
             results_menu_flowLayoutPanel.WrapContents = false;
+            results_menu_flowLayoutPanel.Click += results_menu_flowLayoutPanel_Click;
             // 
             // results_menu_pictureBox
             // 
@@ -403,6 +411,7 @@
             results_menu_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
             results_menu_pictureBox.TabIndex = 0;
             results_menu_pictureBox.TabStop = false;
+            results_menu_pictureBox.Click += results_menu_pictureBox_Click;
             // 
             // results_menu_label
             // 
@@ -415,6 +424,7 @@
             results_menu_label.Size = new Size(151, 37);
             results_menu_label.TabIndex = 1;
             results_menu_label.Text = "Kết quả thi";
+            results_menu_label.Click += results_menu_label_Click;
             // 
             // certificate_menu_flowLayoutPanel
             // 
@@ -427,6 +437,7 @@
             certificate_menu_flowLayoutPanel.Size = new Size(318, 80);
             certificate_menu_flowLayoutPanel.TabIndex = 9;
             certificate_menu_flowLayoutPanel.WrapContents = false;
+            certificate_menu_flowLayoutPanel.Click += certificate_menu_flowLayoutPanel_Click;
             // 
             // certificate_menu_pictureBox
             // 
@@ -438,6 +449,7 @@
             certificate_menu_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
             certificate_menu_pictureBox.TabIndex = 0;
             certificate_menu_pictureBox.TabStop = false;
+            certificate_menu_pictureBox.Click += certificate_menu_pictureBox_Click;
             // 
             // certificate_menu_label
             // 
@@ -450,6 +462,7 @@
             certificate_menu_label.Size = new Size(142, 37);
             certificate_menu_label.TabIndex = 1;
             certificate_menu_label.Text = "Chứng chỉ";
+            certificate_menu_label.Click += certificate_menu_label_Click;
             // 
             // setting_menu_flowLayoutPanel
             // 
@@ -495,6 +508,7 @@
             out_menu_flowLayoutPanel.Size = new Size(318, 80);
             out_menu_flowLayoutPanel.TabIndex = 3;
             out_menu_flowLayoutPanel.WrapContents = false;
+            out_menu_flowLayoutPanel.Click += out_menu_flowLayoutPanel_Click;
             // 
             // out_menu_pictureBox
             // 
@@ -506,6 +520,7 @@
             out_menu_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
             out_menu_pictureBox.TabIndex = 0;
             out_menu_pictureBox.TabStop = false;
+            out_menu_pictureBox.Click += out_menu_pictureBox_Click;
             // 
             // out_menu_label
             // 
@@ -518,6 +533,7 @@
             out_menu_label.Size = new Size(143, 37);
             out_menu_label.TabIndex = 1;
             out_menu_label.Text = "Đăng xuất";
+            out_menu_label.Click += out_menu_label_Click;
             // 
             // menuTransition
             // 
@@ -529,12 +545,22 @@
             paymentTransition.Interval = 10;
             paymentTransition.Tick += paymentTransition_Tick;
             // 
+            // main_panel
+            // 
+            main_panel.Location = new Point(103, 0);
+            main_panel.Margin = new Padding(0);
+            main_panel.Name = "main_panel";
+            main_panel.Size = new Size(1620, 1209);
+            main_panel.TabIndex = 1;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(1724, 1209);
             Controls.Add(nav_drawer_flowLayoutPanel);
+            Controls.Add(main_panel);
             Name = "Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang chủ";
@@ -619,5 +645,6 @@
         private FlowLayoutPanel payment_menu_group_flowLayoutPanel;
         private System.Windows.Forms.Timer menuTransition;
         private System.Windows.Forms.Timer paymentTransition;
+        private Panel main_panel;
     }
 }
