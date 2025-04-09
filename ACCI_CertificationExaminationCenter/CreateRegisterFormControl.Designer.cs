@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             label1 = new Label();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             tt_kh_title_label = new Label();
@@ -78,14 +74,14 @@
             add_examinee_button = new Button();
             guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             label2 = new Label();
-            guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            dataGridView1 = new DataGridView();
             HoTen = new DataGridViewTextBoxColumn();
             NgaySinh = new DataGridViewTextBoxColumn();
             GioiTinh = new DataGridViewTextBoxColumn();
-            SoDienThoai = new DataGridViewTextBoxColumn();
+            Sdt = new DataGridViewTextBoxColumn();
             Email = new DataGridViewTextBoxColumn();
             DiaChi = new DataGridViewTextBoxColumn();
-            guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             add_confirm_button = new Button();
             guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
             select_exam_button = new Button();
@@ -113,8 +109,8 @@
             ts_birth_panel.SuspendLayout();
             ts_email_panel.SuspendLayout();
             ts_address_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             guna2ShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             exam_id_panel.SuspendLayout();
             date_exam_panel.SuspendLayout();
             time_exam_panel.SuspendLayout();
@@ -576,127 +572,10 @@
             label2.TabIndex = 22;
             label2.Text = "Danh sách thí sinh";
             // 
-            // guna2DataGridView1
-            // 
-            guna2DataGridView1.AllowUserToAddRows = false;
-            guna2DataGridView1.AllowUserToDeleteRows = false;
-            guna2DataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = Color.White;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = Color.PowderBlue;
-            dataGridViewCellStyle1.SelectionForeColor = Color.Black;
-            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            guna2DataGridView1.ColumnHeadersHeight = 4;
-            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.Columns.AddRange(new DataGridViewColumn[] { HoTen, NgaySinh, GioiTinh, SoDienThoai, Email, DiaChi });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = Color.PowderBlue;
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(24, 25);
-            guna2DataGridView1.Name = "guna2DataGridView1";
-            guna2DataGridView1.ReadOnly = true;
-            guna2DataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.White;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            guna2DataGridView1.RowHeadersVisible = false;
-            guna2DataGridView1.RowHeadersWidth = 82;
-            guna2DataGridView1.Size = new Size(1482, 673);
-            guna2DataGridView1.TabIndex = 23;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = SystemColors.ControlText;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.PowderBlue;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Black;
-            guna2DataGridView1.ThemeStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.Black;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 41;
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.PowderBlue;
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
-            // 
-            // HoTen
-            // 
-            HoTen.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            HoTen.HeaderText = "Họ tên";
-            HoTen.MinimumWidth = 10;
-            HoTen.Name = "HoTen";
-            HoTen.ReadOnly = true;
-            // 
-            // NgaySinh
-            // 
-            NgaySinh.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            NgaySinh.HeaderText = "Ngày sinh";
-            NgaySinh.MinimumWidth = 10;
-            NgaySinh.Name = "NgaySinh";
-            NgaySinh.ReadOnly = true;
-            // 
-            // GioiTinh
-            // 
-            GioiTinh.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            GioiTinh.HeaderText = "Giới tính";
-            GioiTinh.MinimumWidth = 10;
-            GioiTinh.Name = "GioiTinh";
-            GioiTinh.ReadOnly = true;
-            // 
-            // SoDienThoai
-            // 
-            SoDienThoai.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            SoDienThoai.HeaderText = "Số điện thoại";
-            SoDienThoai.MinimumWidth = 10;
-            SoDienThoai.Name = "SoDienThoai";
-            SoDienThoai.ReadOnly = true;
-            // 
-            // Email
-            // 
-            Email.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Email.HeaderText = "Email";
-            Email.MinimumWidth = 10;
-            Email.Name = "Email";
-            Email.ReadOnly = true;
-            // 
-            // DiaChi
-            // 
-            DiaChi.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            DiaChi.HeaderText = "Địa chỉ";
-            DiaChi.MinimumWidth = 10;
-            DiaChi.Name = "DiaChi";
-            DiaChi.ReadOnly = true;
-            // 
             // guna2ShadowPanel1
             // 
             guna2ShadowPanel1.BackColor = Color.Transparent;
-            guna2ShadowPanel1.Controls.Add(guna2DataGridView1);
+            guna2ShadowPanel1.Controls.Add(dataGridView1);
             guna2ShadowPanel1.FillColor = Color.White;
             guna2ShadowPanel1.Location = new Point(25, 1380);
             guna2ShadowPanel1.Name = "guna2ShadowPanel1";
@@ -706,6 +585,69 @@
             guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
             guna2ShadowPanel1.Size = new Size(1534, 718);
             guna2ShadowPanel1.TabIndex = 24;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToResizeRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.ColumnHeadersHeight = 46;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { HoTen, NgaySinh, GioiTinh, Sdt, Email, DiaChi });
+            dataGridView1.GridColor = Color.PowderBlue;
+            dataGridView1.Location = new Point(3, 26);
+            dataGridView1.MultiSelect = false;
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersWidth = 82;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(1514, 663);
+            dataGridView1.TabIndex = 0;
+            // 
+            // HoTen
+            // 
+            HoTen.HeaderText = "Họ tên";
+            HoTen.MinimumWidth = 10;
+            HoTen.Name = "HoTen";
+            HoTen.ReadOnly = true;
+            // 
+            // NgaySinh
+            // 
+            NgaySinh.HeaderText = "Ngày sinh";
+            NgaySinh.MinimumWidth = 10;
+            NgaySinh.Name = "NgaySinh";
+            NgaySinh.ReadOnly = true;
+            // 
+            // GioiTinh
+            // 
+            GioiTinh.HeaderText = "Giới tính";
+            GioiTinh.MinimumWidth = 10;
+            GioiTinh.Name = "GioiTinh";
+            GioiTinh.ReadOnly = true;
+            // 
+            // Sdt
+            // 
+            Sdt.HeaderText = "Số điện thoại";
+            Sdt.MinimumWidth = 10;
+            Sdt.Name = "Sdt";
+            Sdt.ReadOnly = true;
+            // 
+            // Email
+            // 
+            Email.HeaderText = "Email";
+            Email.MinimumWidth = 10;
+            Email.Name = "Email";
+            Email.ReadOnly = true;
+            // 
+            // DiaChi
+            // 
+            DiaChi.HeaderText = "Địa chỉ";
+            DiaChi.MinimumWidth = 10;
+            DiaChi.Name = "DiaChi";
+            DiaChi.ReadOnly = true;
             // 
             // add_confirm_button
             // 
@@ -738,6 +680,7 @@
             select_exam_button.TabIndex = 27;
             select_exam_button.Text = "Tra cứu lịch thi";
             select_exam_button.UseVisualStyleBackColor = false;
+            select_exam_button.Click += select_exam_button_Click;
             // 
             // exam_id_panel
             // 
@@ -751,6 +694,7 @@
             // exam_id_textBox
             // 
             exam_id_textBox.Dock = DockStyle.Fill;
+            exam_id_textBox.Enabled = false;
             exam_id_textBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             exam_id_textBox.Location = new Point(146, 0);
             exam_id_textBox.Name = "exam_id_textBox";
@@ -780,6 +724,7 @@
             // date_exam_textBox
             // 
             date_exam_textBox.Dock = DockStyle.Fill;
+            date_exam_textBox.Enabled = false;
             date_exam_textBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             date_exam_textBox.Location = new Point(122, 0);
             date_exam_textBox.Name = "date_exam_textBox";
@@ -809,6 +754,7 @@
             // time_exam_textBox
             // 
             time_exam_textBox.Dock = DockStyle.Fill;
+            time_exam_textBox.Enabled = false;
             time_exam_textBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             time_exam_textBox.Location = new Point(172, 0);
             time_exam_textBox.Name = "time_exam_textBox";
@@ -838,6 +784,7 @@
             // exam_type_textBox
             // 
             exam_type_textBox.Dock = DockStyle.Fill;
+            exam_type_textBox.Enabled = false;
             exam_type_textBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             exam_type_textBox.Location = new Point(180, 0);
             exam_type_textBox.Name = "exam_type_textBox";
@@ -918,8 +865,8 @@
             ts_email_panel.PerformLayout();
             ts_address_panel.ResumeLayout(false);
             ts_address_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
             guna2ShadowPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             exam_id_panel.ResumeLayout(false);
             exam_id_panel.PerformLayout();
             date_exam_panel.ResumeLayout(false);
@@ -980,7 +927,6 @@
         private Button add_examinee_button;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator4;
         private Label label2;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Button add_confirm_button;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator5;
@@ -997,10 +943,11 @@
         private Panel exam_type_panel;
         private TextBox exam_type_textBox;
         private Label exam_type_label;
+        private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn HoTen;
         private DataGridViewTextBoxColumn NgaySinh;
         private DataGridViewTextBoxColumn GioiTinh;
-        private DataGridViewTextBoxColumn SoDienThoai;
+        private DataGridViewTextBoxColumn Sdt;
         private DataGridViewTextBoxColumn Email;
         private DataGridViewTextBoxColumn DiaChi;
     }

@@ -26,5 +26,10 @@ namespace ACCI_CertificationExaminationCenter
             Thread.CurrentThread.CurrentUICulture = vietnameseCulture;
         }
 
+        private void select_exam_button_Click(object sender, EventArgs e)
+        {
+            // Mở form chọn kỳ thi
+            mainForm.LoadControl(new SelectExamControl(mainForm));
+        }
     }
 }
