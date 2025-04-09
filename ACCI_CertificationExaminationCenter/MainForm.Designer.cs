@@ -547,7 +547,7 @@
             // 
             // main_panel
             // 
-            main_panel.Location = new Point(103, 0);
+            main_panel.Location = new Point(100, 0);
             main_panel.Margin = new Padding(0);
             main_panel.Name = "main_panel";
             main_panel.Size = new Size(1620, 1209);

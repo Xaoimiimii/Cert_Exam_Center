@@ -4,26 +4,27 @@ namespace ACCI_CertificationExaminationCenter
     {
         bool menuExpand = false;
         bool paymentExpand = false;
-        bool isInDashboard = true;
-        bool isInRegister = false;
-        bool isInSelectExam = false;
-        bool isInExamineeResults = false;
-        bool isInCertificate = false;
+        public bool isInDashboard = false;
+        public bool isInRegister = false;
+        public bool isInSelectExam = false;
+        public bool isInExamineeResults = false;
+        public bool isInCertificate = false;
 
         public MainForm()
         {
             InitializeComponent();
-            LoadControl(new DashboardControl());
+            LoadControl(new DashboardControl(this));
+            UpdateStatus("Dashboard");
         }
 
-        private void LoadControl(UserControl control)
+        public void LoadControl(UserControl control)
         {
             main_panel.Controls.Clear();
             control.Dock = DockStyle.Fill;
             main_panel.Controls.Add(control);
         }
 
-        private void UpdateStatus(string currentActivity)
+        public void UpdateStatus(string currentActivity)
         {
             isInDashboard = false;
             isInRegister = false;
@@ -31,13 +32,20 @@ namespace ACCI_CertificationExaminationCenter
             isInExamineeResults = false;
             isInCertificate = false;
 
+            dashboard_menu_pictureBox.Image = Properties.Resources.dashboard_white;
+            register_menu_pictureBox.Image = Properties.Resources.register_white;
+            results_menu_pictureBox.Image = Properties.Resources.grade_white;
+            certificate_menu_pictureBox.Image = Properties.Resources.cert_white;
+
             if (currentActivity == "Dashboard")
             {
                 isInDashboard = true;
+                dashboard_menu_pictureBox.Image = Properties.Resources.dashboard_green;
             }
             else if (currentActivity == "Register")
             {
                 isInRegister = true;
+                register_menu_pictureBox.Image = Properties.Resources.register_green;
             }
             else if (currentActivity == "SelectExam")
             {
@@ -46,10 +54,12 @@ namespace ACCI_CertificationExaminationCenter
             else if (currentActivity == "ExamineeResults")
             {
                 isInExamineeResults = true;
+                results_menu_pictureBox.Image = Properties.Resources.grade_green;
             }
             else if (currentActivity == "Certificate")
             {
                 isInCertificate = true;
+                certificate_menu_pictureBox.Image = Properties.Resources.cert_green;
             }
         }
 
@@ -145,9 +155,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInDashboard = true;
-            LoadControl(new DashboardControl());
             UpdateStatus("Dashboard");
+            LoadControl(new DashboardControl(this));
         }
 
         private void dashboard_menu_pictureBox_Click(object sender, EventArgs e)
@@ -156,9 +165,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInDashboard = true;
-            LoadControl(new DashboardControl());
             UpdateStatus("Dashboard");
+            LoadControl(new DashboardControl(this));
         }
 
         private void dashboard_menu_label_Click(object sender, EventArgs e)
@@ -167,9 +175,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInDashboard = true;
-            LoadControl(new DashboardControl());
             UpdateStatus("Dashboard");
+            LoadControl(new DashboardControl(this));
         }
 
         private void register_menu_flowLayoutPanel_Click(object sender, EventArgs e)
@@ -178,9 +185,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInRegister = true;
-            LoadControl(new CreateRegistrationControl());
             UpdateStatus("Register");
+            LoadControl(new CreateRegistrationControl(this));
         }
 
         private void register_menu_pictureBox_Click(object sender, EventArgs e)
@@ -189,9 +195,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInRegister = true;
-            LoadControl(new CreateRegistrationControl());
             UpdateStatus("Register");
+            LoadControl(new CreateRegistrationControl(this));
         }
 
         private void register_menu_label_Click(object sender, EventArgs e)
@@ -200,9 +205,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInRegister = true;
-            LoadControl(new CreateRegistrationControl());
             UpdateStatus("Register");
+            LoadControl(new CreateRegistrationControl(this));
         }
 
         private void results_menu_flowLayoutPanel_Click(object sender, EventArgs e)
@@ -211,9 +215,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInExamineeResults = true;
-            LoadControl(new ExamineeResultsControl());
             UpdateStatus("ExamineeResults");
+            LoadControl(new ExamineeResultsControl(this));
         }
 
         private void results_menu_pictureBox_Click(object sender, EventArgs e)
@@ -222,9 +225,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInExamineeResults = true;
-            LoadControl(new ExamineeResultsControl());
             UpdateStatus("ExamineeResults");
+            LoadControl(new ExamineeResultsControl(this));
         }
 
         private void results_menu_label_Click(object sender, EventArgs e)
@@ -233,9 +235,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInExamineeResults = true;
-            LoadControl(new ExamineeResultsControl());
             UpdateStatus("ExamineeResults");
+            LoadControl(new ExamineeResultsControl(this));
         }
 
         private void certificate_menu_flowLayoutPanel_Click(object sender, EventArgs e)
@@ -244,9 +245,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInCertificate = true;
-            LoadControl(new FindCertificateControl());
             UpdateStatus("Certificate");
+            LoadControl(new FindCertificateControl(this));
         }
 
         private void certificate_menu_pictureBox_Click(object sender, EventArgs e)
@@ -255,9 +255,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInCertificate = true;
-            LoadControl(new FindCertificateControl());
             UpdateStatus("Certificate");
+            LoadControl(new FindCertificateControl(this));
         }
 
         private void certificate_menu_label_Click(object sender, EventArgs e)
@@ -266,9 +265,8 @@ namespace ACCI_CertificationExaminationCenter
             {
                 return;
             }
-            isInCertificate = true;
-            LoadControl(new FindCertificateControl());
             UpdateStatus("Certificate");
+            LoadControl(new FindCertificateControl(this));
         }
 
         private void out_menu_flowLayoutPanel_Click(object sender, EventArgs e)

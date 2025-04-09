@@ -12,9 +12,12 @@ namespace ACCI_CertificationExaminationCenter
 {
     public partial class CreateRegistrationControl : UserControl
     {
-        public CreateRegistrationControl()
+        private MainForm mainForm;
+
+        public CreateRegistrationControl(MainForm form)
         {
             InitializeComponent();
+            this.mainForm = form;
         }
 
     }

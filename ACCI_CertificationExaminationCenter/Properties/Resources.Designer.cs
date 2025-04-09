@@ -63,6 +63,26 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2148178670 {
+            get {
+                object obj = ResourceManager.GetObject("2148178670", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap background {
+            get {
+                object obj = ResourceManager.GetObject("background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calen_green {
             get {
                 object obj = ResourceManager.GetObject("calen_green", resourceCulture);
@@ -76,6 +96,26 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         internal static System.Drawing.Bitmap calen_white {
             get {
                 object obj = ResourceManager.GetObject("calen_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar_black_128 {
+            get {
+                object obj = ResourceManager.GetObject("calendar_black_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cert_black_128 {
+            get {
+                object obj = ResourceManager.GetObject("cert_black_128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,6 +183,36 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap freepik__adjust__6389 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__adjust__6389", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap freepik__adjust__6391 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__adjust__6391", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grade_black_128 {
+            get {
+                object obj = ResourceManager.GetObject("grade_black_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap grade_green {
             get {
                 object obj = ResourceManager.GetObject("grade_green", resourceCulture);
@@ -183,9 +253,39 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pay_extend {
+            get {
+                object obj = ResourceManager.GetObject("pay_extend", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pay_extend_black_128 {
+            get {
+                object obj = ResourceManager.GetObject("pay_extend_black_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pay_green {
             get {
                 object obj = ResourceManager.GetObject("pay_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pay_regis_black_128 {
+            get {
+                object obj = ResourceManager.GetObject("pay_regis_black_128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,6 +323,26 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap register_128 {
+            get {
+                object obj = ResourceManager.GetObject("register_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap register_black_128 {
+            get {
+                object obj = ResourceManager.GetObject("register_black_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap register_green {
             get {
                 object obj = ResourceManager.GetObject("register_green", resourceCulture);
@@ -236,6 +356,16 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         internal static System.Drawing.Bitmap register_white {
             get {
                 object obj = ResourceManager.GetObject("register_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap result_white {
+            get {
+                object obj = ResourceManager.GetObject("result_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

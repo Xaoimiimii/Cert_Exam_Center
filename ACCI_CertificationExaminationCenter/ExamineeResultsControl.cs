@@ -12,9 +12,12 @@ namespace ACCI_CertificationExaminationCenter
 {
     public partial class ExamineeResultsControl : UserControl
     {
-        public ExamineeResultsControl()
+        private MainForm mainForm;
+
+        public ExamineeResultsControl(MainForm form)
         {
             InitializeComponent();
+            this.mainForm = form;
         }
     }
 }

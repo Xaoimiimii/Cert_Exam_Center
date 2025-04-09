@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             monthCalendar = new MonthCalendar();
+            guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             SuspendLayout();
             // 
             // label1
@@ -57,11 +60,28 @@
             monthCalendar.TitleBackColor = Color.PaleTurquoise;
             monthCalendar.TrailingForeColor = Color.MediumTurquoise;
             // 
+            // guna2DateTimePicker1
+            // 
+            guna2DateTimePicker1.BorderRadius = 10;
+            guna2DateTimePicker1.Checked = true;
+            guna2DateTimePicker1.CustomizableEdges = customizableEdges1;
+            guna2DateTimePicker1.Font = new Font("Segoe UI", 9F);
+            guna2DateTimePicker1.Format = DateTimePickerFormat.Long;
+            guna2DateTimePicker1.Location = new Point(501, 179);
+            guna2DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            guna2DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2DateTimePicker1.Size = new Size(400, 72);
+            guna2DateTimePicker1.TabIndex = 3;
+            guna2DateTimePicker1.Value = new DateTime(2025, 4, 9, 14, 52, 8, 355);
+            // 
             // SelectExamControl
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(guna2DateTimePicker1);
             Controls.Add(monthCalendar);
             Controls.Add(label1);
             Margin = new Padding(0);
@@ -75,5 +95,6 @@
 
         private Label label1;
         private MonthCalendar monthCalendar;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
     }
 }

@@ -12,9 +12,12 @@ namespace ACCI_CertificationExaminationCenter
 {
     public partial class FindCertificateControl : UserControl
     {
-        public FindCertificateControl()
+        private MainForm mainForm;
+
+        public FindCertificateControl(MainForm form)
         {
             InitializeComponent();
+            this.mainForm = form;
         }
     }
 }
