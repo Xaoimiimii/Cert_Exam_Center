@@ -31,19 +31,19 @@ namespace ACCI_CertificationExaminationCenter
         private void register_guna2ShadowPanel_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Register");
-            mainForm.LoadControl(new CreateRegistrationControl(mainForm));
+            mainForm.LoadControl(new CreateRegisterFormControl(mainForm));
         }
 
         private void register_pictureBox_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Register");
-            mainForm.LoadControl(new CreateRegistrationControl(mainForm));
+            mainForm.LoadControl(new CreateRegisterFormControl(mainForm));
         }
 
         private void register_label_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Register");
-            mainForm.LoadControl(new CreateRegistrationControl(mainForm));
+            mainForm.LoadControl(new CreateRegisterFormControl(mainForm));
         }
 
         private void results_guna2ShadowPanel_Click(object sender, EventArgs e)

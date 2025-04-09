@@ -1,6 +1,6 @@
 ﻿namespace ACCI_CertificationExaminationCenter
 {
-    partial class CreateRegistrationControl
+    partial class CreateRegisterFormControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -855,7 +855,7 @@
             exam_type_label.TabIndex = 0;
             exam_type_label.Text = "Loại đánh giá";
             // 
-            // CreateRegistrationControl
+            // CreateRegisterFormControl
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -892,7 +892,7 @@
             Controls.Add(guna2Separator1);
             Controls.Add(label1);
             Margin = new Padding(0);
-            Name = "CreateRegistrationControl";
+            Name = "CreateRegisterFormControl";
             Size = new Size(1580, 2310);
             kh_fullname_panel.ResumeLayout(false);
             kh_fullname_panel.PerformLayout();

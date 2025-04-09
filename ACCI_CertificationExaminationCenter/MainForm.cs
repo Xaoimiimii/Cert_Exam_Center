@@ -186,7 +186,7 @@ namespace ACCI_CertificationExaminationCenter
                 return;
             }
             UpdateStatus("Register");
-            LoadControl(new CreateRegistrationControl(this));
+            LoadControl(new CreateRegisterFormControl(this));
         }
 
         private void register_menu_pictureBox_Click(object sender, EventArgs e)
@@ -196,7 +196,7 @@ namespace ACCI_CertificationExaminationCenter
                 return;
             }
             UpdateStatus("Register");
-            LoadControl(new CreateRegistrationControl(this));
+            LoadControl(new CreateRegisterFormControl(this));
         }
 
         private void register_menu_label_Click(object sender, EventArgs e)
@@ -206,7 +206,7 @@ namespace ACCI_CertificationExaminationCenter
                 return;
             }
             UpdateStatus("Register");
-            LoadControl(new CreateRegistrationControl(this));
+            LoadControl(new CreateRegisterFormControl(this));
         }
 
         private void results_menu_flowLayoutPanel_Click(object sender, EventArgs e)

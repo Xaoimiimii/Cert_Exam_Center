@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace ACCI_CertificationExaminationCenter
 {
-    public partial class CreateRegistrationControl : UserControl
+    public partial class CreateRegisterFormControl : UserControl
     {
         private MainForm mainForm;
 
-        public CreateRegistrationControl(MainForm form)
+        public CreateRegisterFormControl(MainForm form)
         {
             InitializeComponent();
             this.mainForm = form;
