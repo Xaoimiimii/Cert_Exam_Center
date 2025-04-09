@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace ACCI_CertificationExaminationCenter
 {
-    public partial class FindCertificateControl : UserControl
+    public partial class UpdateCertificateStatusControl : UserControl
     {
         private MainForm mainForm;
 
-        public FindCertificateControl(MainForm form)
+        public UpdateCertificateStatusControl(MainForm form)
         {
             InitializeComponent();
             this.mainForm = form;

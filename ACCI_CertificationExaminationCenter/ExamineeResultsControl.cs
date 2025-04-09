@@ -18,6 +18,12 @@ namespace ACCI_CertificationExaminationCenter
         {
             InitializeComponent();
             this.mainForm = form;
+            result_guna2ShadowPanel.Visible = false;
+        }
+
+        private void insert_result_button_Click(object sender, EventArgs e)
+        {
+            result_guna2ShadowPanel.Visible = true;
         }
     }
 }

@@ -246,7 +246,7 @@ namespace ACCI_CertificationExaminationCenter
                 return;
             }
             UpdateStatus("Certificate");
-            LoadControl(new FindCertificateControl(this));
+            LoadControl(new UpdateCertificateStatusControl(this));
         }
 
         private void certificate_menu_pictureBox_Click(object sender, EventArgs e)
@@ -256,7 +256,7 @@ namespace ACCI_CertificationExaminationCenter
                 return;
             }
             UpdateStatus("Certificate");
-            LoadControl(new FindCertificateControl(this));
+            LoadControl(new UpdateCertificateStatusControl(this));
         }
 
         private void certificate_menu_label_Click(object sender, EventArgs e)
@@ -266,7 +266,7 @@ namespace ACCI_CertificationExaminationCenter
                 return;
             }
             UpdateStatus("Certificate");
-            LoadControl(new FindCertificateControl(this));
+            LoadControl(new UpdateCertificateStatusControl(this));
         }
 
         private void out_menu_flowLayoutPanel_Click(object sender, EventArgs e)

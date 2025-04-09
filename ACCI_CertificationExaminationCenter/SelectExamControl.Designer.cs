@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             monthCalendar = new MonthCalendar();
             exams_dataGridView = new DataGridView();
@@ -39,24 +41,20 @@
             SoLuongDaDK = new DataGridViewTextBoxColumn();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             tt_kh_title_label = new Label();
-            search_textBox = new TextBox();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            pictureBox1 = new PictureBox();
             exams_label = new Label();
             select_exam_button = new Button();
             cancel_button = new Button();
+            search_date_guna2TextBox = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)exams_dataGridView).BeginInit();
-            flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(25, 25);
             label1.Name = "label1";
-            label1.Size = new Size(310, 59);
+            label1.Size = new Size(325, 59);
             label1.TabIndex = 1;
             label1.Text = "Tra cứu lịch thi";
             // 
@@ -64,7 +62,7 @@
             // 
             monthCalendar.BackColor = Color.White;
             monthCalendar.ForeColor = Color.PaleTurquoise;
-            monthCalendar.Location = new Point(25, 295);
+            monthCalendar.Location = new Point(25, 277);
             monthCalendar.MaxDate = new DateTime(2026, 12, 31, 0, 0, 0, 0);
             monthCalendar.MaxSelectionCount = 1;
             monthCalendar.MinDate = new DateTime(2025, 1, 1, 0, 0, 0, 0);
@@ -86,6 +84,7 @@
             exams_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             exams_dataGridView.Columns.AddRange(new DataGridViewColumn[] { MaLichThi, NgayThi, ThoiGian, LoaiChungChi, SoLuongToiDa, SoLuongDaDK });
             exams_dataGridView.Location = new Point(420, 210);
+            exams_dataGridView.Margin = new Padding(0);
             exams_dataGridView.MultiSelect = false;
             exams_dataGridView.Name = "exams_dataGridView";
             exams_dataGridView.ReadOnly = true;
@@ -157,38 +156,6 @@
             tt_kh_title_label.TabIndex = 7;
             tt_kh_title_label.Text = "Chọn ngày thi";
             // 
-            // search_textBox
-            // 
-            search_textBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            search_textBox.Location = new Point(41, 3);
-            search_textBox.MaxLength = 10;
-            search_textBox.Name = "search_textBox";
-            search_textBox.Size = new Size(286, 43);
-            search_textBox.TabIndex = 10;
-            search_textBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.AutoSize = true;
-            flowLayoutPanel1.Controls.Add(pictureBox1);
-            flowLayoutPanel1.Controls.Add(search_textBox);
-            flowLayoutPanel1.Location = new Point(25, 210);
-            flowLayoutPanel1.Margin = new Padding(0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(330, 50);
-            flowLayoutPanel1.TabIndex = 11;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.find;
-            pictureBox1.Location = new Point(3, 9);
-            pictureBox1.Margin = new Padding(3, 9, 3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(32, 32);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // exams_label
             // 
             exams_label.AutoSize = true;
@@ -224,15 +191,40 @@
             cancel_button.Text = "Trở về";
             cancel_button.UseVisualStyleBackColor = false;
             // 
+            // search_date_guna2TextBox
+            // 
+            search_date_guna2TextBox.BorderRadius = 20;
+            search_date_guna2TextBox.CustomizableEdges = customizableEdges3;
+            search_date_guna2TextBox.DefaultText = "";
+            search_date_guna2TextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            search_date_guna2TextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            search_date_guna2TextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            search_date_guna2TextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            search_date_guna2TextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            search_date_guna2TextBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            search_date_guna2TextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            search_date_guna2TextBox.IconLeft = Properties.Resources.search;
+            search_date_guna2TextBox.IconLeftOffset = new Point(10, 0);
+            search_date_guna2TextBox.IconRight = Properties.Resources.close__1_;
+            search_date_guna2TextBox.IconRightOffset = new Point(10, 0);
+            search_date_guna2TextBox.Location = new Point(25, 210);
+            search_date_guna2TextBox.Margin = new Padding(7);
+            search_date_guna2TextBox.Name = "search_date_guna2TextBox";
+            search_date_guna2TextBox.PlaceholderText = "";
+            search_date_guna2TextBox.SelectedText = "";
+            search_date_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            search_date_guna2TextBox.Size = new Size(327, 51);
+            search_date_guna2TextBox.TabIndex = 33;
+            // 
             // SelectExamControl
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(search_date_guna2TextBox);
             Controls.Add(cancel_button);
             Controls.Add(select_exam_button);
             Controls.Add(exams_label);
-            Controls.Add(flowLayoutPanel1);
             Controls.Add(tt_kh_title_label);
             Controls.Add(guna2Separator1);
             Controls.Add(exams_dataGridView);
@@ -242,9 +234,6 @@
             Name = "SelectExamControl";
             Size = new Size(1620, 1209);
             ((System.ComponentModel.ISupportInitialize)exams_dataGridView).EndInit();
-            flowLayoutPanel1.ResumeLayout(false);
-            flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -268,5 +257,6 @@
         private DataGridViewTextBoxColumn SoLuongToiDa;
         private DataGridViewTextBoxColumn SoLuongDaDK;
         private Button cancel_button;
+        private Guna.UI2.WinForms.Guna2TextBox search_date_guna2TextBox;
     }
 }
