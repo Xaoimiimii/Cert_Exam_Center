@@ -32,8 +32,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExamineeResultsControl));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExamineeResultsControl));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -375,7 +375,7 @@
             ngayCap_guna2TextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             ngayCap_guna2TextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             ngayCap_guna2TextBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ngayCap_guna2TextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            ngayCap_guna2TextBox.HoverState.BorderColor = Color.PowderBlue;
             ngayCap_guna2TextBox.IconRightOffset = new Point(10, 0);
             ngayCap_guna2TextBox.Location = new Point(146, 7);
             ngayCap_guna2TextBox.Margin = new Padding(7);
@@ -418,7 +418,7 @@
             result_guna2TextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             result_guna2TextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             result_guna2TextBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            result_guna2TextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            result_guna2TextBox.HoverState.BorderColor = Color.PowderBlue;
             result_guna2TextBox.IconRightOffset = new Point(10, 0);
             result_guna2TextBox.Location = new Point(179, 7);
             result_guna2TextBox.Margin = new Padding(7);
@@ -467,7 +467,7 @@
             result_card_guna2ShadowPanel.Controls.Add(type_flowLayoutPanel);
             result_card_guna2ShadowPanel.Controls.Add(gender_flowLayoutPanel);
             result_card_guna2ShadowPanel.FillColor = Color.White;
-            result_card_guna2ShadowPanel.Location = new Point(25, 293);
+            result_card_guna2ShadowPanel.Location = new Point(3, 293);
             result_card_guna2ShadowPanel.Name = "result_card_guna2ShadowPanel";
             result_card_guna2ShadowPanel.Radius = 10;
             result_card_guna2ShadowPanel.ShadowColor = Color.DimGray;
@@ -478,11 +478,11 @@
             // 
             // cert_pictureBox
             // 
-            cert_pictureBox.Image = (Image)resources.GetObject("cert_pictureBox.Image");
-            cert_pictureBox.Location = new Point(60, 32);
+            cert_pictureBox.Image = Properties.Resources.certificate__3_;
+            cert_pictureBox.Location = new Point(56, 32);
             cert_pictureBox.Name = "cert_pictureBox";
-            cert_pictureBox.Size = new Size(256, 256);
-            cert_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
+            cert_pictureBox.Size = new Size(266, 348);
+            cert_pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             cert_pictureBox.TabIndex = 40;
             cert_pictureBox.TabStop = false;
             // 
@@ -495,13 +495,13 @@
             result_guna2ShadowPanel.Controls.Add(capChungChi_checkBox);
             result_guna2ShadowPanel.Controls.Add(res_flowLayoutPanel);
             result_guna2ShadowPanel.FillColor = Color.White;
-            result_guna2ShadowPanel.Location = new Point(910, 293);
+            result_guna2ShadowPanel.Location = new Point(880, 293);
             result_guna2ShadowPanel.Name = "result_guna2ShadowPanel";
             result_guna2ShadowPanel.Radius = 10;
             result_guna2ShadowPanel.ShadowColor = Color.DimGray;
             result_guna2ShadowPanel.ShadowShift = 10;
             result_guna2ShadowPanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            result_guna2ShadowPanel.Size = new Size(690, 521);
+            result_guna2ShadowPanel.Size = new Size(698, 521);
             result_guna2ShadowPanel.TabIndex = 36;
             // 
             // flowLayoutPanel1
@@ -535,7 +535,8 @@
             search_sbd_guna2TextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             search_sbd_guna2TextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             search_sbd_guna2TextBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            search_sbd_guna2TextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            search_sbd_guna2TextBox.HoverState.BorderColor = Color.PowderBlue;
+            search_sbd_guna2TextBox.IconLeftOffset = new Point(16, 0);
             search_sbd_guna2TextBox.IconRight = (Image)resources.GetObject("search_sbd_guna2TextBox.IconRight");
             search_sbd_guna2TextBox.IconRightOffset = new Point(10, 0);
             search_sbd_guna2TextBox.Location = new Point(213, 10);
@@ -574,7 +575,7 @@
             Controls.Add(label1);
             Margin = new Padding(0);
             Name = "ExamineeResultsControl";
-            Size = new Size(1622, 1211);
+            Size = new Size(1622, 1169);
             status_flowLayoutPanel.ResumeLayout(false);
             status_flowLayoutPanel.PerformLayout();
             type_flowLayoutPanel.ResumeLayout(false);

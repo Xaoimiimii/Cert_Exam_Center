@@ -408,7 +408,7 @@ namespace ACCI_CertificationExaminationCenter
             Controls.Add(register_guna2ShadowPanel);
             Margin = new Padding(0);
             Name = "DashboardControl";
-            Size = new Size(1620, 1209);
+            Size = new Size(1620, 1169);
             Load += DashboardControl_Load;
             ((System.ComponentModel.ISupportInitialize)register_pictureBox).EndInit();
             register_guna2ShadowPanel.ResumeLayout(false);

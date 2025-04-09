@@ -143,6 +143,16 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap certificate__3_ {
+            get {
+                object obj = ResourceManager.GetObject("certificate (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close__1_ {
             get {
                 object obj = ResourceManager.GetObject("close (1)", resourceCulture);

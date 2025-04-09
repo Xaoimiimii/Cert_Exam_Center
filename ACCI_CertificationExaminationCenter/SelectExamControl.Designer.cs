@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             monthCalendar = new MonthCalendar();
             exams_dataGridView = new DataGridView();
@@ -194,7 +194,7 @@
             // search_date_guna2TextBox
             // 
             search_date_guna2TextBox.BorderRadius = 20;
-            search_date_guna2TextBox.CustomizableEdges = customizableEdges3;
+            search_date_guna2TextBox.CustomizableEdges = customizableEdges1;
             search_date_guna2TextBox.DefaultText = "";
             search_date_guna2TextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             search_date_guna2TextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -202,7 +202,7 @@
             search_date_guna2TextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             search_date_guna2TextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             search_date_guna2TextBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            search_date_guna2TextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            search_date_guna2TextBox.HoverState.BorderColor = Color.Gray;
             search_date_guna2TextBox.IconLeft = Properties.Resources.search;
             search_date_guna2TextBox.IconLeftOffset = new Point(10, 0);
             search_date_guna2TextBox.IconRight = Properties.Resources.close__1_;
@@ -212,7 +212,7 @@
             search_date_guna2TextBox.Name = "search_date_guna2TextBox";
             search_date_guna2TextBox.PlaceholderText = "";
             search_date_guna2TextBox.SelectedText = "";
-            search_date_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            search_date_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
             search_date_guna2TextBox.Size = new Size(327, 51);
             search_date_guna2TextBox.TabIndex = 33;
             // 
@@ -232,7 +232,7 @@
             Controls.Add(label1);
             Margin = new Padding(0);
             Name = "SelectExamControl";
-            Size = new Size(1620, 1209);
+            Size = new Size(1620, 1169);
             ((System.ComponentModel.ISupportInitialize)exams_dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();

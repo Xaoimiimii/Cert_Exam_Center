@@ -69,6 +69,7 @@
             menuTransition = new System.Windows.Forms.Timer(components);
             paymentTransition = new System.Windows.Forms.Timer(components);
             main_panel = new Panel();
+            status_bar_panel = new Panel();
             nav_drawer_flowLayoutPanel.SuspendLayout();
             menu_group_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)close_menu_pictureBox).BeginInit();
@@ -550,8 +551,16 @@
             main_panel.Location = new Point(100, 0);
             main_panel.Margin = new Padding(0);
             main_panel.Name = "main_panel";
-            main_panel.Size = new Size(1620, 1209);
+            main_panel.Size = new Size(1620, 1169);
             main_panel.TabIndex = 1;
+            // 
+            // status_bar_panel
+            // 
+            status_bar_panel.Location = new Point(100, 1169);
+            status_bar_panel.Margin = new Padding(0);
+            status_bar_panel.Name = "status_bar_panel";
+            status_bar_panel.Size = new Size(1620, 40);
+            status_bar_panel.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -559,6 +568,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1724, 1209);
+            Controls.Add(status_bar_panel);
             Controls.Add(nav_drawer_flowLayoutPanel);
             Controls.Add(main_panel);
             Name = "MainForm";
@@ -646,5 +656,6 @@
         private Panel main_panel;
         private PictureBox payment_register_menu_pictureBox;
         private PictureBox payment_extensive_menu_pictureBox;
+        private Panel status_bar_panel;
     }
 }
