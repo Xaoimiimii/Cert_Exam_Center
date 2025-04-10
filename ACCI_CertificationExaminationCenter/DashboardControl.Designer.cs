@@ -360,7 +360,7 @@ namespace ACCI_CertificationExaminationCenter
             // 
             // bg_pictureBox
             // 
-            bg_pictureBox.Image = Properties.Resources.freepik__adjust__6391;
+            bg_pictureBox.Image = Properties.Resources._2148178670;
             bg_pictureBox.Location = new Point(0, 0);
             bg_pictureBox.Margin = new Padding(0);
             bg_pictureBox.Name = "bg_pictureBox";

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateCertificateStatusControl));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             insert_result_button = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -86,7 +86,7 @@
             // 
             // insert_result_button
             // 
-            insert_result_button.BackColor = Color.MediumTurquoise;
+            insert_result_button.BackColor = Color.DarkTurquoise;
             insert_result_button.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             insert_result_button.ForeColor = Color.Transparent;
             insert_result_button.Location = new Point(486, 830);
@@ -120,7 +120,7 @@
             // search_sbd_guna2TextBox
             // 
             search_sbd_guna2TextBox.BorderRadius = 20;
-            search_sbd_guna2TextBox.CustomizableEdges = customizableEdges1;
+            search_sbd_guna2TextBox.CustomizableEdges = customizableEdges3;
             search_sbd_guna2TextBox.DefaultText = "";
             search_sbd_guna2TextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             search_sbd_guna2TextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -137,7 +137,7 @@
             search_sbd_guna2TextBox.Padding = new Padding(4);
             search_sbd_guna2TextBox.PlaceholderText = "";
             search_sbd_guna2TextBox.SelectedText = "";
-            search_sbd_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            search_sbd_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
             search_sbd_guna2TextBox.Size = new Size(620, 72);
             search_sbd_guna2TextBox.TabIndex = 32;
             // 
