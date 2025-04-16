@@ -108,7 +108,7 @@
             nav_drawer_flowLayoutPanel.Dock = DockStyle.Left;
             nav_drawer_flowLayoutPanel.Location = new Point(0, 0);
             nav_drawer_flowLayoutPanel.Name = "nav_drawer_flowLayoutPanel";
-            nav_drawer_flowLayoutPanel.Size = new Size(100, 1209);
+            nav_drawer_flowLayoutPanel.Size = new Size(98, 1209);
             nav_drawer_flowLayoutPanel.TabIndex = 0;
             // 
             // menu_group_panel
@@ -136,7 +136,7 @@
             // 
             show_menu_pictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             show_menu_pictureBox.Image = Properties.Resources.menu_icon;
-            show_menu_pictureBox.Location = new Point(25, 19);
+            show_menu_pictureBox.Location = new Point(28, 19);
             show_menu_pictureBox.Margin = new Padding(0);
             show_menu_pictureBox.Name = "show_menu_pictureBox";
             show_menu_pictureBox.Size = new Size(32, 32);
@@ -548,7 +548,7 @@
             // 
             // main_panel
             // 
-            main_panel.Location = new Point(100, 0);
+            main_panel.Location = new Point(98, 0);
             main_panel.Margin = new Padding(0);
             main_panel.Name = "main_panel";
             main_panel.Size = new Size(1620, 1169);

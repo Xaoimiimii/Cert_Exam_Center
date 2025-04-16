@@ -68,7 +68,7 @@ namespace ACCI_CertificationExaminationCenter
             if (menuExpand)
             {
                 nav_drawer_flowLayoutPanel.Width -= 10;
-                if (nav_drawer_flowLayoutPanel.Width <= 96)
+                if (nav_drawer_flowLayoutPanel.Width <= 98)
                 {
                     menuTransition.Stop();
                     menuExpand = false;
