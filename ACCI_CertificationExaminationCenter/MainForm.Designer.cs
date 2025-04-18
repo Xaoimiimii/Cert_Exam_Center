@@ -551,15 +551,15 @@
             main_panel.Location = new Point(98, 0);
             main_panel.Margin = new Padding(0);
             main_panel.Name = "main_panel";
-            main_panel.Size = new Size(1620, 1169);
+            main_panel.Size = new Size(1626, 1169);
             main_panel.TabIndex = 1;
             // 
             // status_bar_panel
             // 
-            status_bar_panel.Location = new Point(100, 1169);
+            status_bar_panel.Location = new Point(98, 1169);
             status_bar_panel.Margin = new Padding(0);
             status_bar_panel.Name = "status_bar_panel";
-            status_bar_panel.Size = new Size(1620, 40);
+            status_bar_panel.Size = new Size(1626, 41);
             status_bar_panel.TabIndex = 0;
             // 
             // MainForm
