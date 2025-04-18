@@ -187,6 +187,7 @@ namespace ACCI_CertificationExaminationCenter
             }
             UpdateStatus("Register");
             LoadControl(new CreateRegisterFormControl(this));
+            //LoadControl(new RegisterDetailsFormControl(this));
         }
 
         private void register_menu_pictureBox_Click(object sender, EventArgs e)
