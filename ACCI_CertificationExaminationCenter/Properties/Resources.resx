@@ -133,8 +133,14 @@
   <data name="grade_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grade_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="certificate (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\certificate (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cert_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cert_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setting_greenn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setting_greenn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pay_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pay_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,9 +169,6 @@
   <data name="dashboard_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dashboard_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="grade_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grade_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="receipt_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\receipt_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -187,9 +190,6 @@
   <data name="calendar_black_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar_black_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pay_regis_black_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pay_regis_black_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cert_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cert_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -205,20 +205,23 @@
   <data name="menu_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pay_regis_black_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pay_regis_black_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="setting_whitee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setting_whitee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="out_whitee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\out_whitee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="out_whitee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\out_whitee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="receipt_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\receipt_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="setting_greenn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\setting_greenn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grade_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grade_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="register_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\register_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,7 +229,7 @@
   <data name="close (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="certificate (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\certificate (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="back (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

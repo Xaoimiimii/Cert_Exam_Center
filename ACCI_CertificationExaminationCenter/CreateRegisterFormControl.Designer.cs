@@ -97,6 +97,7 @@
             exam_type_panel = new Panel();
             exam_type_textBox = new TextBox();
             exam_type_label = new Label();
+            lMaPhieuDK = new Label();
             kh_fullname_panel.SuspendLayout();
             kh_phone_panel.SuspendLayout();
             kh_email_panel.SuspendLayout();
@@ -545,7 +546,7 @@
             add_examinee_button.BackColor = Color.MediumTurquoise;
             add_examinee_button.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             add_examinee_button.ForeColor = Color.Transparent;
-            add_examinee_button.Location = new Point(689, 1213);
+            add_examinee_button.Location = new Point(700, 1213);
             add_examinee_button.Name = "add_examinee_button";
             add_examinee_button.Size = new Size(258, 78);
             add_examinee_button.TabIndex = 20;
@@ -583,7 +584,7 @@
             guna2ShadowPanel1.ShadowColor = Color.DimGray;
             guna2ShadowPanel1.ShadowShift = 16;
             guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            guna2ShadowPanel1.Size = new Size(1534, 718);
+            guna2ShadowPanel1.Size = new Size(1536, 718);
             guna2ShadowPanel1.TabIndex = 24;
             // 
             // dataGridView1
@@ -604,7 +605,7 @@
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 82;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(1514, 663);
+            dataGridView1.Size = new Size(1503, 663);
             dataGridView1.TabIndex = 0;
             // 
             // HoTen
@@ -654,7 +655,7 @@
             add_confirm_button.BackColor = Color.MediumTurquoise;
             add_confirm_button.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             add_confirm_button.ForeColor = Color.Transparent;
-            add_confirm_button.Location = new Point(660, 2150);
+            add_confirm_button.Location = new Point(680, 2150);
             add_confirm_button.Name = "add_confirm_button";
             add_confirm_button.Size = new Size(322, 78);
             add_confirm_button.TabIndex = 25;
@@ -802,12 +803,24 @@
             exam_type_label.TabIndex = 0;
             exam_type_label.Text = "Loại đánh giá";
             // 
+            // lMaPhieuDK
+            // 
+            lMaPhieuDK.AutoSize = true;
+            lMaPhieuDK.Font = new Font("Segoe UI", 16.125F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lMaPhieuDK.ForeColor = Color.DarkTurquoise;
+            lMaPhieuDK.Location = new Point(442, 25);
+            lMaPhieuDK.Name = "lMaPhieuDK";
+            lMaPhieuDK.Size = new Size(220, 59);
+            lMaPhieuDK.TabIndex = 32;
+            lMaPhieuDK.Text = "DK293213";
+            // 
             // CreateRegisterFormControl
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
+            Controls.Add(lMaPhieuDK);
             Controls.Add(exam_type_panel);
             Controls.Add(time_exam_panel);
             Controls.Add(date_exam_panel);
@@ -950,5 +963,6 @@
         private DataGridViewTextBoxColumn Sdt;
         private DataGridViewTextBoxColumn Email;
         private DataGridViewTextBoxColumn DiaChi;
+        private Label lMaPhieuDK;
     }
 }
