@@ -12,9 +12,12 @@ namespace ACCI_CertificationExaminationCenter
 {
     public partial class XuatHoaDonThanhToan : UserControl
     {
-        public XuatHoaDonThanhToan()
+        private MainForm mainForm;
+
+        public XuatHoaDonThanhToan(MainForm form)
         {
             InitializeComponent();
+            this.mainForm = form;
         }
     }
 }

@@ -62,9 +62,6 @@
             panelHoTen = new Panel();
             txtHoTen = new TextBox();
             labelHoTen = new Label();
-            panel2 = new Panel();
-            label4 = new Label();
-            pictureBox1 = new PictureBox();
             radioBtnTienMat = new RadioButton();
             radioBtnChuyenKhoan = new RadioButton();
             button1 = new Button();
@@ -80,6 +77,8 @@
             panelMaLichThi = new Panel();
             txtMaLichThi = new TextBox();
             labelMaLichThi = new Label();
+            pbReset = new PictureBox();
+            pbBack = new PictureBox();
             panelSoTienTamTinh.SuspendLayout();
             panelTongTienThanhToan.SuspendLayout();
             panelMaGiaoDich.SuspendLayout();
@@ -89,12 +88,12 @@
             panelTrangThai.SuspendLayout();
             panelMaKH.SuspendLayout();
             panelHoTen.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelLoaiChungChi.SuspendLayout();
             panelGioThi.SuspendLayout();
             panelNgayThi.SuspendLayout();
             panelMaLichThi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbReset).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbBack).BeginInit();
             SuspendLayout();
             // 
             // txtSdt
@@ -313,14 +312,14 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(25, 25);
+            label1.Location = new Point(70, 25);
             label1.Margin = new Padding(0);
             label1.Name = "label1";
-            label1.Size = new Size(608, 59);
+            label1.Size = new Size(1484, 59);
             label1.TabIndex = 54;
             label1.Text = "Thanh toán hóa đơn đăng ký";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panelNgayLap
             // 
@@ -441,36 +440,6 @@
             labelHoTen.Size = new Size(100, 37);
             labelHoTen.TabIndex = 0;
             labelHoTen.Text = "Họ tên";
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(25, 1110);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(178, 34);
-            panel2.TabIndex = 72;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(35, -5);
-            label4.Name = "label4";
-            label4.Size = new Size(116, 37);
-            label4.TabIndex = 1;
-            label4.Text = "Quay lại";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.back__1_;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(32, 32);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // radioBtnTienMat
             // 
@@ -628,11 +597,33 @@
             labelMaLichThi.TabIndex = 0;
             labelMaLichThi.Text = "Mã lịch thi";
             // 
+            // pbReset
+            // 
+            pbReset.Image = Properties.Resources.reload_64;
+            pbReset.Location = new Point(1557, 36);
+            pbReset.Name = "pbReset";
+            pbReset.Size = new Size(38, 38);
+            pbReset.SizeMode = PictureBoxSizeMode.Zoom;
+            pbReset.TabIndex = 81;
+            pbReset.TabStop = false;
+            // 
+            // pbBack
+            // 
+            pbBack.Image = Properties.Resources.back_64;
+            pbBack.Location = new Point(25, 35);
+            pbBack.Name = "pbBack";
+            pbBack.Size = new Size(42, 42);
+            pbBack.SizeMode = PictureBoxSizeMode.Zoom;
+            pbBack.TabIndex = 80;
+            pbBack.TabStop = false;
+            // 
             // ThanhToanPhieuDangKy
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(pbReset);
+            Controls.Add(pbBack);
             Controls.Add(panelLoaiChungChi);
             Controls.Add(panelGioThi);
             Controls.Add(panelNgayThi);
@@ -640,7 +631,6 @@
             Controls.Add(button1);
             Controls.Add(radioBtnChuyenKhoan);
             Controls.Add(radioBtnTienMat);
-            Controls.Add(panel2);
             Controls.Add(label2);
             Controls.Add(guna2Separator2);
             Controls.Add(panelSoTienTamTinh);
@@ -678,9 +668,6 @@
             panelMaKH.PerformLayout();
             panelHoTen.ResumeLayout(false);
             panelHoTen.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelLoaiChungChi.ResumeLayout(false);
             panelLoaiChungChi.PerformLayout();
             panelGioThi.ResumeLayout(false);
@@ -689,6 +676,8 @@
             panelNgayThi.PerformLayout();
             panelMaLichThi.ResumeLayout(false);
             panelMaLichThi.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbReset).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbBack).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -729,9 +718,6 @@
         private Panel panelHoTen;
         private TextBox txtHoTen;
         private Label labelHoTen;
-        private Panel panel2;
-        private Label label4;
-        private PictureBox pictureBox1;
         private RadioButton radioBtnTienMat;
         private RadioButton radioBtnChuyenKhoan;
         private Button button1;
@@ -747,5 +733,7 @@
         private Panel panelMaLichThi;
         private TextBox txtMaLichThi;
         private Label labelMaLichThi;
+        private PictureBox pbReset;
+        private PictureBox pbBack;
     }
 }

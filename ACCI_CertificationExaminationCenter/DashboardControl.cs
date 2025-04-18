@@ -31,19 +31,37 @@ namespace ACCI_CertificationExaminationCenter
         private void register_guna2ShadowPanel_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Register");
-            mainForm.LoadControl(new CreateRegisterFormControl(mainForm));
+            mainForm.LoadControl(new LapPhieuDangKy(mainForm));
         }
 
         private void register_pictureBox_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Register");
-            mainForm.LoadControl(new CreateRegisterFormControl(mainForm));
+            mainForm.LoadControl(new LapPhieuDangKy(mainForm));
         }
 
         private void register_label_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Register");
-            mainForm.LoadControl(new CreateRegisterFormControl(mainForm));
+            mainForm.LoadControl(new LapPhieuDangKy(mainForm));
+        }
+
+        private void payment_register_guna2ShadowPanel_Click(object sender, EventArgs e)
+        {
+            mainForm.UpdateStatus("Payment");
+            mainForm.LoadControl(new ThanhToanPhieuDangKy(mainForm));
+        }
+
+        private void payment_register_pictureBox_Click(object sender, EventArgs e)
+        {
+            mainForm.UpdateStatus("Payment");
+            mainForm.LoadControl(new ThanhToanPhieuDangKy(mainForm));
+        }
+
+        private void payment_register_label_Click(object sender, EventArgs e)
+        {
+            mainForm.UpdateStatus("Payment");
+            mainForm.LoadControl(new ThanhToanPhieuDangKy(mainForm));
         }
 
         private void results_guna2ShadowPanel_Click(object sender, EventArgs e)
@@ -261,5 +279,7 @@ namespace ACCI_CertificationExaminationCenter
         {
             certificate_guna2ShadowPanel.FillColor = Color.LightCyan;
         }
+
+
     }
 }

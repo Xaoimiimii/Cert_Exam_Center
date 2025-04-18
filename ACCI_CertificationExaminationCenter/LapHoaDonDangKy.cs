@@ -12,9 +12,12 @@ namespace ACCI_CertificationExaminationCenter
 {
     public partial class LapHoaDonDangKy : UserControl
     {
-        public LapHoaDonDangKy()
+        private MainForm mainForm;
+
+        public LapHoaDonDangKy(MainForm form)
         {
             InitializeComponent();
+            this.mainForm = form;
         }
     }
 }

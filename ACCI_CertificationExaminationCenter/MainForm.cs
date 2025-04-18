@@ -5,6 +5,8 @@ namespace ACCI_CertificationExaminationCenter
         bool menuExpand = false;
         bool paymentExpand = false;
         public bool isInDashboard = false;
+        public bool isInPaymentRegister = false;
+        public bool isInPaymentExtend = false;
         public bool isInRegister = false;
         public bool isInSelectExam = false;
         public bool isInExamineeResults = false;
@@ -28,12 +30,15 @@ namespace ACCI_CertificationExaminationCenter
         {
             isInDashboard = false;
             isInRegister = false;
+            isInPaymentRegister = false;
+            isInPaymentExtend = false;
             isInSelectExam = false;
             isInExamineeResults = false;
             isInCertificate = false;
 
             dashboard_menu_pictureBox.Image = Properties.Resources.dashboard_white;
             register_menu_pictureBox.Image = Properties.Resources.register_white;
+            payment_menu_pictureBox.Image = Properties.Resources.pay_white;
             results_menu_pictureBox.Image = Properties.Resources.grade_white;
             certificate_menu_pictureBox.Image = Properties.Resources.cert_white;
 
@@ -46,6 +51,16 @@ namespace ACCI_CertificationExaminationCenter
             {
                 isInRegister = true;
                 register_menu_pictureBox.Image = Properties.Resources.register_green;
+            }
+            else if (currentActivity == "PaymentRegister")
+            {
+                isInPaymentRegister = true;
+                payment_menu_pictureBox.Image = Properties.Resources.pay_green;
+            }
+            else if (currentActivity == "PaymentExtend")
+            {
+                isInPaymentExtend = true;
+                payment_menu_pictureBox.Image = Properties.Resources.pay_green;
             }
             else if (currentActivity == "SelectExam")
             {
@@ -108,7 +123,7 @@ namespace ACCI_CertificationExaminationCenter
                     payment_register_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
                     payment_extensive_menu_pictureBox.Margin = new Padding(32, 24, 3, 3);
                 }
-                    payment_menu_group_flowLayoutPanel.Height += 10;
+                payment_menu_group_flowLayoutPanel.Height += 10;
                 if (payment_menu_group_flowLayoutPanel.Height >= 240)
                 {
                     paymentTransition.Stop();
@@ -186,7 +201,7 @@ namespace ACCI_CertificationExaminationCenter
                 return;
             }
             UpdateStatus("Register");
-            LoadControl(new CreateRegisterFormControl(this));
+            LoadControl(new LapPhieuDangKy(this));
         }
 
         private void register_menu_pictureBox_Click(object sender, EventArgs e)
@@ -196,7 +211,7 @@ namespace ACCI_CertificationExaminationCenter
                 return;
             }
             UpdateStatus("Register");
-            LoadControl(new CreateRegisterFormControl(this));
+            LoadControl(new LapPhieuDangKy(this));
         }
 
         private void register_menu_label_Click(object sender, EventArgs e)
@@ -206,7 +221,37 @@ namespace ACCI_CertificationExaminationCenter
                 return;
             }
             UpdateStatus("Register");
-            LoadControl(new CreateRegisterFormControl(this));
+            LoadControl(new LapPhieuDangKy(this));
+        }
+
+        private void payment_register_menu_flowLayoutPanel_Click(object sender, EventArgs e)
+        {
+            if (isInPaymentRegister)
+            {
+                return;
+            }
+            UpdateStatus("PaymentRegister");
+            LoadControl(new ThanhToanPhieuDangKy(this));
+        }
+
+        private void payment_register_menu_label_Click(object sender, EventArgs e)
+        {
+            if (isInPaymentRegister)
+            {
+                return;
+            }
+            UpdateStatus("PaymentRegister");
+            LoadControl(new ThanhToanPhieuDangKy(this));
+        }
+
+        private void payment_register_menu_pictureBox_Click(object sender, EventArgs e)
+        {
+            if (isInPaymentRegister)
+            {
+                return;
+            }
+            UpdateStatus("PaymentRegister");
+            LoadControl(new ThanhToanPhieuDangKy(this));
         }
 
         private void results_menu_flowLayoutPanel_Click(object sender, EventArgs e)
@@ -283,5 +328,7 @@ namespace ACCI_CertificationExaminationCenter
         {
 
         }
+
+
     }
 }

@@ -50,9 +50,6 @@
             textBox1 = new TextBox();
             label3 = new Label();
             btnLapHoaDon = new Button();
-            panel2 = new Panel();
-            label4 = new Label();
-            pictureBox1 = new PictureBox();
             panelLoaiChungChi = new Panel();
             txtLoaiChungChi = new TextBox();
             labelLoaiChungChi = new Label();
@@ -83,13 +80,13 @@
             panelHoTen = new Panel();
             txtHoTen = new TextBox();
             labelHoTen = new Label();
+            pbReset = new PictureBox();
+            pbBack = new PictureBox();
             panelSlgThiSinh.SuspendLayout();
             panelSoTienTamTinh.SuspendLayout();
             panelSoTienUuDai.SuspendLayout();
             panelTongTienThanhToan.SuspendLayout();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelLoaiChungChi.SuspendLayout();
             panelGioThi.SuspendLayout();
             panelNgayThi.SuspendLayout();
@@ -100,6 +97,8 @@
             panelTrangThai.SuspendLayout();
             panelMaKH.SuspendLayout();
             panelHoTen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbReset).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbBack).BeginInit();
             SuspendLayout();
             // 
             // select_exam_button
@@ -136,14 +135,14 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(25, 25);
+            label1.Location = new Point(70, 25);
             label1.Margin = new Padding(0);
             label1.Name = "label1";
-            label1.Size = new Size(450, 59);
+            label1.Size = new Size(1484, 59);
             label1.TabIndex = 32;
             label1.Text = "Lập hóa đơn đăng ký";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -327,37 +326,6 @@
             btnLapHoaDon.TabIndex = 53;
             btnLapHoaDon.Text = "Lập hóa đơn";
             btnLapHoaDon.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            panel2.Location = new Point(25, 1110);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(178, 34);
-            panel2.TabIndex = 54;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(35, -5);
-            label4.Name = "label4";
-            label4.Size = new Size(116, 37);
-            label4.TabIndex = 1;
-            label4.Text = "Quay lại";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.back__1_;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(32, 32);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // panelLoaiChungChi
             // 
@@ -659,11 +627,33 @@
             labelHoTen.TabIndex = 0;
             labelHoTen.Text = "Họ tên";
             // 
+            // pbReset
+            // 
+            pbReset.Image = Properties.Resources.reload_64;
+            pbReset.Location = new Point(1557, 36);
+            pbReset.Name = "pbReset";
+            pbReset.Size = new Size(38, 38);
+            pbReset.SizeMode = PictureBoxSizeMode.Zoom;
+            pbReset.TabIndex = 117;
+            pbReset.TabStop = false;
+            // 
+            // pbBack
+            // 
+            pbBack.Image = Properties.Resources.back_64;
+            pbBack.Location = new Point(25, 35);
+            pbBack.Name = "pbBack";
+            pbBack.Size = new Size(42, 42);
+            pbBack.SizeMode = PictureBoxSizeMode.Zoom;
+            pbBack.TabIndex = 116;
+            pbBack.TabStop = false;
+            // 
             // LapHoaDonDangKy
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(pbReset);
+            Controls.Add(pbBack);
             Controls.Add(panelLoaiChungChi);
             Controls.Add(panelGioThi);
             Controls.Add(panelNgayThi);
@@ -674,7 +664,6 @@
             Controls.Add(panelTrangThai);
             Controls.Add(panelMaKH);
             Controls.Add(panelHoTen);
-            Controls.Add(panel2);
             Controls.Add(btnLapHoaDon);
             Controls.Add(panel1);
             Controls.Add(panelTongTienThanhToan);
@@ -700,9 +689,6 @@
             panelTongTienThanhToan.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelLoaiChungChi.ResumeLayout(false);
             panelLoaiChungChi.PerformLayout();
             panelGioThi.ResumeLayout(false);
@@ -723,6 +709,8 @@
             panelMaKH.PerformLayout();
             panelHoTen.ResumeLayout(false);
             panelHoTen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbReset).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbBack).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -761,9 +749,6 @@
         private TextBox textBox1;
         private Label label3;
         private Button btnLapHoaDon;
-        private Panel panel2;
-        private PictureBox pictureBox1;
-        private Label label4;
         private Panel panelLoaiChungChi;
         private TextBox txtLoaiChungChi;
         private Label labelLoaiChungChi;
@@ -794,5 +779,7 @@
         private Panel panelHoTen;
         private TextBox txtHoTen;
         private Label labelHoTen;
+        private PictureBox pbReset;
+        private PictureBox pbBack;
     }
 }

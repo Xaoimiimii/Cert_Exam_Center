@@ -83,6 +83,16 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_64 {
+            get {
+                object obj = ResourceManager.GetObject("back_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
@@ -396,6 +406,16 @@ namespace ACCI_CertificationExaminationCenter.Properties {
         internal static System.Drawing.Bitmap register_white {
             get {
                 object obj = ResourceManager.GetObject("register_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reload_64 {
+            get {
+                object obj = ResourceManager.GetObject("reload_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

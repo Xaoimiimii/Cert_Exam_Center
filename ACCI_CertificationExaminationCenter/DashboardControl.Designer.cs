@@ -142,6 +142,7 @@ namespace ACCI_CertificationExaminationCenter
             payment_register_guna2ShadowPanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
             payment_register_guna2ShadowPanel.Size = new Size(480, 245);
             payment_register_guna2ShadowPanel.TabIndex = 5;
+            payment_register_guna2ShadowPanel.Click += payment_register_guna2ShadowPanel_Click;
             payment_register_guna2ShadowPanel.MouseEnter += payment_register_guna2ShadowPanel_MouseEnter;
             payment_register_guna2ShadowPanel.MouseLeave += payment_register_guna2ShadowPanel_MouseLeave;
             // 
@@ -156,6 +157,7 @@ namespace ACCI_CertificationExaminationCenter
             payment_register_label.TabIndex = 1;
             payment_register_label.Text = "Thanh toán đăng ký thi";
             payment_register_label.TextAlign = ContentAlignment.MiddleCenter;
+            payment_register_label.Click += payment_register_label_Click;
             payment_register_label.MouseEnter += payment_register_label_MouseEnter;
             payment_register_label.MouseLeave += payment_register_label_MouseLeave;
             // 
@@ -169,6 +171,7 @@ namespace ACCI_CertificationExaminationCenter
             payment_register_pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             payment_register_pictureBox.TabIndex = 0;
             payment_register_pictureBox.TabStop = false;
+            payment_register_pictureBox.Click += payment_register_pictureBox_Click;
             payment_register_pictureBox.MouseEnter += payment_register_pictureBox_MouseEnter;
             payment_register_pictureBox.MouseLeave += payment_register_pictureBox_MouseLeave;
             // 
