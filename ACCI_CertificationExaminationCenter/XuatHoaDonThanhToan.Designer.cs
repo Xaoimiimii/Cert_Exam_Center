@@ -32,7 +32,7 @@
             labelHoTen = new Label();
             txtMaKH = new TextBox();
             labelMaKH = new Label();
-            select_exam_button = new Button();
+            btnTraCuuPhieuDK = new Button();
             txtSdt = new TextBox();
             label2 = new Label();
             guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
@@ -51,7 +51,7 @@
             tt_lt_title_label = new Label();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             label1 = new Label();
-            btnLapHoaDon = new Button();
+            btnXuatPDF = new Button();
             panelSdt = new Panel();
             panelEmail = new Panel();
             txtEmail = new TextBox();
@@ -67,7 +67,7 @@
             panelTrangThai = new Panel();
             txtTrangThai = new TextBox();
             labelTrangThai = new Label();
-            button2 = new Button();
+            btnInHoaDon = new Button();
             panelNgayThanhToan = new Panel();
             txtNgayThanhToan = new TextBox();
             labelNgayThanhToan = new Label();
@@ -80,25 +80,25 @@
             panelPhuongThucThanhToan = new Panel();
             txtPhuongThucThanhToan = new TextBox();
             labelPhuongThucThanhToan = new Label();
-            this.panelLoaiChungChi = new Panel();
-            this.txtLoaiChungChi = new TextBox();
-            this.labelLoaiChungChi = new Label();
-            this.panelNgayThi = new Panel();
-            this.txtNgayThi = new TextBox();
-            this.labelNgayThi = new Label();
             panelMaLichThi = new Panel();
             txtMaLichThi = new TextBox();
             labelMaLichThi = new Label();
             labelTTLichThi = new Label();
-            this.panelGioThi = new Panel();
-            this.txtGioThi = new TextBox();
-            labelGioThi = new Label();
             guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             panelDonVi = new Panel();
             txtDonVi = new TextBox();
             labelDonVi = new Label();
             pbReset = new PictureBox();
             pbBack = new PictureBox();
+            panelNgayThi = new Panel();
+            txtNgayThi = new TextBox();
+            labelNgayThi = new Label();
+            panelGioThi = new Panel();
+            txtGioThi = new TextBox();
+            labelGioThi = new Label();
+            panelLoaiChungChi = new Panel();
+            txtLoaiChungChi = new TextBox();
+            labelLoaiChungChi = new Label();
             panelMaHoaDon.SuspendLayout();
             panelHoTen.SuspendLayout();
             panelTongTienThanhToan.SuspendLayout();
@@ -113,13 +113,13 @@
             panelSoTienTamTinh.SuspendLayout();
             panelSoTienUuDai.SuspendLayout();
             panelPhuongThucThanhToan.SuspendLayout();
-            this.panelLoaiChungChi.SuspendLayout();
-            this.panelNgayThi.SuspendLayout();
             panelMaLichThi.SuspendLayout();
-            this.panelGioThi.SuspendLayout();
             panelDonVi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbReset).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbBack).BeginInit();
+            panelNgayThi.SuspendLayout();
+            panelGioThi.SuspendLayout();
+            panelLoaiChungChi.SuspendLayout();
             SuspendLayout();
             // 
             // txtHoTen
@@ -162,17 +162,17 @@
             labelMaKH.TabIndex = 0;
             labelMaKH.Text = "Mã khách hàng";
             // 
-            // select_exam_button
+            // btnTraCuuPhieuDK
             // 
-            select_exam_button.BackColor = Color.MediumTurquoise;
-            select_exam_button.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            select_exam_button.ForeColor = Color.Transparent;
-            select_exam_button.Location = new Point(1275, 877);
-            select_exam_button.Name = "select_exam_button";
-            select_exam_button.Size = new Size(320, 91);
-            select_exam_button.TabIndex = 79;
-            select_exam_button.Text = "Tra cứu phiếu đăng ký";
-            select_exam_button.UseVisualStyleBackColor = false;
+            btnTraCuuPhieuDK.BackColor = Color.MediumTurquoise;
+            btnTraCuuPhieuDK.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTraCuuPhieuDK.ForeColor = Color.Transparent;
+            btnTraCuuPhieuDK.Location = new Point(1275, 877);
+            btnTraCuuPhieuDK.Name = "btnTraCuuPhieuDK";
+            btnTraCuuPhieuDK.Size = new Size(320, 91);
+            btnTraCuuPhieuDK.TabIndex = 79;
+            btnTraCuuPhieuDK.Text = "Tra cứu phiếu đăng ký";
+            btnTraCuuPhieuDK.UseVisualStyleBackColor = false;
             // 
             // txtSdt
             // 
@@ -350,17 +350,17 @@
             label1.Text = "Xuất hóa đơn thanh toán";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnLapHoaDon
+            // btnXuatPDF
             // 
-            btnLapHoaDon.BackColor = Color.MediumTurquoise;
-            btnLapHoaDon.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLapHoaDon.ForeColor = Color.Transparent;
-            btnLapHoaDon.Location = new Point(874, 1430);
-            btnLapHoaDon.Name = "btnLapHoaDon";
-            btnLapHoaDon.Size = new Size(406, 78);
-            btnLapHoaDon.TabIndex = 91;
-            btnLapHoaDon.Text = "Xuất PDF";
-            btnLapHoaDon.UseVisualStyleBackColor = false;
+            btnXuatPDF.BackColor = Color.MediumTurquoise;
+            btnXuatPDF.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnXuatPDF.ForeColor = Color.Transparent;
+            btnXuatPDF.Location = new Point(874, 1430);
+            btnXuatPDF.Name = "btnXuatPDF";
+            btnXuatPDF.Size = new Size(406, 78);
+            btnXuatPDF.TabIndex = 91;
+            btnXuatPDF.Text = "Xuất PDF";
+            btnXuatPDF.UseVisualStyleBackColor = false;
             // 
             // panelSdt
             // 
@@ -508,17 +508,17 @@
             labelTrangThai.TabIndex = 0;
             labelTrangThai.Text = "Trạng thái";
             // 
-            // button2
+            // btnInHoaDon
             // 
-            button2.BackColor = SystemColors.ActiveBorder;
-            button2.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Transparent;
-            button2.Location = new Point(450, 1430);
-            button2.Name = "button2";
-            button2.Size = new Size(406, 78);
-            button2.TabIndex = 102;
-            button2.Text = "In hóa đơn";
-            button2.UseVisualStyleBackColor = false;
+            btnInHoaDon.BackColor = SystemColors.ActiveBorder;
+            btnInHoaDon.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnInHoaDon.ForeColor = Color.Transparent;
+            btnInHoaDon.Location = new Point(450, 1430);
+            btnInHoaDon.Name = "btnInHoaDon";
+            btnInHoaDon.Size = new Size(406, 78);
+            btnInHoaDon.TabIndex = 102;
+            btnInHoaDon.Text = "In hóa đơn";
+            btnInHoaDon.UseVisualStyleBackColor = false;
             // 
             // panelNgayThanhToan
             // 
@@ -635,64 +635,6 @@
             labelPhuongThucThanhToan.TabIndex = 0;
             labelPhuongThucThanhToan.Text = "Phương thức thanh toán";
             // 
-            // panelLoaiChungChi
-            // 
-            this.panelLoaiChungChi.Controls.Add(this.txtLoaiChungChi);
-            this.panelLoaiChungChi.Controls.Add(this.labelLoaiChungChi);
-            this.panelLoaiChungChi.Location = new Point(1275, 603);
-            this.panelLoaiChungChi.Name = "panelLoaiChungChi";
-            this.panelLoaiChungChi.Size = new Size(320, 92);
-            this.panelLoaiChungChi.TabIndex = 111;
-            // 
-            // txtLoaiChungChi
-            // 
-            this.txtLoaiChungChi.Enabled = false;
-            this.txtLoaiChungChi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtLoaiChungChi.Location = new Point(0, 48);
-            this.txtLoaiChungChi.Name = "txtLoaiChungChi";
-            this.txtLoaiChungChi.Size = new Size(317, 43);
-            this.txtLoaiChungChi.TabIndex = 1;
-            // 
-            // labelLoaiChungChi
-            // 
-            this.labelLoaiChungChi.AutoSize = true;
-            this.labelLoaiChungChi.Dock = DockStyle.Left;
-            this.labelLoaiChungChi.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.labelLoaiChungChi.Location = new Point(0, 0);
-            this.labelLoaiChungChi.Name = "labelLoaiChungChi";
-            this.labelLoaiChungChi.Size = new Size(195, 37);
-            this.labelLoaiChungChi.TabIndex = 0;
-            this.labelLoaiChungChi.Text = "Loại chứng chỉ";
-            // 
-            // panelNgayThi
-            // 
-            this.panelNgayThi.Controls.Add(this.txtNgayThi);
-            this.panelNgayThi.Controls.Add(this.labelNgayThi);
-            this.panelNgayThi.Location = new Point(435, 603);
-            this.panelNgayThi.Name = "panelNgayThi";
-            this.panelNgayThi.Size = new Size(270, 92);
-            this.panelNgayThi.TabIndex = 109;
-            // 
-            // txtNgayThi
-            // 
-            this.txtNgayThi.Enabled = false;
-            this.txtNgayThi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtNgayThi.Location = new Point(0, 48);
-            this.txtNgayThi.Name = "txtNgayThi";
-            this.txtNgayThi.Size = new Size(268, 43);
-            this.txtNgayThi.TabIndex = 1;
-            // 
-            // labelNgayThi
-            // 
-            this.labelNgayThi.AutoSize = true;
-            this.labelNgayThi.Dock = DockStyle.Left;
-            this.labelNgayThi.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.labelNgayThi.Location = new Point(0, 0);
-            this.labelNgayThi.Name = "labelNgayThi";
-            this.labelNgayThi.Size = new Size(122, 37);
-            this.labelNgayThi.TabIndex = 0;
-            this.labelNgayThi.Text = "Ngày thi";
-            // 
             // panelMaLichThi
             // 
             panelMaLichThi.Controls.Add(txtMaLichThi);
@@ -732,35 +674,6 @@
             labelTTLichThi.Size = new Size(309, 50);
             labelTTLichThi.TabIndex = 107;
             labelTTLichThi.Text = "Thông tin lịch thi";
-            // 
-            // panelGioThi
-            // 
-            this.panelGioThi.Controls.Add(this.txtGioThi);
-            this.panelGioThi.Controls.Add(labelGioThi);
-            this.panelGioThi.Location = new Point(862, 603);
-            this.panelGioThi.Name = "panelGioThi";
-            this.panelGioThi.Size = new Size(270, 92);
-            this.panelGioThi.TabIndex = 110;
-            // 
-            // txtGioThi
-            // 
-            this.txtGioThi.Enabled = false;
-            this.txtGioThi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.txtGioThi.Location = new Point(0, 48);
-            this.txtGioThi.Name = "txtGioThi";
-            this.txtGioThi.Size = new Size(262, 43);
-            this.txtGioThi.TabIndex = 1;
-            // 
-            // labelGioThi
-            // 
-            labelGioThi.AutoSize = true;
-            labelGioThi.Dock = DockStyle.Left;
-            labelGioThi.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelGioThi.Location = new Point(0, 0);
-            labelGioThi.Name = "labelGioThi";
-            labelGioThi.Size = new Size(100, 37);
-            labelGioThi.TabIndex = 0;
-            labelGioThi.Text = "Giờ thi";
             // 
             // guna2Separator4
             // 
@@ -821,26 +734,113 @@
             pbBack.TabIndex = 114;
             pbBack.TabStop = false;
             // 
+            // panelNgayThi
+            // 
+            panelNgayThi.Controls.Add(txtNgayThi);
+            panelNgayThi.Controls.Add(labelNgayThi);
+            panelNgayThi.Location = new Point(435, 603);
+            panelNgayThi.Name = "panelNgayThi";
+            panelNgayThi.Size = new Size(268, 92);
+            panelNgayThi.TabIndex = 116;
+            // 
+            // txtNgayThi
+            // 
+            txtNgayThi.Enabled = false;
+            txtNgayThi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNgayThi.Location = new Point(0, 48);
+            txtNgayThi.Name = "txtNgayThi";
+            txtNgayThi.Size = new Size(257, 43);
+            txtNgayThi.TabIndex = 1;
+            // 
+            // labelNgayThi
+            // 
+            labelNgayThi.AutoSize = true;
+            labelNgayThi.Dock = DockStyle.Left;
+            labelNgayThi.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelNgayThi.Location = new Point(0, 0);
+            labelNgayThi.Name = "labelNgayThi";
+            labelNgayThi.Size = new Size(122, 37);
+            labelNgayThi.TabIndex = 0;
+            labelNgayThi.Text = "Ngày thi";
+            // 
+            // panelGioThi
+            // 
+            panelGioThi.Controls.Add(txtGioThi);
+            panelGioThi.Controls.Add(labelGioThi);
+            panelGioThi.Location = new Point(862, 603);
+            panelGioThi.Name = "panelGioThi";
+            panelGioThi.Size = new Size(268, 92);
+            panelGioThi.TabIndex = 117;
+            // 
+            // txtGioThi
+            // 
+            txtGioThi.Enabled = false;
+            txtGioThi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtGioThi.Location = new Point(0, 48);
+            txtGioThi.Name = "txtGioThi";
+            txtGioThi.Size = new Size(257, 43);
+            txtGioThi.TabIndex = 1;
+            // 
+            // labelGioThi
+            // 
+            labelGioThi.AutoSize = true;
+            labelGioThi.Dock = DockStyle.Left;
+            labelGioThi.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelGioThi.Location = new Point(0, 0);
+            labelGioThi.Name = "labelGioThi";
+            labelGioThi.Size = new Size(100, 37);
+            labelGioThi.TabIndex = 0;
+            labelGioThi.Text = "Giờ thi";
+            // 
+            // panelLoaiChungChi
+            // 
+            panelLoaiChungChi.Controls.Add(txtLoaiChungChi);
+            panelLoaiChungChi.Controls.Add(labelLoaiChungChi);
+            panelLoaiChungChi.Location = new Point(1275, 602);
+            panelLoaiChungChi.Name = "panelLoaiChungChi";
+            panelLoaiChungChi.Size = new Size(320, 92);
+            panelLoaiChungChi.TabIndex = 118;
+            // 
+            // txtLoaiChungChi
+            // 
+            txtLoaiChungChi.Enabled = false;
+            txtLoaiChungChi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtLoaiChungChi.Location = new Point(0, 48);
+            txtLoaiChungChi.Name = "txtLoaiChungChi";
+            txtLoaiChungChi.Size = new Size(317, 43);
+            txtLoaiChungChi.TabIndex = 1;
+            // 
+            // labelLoaiChungChi
+            // 
+            labelLoaiChungChi.AutoSize = true;
+            labelLoaiChungChi.Dock = DockStyle.Left;
+            labelLoaiChungChi.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelLoaiChungChi.Location = new Point(0, 0);
+            labelLoaiChungChi.Name = "labelLoaiChungChi";
+            labelLoaiChungChi.Size = new Size(195, 37);
+            labelLoaiChungChi.TabIndex = 0;
+            labelLoaiChungChi.Text = "Loại chứng chỉ";
+            // 
             // XuatHoaDonThanhToan
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
+            Controls.Add(panelLoaiChungChi);
+            Controls.Add(panelGioThi);
+            Controls.Add(panelNgayThi);
             Controls.Add(pbReset);
             Controls.Add(pbBack);
             Controls.Add(panelDonVi);
             Controls.Add(guna2Separator4);
-            Controls.Add(this.panelLoaiChungChi);
-            Controls.Add(this.panelNgayThi);
             Controls.Add(panelMaLichThi);
             Controls.Add(labelTTLichThi);
-            Controls.Add(this.panelGioThi);
             Controls.Add(panelPhuongThucThanhToan);
             Controls.Add(panelSoTienUuDai);
             Controls.Add(panelSoTienTamTinh);
             Controls.Add(panelNgayThanhToan);
-            Controls.Add(button2);
+            Controls.Add(btnInHoaDon);
             Controls.Add(panelTongTienThanhToan);
             Controls.Add(guna2Separator3);
             Controls.Add(panelNgayLap);
@@ -848,7 +848,7 @@
             Controls.Add(panelMaPhieuDK);
             Controls.Add(label7);
             Controls.Add(panelTrangThai);
-            Controls.Add(select_exam_button);
+            Controls.Add(btnTraCuuPhieuDK);
             Controls.Add(label2);
             Controls.Add(guna2Separator2);
             Controls.Add(panelMaHoaDon);
@@ -858,7 +858,7 @@
             Controls.Add(tt_lt_title_label);
             Controls.Add(guna2Separator1);
             Controls.Add(label1);
-            Controls.Add(btnLapHoaDon);
+            Controls.Add(btnXuatPDF);
             Controls.Add(panelSdt);
             Margin = new Padding(0);
             Name = "XuatHoaDonThanhToan";
@@ -891,18 +891,18 @@
             panelSoTienUuDai.PerformLayout();
             panelPhuongThucThanhToan.ResumeLayout(false);
             panelPhuongThucThanhToan.PerformLayout();
-            this.panelLoaiChungChi.ResumeLayout(false);
-            this.panelLoaiChungChi.PerformLayout();
-            this.panelNgayThi.ResumeLayout(false);
-            this.panelNgayThi.PerformLayout();
             panelMaLichThi.ResumeLayout(false);
             panelMaLichThi.PerformLayout();
-            this.panelGioThi.ResumeLayout(false);
-            this.panelGioThi.PerformLayout();
             panelDonVi.ResumeLayout(false);
             panelDonVi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pbReset).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbBack).EndInit();
+            panelNgayThi.ResumeLayout(false);
+            panelNgayThi.PerformLayout();
+            panelGioThi.ResumeLayout(false);
+            panelGioThi.PerformLayout();
+            panelLoaiChungChi.ResumeLayout(false);
+            panelLoaiChungChi.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -912,7 +912,7 @@
         private Label labelHoTen;
         private TextBox txtMaKH;
         private Label labelMaKH;
-        private Button select_exam_button;
+        private Button btnTraCuuPhieuDK;
         private TextBox txtSdt;
         private Label label2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
@@ -931,7 +931,7 @@
         private Label tt_lt_title_label;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Label label1;
-        private Button btnLapHoaDon;
+        private Button btnXuatPDF;
         private Panel panelSdt;
         private Panel panelEmail;
         private TextBox txtEmail;
@@ -950,7 +950,7 @@
         private Panel panelTrangThai;
         private TextBox txtTrangThai;
         private Label labelTrangThai;
-        private Button button2;
+        private Button btnInHoaDon;
         private Panel panelNgayThanhToan;
         private TextBox txtNgayThanhToan;
         private Label labelNgayThanhToan;
@@ -963,9 +963,9 @@
         private Panel panelPhuongThucThanhToan;
         private TextBox txtPhuongThucThanhToan;
         private Label labelPhuongThucThanhToan;
-        private Panel panel1;
-        private TextBox textBox2;
-        private Label label3;
+        private Panel panelGioThi;
+        private TextBox txtGioThi;
+        private Label labelGioThi;
         private Panel panel2;
         private TextBox textBox3;
         private Label label4;
@@ -975,12 +975,17 @@
         private Label labelTTLichThi;
         private Panel panel4;
         private TextBox textBox5;
-        private Label labelGioThi;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator4;
         private Panel panelDonVi;
         private TextBox txtDonVi;
         private Label labelDonVi;
         private PictureBox pbReset;
         private PictureBox pbBack;
+        private Panel panelNgayThi;
+        private TextBox txtNgayThi;
+        private Label labelNgayThi;
+        private Panel panelLoaiChungChi;
+        private TextBox txtLoaiChungChi;
+        private Label labelLoaiChungChi;
     }
 }
