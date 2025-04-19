@@ -17,10 +17,7 @@ namespace ACCI_CertificationExaminationCenter
         {
             InitializeComponent();
             this.mainForm = form;
-        }
 
-        private void ChinhSuaThongTinNV_Load(object sender, EventArgs e)
-        {
             cbbGioiTinh.Items.Add("Nam");
             cbbGioiTinh.Items.Add("Nữ");
             cbbGioiTinh.Items.Add("Khác");
@@ -28,6 +25,11 @@ namespace ACCI_CertificationExaminationCenter
             cbbChucVu.Items.Add("Nhân viên nhập liệu");
             cbbChucVu.Items.Add("Nhân viên tiếp nhận");
             cbbChucVu.Items.Add("Nhân viên");
+        }
+
+        private void ChinhSuaThongTinNV_Load(object sender, EventArgs e)
+        {
+            
         }
 
         private void btnChinhSua_Click(object sender, EventArgs e)

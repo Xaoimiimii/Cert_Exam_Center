@@ -513,7 +513,7 @@
             // 
             flowLayoutPanel7.Controls.Add(lbNgaySinh);
             flowLayoutPanel7.Controls.Add(txtNgaySinh);
-            flowLayoutPanel7.Location = new Point(330, 218);
+            flowLayoutPanel7.Location = new Point(470, 218);
             flowLayoutPanel7.Margin = new Padding(2);
             flowLayoutPanel7.Name = "flowLayoutPanel7";
             flowLayoutPanel7.Size = new Size(367, 42);
@@ -560,7 +560,7 @@
             flowLayoutPanel8.Location = new Point(23, 218);
             flowLayoutPanel8.Margin = new Padding(2);
             flowLayoutPanel8.Name = "flowLayoutPanel8";
-            flowLayoutPanel8.Size = new Size(287, 42);
+            flowLayoutPanel8.Size = new Size(410, 42);
             flowLayoutPanel8.TabIndex = 45;
             // 
             // lbChucVu
@@ -588,7 +588,7 @@
             cbbChucVu.Location = new Point(77, 3);
             cbbChucVu.Name = "cbbChucVu";
             cbbChucVu.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            cbbChucVu.Size = new Size(196, 36);
+            cbbChucVu.Size = new Size(317, 36);
             cbbChucVu.TabIndex = 36;
             // 
             // flowLayoutPanel6
@@ -849,8 +849,7 @@
             Controls.Add(lbCapNhatTT);
             Margin = new Padding(0);
             Name = "TraCuuNhanVien";
-            Size = new Size(977, 710);
-            //Load += this.TraCuuNhanVien_Load;
+            Size = new Size(956, 689);
             status_flowLayoutPanel.ResumeLayout(false);
             status_flowLayoutPanel.PerformLayout();
             type_flowLayoutPanel.ResumeLayout(false);

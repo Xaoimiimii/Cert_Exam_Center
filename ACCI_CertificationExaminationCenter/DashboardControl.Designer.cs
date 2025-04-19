@@ -428,6 +428,11 @@ namespace ACCI_CertificationExaminationCenter
             PerformLayout();
         }
 
+        private void PnlTest_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private Label hello_label;

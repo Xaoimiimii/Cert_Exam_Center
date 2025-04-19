@@ -79,7 +79,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(29, 317);
+            label1.Location = new Point(29, 274);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(236, 37);
@@ -92,7 +92,7 @@
             pnlChinhSuaThongTin.Controls.Add(payment_extend_label);
             pnlChinhSuaThongTin.Controls.Add(payment_extend_pictureBox);
             pnlChinhSuaThongTin.FillColor = Color.LightCyan;
-            pnlChinhSuaThongTin.Location = new Point(674, 537);
+            pnlChinhSuaThongTin.Location = new Point(674, 494);
             pnlChinhSuaThongTin.Margin = new Padding(0);
             pnlChinhSuaThongTin.Name = "pnlChinhSuaThongTin";
             pnlChinhSuaThongTin.Radius = 10;
@@ -133,7 +133,7 @@
             pnlXoaNhanVien.Controls.Add(payment_register_label);
             pnlXoaNhanVien.Controls.Add(payment_register_pictureBox);
             pnlXoaNhanVien.FillColor = Color.LightCyan;
-            pnlXoaNhanVien.Location = new Point(354, 537);
+            pnlXoaNhanVien.Location = new Point(354, 494);
             pnlXoaNhanVien.Margin = new Padding(0);
             pnlXoaNhanVien.Name = "pnlXoaNhanVien";
             pnlXoaNhanVien.Radius = 10;
@@ -174,7 +174,7 @@
             pnlThemNhanVien.Controls.Add(register_label);
             pnlThemNhanVien.Controls.Add(register_pictureBox);
             pnlThemNhanVien.FillColor = Color.LightCyan;
-            pnlThemNhanVien.Location = new Point(34, 537);
+            pnlThemNhanVien.Location = new Point(34, 494);
             pnlThemNhanVien.Margin = new Padding(0);
             pnlThemNhanVien.Name = "pnlThemNhanVien";
             pnlThemNhanVien.Radius = 10;
@@ -214,17 +214,18 @@
             bg_pictureBox.Location = new Point(0, 62);
             bg_pictureBox.Margin = new Padding(0);
             bg_pictureBox.Name = "bg_pictureBox";
-            bg_pictureBox.Size = new Size(997, 212);
+            bg_pictureBox.Size = new Size(998, 176);
             bg_pictureBox.TabIndex = 35;
             bg_pictureBox.TabStop = false;
             // 
             // pnlTraCuuNhanVien
             // 
+            pnlTraCuuNhanVien.AutoScroll = true;
             pnlTraCuuNhanVien.BackColor = Color.Transparent;
             pnlTraCuuNhanVien.Controls.Add(btnTraCuu);
             pnlTraCuuNhanVien.Controls.Add(pictureBox1);
             pnlTraCuuNhanVien.FillColor = Color.LightCyan;
-            pnlTraCuuNhanVien.Location = new Point(354, 359);
+            pnlTraCuuNhanVien.Location = new Point(354, 316);
             pnlTraCuuNhanVien.Margin = new Padding(0);
             pnlTraCuuNhanVien.Name = "pnlTraCuuNhanVien";
             pnlTraCuuNhanVien.Radius = 10;
@@ -234,6 +235,7 @@
             pnlTraCuuNhanVien.Size = new Size(295, 153);
             pnlTraCuuNhanVien.TabIndex = 33;
             pnlTraCuuNhanVien.Click += pnlTraCuuNhanVien_Click;
+            pnlTraCuuNhanVien.Paint += pnlTraCuuNhanVien_Paint;
             // 
             // btnTraCuu
             // 

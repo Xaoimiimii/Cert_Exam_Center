@@ -261,5 +261,11 @@ namespace ACCI_CertificationExaminationCenter
         {
             certificate_guna2ShadowPanel.FillColor = Color.LightCyan;
         }
+
+        private void pnlTest_Click(object sender, EventArgs e)
+        {
+            mainForm.LoadControl(new QuanLyNhanVien(mainForm));
+        }
+
     }
 }
