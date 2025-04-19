@@ -25,6 +25,9 @@ namespace ACCI_CertificationExaminationCenter
             pnlThongTinPDT.Visible = true;
         }
 
-        
+        private void CapNhatTrangThaiPhieuDuThi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

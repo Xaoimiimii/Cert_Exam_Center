@@ -72,20 +72,20 @@ namespace ACCI_CertificationExaminationCenter
             hello_label.AutoSize = true;
             hello_label.BackColor = Color.Transparent;
             hello_label.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            hello_label.Location = new Point(41, 97);
+            hello_label.Location = new Point(25, 61);
             hello_label.Margin = new Padding(0);
             hello_label.Name = "hello_label";
-            hello_label.Size = new Size(459, 86);
+            hello_label.Size = new Size(286, 54);
             hello_label.TabIndex = 2;
             hello_label.Text = "Xin chào, user";
             // 
             // register_pictureBox
             // 
             register_pictureBox.Image = Properties.Resources.register_black_128;
-            register_pictureBox.Location = new Point(190, 40);
+            register_pictureBox.Location = new Point(117, 25);
             register_pictureBox.Margin = new Padding(0);
             register_pictureBox.Name = "register_pictureBox";
-            register_pictureBox.Size = new Size(100, 100);
+            register_pictureBox.Size = new Size(62, 62);
             register_pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             register_pictureBox.TabIndex = 0;
             register_pictureBox.TabStop = false;
@@ -97,10 +97,10 @@ namespace ACCI_CertificationExaminationCenter
             // 
             register_label.Font = new Font("Calibri", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
             register_label.ForeColor = Color.Black;
-            register_label.Location = new Point(8, 145);
+            register_label.Location = new Point(5, 91);
             register_label.Margin = new Padding(0);
             register_label.Name = "register_label";
-            register_label.Size = new Size(456, 64);
+            register_label.Size = new Size(281, 40);
             register_label.TabIndex = 1;
             register_label.Text = "Đăng ký thi chứng chỉ";
             register_label.TextAlign = ContentAlignment.MiddleCenter;
@@ -114,14 +114,14 @@ namespace ACCI_CertificationExaminationCenter
             register_guna2ShadowPanel.Controls.Add(register_label);
             register_guna2ShadowPanel.Controls.Add(register_pictureBox);
             register_guna2ShadowPanel.FillColor = Color.LightCyan;
-            register_guna2ShadowPanel.Location = new Point(50, 500);
+            register_guna2ShadowPanel.Location = new Point(31, 312);
             register_guna2ShadowPanel.Margin = new Padding(0);
             register_guna2ShadowPanel.Name = "register_guna2ShadowPanel";
             register_guna2ShadowPanel.Radius = 10;
             register_guna2ShadowPanel.ShadowColor = Color.DimGray;
             register_guna2ShadowPanel.ShadowShift = 10;
             register_guna2ShadowPanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            register_guna2ShadowPanel.Size = new Size(480, 245);
+            register_guna2ShadowPanel.Size = new Size(295, 153);
             register_guna2ShadowPanel.TabIndex = 4;
             register_guna2ShadowPanel.Click += register_guna2ShadowPanel_Click;
             register_guna2ShadowPanel.MouseEnter += register_guna2ShadowPanel_MouseEnter;
@@ -133,14 +133,14 @@ namespace ACCI_CertificationExaminationCenter
             payment_register_guna2ShadowPanel.Controls.Add(payment_register_label);
             payment_register_guna2ShadowPanel.Controls.Add(payment_register_pictureBox);
             payment_register_guna2ShadowPanel.FillColor = Color.LightCyan;
-            payment_register_guna2ShadowPanel.Location = new Point(570, 500);
+            payment_register_guna2ShadowPanel.Location = new Point(351, 312);
             payment_register_guna2ShadowPanel.Margin = new Padding(0);
             payment_register_guna2ShadowPanel.Name = "payment_register_guna2ShadowPanel";
             payment_register_guna2ShadowPanel.Radius = 10;
             payment_register_guna2ShadowPanel.ShadowColor = Color.DimGray;
             payment_register_guna2ShadowPanel.ShadowShift = 10;
             payment_register_guna2ShadowPanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            payment_register_guna2ShadowPanel.Size = new Size(480, 245);
+            payment_register_guna2ShadowPanel.Size = new Size(295, 153);
             payment_register_guna2ShadowPanel.TabIndex = 5;
             payment_register_guna2ShadowPanel.MouseEnter += payment_register_guna2ShadowPanel_MouseEnter;
             payment_register_guna2ShadowPanel.MouseLeave += payment_register_guna2ShadowPanel_MouseLeave;
@@ -149,10 +149,10 @@ namespace ACCI_CertificationExaminationCenter
             // 
             payment_register_label.Font = new Font("Calibri", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
             payment_register_label.ForeColor = Color.Black;
-            payment_register_label.Location = new Point(8, 145);
+            payment_register_label.Location = new Point(5, 91);
             payment_register_label.Margin = new Padding(0);
             payment_register_label.Name = "payment_register_label";
-            payment_register_label.Size = new Size(459, 64);
+            payment_register_label.Size = new Size(282, 40);
             payment_register_label.TabIndex = 1;
             payment_register_label.Text = "Thanh toán đăng ký thi";
             payment_register_label.TextAlign = ContentAlignment.MiddleCenter;
@@ -162,10 +162,10 @@ namespace ACCI_CertificationExaminationCenter
             // payment_register_pictureBox
             // 
             payment_register_pictureBox.Image = Properties.Resources.pay_regis_black_128;
-            payment_register_pictureBox.Location = new Point(190, 40);
+            payment_register_pictureBox.Location = new Point(117, 25);
             payment_register_pictureBox.Margin = new Padding(0);
             payment_register_pictureBox.Name = "payment_register_pictureBox";
-            payment_register_pictureBox.Size = new Size(100, 100);
+            payment_register_pictureBox.Size = new Size(62, 62);
             payment_register_pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             payment_register_pictureBox.TabIndex = 0;
             payment_register_pictureBox.TabStop = false;
@@ -178,14 +178,14 @@ namespace ACCI_CertificationExaminationCenter
             extend_guna2ShadowPanel.Controls.Add(extend_label);
             extend_guna2ShadowPanel.Controls.Add(extend_pictureBox);
             extend_guna2ShadowPanel.FillColor = Color.LightCyan;
-            extend_guna2ShadowPanel.Location = new Point(50, 785);
+            extend_guna2ShadowPanel.Location = new Point(31, 491);
             extend_guna2ShadowPanel.Margin = new Padding(0);
             extend_guna2ShadowPanel.Name = "extend_guna2ShadowPanel";
             extend_guna2ShadowPanel.Radius = 10;
             extend_guna2ShadowPanel.ShadowColor = Color.DimGray;
             extend_guna2ShadowPanel.ShadowShift = 10;
             extend_guna2ShadowPanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            extend_guna2ShadowPanel.Size = new Size(480, 245);
+            extend_guna2ShadowPanel.Size = new Size(295, 153);
             extend_guna2ShadowPanel.TabIndex = 6;
             extend_guna2ShadowPanel.MouseEnter += extend_guna2ShadowPanel_MouseEnter;
             extend_guna2ShadowPanel.MouseLeave += extend_guna2ShadowPanel_MouseLeave;
@@ -194,10 +194,10 @@ namespace ACCI_CertificationExaminationCenter
             // 
             extend_label.Font = new Font("Calibri", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
             extend_label.ForeColor = Color.Black;
-            extend_label.Location = new Point(8, 145);
+            extend_label.Location = new Point(5, 91);
             extend_label.Margin = new Padding(0);
             extend_label.Name = "extend_label";
-            extend_label.Size = new Size(456, 64);
+            extend_label.Size = new Size(281, 40);
             extend_label.TabIndex = 1;
             extend_label.Text = "Gia hạn thi";
             extend_label.TextAlign = ContentAlignment.MiddleCenter;
@@ -207,10 +207,10 @@ namespace ACCI_CertificationExaminationCenter
             // extend_pictureBox
             // 
             extend_pictureBox.Image = Properties.Resources.calendar_black_128;
-            extend_pictureBox.Location = new Point(190, 40);
+            extend_pictureBox.Location = new Point(117, 25);
             extend_pictureBox.Margin = new Padding(0);
             extend_pictureBox.Name = "extend_pictureBox";
-            extend_pictureBox.Size = new Size(100, 100);
+            extend_pictureBox.Size = new Size(62, 62);
             extend_pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             extend_pictureBox.TabIndex = 0;
             extend_pictureBox.TabStop = false;
@@ -223,14 +223,14 @@ namespace ACCI_CertificationExaminationCenter
             payment_extend_guna2ShadowPanel.Controls.Add(payment_extend_label);
             payment_extend_guna2ShadowPanel.Controls.Add(payment_extend_pictureBox);
             payment_extend_guna2ShadowPanel.FillColor = Color.LightCyan;
-            payment_extend_guna2ShadowPanel.Location = new Point(1090, 500);
+            payment_extend_guna2ShadowPanel.Location = new Point(671, 312);
             payment_extend_guna2ShadowPanel.Margin = new Padding(0);
             payment_extend_guna2ShadowPanel.Name = "payment_extend_guna2ShadowPanel";
             payment_extend_guna2ShadowPanel.Radius = 10;
             payment_extend_guna2ShadowPanel.ShadowColor = Color.DimGray;
             payment_extend_guna2ShadowPanel.ShadowShift = 10;
             payment_extend_guna2ShadowPanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            payment_extend_guna2ShadowPanel.Size = new Size(480, 245);
+            payment_extend_guna2ShadowPanel.Size = new Size(295, 153);
             payment_extend_guna2ShadowPanel.TabIndex = 7;
             payment_extend_guna2ShadowPanel.MouseEnter += payment_extend_guna2ShadowPanel_MouseEnter;
             payment_extend_guna2ShadowPanel.MouseLeave += payment_extend_guna2ShadowPanel_MouseLeave;
@@ -239,10 +239,10 @@ namespace ACCI_CertificationExaminationCenter
             // 
             payment_extend_label.Font = new Font("Calibri", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
             payment_extend_label.ForeColor = Color.Black;
-            payment_extend_label.Location = new Point(8, 145);
+            payment_extend_label.Location = new Point(5, 91);
             payment_extend_label.Margin = new Padding(0);
             payment_extend_label.Name = "payment_extend_label";
-            payment_extend_label.Size = new Size(455, 64);
+            payment_extend_label.Size = new Size(280, 40);
             payment_extend_label.TabIndex = 1;
             payment_extend_label.Text = "Thanh toán gia hạn";
             payment_extend_label.TextAlign = ContentAlignment.MiddleCenter;
@@ -252,10 +252,10 @@ namespace ACCI_CertificationExaminationCenter
             // payment_extend_pictureBox
             // 
             payment_extend_pictureBox.Image = Properties.Resources.pay_extend_black_128;
-            payment_extend_pictureBox.Location = new Point(190, 40);
+            payment_extend_pictureBox.Location = new Point(117, 25);
             payment_extend_pictureBox.Margin = new Padding(0);
             payment_extend_pictureBox.Name = "payment_extend_pictureBox";
-            payment_extend_pictureBox.Size = new Size(100, 100);
+            payment_extend_pictureBox.Size = new Size(62, 62);
             payment_extend_pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             payment_extend_pictureBox.TabIndex = 0;
             payment_extend_pictureBox.TabStop = false;
@@ -268,14 +268,14 @@ namespace ACCI_CertificationExaminationCenter
             results_guna2ShadowPanel.Controls.Add(results_label);
             results_guna2ShadowPanel.Controls.Add(result_pictureBox);
             results_guna2ShadowPanel.FillColor = Color.LightCyan;
-            results_guna2ShadowPanel.Location = new Point(570, 785);
+            results_guna2ShadowPanel.Location = new Point(351, 491);
             results_guna2ShadowPanel.Margin = new Padding(0);
             results_guna2ShadowPanel.Name = "results_guna2ShadowPanel";
             results_guna2ShadowPanel.Radius = 10;
             results_guna2ShadowPanel.ShadowColor = Color.DimGray;
             results_guna2ShadowPanel.ShadowShift = 10;
             results_guna2ShadowPanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            results_guna2ShadowPanel.Size = new Size(480, 245);
+            results_guna2ShadowPanel.Size = new Size(295, 153);
             results_guna2ShadowPanel.TabIndex = 8;
             results_guna2ShadowPanel.Click += results_guna2ShadowPanel_Click;
             results_guna2ShadowPanel.MouseEnter += results_guna2ShadowPanel_MouseEnter;
@@ -285,10 +285,10 @@ namespace ACCI_CertificationExaminationCenter
             // 
             results_label.Font = new Font("Calibri", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
             results_label.ForeColor = Color.Black;
-            results_label.Location = new Point(8, 145);
+            results_label.Location = new Point(5, 91);
             results_label.Margin = new Padding(0);
             results_label.Name = "results_label";
-            results_label.Size = new Size(459, 64);
+            results_label.Size = new Size(282, 40);
             results_label.TabIndex = 1;
             results_label.Text = "Cập nhật điểm thi";
             results_label.TextAlign = ContentAlignment.MiddleCenter;
@@ -299,10 +299,10 @@ namespace ACCI_CertificationExaminationCenter
             // result_pictureBox
             // 
             result_pictureBox.Image = Properties.Resources.grade_black_128;
-            result_pictureBox.Location = new Point(190, 40);
+            result_pictureBox.Location = new Point(117, 25);
             result_pictureBox.Margin = new Padding(0);
             result_pictureBox.Name = "result_pictureBox";
-            result_pictureBox.Size = new Size(100, 100);
+            result_pictureBox.Size = new Size(62, 62);
             result_pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             result_pictureBox.TabIndex = 0;
             result_pictureBox.TabStop = false;
@@ -316,14 +316,14 @@ namespace ACCI_CertificationExaminationCenter
             certificate_guna2ShadowPanel.Controls.Add(certificate_label);
             certificate_guna2ShadowPanel.Controls.Add(certificate_pictureBox);
             certificate_guna2ShadowPanel.FillColor = Color.LightCyan;
-            certificate_guna2ShadowPanel.Location = new Point(1090, 785);
+            certificate_guna2ShadowPanel.Location = new Point(671, 491);
             certificate_guna2ShadowPanel.Margin = new Padding(0);
             certificate_guna2ShadowPanel.Name = "certificate_guna2ShadowPanel";
             certificate_guna2ShadowPanel.Radius = 10;
             certificate_guna2ShadowPanel.ShadowColor = Color.DimGray;
             certificate_guna2ShadowPanel.ShadowShift = 10;
             certificate_guna2ShadowPanel.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            certificate_guna2ShadowPanel.Size = new Size(480, 245);
+            certificate_guna2ShadowPanel.Size = new Size(295, 153);
             certificate_guna2ShadowPanel.TabIndex = 9;
             certificate_guna2ShadowPanel.Click += certificate_guna2ShadowPanel_Click;
             certificate_guna2ShadowPanel.MouseEnter += certificate_guna2ShadowPanel_MouseEnter;
@@ -333,10 +333,10 @@ namespace ACCI_CertificationExaminationCenter
             // 
             certificate_label.Font = new Font("Calibri", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
             certificate_label.ForeColor = Color.Black;
-            certificate_label.Location = new Point(8, 145);
+            certificate_label.Location = new Point(5, 91);
             certificate_label.Margin = new Padding(0);
             certificate_label.Name = "certificate_label";
-            certificate_label.Size = new Size(455, 64);
+            certificate_label.Size = new Size(280, 40);
             certificate_label.TabIndex = 1;
             certificate_label.Text = "Cấp chứng chỉ";
             certificate_label.TextAlign = ContentAlignment.MiddleCenter;
@@ -347,10 +347,10 @@ namespace ACCI_CertificationExaminationCenter
             // certificate_pictureBox
             // 
             certificate_pictureBox.Image = Properties.Resources.cert_black_128;
-            certificate_pictureBox.Location = new Point(190, 40);
+            certificate_pictureBox.Location = new Point(117, 25);
             certificate_pictureBox.Margin = new Padding(0);
             certificate_pictureBox.Name = "certificate_pictureBox";
-            certificate_pictureBox.Size = new Size(100, 100);
+            certificate_pictureBox.Size = new Size(62, 62);
             certificate_pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             certificate_pictureBox.TabIndex = 0;
             certificate_pictureBox.TabStop = false;
@@ -364,7 +364,7 @@ namespace ACCI_CertificationExaminationCenter
             bg_pictureBox.Location = new Point(0, 0);
             bg_pictureBox.Margin = new Padding(0);
             bg_pictureBox.Name = "bg_pictureBox";
-            bg_pictureBox.Size = new Size(1620, 340);
+            bg_pictureBox.Size = new Size(997, 212);
             bg_pictureBox.TabIndex = 10;
             bg_pictureBox.TabStop = false;
             // 
@@ -374,10 +374,10 @@ namespace ACCI_CertificationExaminationCenter
             date_label.BackColor = Color.Transparent;
             date_label.Font = new Font("Segoe UI Semibold", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
             date_label.ForeColor = Color.White;
-            date_label.Location = new Point(41, 185);
+            date_label.Location = new Point(25, 116);
             date_label.Margin = new Padding(0);
             date_label.Name = "date_label";
-            date_label.Size = new Size(308, 50);
+            date_label.Size = new Size(199, 32);
             date_label.TabIndex = 11;
             date_label.Text = "Thứ tư, 4/9/2025";
             // 
@@ -385,15 +385,16 @@ namespace ACCI_CertificationExaminationCenter
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(41, 390);
+            label1.Location = new Point(25, 244);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(375, 59);
+            label1.Size = new Size(236, 37);
             label1.TabIndex = 12;
             label1.Text = "Bạn muốn làm gì?";
             // 
             // DashboardControl
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(label1);
@@ -408,7 +409,7 @@ namespace ACCI_CertificationExaminationCenter
             Controls.Add(register_guna2ShadowPanel);
             Margin = new Padding(0);
             Name = "DashboardControl";
-            Size = new Size(1620, 1169);
+            Size = new Size(997, 731);
             Load += DashboardControl_Load;
             ((System.ComponentModel.ISupportInitialize)register_pictureBox).EndInit();
             register_guna2ShadowPanel.ResumeLayout(false);

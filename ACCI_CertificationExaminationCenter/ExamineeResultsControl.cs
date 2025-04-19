@@ -25,5 +25,10 @@ namespace ACCI_CertificationExaminationCenter
         {
             result_guna2ShadowPanel.Visible = true;
         }
+
+        private void ExamineeResultsControl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             btnCapNhatTrangThai = new Button();
@@ -382,7 +382,7 @@
             // cbbTrangThai
             // 
             cbbTrangThai.BackColor = Color.Transparent;
-            cbbTrangThai.CustomizableEdges = customizableEdges5;
+            cbbTrangThai.CustomizableEdges = customizableEdges1;
             cbbTrangThai.DrawMode = DrawMode.OwnerDrawFixed;
             cbbTrangThai.DropDownStyle = ComboBoxStyle.DropDownList;
             cbbTrangThai.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -392,10 +392,9 @@
             cbbTrangThai.ItemHeight = 30;
             cbbTrangThai.Location = new Point(94, 3);
             cbbTrangThai.Name = "cbbTrangThai";
-            cbbTrangThai.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            cbbTrangThai.ShadowDecoration.CustomizableEdges = customizableEdges2;
             cbbTrangThai.Size = new Size(235, 36);
             cbbTrangThai.TabIndex = 36;
-            //cbbTrangThai.SelectedIndexChanged += guna2ComboBox1_SelectedIndexChanged;
             // 
             // lbPhieuDuThi
             // 
@@ -423,7 +422,7 @@
             pnlThongTin.Controls.Add(type_flowLayoutPanel);
             pnlThongTin.Controls.Add(gender_flowLayoutPanel);
             pnlThongTin.FillColor = Color.White;
-            pnlThongTin.Location = new Point(2, 183);
+            pnlThongTin.Location = new Point(15, 183);
             pnlThongTin.Margin = new Padding(2);
             pnlThongTin.Name = "pnlThongTin";
             pnlThongTin.Radius = 10;
@@ -451,7 +450,7 @@
             pnlThongTinPDT.Controls.Add(lbPhieuDuThi);
             pnlThongTinPDT.Controls.Add(res_flowLayoutPanel);
             pnlThongTinPDT.FillColor = Color.White;
-            pnlThongTinPDT.Location = new Point(542, 183);
+            pnlThongTinPDT.Location = new Point(557, 183);
             pnlThongTinPDT.Margin = new Padding(2);
             pnlThongTinPDT.Name = "pnlThongTinPDT";
             pnlThongTinPDT.Radius = 10;
@@ -486,7 +485,7 @@
             // txtSoBaoDanh
             // 
             txtSoBaoDanh.BorderRadius = 20;
-            txtSoBaoDanh.CustomizableEdges = customizableEdges7;
+            txtSoBaoDanh.CustomizableEdges = customizableEdges3;
             txtSoBaoDanh.DefaultText = "";
             txtSoBaoDanh.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSoBaoDanh.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -504,7 +503,7 @@
             txtSoBaoDanh.Padding = new Padding(2);
             txtSoBaoDanh.PlaceholderText = "";
             txtSoBaoDanh.SelectedText = "";
-            txtSoBaoDanh.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtSoBaoDanh.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtSoBaoDanh.Size = new Size(382, 45);
             txtSoBaoDanh.TabIndex = 32;
             // 
@@ -535,6 +534,7 @@
             Margin = new Padding(0);
             Name = "CapNhatTrangThaiPhieuDuThi";
             Size = new Size(998, 731);
+            Load += CapNhatTrangThaiPhieuDuThi_Load;
             status_flowLayoutPanel.ResumeLayout(false);
             status_flowLayoutPanel.PerformLayout();
             type_flowLayoutPanel.ResumeLayout(false);
