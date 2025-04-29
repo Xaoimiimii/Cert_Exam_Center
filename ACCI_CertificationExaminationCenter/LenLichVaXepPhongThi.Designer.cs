@@ -50,15 +50,15 @@
             SoLuongDaDK = new DataGridViewTextBoxColumn();
             button3 = new Button();
             dataGridView1 = new DataGridView();
-            panel1 = new Panel();
-            comboBox1 = new ComboBox();
-            label2 = new Label();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            panel1 = new Panel();
+            comboBox1 = new ComboBox();
+            label2 = new Label();
             panel4 = new Panel();
             comboBox2 = new ComboBox();
             label6 = new Label();
@@ -311,38 +311,6 @@
             dataGridView1.Size = new Size(944, 250);
             dataGridView1.TabIndex = 85;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(label2);
-            panel1.Location = new Point(26, 615);
-            panel1.Margin = new Padding(2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(326, 38);
-            panel1.TabIndex = 76;
-            // 
-            // comboBox1
-            // 
-            comboBox1.Dock = DockStyle.Fill;
-            comboBox1.Font = new Font("Segoe UI", 10.125F);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(85, 0);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(241, 31);
-            comboBox1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Dock = DockStyle.Left;
-            label2.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(0, 0);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(85, 23);
-            label2.TabIndex = 0;
-            label2.Text = "Phòng thi";
-            // 
             // dataGridViewTextBoxColumn1
             // 
             dataGridViewTextBoxColumn1.FillWeight = 58.2633057F;
@@ -392,6 +360,38 @@
             dataGridViewTextBoxColumn6.MinimumWidth = 10;
             dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(label2);
+            panel1.Location = new Point(26, 615);
+            panel1.Margin = new Padding(2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(326, 38);
+            panel1.TabIndex = 76;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Dock = DockStyle.Fill;
+            comboBox1.Font = new Font("Segoe UI", 10.125F);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(85, 0);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(241, 31);
+            comboBox1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Dock = DockStyle.Left;
+            label2.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(0, 0);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(85, 23);
+            label2.TabIndex = 0;
+            label2.Text = "Phòng thi";
             // 
             // panel4
             // 

@@ -54,19 +54,11 @@
             Email = new DataGridViewTextBoxColumn();
             DiaChi = new DataGridViewTextBoxColumn();
             button1 = new Button();
-            panel3 = new Panel();
-            textBox3 = new TextBox();
-            label5 = new Label();
-            panel4 = new Panel();
-            textBox4 = new TextBox();
-            label6 = new Label();
             kh_fullname_panel.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel3.SuspendLayout();
-            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -116,7 +108,7 @@
             // 
             radioButton2.AutoSize = true;
             radioButton2.Font = new Font("Segoe UI", 10.125F);
-            radioButton2.Location = new Point(25, 223);
+            radioButton2.Location = new Point(469, 132);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(17, 16);
             radioButton2.TabIndex = 37;
@@ -160,7 +152,7 @@
             // 
             panel1.Controls.Add(textBox1);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(60, 223);
+            panel1.Location = new Point(504, 132);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new Size(254, 38);
@@ -193,7 +185,7 @@
             // 
             panel2.Controls.Add(textBox2);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(328, 223);
+            panel2.Location = new Point(772, 132);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
             panel2.Size = new Size(200, 38);
@@ -227,7 +219,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(15, 389);
+            label4.Location = new Point(15, 297);
             label4.Margin = new Padding(0);
             label4.Name = "label4";
             label4.Size = new Size(238, 28);
@@ -237,7 +229,7 @@
             // guna2Separator2
             // 
             guna2Separator2.FillThickness = 2;
-            guna2Separator2.Location = new Point(0, 365);
+            guna2Separator2.Location = new Point(0, 273);
             guna2Separator2.Margin = new Padding(0);
             guna2Separator2.Name = "guna2Separator2";
             guna2Separator2.Size = new Size(997, 13);
@@ -249,7 +241,7 @@
             select_exam_button.BackColor = Color.MediumTurquoise;
             select_exam_button.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             select_exam_button.ForeColor = Color.Transparent;
-            select_exam_button.Location = new Point(409, 293);
+            select_exam_button.Location = new Point(439, 202);
             select_exam_button.Margin = new Padding(2);
             select_exam_button.Name = "select_exam_button";
             select_exam_button.Size = new Size(131, 49);
@@ -262,14 +254,14 @@
             guna2ShadowPanel1.BackColor = Color.Transparent;
             guna2ShadowPanel1.Controls.Add(dataGridView1);
             guna2ShadowPanel1.FillColor = Color.White;
-            guna2ShadowPanel1.Location = new Point(26, 425);
+            guna2ShadowPanel1.Location = new Point(26, 333);
             guna2ShadowPanel1.Margin = new Padding(2);
             guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             guna2ShadowPanel1.Radius = 10;
             guna2ShadowPanel1.ShadowColor = Color.DimGray;
             guna2ShadowPanel1.ShadowShift = 16;
             guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            guna2ShadowPanel1.Size = new Size(944, 190);
+            guna2ShadowPanel1.Size = new Size(944, 298);
             guna2ShadowPanel1.TabIndex = 64;
             // 
             // dataGridView1
@@ -291,7 +283,7 @@
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 82;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(932, 165);
+            dataGridView1.Size = new Size(932, 269);
             dataGridView1.TabIndex = 0;
             // 
             // HoTen
@@ -341,7 +333,7 @@
             button1.BackColor = Color.MediumTurquoise;
             button1.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.Transparent;
-            button1.Location = new Point(409, 640);
+            button1.Location = new Point(439, 653);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(131, 49);
@@ -349,79 +341,11 @@
             button1.Text = "Hoàn thành";
             button1.UseVisualStyleBackColor = false;
             // 
-            // panel3
-            // 
-            panel3.Controls.Add(textBox3);
-            panel3.Controls.Add(label5);
-            panel3.Location = new Point(542, 223);
-            panel3.Margin = new Padding(2);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(196, 38);
-            panel3.TabIndex = 66;
-            // 
-            // textBox3
-            // 
-            textBox3.Dock = DockStyle.Fill;
-            textBox3.Enabled = false;
-            textBox3.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(106, 0);
-            textBox3.Margin = new Padding(2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(90, 30);
-            textBox3.TabIndex = 1;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Dock = DockStyle.Left;
-            label5.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(0, 0);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(106, 23);
-            label5.TabIndex = 0;
-            label5.Text = "Thời gian thi";
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(textBox4);
-            panel4.Controls.Add(label6);
-            panel4.Location = new Point(752, 223);
-            panel4.Margin = new Padding(2);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(218, 38);
-            panel4.TabIndex = 67;
-            // 
-            // textBox4
-            // 
-            textBox4.Dock = DockStyle.Fill;
-            textBox4.Enabled = false;
-            textBox4.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(91, 0);
-            textBox4.Margin = new Padding(2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(127, 30);
-            textBox4.TabIndex = 1;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Dock = DockStyle.Left;
-            label6.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(0, 0);
-            label6.Margin = new Padding(2, 0, 2, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(91, 23);
-            label6.TabIndex = 0;
-            label6.Text = "Loại ĐGNL";
-            // 
             // SelectRegisterFormControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            Controls.Add(panel4);
-            Controls.Add(panel3);
             Controls.Add(button1);
             Controls.Add(guna2ShadowPanel1);
             Controls.Add(select_exam_button);
@@ -445,10 +369,6 @@
             panel2.PerformLayout();
             guna2ShadowPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -481,11 +401,5 @@
         private DataGridViewTextBoxColumn Email;
         private DataGridViewTextBoxColumn DiaChi;
         private Button button1;
-        private Panel panel3;
-        private TextBox textBox3;
-        private Label label5;
-        private Panel panel4;
-        private TextBox textBox4;
-        private Label label6;
     }
 }
