@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             ts_birth_textBox = new TextBox();
             ts_email_panel = new Panel();
             ts_email_textBox = new TextBox();
@@ -113,6 +113,8 @@
             cbTraCuuGioiTinh = new ComboBox();
             label8 = new Label();
             tabPage4 = new TabPage();
+            label15 = new Label();
+            btnKiemTra = new Button();
             panel7 = new Panel();
             txtThemDiaChi = new TextBox();
             label9 = new Label();
@@ -131,8 +133,6 @@
             panel12 = new Panel();
             cbThemGioiTinh = new ComboBox();
             label14 = new Label();
-            btnKiemTra = new Button();
-            label15 = new Label();
             ts_email_panel.SuspendLayout();
             ts_address_panel.SuspendLayout();
             guna2ShadowPanel1.SuspendLayout();
@@ -784,7 +784,7 @@
             // txtTimEmail
             // 
             txtTimEmail.BorderRadius = 20;
-            txtTimEmail.CustomizableEdges = customizableEdges9;
+            txtTimEmail.CustomizableEdges = customizableEdges1;
             txtTimEmail.DefaultText = "";
             txtTimEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTimEmail.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -802,7 +802,7 @@
             txtTimEmail.Name = "txtTimEmail";
             txtTimEmail.PlaceholderText = "";
             txtTimEmail.SelectedText = "";
-            txtTimEmail.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtTimEmail.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtTimEmail.Size = new Size(441, 51);
             txtTimEmail.TabIndex = 51;
             txtTimEmail.TextOffset = new Point(20, 0);
@@ -821,7 +821,7 @@
             // txtTimSdt
             // 
             txtTimSdt.BorderRadius = 20;
-            txtTimSdt.CustomizableEdges = customizableEdges11;
+            txtTimSdt.CustomizableEdges = customizableEdges3;
             txtTimSdt.DefaultText = "";
             txtTimSdt.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTimSdt.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -839,7 +839,7 @@
             txtTimSdt.Name = "txtTimSdt";
             txtTimSdt.PlaceholderText = "";
             txtTimSdt.SelectedText = "";
-            txtTimSdt.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtTimSdt.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtTimSdt.Size = new Size(328, 51);
             txtTimSdt.TabIndex = 49;
             txtTimSdt.TextOffset = new Point(20, 0);
@@ -1054,6 +1054,30 @@
             tabPage4.TabIndex = 1;
             tabPage4.Text = "Thêm KH";
             // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.ForeColor = Color.MediumSeaGreen;
+            label15.Location = new Point(0, 381);
+            label15.Margin = new Padding(0);
+            label15.Name = "label15";
+            label15.Size = new Size(202, 32);
+            label15.TabIndex = 55;
+            label15.Text = "Thông tin hợp lệ!";
+            // 
+            // btnKiemTra
+            // 
+            btnKiemTra.BackColor = Color.MediumTurquoise;
+            btnKiemTra.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKiemTra.ForeColor = Color.Transparent;
+            btnKiemTra.Location = new Point(597, 416);
+            btnKiemTra.Name = "btnKiemTra";
+            btnKiemTra.Size = new Size(322, 68);
+            btnKiemTra.TabIndex = 54;
+            btnKiemTra.Text = "Kiểm tra";
+            btnKiemTra.UseVisualStyleBackColor = false;
+            // 
             // panel7
             // 
             panel7.Controls.Add(txtThemDiaChi);
@@ -1229,30 +1253,6 @@
             label14.Size = new Size(123, 37);
             label14.TabIndex = 0;
             label14.Text = "Giới tính";
-            // 
-            // btnKiemTra
-            // 
-            btnKiemTra.BackColor = Color.MediumTurquoise;
-            btnKiemTra.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnKiemTra.ForeColor = Color.Transparent;
-            btnKiemTra.Location = new Point(597, 416);
-            btnKiemTra.Name = "btnKiemTra";
-            btnKiemTra.Size = new Size(322, 68);
-            btnKiemTra.TabIndex = 54;
-            btnKiemTra.Text = "Kiểm tra";
-            btnKiemTra.UseVisualStyleBackColor = false;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.ForeColor = Color.MediumSeaGreen;
-            label15.Location = new Point(0, 381);
-            label15.Margin = new Padding(0);
-            label15.Name = "label15";
-            label15.Size = new Size(202, 32);
-            label15.TabIndex = 55;
-            label15.Text = "Thông tin hợp lệ!";
             // 
             // LapPhieuDangKy
             // 
