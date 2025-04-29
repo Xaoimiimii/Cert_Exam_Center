@@ -575,7 +575,7 @@
             Controls.Add(label1);
             Margin = new Padding(0);
             Name = "ExamineeResultsControl";
-            Size = new Size(1622, 1169);
+            Size = new Size(1620, 1169);
             status_flowLayoutPanel.ResumeLayout(false);
             status_flowLayoutPanel.PerformLayout();
             type_flowLayoutPanel.ResumeLayout(false);

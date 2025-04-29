@@ -295,6 +295,7 @@
             payment_register_menu_flowLayoutPanel.Size = new Size(318, 80);
             payment_register_menu_flowLayoutPanel.TabIndex = 10;
             payment_register_menu_flowLayoutPanel.WrapContents = false;
+            payment_register_menu_flowLayoutPanel.Click += payment_register_menu_flowLayoutPanel_Click;
             // 
             // payment_register_menu_pictureBox
             // 
@@ -306,6 +307,7 @@
             payment_register_menu_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
             payment_register_menu_pictureBox.TabIndex = 1;
             payment_register_menu_pictureBox.TabStop = false;
+            payment_register_menu_pictureBox.Click += payment_register_menu_pictureBox_Click;
             // 
             // payment_register_menu_label
             // 
@@ -318,6 +320,7 @@
             payment_register_menu_label.Size = new Size(117, 37);
             payment_register_menu_label.TabIndex = 1;
             payment_register_menu_label.Text = "Đăng ký";
+            payment_register_menu_label.Click += payment_register_menu_label_Click;
             // 
             // payment_extension_menu_flowLayoutPanel
             // 
@@ -551,15 +554,15 @@
             main_panel.Location = new Point(98, 0);
             main_panel.Margin = new Padding(0);
             main_panel.Name = "main_panel";
-            main_panel.Size = new Size(1620, 1169);
+            main_panel.Size = new Size(1626, 1169);
             main_panel.TabIndex = 1;
             // 
             // status_bar_panel
             // 
-            status_bar_panel.Location = new Point(100, 1169);
+            status_bar_panel.Location = new Point(98, 1169);
             status_bar_panel.Margin = new Padding(0);
             status_bar_panel.Name = "status_bar_panel";
-            status_bar_panel.Size = new Size(1620, 40);
+            status_bar_panel.Size = new Size(1626, 41);
             status_bar_panel.TabIndex = 0;
             // 
             // MainForm
@@ -568,9 +571,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1724, 1209);
-            Controls.Add(status_bar_panel);
             Controls.Add(nav_drawer_flowLayoutPanel);
             Controls.Add(main_panel);
+            Controls.Add(status_bar_panel);
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang chủ";
