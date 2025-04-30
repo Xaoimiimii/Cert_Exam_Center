@@ -27,6 +27,12 @@ namespace ACCI_CertificationExaminationCenter
             tenDangNhap = txtTenDangNhap.Text;
             matKhau = txtMatKhau.Text;
 
+            if (string.IsNullOrEmpty(tenDangNhap) || string.IsNullOrEmpty(matKhau))
+            {
+                HienThiTB("Vui lòng nhập tên đăng nhập và mật khẩu!");
+                return;
+            }
+
             if (DangNhap_BUS.KiemTraTaiKhoan(tenDangNhap, matKhau))
             {
                 vaiTro = DangNhap_BUS.LayVaiTro(tenDangNhap);
