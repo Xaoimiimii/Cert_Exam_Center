@@ -19,5 +19,23 @@ namespace ACCI_CertificationExaminationCenter
             InitializeComponent();
             this.mainForm = form;
         }
+
+        private void btnTraCuu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void select_exam_button_Click(object sender, EventArgs e)
+        {
+            TraCuuLichThi form = new TraCuuLichThi();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                LichThi_BUS lichThi = form.LichThiDaChon;
+                txtMaLichThi.Text = lichThi.MaLichThi;
+                txtNgayThi.Text = lichThi.NgayThi.ToString("dd/MM/yyyy");
+                txtThoiGianThi.Text = lichThi.ThoiGianThi.ToString(@"hh\:mm");
+                txtLoaiDGNL.Text = lichThi.LoaiDanhGia;
+            }
+        }
     }
 }
