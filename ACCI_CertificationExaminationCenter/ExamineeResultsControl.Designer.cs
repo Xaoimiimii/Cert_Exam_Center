@@ -40,44 +40,43 @@
             insert_result_button = new Button();
             status_flowLayoutPanel = new FlowLayoutPanel();
             status_label = new Label();
-            found_status_label = new Label();
-            type_flowLayoutPanel = new FlowLayoutPanel();
-            type_label = new Label();
-            found_type_label = new Label();
+            lbTrangThai = new Label();
+            lbLoai = new Label();
             time_flowLayoutPanel = new FlowLayoutPanel();
             time_label = new Label();
-            found_time_label = new Label();
+            lbGioThi = new Label();
             date_flowLayoutPanel = new FlowLayoutPanel();
             date_label = new Label();
-            found_date_label = new Label();
+            lbNgayThi = new Label();
             sdt_flowLayoutPanel = new FlowLayoutPanel();
             sdt_label = new Label();
-            found_sdt_label = new Label();
+            lbSoDT = new Label();
             gender_flowLayoutPanel = new FlowLayoutPanel();
             gender_label = new Label();
-            found_gender_label = new Label();
+            lbGioiTinh = new Label();
             sbd_flowLayoutPanel = new FlowLayoutPanel();
             sbd_label = new Label();
-            found_sbd_label = new Label();
-            label3 = new Label();
+            lbSoBaoDanh = new Label();
+            lbHoTen = new Label();
             save_button = new Button();
             ngayCap_flowLayoutPanel = new FlowLayoutPanel();
             ngayCap_label = new Label();
-            ngayCap_guna2TextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            txtNgayCap = new Guna.UI2.WinForms.Guna2TextBox();
             res_flowLayoutPanel = new FlowLayoutPanel();
             res_label = new Label();
-            result_guna2TextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            txtDiem = new Guna.UI2.WinForms.Guna2TextBox();
             capChungChi_checkBox = new CheckBox();
             exam_result_label = new Label();
             result_card_guna2ShadowPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             cert_pictureBox = new PictureBox();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            label3 = new Label();
             result_guna2ShadowPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             flowLayoutPanel1 = new FlowLayoutPanel();
             label2 = new Label();
             search_sbd_guna2TextBox = new Guna.UI2.WinForms.Guna2TextBox();
             find_sbd_button = new Button();
             status_flowLayoutPanel.SuspendLayout();
-            type_flowLayoutPanel.SuspendLayout();
             time_flowLayoutPanel.SuspendLayout();
             date_flowLayoutPanel.SuspendLayout();
             sdt_flowLayoutPanel.SuspendLayout();
@@ -87,6 +86,7 @@
             res_flowLayoutPanel.SuspendLayout();
             result_card_guna2ShadowPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)cert_pictureBox).BeginInit();
+            flowLayoutPanel2.SuspendLayout();
             result_guna2ShadowPanel.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -128,9 +128,9 @@
             // status_flowLayoutPanel
             // 
             status_flowLayoutPanel.Controls.Add(status_label);
-            status_flowLayoutPanel.Controls.Add(found_status_label);
+            status_flowLayoutPanel.Controls.Add(lbTrangThai);
             status_flowLayoutPanel.Location = new Point(211, 210);
-            status_flowLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            status_flowLayoutPanel.Margin = new Padding(2);
             status_flowLayoutPanel.Name = "status_flowLayoutPanel";
             status_flowLayoutPanel.Size = new Size(292, 28);
             status_flowLayoutPanel.TabIndex = 39;
@@ -146,53 +146,32 @@
             status_label.TabIndex = 0;
             status_label.Text = "Trạng thái:";
             // 
-            // found_status_label
+            // lbTrangThai
             // 
-            found_status_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            found_status_label.ForeColor = SystemColors.WindowFrame;
-            found_status_label.Location = new Point(2, 23);
-            found_status_label.Margin = new Padding(2, 0, 2, 0);
-            found_status_label.Name = "found_status_label";
-            found_status_label.Size = new Size(197, 28);
-            found_status_label.TabIndex = 1;
+            lbTrangThai.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbTrangThai.ForeColor = SystemColors.WindowFrame;
+            lbTrangThai.Location = new Point(97, 0);
+            lbTrangThai.Margin = new Padding(2, 0, 2, 0);
+            lbTrangThai.Name = "lbTrangThai";
+            lbTrangThai.Size = new Size(188, 28);
+            lbTrangThai.TabIndex = 1;
             // 
-            // type_flowLayoutPanel
+            // lbLoai
             // 
-            type_flowLayoutPanel.Controls.Add(type_label);
-            type_flowLayoutPanel.Controls.Add(found_type_label);
-            type_flowLayoutPanel.Location = new Point(211, 185);
-            type_flowLayoutPanel.Margin = new Padding(2, 2, 2, 2);
-            type_flowLayoutPanel.Name = "type_flowLayoutPanel";
-            type_flowLayoutPanel.Size = new Size(292, 28);
-            type_flowLayoutPanel.TabIndex = 38;
-            // 
-            // type_label
-            // 
-            type_label.AutoSize = true;
-            type_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            type_label.Location = new Point(2, 0);
-            type_label.Margin = new Padding(2, 0, 2, 0);
-            type_label.Name = "type_label";
-            type_label.Size = new Size(117, 23);
-            type_label.TabIndex = 0;
-            type_label.Text = "Loại đánh giá:";
-            // 
-            // found_type_label
-            // 
-            found_type_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            found_type_label.ForeColor = SystemColors.WindowFrame;
-            found_type_label.Location = new Point(2, 23);
-            found_type_label.Margin = new Padding(2, 0, 2, 0);
-            found_type_label.Name = "found_type_label";
-            found_type_label.Size = new Size(168, 28);
-            found_type_label.TabIndex = 1;
+            lbLoai.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbLoai.ForeColor = SystemColors.WindowFrame;
+            lbLoai.Location = new Point(123, 0);
+            lbLoai.Margin = new Padding(2, 0, 2, 0);
+            lbLoai.Name = "lbLoai";
+            lbLoai.Size = new Size(152, 28);
+            lbLoai.TabIndex = 1;
             // 
             // time_flowLayoutPanel
             // 
             time_flowLayoutPanel.Controls.Add(time_label);
-            time_flowLayoutPanel.Controls.Add(found_time_label);
+            time_flowLayoutPanel.Controls.Add(lbGioThi);
             time_flowLayoutPanel.Location = new Point(211, 160);
-            time_flowLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            time_flowLayoutPanel.Margin = new Padding(2);
             time_flowLayoutPanel.Name = "time_flowLayoutPanel";
             time_flowLayoutPanel.Size = new Size(292, 28);
             time_flowLayoutPanel.TabIndex = 37;
@@ -208,22 +187,22 @@
             time_label.TabIndex = 0;
             time_label.Text = "Giờ thi:";
             // 
-            // found_time_label
+            // lbGioThi
             // 
-            found_time_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            found_time_label.ForeColor = SystemColors.WindowFrame;
-            found_time_label.Location = new Point(71, 0);
-            found_time_label.Margin = new Padding(2, 0, 2, 0);
-            found_time_label.Name = "found_time_label";
-            found_time_label.Size = new Size(168, 28);
-            found_time_label.TabIndex = 1;
+            lbGioThi.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbGioThi.ForeColor = SystemColors.WindowFrame;
+            lbGioThi.Location = new Point(71, 0);
+            lbGioThi.Margin = new Padding(2, 0, 2, 0);
+            lbGioThi.Name = "lbGioThi";
+            lbGioThi.Size = new Size(168, 28);
+            lbGioThi.TabIndex = 1;
             // 
             // date_flowLayoutPanel
             // 
             date_flowLayoutPanel.Controls.Add(date_label);
-            date_flowLayoutPanel.Controls.Add(found_date_label);
+            date_flowLayoutPanel.Controls.Add(lbNgayThi);
             date_flowLayoutPanel.Location = new Point(211, 135);
-            date_flowLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            date_flowLayoutPanel.Margin = new Padding(2);
             date_flowLayoutPanel.Name = "date_flowLayoutPanel";
             date_flowLayoutPanel.Size = new Size(292, 28);
             date_flowLayoutPanel.TabIndex = 36;
@@ -239,22 +218,22 @@
             date_label.TabIndex = 0;
             date_label.Text = "Ngày thi:";
             // 
-            // found_date_label
+            // lbNgayThi
             // 
-            found_date_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            found_date_label.ForeColor = SystemColors.WindowFrame;
-            found_date_label.Location = new Point(85, 0);
-            found_date_label.Margin = new Padding(2, 0, 2, 0);
-            found_date_label.Name = "found_date_label";
-            found_date_label.Size = new Size(168, 28);
-            found_date_label.TabIndex = 1;
+            lbNgayThi.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNgayThi.ForeColor = SystemColors.WindowFrame;
+            lbNgayThi.Location = new Point(85, 0);
+            lbNgayThi.Margin = new Padding(2, 0, 2, 0);
+            lbNgayThi.Name = "lbNgayThi";
+            lbNgayThi.Size = new Size(168, 28);
+            lbNgayThi.TabIndex = 1;
             // 
             // sdt_flowLayoutPanel
             // 
             sdt_flowLayoutPanel.Controls.Add(sdt_label);
-            sdt_flowLayoutPanel.Controls.Add(found_sdt_label);
+            sdt_flowLayoutPanel.Controls.Add(lbSoDT);
             sdt_flowLayoutPanel.Location = new Point(211, 110);
-            sdt_flowLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            sdt_flowLayoutPanel.Margin = new Padding(2);
             sdt_flowLayoutPanel.Name = "sdt_flowLayoutPanel";
             sdt_flowLayoutPanel.Size = new Size(292, 28);
             sdt_flowLayoutPanel.TabIndex = 35;
@@ -270,22 +249,22 @@
             sdt_label.TabIndex = 0;
             sdt_label.Text = "Số điện thoại:";
             // 
-            // found_sdt_label
+            // lbSoDT
             // 
-            found_sdt_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            found_sdt_label.ForeColor = SystemColors.WindowFrame;
-            found_sdt_label.Location = new Point(121, 0);
-            found_sdt_label.Margin = new Padding(2, 0, 2, 0);
-            found_sdt_label.Name = "found_sdt_label";
-            found_sdt_label.Size = new Size(168, 28);
-            found_sdt_label.TabIndex = 1;
+            lbSoDT.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbSoDT.ForeColor = SystemColors.WindowFrame;
+            lbSoDT.Location = new Point(121, 0);
+            lbSoDT.Margin = new Padding(2, 0, 2, 0);
+            lbSoDT.Name = "lbSoDT";
+            lbSoDT.Size = new Size(168, 28);
+            lbSoDT.TabIndex = 1;
             // 
             // gender_flowLayoutPanel
             // 
             gender_flowLayoutPanel.Controls.Add(gender_label);
-            gender_flowLayoutPanel.Controls.Add(found_gender_label);
+            gender_flowLayoutPanel.Controls.Add(lbGioiTinh);
             gender_flowLayoutPanel.Location = new Point(211, 85);
-            gender_flowLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            gender_flowLayoutPanel.Margin = new Padding(2);
             gender_flowLayoutPanel.Name = "gender_flowLayoutPanel";
             gender_flowLayoutPanel.Size = new Size(292, 28);
             gender_flowLayoutPanel.TabIndex = 34;
@@ -301,22 +280,22 @@
             gender_label.TabIndex = 0;
             gender_label.Text = "Giới tính:";
             // 
-            // found_gender_label
+            // lbGioiTinh
             // 
-            found_gender_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            found_gender_label.ForeColor = SystemColors.WindowFrame;
-            found_gender_label.Location = new Point(85, 0);
-            found_gender_label.Margin = new Padding(2, 0, 2, 0);
-            found_gender_label.Name = "found_gender_label";
-            found_gender_label.Size = new Size(168, 28);
-            found_gender_label.TabIndex = 1;
+            lbGioiTinh.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbGioiTinh.ForeColor = SystemColors.WindowFrame;
+            lbGioiTinh.Location = new Point(85, 0);
+            lbGioiTinh.Margin = new Padding(2, 0, 2, 0);
+            lbGioiTinh.Name = "lbGioiTinh";
+            lbGioiTinh.Size = new Size(168, 28);
+            lbGioiTinh.TabIndex = 1;
             // 
             // sbd_flowLayoutPanel
             // 
             sbd_flowLayoutPanel.Controls.Add(sbd_label);
-            sbd_flowLayoutPanel.Controls.Add(found_sbd_label);
+            sbd_flowLayoutPanel.Controls.Add(lbSoBaoDanh);
             sbd_flowLayoutPanel.Location = new Point(211, 60);
-            sbd_flowLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            sbd_flowLayoutPanel.Margin = new Padding(2);
             sbd_flowLayoutPanel.Name = "sbd_flowLayoutPanel";
             sbd_flowLayoutPanel.Size = new Size(292, 28);
             sbd_flowLayoutPanel.TabIndex = 33;
@@ -332,26 +311,26 @@
             sbd_label.TabIndex = 0;
             sbd_label.Text = "Số báo danh:";
             // 
-            // found_sbd_label
+            // lbSoBaoDanh
             // 
-            found_sbd_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            found_sbd_label.ForeColor = SystemColors.WindowFrame;
-            found_sbd_label.Location = new Point(117, 0);
-            found_sbd_label.Margin = new Padding(2, 0, 2, 0);
-            found_sbd_label.Name = "found_sbd_label";
-            found_sbd_label.Size = new Size(168, 28);
-            found_sbd_label.TabIndex = 1;
+            lbSoBaoDanh.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbSoBaoDanh.ForeColor = SystemColors.WindowFrame;
+            lbSoBaoDanh.Location = new Point(117, 0);
+            lbSoBaoDanh.Margin = new Padding(2, 0, 2, 0);
+            lbSoBaoDanh.Name = "lbSoBaoDanh";
+            lbSoBaoDanh.Size = new Size(168, 28);
+            lbSoBaoDanh.TabIndex = 1;
             // 
-            // label3
+            // lbHoTen
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(211, 20);
-            label3.Margin = new Padding(0);
-            label3.Name = "label3";
-            label3.Size = new Size(147, 28);
-            label3.TabIndex = 0;
-            label3.Text = "Nguyễn Văn A";
+            lbHoTen.AutoSize = true;
+            lbHoTen.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbHoTen.Location = new Point(211, 20);
+            lbHoTen.Margin = new Padding(0);
+            lbHoTen.Name = "lbHoTen";
+            lbHoTen.Size = new Size(147, 28);
+            lbHoTen.TabIndex = 0;
+            lbHoTen.Text = "Nguyễn Văn A";
             // 
             // save_button
             // 
@@ -365,13 +344,14 @@
             save_button.TabIndex = 36;
             save_button.Text = "Lưu";
             save_button.UseVisualStyleBackColor = false;
+            save_button.Click += save_button_Click;
             // 
             // ngayCap_flowLayoutPanel
             // 
             ngayCap_flowLayoutPanel.Controls.Add(ngayCap_label);
-            ngayCap_flowLayoutPanel.Controls.Add(ngayCap_guna2TextBox);
+            ngayCap_flowLayoutPanel.Controls.Add(txtNgayCap);
             ngayCap_flowLayoutPanel.Location = new Point(40, 167);
-            ngayCap_flowLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            ngayCap_flowLayoutPanel.Margin = new Padding(2);
             ngayCap_flowLayoutPanel.Name = "ngayCap_flowLayoutPanel";
             ngayCap_flowLayoutPanel.Size = new Size(356, 41);
             ngayCap_flowLayoutPanel.TabIndex = 35;
@@ -387,35 +367,35 @@
             ngayCap_label.TabIndex = 0;
             ngayCap_label.Text = "Ngày cấp:";
             // 
-            // ngayCap_guna2TextBox
+            // txtNgayCap
             // 
-            ngayCap_guna2TextBox.BorderRadius = 20;
-            ngayCap_guna2TextBox.CustomizableEdges = customizableEdges1;
-            ngayCap_guna2TextBox.DefaultText = "";
-            ngayCap_guna2TextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            ngayCap_guna2TextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            ngayCap_guna2TextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            ngayCap_guna2TextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            ngayCap_guna2TextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            ngayCap_guna2TextBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ngayCap_guna2TextBox.HoverState.BorderColor = Color.PowderBlue;
-            ngayCap_guna2TextBox.IconRightOffset = new Point(10, 0);
-            ngayCap_guna2TextBox.Location = new Point(91, 4);
-            ngayCap_guna2TextBox.Margin = new Padding(4, 4, 4, 4);
-            ngayCap_guna2TextBox.Name = "ngayCap_guna2TextBox";
-            ngayCap_guna2TextBox.Padding = new Padding(2, 2, 2, 2);
-            ngayCap_guna2TextBox.PlaceholderText = "";
-            ngayCap_guna2TextBox.SelectedText = "";
-            ngayCap_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            ngayCap_guna2TextBox.Size = new Size(253, 32);
-            ngayCap_guna2TextBox.TabIndex = 36;
+            txtNgayCap.BorderRadius = 20;
+            txtNgayCap.CustomizableEdges = customizableEdges1;
+            txtNgayCap.DefaultText = "";
+            txtNgayCap.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtNgayCap.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtNgayCap.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtNgayCap.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtNgayCap.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtNgayCap.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNgayCap.HoverState.BorderColor = Color.PowderBlue;
+            txtNgayCap.IconRightOffset = new Point(10, 0);
+            txtNgayCap.Location = new Point(91, 4);
+            txtNgayCap.Margin = new Padding(4);
+            txtNgayCap.Name = "txtNgayCap";
+            txtNgayCap.Padding = new Padding(2);
+            txtNgayCap.PlaceholderText = "dd/MM/yy";
+            txtNgayCap.SelectedText = "";
+            txtNgayCap.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtNgayCap.Size = new Size(253, 32);
+            txtNgayCap.TabIndex = 36;
             // 
             // res_flowLayoutPanel
             // 
             res_flowLayoutPanel.Controls.Add(res_label);
-            res_flowLayoutPanel.Controls.Add(result_guna2TextBox);
+            res_flowLayoutPanel.Controls.Add(txtDiem);
             res_flowLayoutPanel.Location = new Point(40, 67);
-            res_flowLayoutPanel.Margin = new Padding(2, 2, 2, 2);
+            res_flowLayoutPanel.Margin = new Padding(2);
             res_flowLayoutPanel.Name = "res_flowLayoutPanel";
             res_flowLayoutPanel.Size = new Size(356, 41);
             res_flowLayoutPanel.TabIndex = 34;
@@ -431,35 +411,35 @@
             res_label.TabIndex = 0;
             res_label.Text = "Điểm bài thi:";
             // 
-            // result_guna2TextBox
+            // txtDiem
             // 
-            result_guna2TextBox.BorderRadius = 20;
-            result_guna2TextBox.CustomizableEdges = customizableEdges3;
-            result_guna2TextBox.DefaultText = "";
-            result_guna2TextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            result_guna2TextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            result_guna2TextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            result_guna2TextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            result_guna2TextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            result_guna2TextBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            result_guna2TextBox.HoverState.BorderColor = Color.PowderBlue;
-            result_guna2TextBox.IconRightOffset = new Point(10, 0);
-            result_guna2TextBox.Location = new Point(111, 4);
-            result_guna2TextBox.Margin = new Padding(4, 4, 4, 4);
-            result_guna2TextBox.Name = "result_guna2TextBox";
-            result_guna2TextBox.Padding = new Padding(2, 2, 2, 2);
-            result_guna2TextBox.PlaceholderText = "";
-            result_guna2TextBox.SelectedText = "";
-            result_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            result_guna2TextBox.Size = new Size(233, 32);
-            result_guna2TextBox.TabIndex = 35;
+            txtDiem.BorderRadius = 20;
+            txtDiem.CustomizableEdges = customizableEdges3;
+            txtDiem.DefaultText = "";
+            txtDiem.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtDiem.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtDiem.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtDiem.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtDiem.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtDiem.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtDiem.HoverState.BorderColor = Color.PowderBlue;
+            txtDiem.IconRightOffset = new Point(10, 0);
+            txtDiem.Location = new Point(111, 4);
+            txtDiem.Margin = new Padding(4);
+            txtDiem.Name = "txtDiem";
+            txtDiem.Padding = new Padding(2);
+            txtDiem.PlaceholderText = "";
+            txtDiem.SelectedText = "";
+            txtDiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtDiem.Size = new Size(233, 32);
+            txtDiem.TabIndex = 35;
             // 
             // capChungChi_checkBox
             // 
             capChungChi_checkBox.AutoSize = true;
             capChungChi_checkBox.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             capChungChi_checkBox.Location = new Point(40, 126);
-            capChungChi_checkBox.Margin = new Padding(2, 2, 2, 2);
+            capChungChi_checkBox.Margin = new Padding(2);
             capChungChi_checkBox.Name = "capChungChi_checkBox";
             capChungChi_checkBox.Size = new Size(143, 27);
             capChungChi_checkBox.TabIndex = 1;
@@ -482,18 +462,18 @@
             // 
             result_card_guna2ShadowPanel.BackColor = Color.Transparent;
             result_card_guna2ShadowPanel.Controls.Add(cert_pictureBox);
+            result_card_guna2ShadowPanel.Controls.Add(flowLayoutPanel2);
             result_card_guna2ShadowPanel.Controls.Add(insert_result_button);
-            result_card_guna2ShadowPanel.Controls.Add(label3);
+            result_card_guna2ShadowPanel.Controls.Add(lbHoTen);
             result_card_guna2ShadowPanel.Controls.Add(date_flowLayoutPanel);
             result_card_guna2ShadowPanel.Controls.Add(status_flowLayoutPanel);
             result_card_guna2ShadowPanel.Controls.Add(sdt_flowLayoutPanel);
             result_card_guna2ShadowPanel.Controls.Add(sbd_flowLayoutPanel);
             result_card_guna2ShadowPanel.Controls.Add(time_flowLayoutPanel);
-            result_card_guna2ShadowPanel.Controls.Add(type_flowLayoutPanel);
             result_card_guna2ShadowPanel.Controls.Add(gender_flowLayoutPanel);
             result_card_guna2ShadowPanel.FillColor = Color.White;
             result_card_guna2ShadowPanel.Location = new Point(2, 183);
-            result_card_guna2ShadowPanel.Margin = new Padding(2, 2, 2, 2);
+            result_card_guna2ShadowPanel.Margin = new Padding(2);
             result_card_guna2ShadowPanel.Name = "result_card_guna2ShadowPanel";
             result_card_guna2ShadowPanel.Radius = 10;
             result_card_guna2ShadowPanel.ShadowColor = Color.DimGray;
@@ -506,12 +486,33 @@
             // 
             cert_pictureBox.Image = Properties.Resources.certificate__3_;
             cert_pictureBox.Location = new Point(34, 20);
-            cert_pictureBox.Margin = new Padding(2, 2, 2, 2);
+            cert_pictureBox.Margin = new Padding(2);
             cert_pictureBox.Name = "cert_pictureBox";
             cert_pictureBox.Size = new Size(164, 218);
             cert_pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             cert_pictureBox.TabIndex = 40;
             cert_pictureBox.TabStop = false;
+            // 
+            // flowLayoutPanel2
+            // 
+            flowLayoutPanel2.Controls.Add(label3);
+            flowLayoutPanel2.Controls.Add(lbLoai);
+            flowLayoutPanel2.Location = new Point(211, 185);
+            flowLayoutPanel2.Margin = new Padding(2);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(292, 29);
+            flowLayoutPanel2.TabIndex = 38;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(2, 0);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(117, 23);
+            label3.TabIndex = 0;
+            label3.Text = "Loại đánh giá:";
             // 
             // result_guna2ShadowPanel
             // 
@@ -523,7 +524,7 @@
             result_guna2ShadowPanel.Controls.Add(res_flowLayoutPanel);
             result_guna2ShadowPanel.FillColor = Color.White;
             result_guna2ShadowPanel.Location = new Point(542, 183);
-            result_guna2ShadowPanel.Margin = new Padding(2, 2, 2, 2);
+            result_guna2ShadowPanel.Margin = new Padding(2);
             result_guna2ShadowPanel.Name = "result_guna2ShadowPanel";
             result_guna2ShadowPanel.Radius = 10;
             result_guna2ShadowPanel.ShadowColor = Color.DimGray;
@@ -537,7 +538,7 @@
             flowLayoutPanel1.Controls.Add(label2);
             flowLayoutPanel1.Controls.Add(search_sbd_guna2TextBox);
             flowLayoutPanel1.Location = new Point(34, 94);
-            flowLayoutPanel1.Margin = new Padding(2, 2, 2, 2);
+            flowLayoutPanel1.Margin = new Padding(2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(526, 58);
             flowLayoutPanel1.TabIndex = 39;
@@ -569,9 +570,9 @@
             search_sbd_guna2TextBox.IconRight = (Image)resources.GetObject("search_sbd_guna2TextBox.IconRight");
             search_sbd_guna2TextBox.IconRightOffset = new Point(10, 0);
             search_sbd_guna2TextBox.Location = new Point(133, 6);
-            search_sbd_guna2TextBox.Margin = new Padding(6, 6, 6, 6);
+            search_sbd_guna2TextBox.Margin = new Padding(6);
             search_sbd_guna2TextBox.Name = "search_sbd_guna2TextBox";
-            search_sbd_guna2TextBox.Padding = new Padding(2, 2, 2, 2);
+            search_sbd_guna2TextBox.Padding = new Padding(2);
             search_sbd_guna2TextBox.PlaceholderText = "";
             search_sbd_guna2TextBox.SelectedText = "";
             search_sbd_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
@@ -590,6 +591,7 @@
             find_sbd_button.TabIndex = 38;
             find_sbd_button.Text = "Tìm kiếm";
             find_sbd_button.UseVisualStyleBackColor = false;
+            find_sbd_button.Click += find_sbd_button_Click;
             // 
             // ExamineeResultsControl
             // 
@@ -608,8 +610,6 @@
             Load += ExamineeResultsControl_Load;
             status_flowLayoutPanel.ResumeLayout(false);
             status_flowLayoutPanel.PerformLayout();
-            type_flowLayoutPanel.ResumeLayout(false);
-            type_flowLayoutPanel.PerformLayout();
             time_flowLayoutPanel.ResumeLayout(false);
             time_flowLayoutPanel.PerformLayout();
             date_flowLayoutPanel.ResumeLayout(false);
@@ -627,6 +627,8 @@
             result_card_guna2ShadowPanel.ResumeLayout(false);
             result_card_guna2ShadowPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)cert_pictureBox).EndInit();
+            flowLayoutPanel2.ResumeLayout(false);
+            flowLayoutPanel2.PerformLayout();
             result_guna2ShadowPanel.ResumeLayout(false);
             result_guna2ShadowPanel.PerformLayout();
             flowLayoutPanel1.ResumeLayout(false);
@@ -639,38 +641,37 @@
 
         private Label label1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Label label3;
+        private Label lbHoTen;
         private FlowLayoutPanel sbd_flowLayoutPanel;
         private Label sbd_label;
-        private Label found_sbd_label;
+        private Label lbSoBaoDanh;
         private FlowLayoutPanel date_flowLayoutPanel;
         private Label date_label;
-        private Label found_date_label;
+        private Label lbNgayThi;
         private FlowLayoutPanel sdt_flowLayoutPanel;
         private Label sdt_label;
-        private Label found_sdt_label;
+        private Label lbSoDT;
         private FlowLayoutPanel gender_flowLayoutPanel;
         private Label gender_label;
-        private Label found_gender_label;
+        private Label lbGioiTinh;
         private Button insert_result_button;
         private FlowLayoutPanel status_flowLayoutPanel;
         private Label status_label;
-        private Label found_status_label;
+        private Label lbTrangThai;
         private FlowLayoutPanel type_flowLayoutPanel;
-        private Label type_label;
-        private Label found_type_label;
+        private Label lbLoai;
         private FlowLayoutPanel time_flowLayoutPanel;
         private Label time_label;
-        private Label found_time_label;
+        private Label lbGioThi;
         private Panel insert_result_panel;
         private Label exam_result_label;
         private FlowLayoutPanel res_flowLayoutPanel;
         private Label res_label;
-        private Guna.UI2.WinForms.Guna2TextBox result_guna2TextBox;
+        private Guna.UI2.WinForms.Guna2TextBox txtDiem;
         private Button save_button;
         private FlowLayoutPanel ngayCap_flowLayoutPanel;
         private Label ngayCap_label;
-        private Guna.UI2.WinForms.Guna2TextBox ngayCap_guna2TextBox;
+        private Guna.UI2.WinForms.Guna2TextBox txtNgayCap;
         private CheckBox capChungChi_checkBox;
         private Panel card_panel;
         private Guna.UI2.WinForms.Guna2ShadowPanel result_card_guna2ShadowPanel;
@@ -680,5 +681,8 @@
         private Label label2;
         private Guna.UI2.WinForms.Guna2TextBox search_sbd_guna2TextBox;
         private Button find_sbd_button;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private Label label3;
+        private Label label4;
     }
 }
