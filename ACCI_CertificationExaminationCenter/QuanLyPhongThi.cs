@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ACCI_CertificationExaminationCenter
 {
-    public partial class QuanLyNhanVien : UserControl
+    public partial class QuanLyPhongThi : UserControl
     {
-        public QuanLyNhanVien()
+        public QuanLyPhongThi()
         {
             InitializeComponent();
+        }
+
+        private void alter_button_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
