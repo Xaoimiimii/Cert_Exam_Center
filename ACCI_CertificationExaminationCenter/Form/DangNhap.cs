@@ -27,16 +27,26 @@ namespace ACCI_CertificationExaminationCenter
             tenDangNhap = txtTenDangNhap.Text;
             matKhau = txtMatKhau.Text;
 
-            if (DangNhap_BUS.KiemTraDangNhap(tenDangNhap, matKhau))
+            if (DangNhap_BUS.KiemTraTaiKhoan(tenDangNhap, matKhau))
             {
                 vaiTro = DangNhap_BUS.LayVaiTro(tenDangNhap);
-                this.DialogResult = DialogResult.OK;
-                this.Close();
+                HienThiTrangChu();
             }
             else
             {
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                HienThiTB("Tên đăng nhập hoặc mật khẩu không đúng!");
             }
+        }
+
+        public void HienThiTrangChu()
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+        public void HienThiTB(string message)
+        {
+            MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         public string LayTenDangNhap()

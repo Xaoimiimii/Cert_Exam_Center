@@ -12,14 +12,14 @@
         public bool isInSelectExam = false;
         public bool isInExamineeResults = false;
         public bool isInCertificate = false;
-        public string username;
-        public string role;
+        public string tenDangNhap;
+        public string vaiTro;
 
         public MainForm(string username, string role)
         {
             InitializeComponent();
-            this.username = username;
-            this.role = role;
+            this.tenDangNhap = username;
+            this.vaiTro = role;
             LoadControl(new DashboardControl(this));
             UpdateStatus("Dashboard");
         }

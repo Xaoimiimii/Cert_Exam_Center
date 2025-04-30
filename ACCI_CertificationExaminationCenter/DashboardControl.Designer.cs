@@ -30,7 +30,7 @@ namespace ACCI_CertificationExaminationCenter
         /// </summary>
         private void InitializeComponent()
         {
-            hello_label = new Label();
+            lTieuDe = new Label();
             register_pictureBox = new PictureBox();
             register_label = new Label();
             register_guna2ShadowPanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
@@ -50,7 +50,7 @@ namespace ACCI_CertificationExaminationCenter
             certificate_label = new Label();
             certificate_pictureBox = new PictureBox();
             bg_pictureBox = new PictureBox();
-            date_label = new Label();
+            lNgayThangNam = new Label();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)register_pictureBox).BeginInit();
             register_guna2ShadowPanel.SuspendLayout();
@@ -67,17 +67,17 @@ namespace ACCI_CertificationExaminationCenter
             ((System.ComponentModel.ISupportInitialize)bg_pictureBox).BeginInit();
             SuspendLayout();
             // 
-            // hello_label
+            // lTieuDe
             // 
-            hello_label.AutoSize = true;
-            hello_label.BackColor = Color.Transparent;
-            hello_label.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            hello_label.Location = new Point(41, 97);
-            hello_label.Margin = new Padding(0);
-            hello_label.Name = "hello_label";
-            hello_label.Size = new Size(459, 86);
-            hello_label.TabIndex = 2;
-            hello_label.Text = "Xin chào, user";
+            lTieuDe.AutoSize = true;
+            lTieuDe.BackColor = Color.Transparent;
+            lTieuDe.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lTieuDe.Location = new Point(41, 97);
+            lTieuDe.Margin = new Padding(0);
+            lTieuDe.Name = "lTieuDe";
+            lTieuDe.Size = new Size(459, 86);
+            lTieuDe.TabIndex = 2;
+            lTieuDe.Text = "Xin chào, user";
             // 
             // register_pictureBox
             // 
@@ -371,18 +371,18 @@ namespace ACCI_CertificationExaminationCenter
             bg_pictureBox.TabIndex = 10;
             bg_pictureBox.TabStop = false;
             // 
-            // date_label
+            // lNgayThangNam
             // 
-            date_label.AutoSize = true;
-            date_label.BackColor = Color.Transparent;
-            date_label.Font = new Font("Segoe UI Semibold", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            date_label.ForeColor = Color.White;
-            date_label.Location = new Point(41, 185);
-            date_label.Margin = new Padding(0);
-            date_label.Name = "date_label";
-            date_label.Size = new Size(308, 50);
-            date_label.TabIndex = 11;
-            date_label.Text = "Thứ tư, 4/9/2025";
+            lNgayThangNam.AutoSize = true;
+            lNgayThangNam.BackColor = Color.Transparent;
+            lNgayThangNam.Font = new Font("Segoe UI Semibold", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lNgayThangNam.ForeColor = Color.White;
+            lNgayThangNam.Location = new Point(41, 185);
+            lNgayThangNam.Margin = new Padding(0);
+            lNgayThangNam.Name = "lNgayThangNam";
+            lNgayThangNam.Size = new Size(308, 50);
+            lNgayThangNam.TabIndex = 11;
+            lNgayThangNam.Text = "Thứ tư, 4/9/2025";
             // 
             // label1
             // 
@@ -400,8 +400,8 @@ namespace ACCI_CertificationExaminationCenter
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(label1);
-            Controls.Add(hello_label);
-            Controls.Add(date_label);
+            Controls.Add(lTieuDe);
+            Controls.Add(lNgayThangNam);
             Controls.Add(bg_pictureBox);
             Controls.Add(certificate_guna2ShadowPanel);
             Controls.Add(results_guna2ShadowPanel);
@@ -432,7 +432,7 @@ namespace ACCI_CertificationExaminationCenter
 
         #endregion
 
-        private Label hello_label;
+        private Label lTieuDe;
         private FlowLayoutPanel register_flowLayoutPanel;
         private PictureBox register_pictureBox;
         private Label register_label;
@@ -453,7 +453,7 @@ namespace ACCI_CertificationExaminationCenter
         private Label certificate_label;
         private PictureBox certificate_pictureBox;
         private PictureBox bg_pictureBox;
-        private Label date_label;
+        private Label lNgayThangNam;
         private Label label1;
     }
 }

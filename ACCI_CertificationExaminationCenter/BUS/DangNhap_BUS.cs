@@ -10,7 +10,7 @@ namespace ACCI_CertificationExaminationCenter.BUS
 {
     internal class DangNhap_BUS
     {
-        public static bool KiemTraDangNhap(string tenDangNhap, string matKhau)
+        public static bool KiemTraTaiKhoan(string tenDangNhap, string matKhau)
         {
             bool result = false;
 
