@@ -34,27 +34,19 @@ namespace ACCI_CertificationExaminationCenter
                 connection.Close();
         }
 
-        public string ThemPhieuDK(string MaNhanVien)
+        public string ThemPhieuDK(string MaNV)
         {
             string maphieuDK = "";
-            try
+            SqlCommand cmd = new SqlCommand("ThemPhieuDK", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@MaNV", MaNV);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            using (SqlDataReader reader = cmd.ExecuteReader())
             {
-                Connect();
-                SqlCommand cmd = new SqlCommand("ThemPhieuDK", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MaNV", MaNhanVien);
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                using (SqlDataReader reader = cmd.ExecuteReader())
+                if (reader.Read())
                 {
-                    if (reader.Read())
-                    {
-                        maphieuDK = reader.GetString(0); // Lấy cột đầu tiên (MaPhieuDK)
-                    }
+                    maphieuDK = reader.GetString(0);
                 }
-            }
-            finally
-            {
-                Disconnect();
             }
             return maphieuDK;
         }

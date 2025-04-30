@@ -16,15 +16,24 @@ namespace ACCI_CertificationExaminationCenter
         private string MaNVLap;
         private string MaLichThi;
         private string MaKH;
-
         private PhieuDangKy_DAO dao = new PhieuDangKy_DAO();
+
+        public PhieuDangKy_BUS() { }
+
+        public PhieuDangKy_BUS(string MaNhanVien)
+        {
+            this.MaNVLap = MaNhanVien;
+        }
+
 
         // Methods
 
-        public string ThemPhieuDK(string MaNhanVien)
+        public string ThemPhieuDK()
         {
             string MaPhieuDK = "";
-            MaPhieuDK = dao.ThemPhieuDK(MaNhanVien);
+            dao.Connect();
+            MaPhieuDK = dao.ThemPhieuDK(MaNVLap);
+            dao.Disconnect();
             return MaPhieuDK;
         }
 

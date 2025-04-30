@@ -89,7 +89,7 @@
             tctThongTinKH = new Guna.UI2.WinForms.Guna2TabControl();
             tbpTraCuuKH = new TabPage();
             btnTraCuuKH = new Button();
-            labelKetQuaTraCuu = new Label();
+            lblTBTraCuuKH = new Label();
             txtTimEmailKH = new Guna.UI2.WinForms.Guna2TextBox();
             labelTimEmail = new Label();
             txtTimSDTKH = new Guna.UI2.WinForms.Guna2TextBox();
@@ -104,7 +104,7 @@
             txtTraCuuSDTKH = new TextBox();
             label5 = new Label();
             panel4 = new Panel();
-            txtTraCuuDonVi = new TextBox();
+            txtTraCuuTenDonVi = new TextBox();
             label6 = new Label();
             panel5 = new Panel();
             txtTraCuuHoTenKH = new TextBox();
@@ -780,7 +780,7 @@
             // 
             tbpTraCuuKH.BackColor = Color.White;
             tbpTraCuuKH.Controls.Add(btnTraCuuKH);
-            tbpTraCuuKH.Controls.Add(labelKetQuaTraCuu);
+            tbpTraCuuKH.Controls.Add(lblTBTraCuuKH);
             tbpTraCuuKH.Controls.Add(txtTimEmailKH);
             tbpTraCuuKH.Controls.Add(labelTimEmail);
             tbpTraCuuKH.Controls.Add(txtTimSDTKH);
@@ -813,19 +813,20 @@
             btnTraCuuKH.TabIndex = 52;
             btnTraCuuKH.Text = "Tra cứu";
             btnTraCuuKH.UseVisualStyleBackColor = false;
-            btnTraCuuKH.Click += btnTraCuu_Click;
+            btnTraCuuKH.Click += btnTraCuuKH_Click;
             // 
-            // labelKetQuaTraCuu
+            // lblTBTraCuuKH
             // 
-            labelKetQuaTraCuu.AutoSize = true;
-            labelKetQuaTraCuu.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelKetQuaTraCuu.ForeColor = Color.Red;
-            labelKetQuaTraCuu.Location = new Point(2, 289);
-            labelKetQuaTraCuu.Margin = new Padding(2, 0, 2, 0);
-            labelKetQuaTraCuu.Name = "labelKetQuaTraCuu";
-            labelKetQuaTraCuu.Size = new Size(181, 20);
-            labelKetQuaTraCuu.TabIndex = 53;
-            labelKetQuaTraCuu.Text = "Không tìm thấy thông tin";
+            lblTBTraCuuKH.AutoSize = true;
+            lblTBTraCuuKH.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTBTraCuuKH.ForeColor = Color.Red;
+            lblTBTraCuuKH.Location = new Point(2, 289);
+            lblTBTraCuuKH.Margin = new Padding(2, 0, 2, 0);
+            lblTBTraCuuKH.Name = "lblTBTraCuuKH";
+            lblTBTraCuuKH.Size = new Size(181, 20);
+            lblTBTraCuuKH.TabIndex = 53;
+            lblTBTraCuuKH.Text = "Không tìm thấy thông tin";
+            lblTBTraCuuKH.Visible = false;
             // 
             // txtTimEmailKH
             // 
@@ -1001,7 +1002,7 @@
             // 
             // panel4
             // 
-            panel4.Controls.Add(txtTraCuuDonVi);
+            panel4.Controls.Add(txtTraCuuTenDonVi);
             panel4.Controls.Add(label6);
             panel4.Location = new Point(0, 243);
             panel4.Margin = new Padding(2);
@@ -1009,15 +1010,15 @@
             panel4.Size = new Size(684, 38);
             panel4.TabIndex = 46;
             // 
-            // txtTraCuuDonVi
+            // txtTraCuuTenDonVi
             // 
-            txtTraCuuDonVi.Dock = DockStyle.Fill;
-            txtTraCuuDonVi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTraCuuDonVi.Location = new Point(89, 0);
-            txtTraCuuDonVi.Margin = new Padding(2);
-            txtTraCuuDonVi.Name = "txtTraCuuDonVi";
-            txtTraCuuDonVi.Size = new Size(595, 30);
-            txtTraCuuDonVi.TabIndex = 1;
+            txtTraCuuTenDonVi.Dock = DockStyle.Fill;
+            txtTraCuuTenDonVi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTraCuuTenDonVi.Location = new Point(89, 0);
+            txtTraCuuTenDonVi.Margin = new Padding(2);
+            txtTraCuuTenDonVi.Name = "txtTraCuuTenDonVi";
+            txtTraCuuTenDonVi.Size = new Size(595, 30);
+            txtTraCuuTenDonVi.TabIndex = 1;
             // 
             // label6
             // 
@@ -1130,6 +1131,7 @@
             lblTBThemKH.Size = new Size(127, 20);
             lblTBThemKH.TabIndex = 55;
             lblTBThemKH.Text = "Thông tin hợp lệ!";
+            lblTBThemKH.Visible = false;
             // 
             // btnKiemTraKH
             // 
@@ -1143,6 +1145,7 @@
             btnKiemTraKH.TabIndex = 54;
             btnKiemTraKH.Text = "Kiểm tra";
             btnKiemTraKH.UseVisualStyleBackColor = false;
+            btnKiemTraKH.Click += btnKiemTraKH_Click;
             // 
             // panel7
             // 
@@ -1349,6 +1352,7 @@
             lblTBThemTS.Size = new Size(181, 20);
             lblTBThemTS.TabIndex = 69;
             lblTBThemTS.Text = "Không tìm thấy thông tin";
+            lblTBThemTS.Visible = false;
             // 
             // LapPhieuDangKy
             // 
@@ -1503,7 +1507,7 @@
         private PictureBox pbReset;
         private Guna.UI2.WinForms.Guna2TabControl tctThongTinKH;
         private TabPage tbpTraCuuKH;
-        private Label labelKetQuaTraCuu;
+        private Label lblTBTraCuuKH;
         private Button btnTraCuuKH;
         private Guna.UI2.WinForms.Guna2TextBox txtTimEmailKH;
         private Label labelTimEmail;
@@ -1519,7 +1523,7 @@
         private TextBox txtTraCuuSDTKH;
         private Label label5;
         private Panel panel4;
-        private TextBox txtTraCuuDonVi;
+        private TextBox txtTraCuuTenDonVi;
         private Label label6;
         private Panel panel5;
         private TextBox txtTraCuuHoTenKH;
