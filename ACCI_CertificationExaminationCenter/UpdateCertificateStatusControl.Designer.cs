@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateCertificateStatusControl));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             insert_result_button = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -78,9 +78,10 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(25, 25);
+            label1.Location = new Point(15, 16);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(630, 59);
+            label1.Size = new Size(396, 37);
             label1.TabIndex = 1;
             label1.Text = "Cập nhật trạng thái chứng chỉ";
             // 
@@ -89,38 +90,40 @@
             insert_result_button.BackColor = Color.DarkTurquoise;
             insert_result_button.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             insert_result_button.ForeColor = Color.Transparent;
-            insert_result_button.Location = new Point(486, 830);
+            insert_result_button.Location = new Point(299, 519);
             insert_result_button.Margin = new Padding(0);
             insert_result_button.Name = "insert_result_button";
-            insert_result_button.Size = new Size(721, 92);
+            insert_result_button.Size = new Size(444, 58);
             insert_result_button.TabIndex = 33;
             insert_result_button.Text = "Cập nhật trạng thái nhận chứng chỉ";
             insert_result_button.UseVisualStyleBackColor = false;
+            insert_result_button.Click += insert_result_button_Click;
             // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.Controls.Add(label2);
             flowLayoutPanel1.Controls.Add(search_sbd_guna2TextBox);
-            flowLayoutPanel1.Location = new Point(56, 150);
+            flowLayoutPanel1.Location = new Point(34, 94);
+            flowLayoutPanel1.Margin = new Padding(2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(855, 92);
+            flowLayoutPanel1.Size = new Size(526, 58);
             flowLayoutPanel1.TabIndex = 37;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(0, 25);
-            label2.Margin = new Padding(0, 25, 0, 0);
+            label2.Location = new Point(0, 16);
+            label2.Margin = new Padding(0, 16, 0, 0);
             label2.Name = "label2";
-            label2.Size = new Size(203, 45);
+            label2.Size = new Size(127, 28);
             label2.TabIndex = 0;
             label2.Text = "Số báo danh";
             // 
             // search_sbd_guna2TextBox
             // 
             search_sbd_guna2TextBox.BorderRadius = 20;
-            search_sbd_guna2TextBox.CustomizableEdges = customizableEdges3;
+            search_sbd_guna2TextBox.CustomizableEdges = customizableEdges1;
             search_sbd_guna2TextBox.DefaultText = "";
             search_sbd_guna2TextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             search_sbd_guna2TextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -131,14 +134,14 @@
             search_sbd_guna2TextBox.HoverState.BorderColor = Color.PowderBlue;
             search_sbd_guna2TextBox.IconRight = (Image)resources.GetObject("search_sbd_guna2TextBox.IconRight");
             search_sbd_guna2TextBox.IconRightOffset = new Point(10, 0);
-            search_sbd_guna2TextBox.Location = new Point(213, 10);
-            search_sbd_guna2TextBox.Margin = new Padding(10);
+            search_sbd_guna2TextBox.Location = new Point(133, 6);
+            search_sbd_guna2TextBox.Margin = new Padding(6);
             search_sbd_guna2TextBox.Name = "search_sbd_guna2TextBox";
-            search_sbd_guna2TextBox.Padding = new Padding(4);
+            search_sbd_guna2TextBox.Padding = new Padding(2);
             search_sbd_guna2TextBox.PlaceholderText = "";
             search_sbd_guna2TextBox.SelectedText = "";
-            search_sbd_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            search_sbd_guna2TextBox.Size = new Size(620, 72);
+            search_sbd_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            search_sbd_guna2TextBox.Size = new Size(382, 45);
             search_sbd_guna2TextBox.TabIndex = 32;
             // 
             // find_sbd_button
@@ -146,21 +149,22 @@
             find_sbd_button.BackColor = Color.MediumTurquoise;
             find_sbd_button.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             find_sbd_button.ForeColor = Color.Transparent;
-            find_sbd_button.Location = new Point(941, 150);
+            find_sbd_button.Location = new Point(579, 94);
             find_sbd_button.Margin = new Padding(0);
             find_sbd_button.Name = "find_sbd_button";
-            find_sbd_button.Size = new Size(266, 92);
+            find_sbd_button.Size = new Size(164, 58);
             find_sbd_button.TabIndex = 36;
             find_sbd_button.Text = "Tìm kiếm";
             find_sbd_button.UseVisualStyleBackColor = false;
+            find_sbd_button.Click += find_sbd_button_Click;
             // 
             // guna2Separator1
             // 
             guna2Separator1.FillThickness = 2;
-            guna2Separator1.Location = new Point(0, 100);
+            guna2Separator1.Location = new Point(0, 62);
             guna2Separator1.Margin = new Padding(0);
             guna2Separator1.Name = "guna2Separator1";
-            guna2Separator1.Size = new Size(1620, 21);
+            guna2Separator1.Size = new Size(997, 13);
             guna2Separator1.TabIndex = 39;
             // 
             // guna2ShadowPanel1
@@ -176,21 +180,23 @@
             guna2ShadowPanel1.Controls.Add(type_flowLayoutPanel);
             guna2ShadowPanel1.Controls.Add(gender_flowLayoutPanel);
             guna2ShadowPanel1.FillColor = Color.White;
-            guna2ShadowPanel1.Location = new Point(56, 271);
+            guna2ShadowPanel1.Location = new Point(34, 169);
+            guna2ShadowPanel1.Margin = new Padding(2);
             guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             guna2ShadowPanel1.Radius = 10;
             guna2ShadowPanel1.ShadowColor = Color.DimGray;
             guna2ShadowPanel1.ShadowShift = 10;
             guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            guna2ShadowPanel1.Size = new Size(1483, 479);
+            guna2ShadowPanel1.Size = new Size(913, 299);
             guna2ShadowPanel1.TabIndex = 40;
             // 
             // cert_pictureBox
             // 
             cert_pictureBox.Image = (Image)resources.GetObject("cert_pictureBox.Image");
-            cert_pictureBox.Location = new Point(92, 30);
+            cert_pictureBox.Location = new Point(57, 19);
+            cert_pictureBox.Margin = new Padding(2);
             cert_pictureBox.Name = "cert_pictureBox";
-            cert_pictureBox.Size = new Size(323, 415);
+            cert_pictureBox.Size = new Size(199, 259);
             cert_pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             cert_pictureBox.TabIndex = 58;
             cert_pictureBox.TabStop = false;
@@ -199,10 +205,10 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(454, 67);
+            label3.Location = new Point(279, 42);
             label3.Margin = new Padding(0);
             label3.Name = "label3";
-            label3.Size = new Size(269, 50);
+            label3.Size = new Size(178, 32);
             label3.TabIndex = 50;
             label3.Text = "Nguyễn Văn A";
             // 
@@ -210,18 +216,20 @@
             // 
             date_flowLayoutPanel.Controls.Add(date_label);
             date_flowLayoutPanel.Controls.Add(found_date_label);
-            date_flowLayoutPanel.Location = new Point(454, 260);
+            date_flowLayoutPanel.Location = new Point(279, 162);
+            date_flowLayoutPanel.Margin = new Padding(2);
             date_flowLayoutPanel.Name = "date_flowLayoutPanel";
-            date_flowLayoutPanel.Size = new Size(528, 44);
+            date_flowLayoutPanel.Size = new Size(325, 28);
             date_flowLayoutPanel.TabIndex = 54;
             // 
             // date_label
             // 
             date_label.AutoSize = true;
             date_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            date_label.Location = new Point(3, 0);
+            date_label.Location = new Point(2, 0);
+            date_label.Margin = new Padding(2, 0, 2, 0);
             date_label.Name = "date_label";
-            date_label.Size = new Size(124, 37);
+            date_label.Size = new Size(79, 23);
             date_label.TabIndex = 0;
             date_label.Text = "Ngày thi:";
             // 
@@ -229,27 +237,30 @@
             // 
             found_date_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             found_date_label.ForeColor = SystemColors.WindowFrame;
-            found_date_label.Location = new Point(133, 0);
+            found_date_label.Location = new Point(85, 0);
+            found_date_label.Margin = new Padding(2, 0, 2, 0);
             found_date_label.Name = "found_date_label";
-            found_date_label.Size = new Size(273, 44);
+            found_date_label.Size = new Size(168, 28);
             found_date_label.TabIndex = 1;
             // 
             // status_flowLayoutPanel
             // 
             status_flowLayoutPanel.Controls.Add(status_label);
             status_flowLayoutPanel.Controls.Add(found_status_label);
-            status_flowLayoutPanel.Location = new Point(454, 380);
+            status_flowLayoutPanel.Location = new Point(279, 238);
+            status_flowLayoutPanel.Margin = new Padding(2);
             status_flowLayoutPanel.Name = "status_flowLayoutPanel";
-            status_flowLayoutPanel.Size = new Size(528, 44);
+            status_flowLayoutPanel.Size = new Size(325, 28);
             status_flowLayoutPanel.TabIndex = 57;
             // 
             // status_label
             // 
             status_label.AutoSize = true;
             status_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            status_label.Location = new Point(3, 0);
+            status_label.Location = new Point(2, 0);
+            status_label.Margin = new Padding(2, 0, 2, 0);
             status_label.Name = "status_label";
-            status_label.Size = new Size(141, 37);
+            status_label.Size = new Size(91, 23);
             status_label.TabIndex = 0;
             status_label.Text = "Trạng thái:";
             // 
@@ -257,27 +268,30 @@
             // 
             found_status_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             found_status_label.ForeColor = SystemColors.WindowFrame;
-            found_status_label.Location = new Point(150, 0);
+            found_status_label.Location = new Point(97, 0);
+            found_status_label.Margin = new Padding(2, 0, 2, 0);
             found_status_label.Name = "found_status_label";
-            found_status_label.Size = new Size(320, 44);
+            found_status_label.Size = new Size(197, 28);
             found_status_label.TabIndex = 1;
             // 
             // sdt_flowLayoutPanel
             // 
             sdt_flowLayoutPanel.Controls.Add(sdt_label);
             sdt_flowLayoutPanel.Controls.Add(found_sdt_label);
-            sdt_flowLayoutPanel.Location = new Point(454, 220);
+            sdt_flowLayoutPanel.Location = new Point(279, 138);
+            sdt_flowLayoutPanel.Margin = new Padding(2);
             sdt_flowLayoutPanel.Name = "sdt_flowLayoutPanel";
-            sdt_flowLayoutPanel.Size = new Size(528, 44);
+            sdt_flowLayoutPanel.Size = new Size(325, 28);
             sdt_flowLayoutPanel.TabIndex = 53;
             // 
             // sdt_label
             // 
             sdt_label.AutoSize = true;
             sdt_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sdt_label.Location = new Point(3, 0);
+            sdt_label.Location = new Point(2, 0);
+            sdt_label.Margin = new Padding(2, 0, 2, 0);
             sdt_label.Name = "sdt_label";
-            sdt_label.Size = new Size(180, 37);
+            sdt_label.Size = new Size(115, 23);
             sdt_label.TabIndex = 0;
             sdt_label.Text = "Số điện thoại:";
             // 
@@ -285,27 +299,30 @@
             // 
             found_sdt_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             found_sdt_label.ForeColor = SystemColors.WindowFrame;
-            found_sdt_label.Location = new Point(189, 0);
+            found_sdt_label.Location = new Point(121, 0);
+            found_sdt_label.Margin = new Padding(2, 0, 2, 0);
             found_sdt_label.Name = "found_sdt_label";
-            found_sdt_label.Size = new Size(273, 44);
+            found_sdt_label.Size = new Size(168, 28);
             found_sdt_label.TabIndex = 1;
             // 
             // sbd_flowLayoutPanel
             // 
             sbd_flowLayoutPanel.Controls.Add(sbd_label);
             sbd_flowLayoutPanel.Controls.Add(found_sbd_label);
-            sbd_flowLayoutPanel.Location = new Point(454, 140);
+            sbd_flowLayoutPanel.Location = new Point(279, 88);
+            sbd_flowLayoutPanel.Margin = new Padding(2);
             sbd_flowLayoutPanel.Name = "sbd_flowLayoutPanel";
-            sbd_flowLayoutPanel.Size = new Size(528, 44);
+            sbd_flowLayoutPanel.Size = new Size(325, 28);
             sbd_flowLayoutPanel.TabIndex = 51;
             // 
             // sbd_label
             // 
             sbd_label.AutoSize = true;
             sbd_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sbd_label.Location = new Point(3, 0);
+            sbd_label.Location = new Point(2, 0);
+            sbd_label.Margin = new Padding(2, 0, 2, 0);
             sbd_label.Name = "sbd_label";
-            sbd_label.Size = new Size(173, 37);
+            sbd_label.Size = new Size(111, 23);
             sbd_label.TabIndex = 0;
             sbd_label.Text = "Số báo danh:";
             // 
@@ -313,27 +330,30 @@
             // 
             found_sbd_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             found_sbd_label.ForeColor = SystemColors.WindowFrame;
-            found_sbd_label.Location = new Point(182, 0);
+            found_sbd_label.Location = new Point(117, 0);
+            found_sbd_label.Margin = new Padding(2, 0, 2, 0);
             found_sbd_label.Name = "found_sbd_label";
-            found_sbd_label.Size = new Size(273, 44);
+            found_sbd_label.Size = new Size(168, 28);
             found_sbd_label.TabIndex = 1;
             // 
             // time_flowLayoutPanel
             // 
             time_flowLayoutPanel.Controls.Add(time_label);
             time_flowLayoutPanel.Controls.Add(found_time_label);
-            time_flowLayoutPanel.Location = new Point(454, 300);
+            time_flowLayoutPanel.Location = new Point(279, 188);
+            time_flowLayoutPanel.Margin = new Padding(2);
             time_flowLayoutPanel.Name = "time_flowLayoutPanel";
-            time_flowLayoutPanel.Size = new Size(528, 44);
+            time_flowLayoutPanel.Size = new Size(325, 28);
             time_flowLayoutPanel.TabIndex = 55;
             // 
             // time_label
             // 
             time_label.AutoSize = true;
             time_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            time_label.Location = new Point(3, 0);
+            time_label.Location = new Point(2, 0);
+            time_label.Margin = new Padding(2, 0, 2, 0);
             time_label.Name = "time_label";
-            time_label.Size = new Size(103, 37);
+            time_label.Size = new Size(65, 23);
             time_label.TabIndex = 0;
             time_label.Text = "Giờ thi:";
             // 
@@ -341,27 +361,30 @@
             // 
             found_time_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             found_time_label.ForeColor = SystemColors.WindowFrame;
-            found_time_label.Location = new Point(112, 0);
+            found_time_label.Location = new Point(71, 0);
+            found_time_label.Margin = new Padding(2, 0, 2, 0);
             found_time_label.Name = "found_time_label";
-            found_time_label.Size = new Size(273, 44);
+            found_time_label.Size = new Size(168, 28);
             found_time_label.TabIndex = 1;
             // 
             // type_flowLayoutPanel
             // 
             type_flowLayoutPanel.Controls.Add(type_label);
             type_flowLayoutPanel.Controls.Add(found_type_label);
-            type_flowLayoutPanel.Location = new Point(454, 340);
+            type_flowLayoutPanel.Location = new Point(279, 212);
+            type_flowLayoutPanel.Margin = new Padding(2);
             type_flowLayoutPanel.Name = "type_flowLayoutPanel";
-            type_flowLayoutPanel.Size = new Size(528, 44);
+            type_flowLayoutPanel.Size = new Size(325, 28);
             type_flowLayoutPanel.TabIndex = 56;
             // 
             // type_label
             // 
             type_label.AutoSize = true;
             type_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            type_label.Location = new Point(3, 0);
+            type_label.Location = new Point(2, 0);
+            type_label.Margin = new Padding(2, 0, 2, 0);
             type_label.Name = "type_label";
-            type_label.Size = new Size(184, 37);
+            type_label.Size = new Size(117, 23);
             type_label.TabIndex = 0;
             type_label.Text = "Loại đánh giá:";
             // 
@@ -369,27 +392,30 @@
             // 
             found_type_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             found_type_label.ForeColor = SystemColors.WindowFrame;
-            found_type_label.Location = new Point(193, 0);
+            found_type_label.Location = new Point(123, 0);
+            found_type_label.Margin = new Padding(2, 0, 2, 0);
             found_type_label.Name = "found_type_label";
-            found_type_label.Size = new Size(273, 44);
+            found_type_label.Size = new Size(168, 28);
             found_type_label.TabIndex = 1;
             // 
             // gender_flowLayoutPanel
             // 
             gender_flowLayoutPanel.Controls.Add(gender_label);
             gender_flowLayoutPanel.Controls.Add(found_gender_label);
-            gender_flowLayoutPanel.Location = new Point(454, 180);
+            gender_flowLayoutPanel.Location = new Point(279, 112);
+            gender_flowLayoutPanel.Margin = new Padding(2);
             gender_flowLayoutPanel.Name = "gender_flowLayoutPanel";
-            gender_flowLayoutPanel.Size = new Size(528, 44);
+            gender_flowLayoutPanel.Size = new Size(325, 28);
             gender_flowLayoutPanel.TabIndex = 52;
             // 
             // gender_label
             // 
             gender_label.AutoSize = true;
             gender_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            gender_label.Location = new Point(3, 0);
+            gender_label.Location = new Point(2, 0);
+            gender_label.Margin = new Padding(2, 0, 2, 0);
             gender_label.Name = "gender_label";
-            gender_label.Size = new Size(125, 37);
+            gender_label.Size = new Size(79, 23);
             gender_label.TabIndex = 0;
             gender_label.Text = "Giới tính:";
             // 
@@ -397,14 +423,15 @@
             // 
             found_gender_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             found_gender_label.ForeColor = SystemColors.WindowFrame;
-            found_gender_label.Location = new Point(134, 0);
+            found_gender_label.Location = new Point(85, 0);
+            found_gender_label.Margin = new Padding(2, 0, 2, 0);
             found_gender_label.Name = "found_gender_label";
-            found_gender_label.Size = new Size(273, 44);
+            found_gender_label.Size = new Size(168, 28);
             found_gender_label.TabIndex = 1;
             // 
             // UpdateCertificateStatusControl
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(guna2ShadowPanel1);
@@ -415,7 +442,7 @@
             Controls.Add(label1);
             Margin = new Padding(0);
             Name = "UpdateCertificateStatusControl";
-            Size = new Size(1620, 1169);
+            Size = new Size(997, 731);
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
             guna2ShadowPanel1.ResumeLayout(false);

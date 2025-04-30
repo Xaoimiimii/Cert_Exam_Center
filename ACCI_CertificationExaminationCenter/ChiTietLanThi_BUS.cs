@@ -20,8 +20,12 @@ namespace ACCI_CertificationExaminationCenter
 
         public static DataTable LayTTChiTietLanThi(string SoBaoDanh)
         {
+            DataTable dt = new DataTable();
             ChiTietLanThi_DAO dao = new ChiTietLanThi_DAO();
-            return dao.LayTTChiTietLanThi(SoBaoDanh);
+            dao.Connect();
+            dt =  dao.LayTTChiTietLanThi(SoBaoDanh);
+            dao.Disconnect();
+            return dt;
         }
     }
 }
