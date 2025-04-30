@@ -17,21 +17,28 @@ namespace ACCI_CertificationExaminationCenter.BUS
         private int SoLuongDaDK { get; set; }
         private string LoaiDanhGia { get; set; }
 
-        private LichThi_DAO dao = new LichThi_DAO();
-
-        public DataTable LayDSLichThi()
+        public static DataTable LayDSLichThi()
         {
-            return dao.LayDSLichThi();
+            LichThi_DAO.Connect();
+            DataTable dt = LichThi_DAO.LayDSLichThi();
+            LichThi_DAO.Disconnect();
+            return dt;
         }
 
-        public DataTable LayTTLichThi(string maLichThi)
+        public static DataTable LayTTLichThi(string maLichThi)
         {
-            return dao.LayTTLichThi(maLichThi);
+            LichThi_DAO.Connect();
+            DataTable dt = LichThi_DAO.LayTTLichThi(maLichThi);
+            LichThi_DAO.Disconnect();
+            return dt;
         }
 
-        public DataTable LayTTLichThi(DateOnly? ngayThi, TimeOnly? thoiGianThi, string? loaiDanhGia)
+        public static DataTable LayTTLichThi(DateOnly? ngayThi, TimeOnly? thoiGianThi, string? loaiDanhGia)
         {
-            return dao.LayTTLichThi(ngayThi, thoiGianThi, loaiDanhGia);
+            LichThi_DAO.Connect();
+            DataTable dt = LichThi_DAO.LayTTLichThi(ngayThi, thoiGianThi, loaiDanhGia);
+            LichThi_DAO.Disconnect();
+            return dt;
         }
     }
 }

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             ts_birth_textBox = new TextBox();
             ts_email_panel = new Panel();
             ts_email_textBox = new TextBox();
@@ -786,7 +786,7 @@
             // txtTimEmail
             // 
             txtTimEmail.BorderRadius = 20;
-            txtTimEmail.CustomizableEdges = customizableEdges5;
+            txtTimEmail.CustomizableEdges = customizableEdges1;
             txtTimEmail.DefaultText = "";
             txtTimEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTimEmail.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -804,7 +804,7 @@
             txtTimEmail.Name = "txtTimEmail";
             txtTimEmail.PlaceholderText = "";
             txtTimEmail.SelectedText = "";
-            txtTimEmail.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtTimEmail.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtTimEmail.Size = new Size(441, 51);
             txtTimEmail.TabIndex = 51;
             txtTimEmail.TextOffset = new Point(20, 0);
@@ -823,7 +823,7 @@
             // txtTimSdt
             // 
             txtTimSdt.BorderRadius = 20;
-            txtTimSdt.CustomizableEdges = customizableEdges7;
+            txtTimSdt.CustomizableEdges = customizableEdges3;
             txtTimSdt.DefaultText = "";
             txtTimSdt.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTimSdt.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -841,7 +841,7 @@
             txtTimSdt.Name = "txtTimSdt";
             txtTimSdt.PlaceholderText = "";
             txtTimSdt.SelectedText = "";
-            txtTimSdt.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtTimSdt.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtTimSdt.Size = new Size(328, 51);
             txtTimSdt.TabIndex = 49;
             txtTimSdt.TextOffset = new Point(20, 0);

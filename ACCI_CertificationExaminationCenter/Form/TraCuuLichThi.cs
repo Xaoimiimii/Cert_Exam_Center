@@ -14,7 +14,6 @@ namespace ACCI_CertificationExaminationCenter
 {
     public partial class TraCuuLichThi : Form
     {
-        private LichThi_BUS bus = new LichThi_BUS();
         private DataTable LichThiDaChon;
 
         public TraCuuLichThi()
@@ -71,7 +70,7 @@ namespace ACCI_CertificationExaminationCenter
             }
 
 
-            DataTable dtLichThi = bus.LayTTLichThi(ngayThi, thoiGianThi, loaiDanhGia);
+            DataTable dtLichThi = LichThi_BUS.LayTTLichThi(ngayThi, thoiGianThi, loaiDanhGia);
 
             if (dtLichThi != null && dtLichThi.Rows.Count > 0)
             {
@@ -87,7 +86,7 @@ namespace ACCI_CertificationExaminationCenter
 
         public void TraCuuLichThi_Load(object sender, EventArgs e)
         {
-            DataTable dsLichThi = bus.LayDSLichThi();
+            DataTable dsLichThi = LichThi_BUS.LayDSLichThi();
             dgvDSLichThi.DataSource = dsLichThi;
             dgvDSLichThi.Columns["NgayThi"].DefaultCellStyle.Format = "dd/MM/yyyy";
         }
@@ -97,7 +96,7 @@ namespace ACCI_CertificationExaminationCenter
             if (e.RowIndex < 0) return;
 
             string selectedMaLichThi = dgvDSLichThi.Rows[e.RowIndex].Cells[0].Value.ToString();
-            LichThiDaChon = bus.LayTTLichThi(selectedMaLichThi);
+            LichThiDaChon = LichThi_BUS.LayTTLichThi(selectedMaLichThi);
         }
 
         public void btnTraCuu_Click(object sender, EventArgs e)

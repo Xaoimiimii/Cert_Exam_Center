@@ -10,10 +10,10 @@ namespace ACCI_CertificationExaminationCenter.DAO
 {
     internal class LichThi_DAO
     {
-        private SqlConnection connection;
-        private string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
+        private static SqlConnection connection;
+        private static string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
 
-        public void Connect()
+        public static void Connect()
         {
             if (connection == null)
                 connection = new SqlConnection(strConnection);
@@ -22,82 +22,58 @@ namespace ACCI_CertificationExaminationCenter.DAO
                 connection.Open();
         }
 
-        public void Disconnect()
+        public static void Disconnect()
         {
             if (connection != null && connection.State == ConnectionState.Open)
                 connection.Close();
         }
 
-        public DataTable LayDSLichThi()
+        public static DataTable LayDSLichThi()
         {
+            SqlCommand cmd = new SqlCommand("LayDSLichThi", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
-            try
-            {
-                Connect();
-                SqlCommand cmd = new SqlCommand("LayDSLichThi", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                adapter.Fill(dt);
-            }
-            finally
-            {
-                Disconnect();
-            }
+            adapter.Fill(dt);
             return dt;
         }
 
 
-        public DataTable LayTTLichThi(string maLichThi)
+        public static DataTable LayTTLichThi(string maLichThi)
         {
+            SqlCommand cmd = new SqlCommand("LayTTLichThi_MaLichThi", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@MaLichThi", maLichThi);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
-            try
-            {
-                Connect();
-                SqlCommand cmd = new SqlCommand("LayTTLichThi_MaLichThi", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MaLichThi", maLichThi);
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                adapter.Fill(dt);
-            }
-            finally
-            {
-                Disconnect();
-            }
+            adapter.Fill(dt);
             return dt;
         }
 
-        public DataTable LayTTLichThi(DateOnly? ngayThi, TimeOnly? thoiGianThi, string? loaiDanhGia)
+        public static DataTable LayTTLichThi(DateOnly? ngayThi, TimeOnly? thoiGianThi, string? loaiDanhGia)
         {
+            SqlCommand cmd = new SqlCommand("LayTTLichThi_Ngay_ThoiGian_LoaiDanhGia", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            if (ngayThi.HasValue)
+                cmd.Parameters.AddWithValue("@NgayThi", ngayThi);
+            else
+                cmd.Parameters.AddWithValue("@NgayThi", DBNull.Value);
+
+            if (thoiGianThi.HasValue)
+                cmd.Parameters.AddWithValue("@ThoiGianThi", thoiGianThi);
+            else
+                cmd.Parameters.AddWithValue("@ThoiGianThi", DBNull.Value);
+
+            if (!string.IsNullOrEmpty(loaiDanhGia))
+                cmd.Parameters.AddWithValue("@LoaiDanhGia", loaiDanhGia);
+            else
+                cmd.Parameters.AddWithValue("@LoaiDanhGia", DBNull.Value);
+
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
-            try
-            {
-                Connect();
-                SqlCommand cmd = new SqlCommand("LayTTLichThi_Ngay_ThoiGian_LoaiDanhGia", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
+            adapter.Fill(dt);
 
-                if (ngayThi.HasValue)
-                    cmd.Parameters.AddWithValue("@NgayThi", ngayThi);
-                else
-                    cmd.Parameters.AddWithValue("@NgayThi", DBNull.Value);
-
-                if (thoiGianThi.HasValue)
-                    cmd.Parameters.AddWithValue("@ThoiGianThi", thoiGianThi);
-                else
-                    cmd.Parameters.AddWithValue("@ThoiGianThi", DBNull.Value);
-
-                if (!string.IsNullOrEmpty(loaiDanhGia))
-                    cmd.Parameters.AddWithValue("@LoaiDanhGia", loaiDanhGia);
-                else
-                    cmd.Parameters.AddWithValue("@LoaiDanhGia", DBNull.Value);
-
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                adapter.Fill(dt);
-            }
-            finally
-            {
-                Disconnect();
-            }
             return dt;
         }
     }

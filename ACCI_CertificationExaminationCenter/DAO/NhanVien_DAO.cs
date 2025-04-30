@@ -8,7 +8,7 @@ using Microsoft.Data.SqlClient;
 
 namespace ACCI_CertificationExaminationCenter.DAO
 {
-    internal class TaiKhoan_DAO
+    internal class NhanVien_DAO
     {
         private static SqlConnection connection;
         private static string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
@@ -28,14 +28,15 @@ namespace ACCI_CertificationExaminationCenter.DAO
                 connection.Close();
         }
 
-        public static bool KiemTraTaiKhoan(string tenDangNhap, string matKhau)
+        public static DataTable LayTTNhanVien(string maNV)
         {
-            SqlCommand cmd = new SqlCommand("KiemTraTaiKhoan", connection);
+            SqlCommand cmd = new SqlCommand("LayTTNhanVien", connection);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@TenDangNhap", tenDangNhap);
-            cmd.Parameters.AddWithValue("@MatKhau", matKhau);
-            int result = (int)cmd.ExecuteScalar();
-            return result > 0;
+            cmd.Parameters.AddWithValue("@MaNhanVien", maNV);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
     }
 }
