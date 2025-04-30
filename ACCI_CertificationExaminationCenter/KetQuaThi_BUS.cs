@@ -23,6 +23,13 @@ namespace ACCI_CertificationExaminationCenter
             dao.Disconnect();
         }
 
+        public void ThemKetQuaThi(string SoBaoDanh, int Diem, DateTime? NgayNhanChungChi)
+        {
+            dao.Connect();
+            dao.ThemKQThi(SoBaoDanh, Diem, NgayNhanChungChi);
+            dao.Disconnect();
+        }
+
     }
 
 }

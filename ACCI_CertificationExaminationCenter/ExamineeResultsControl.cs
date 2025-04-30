@@ -35,7 +35,7 @@ namespace ACCI_CertificationExaminationCenter
 
         private void XoaThongTin()
         {
-            lbHoTen.Text = "";
+            lbHoTen.Text = "Họ và tên HS";
             lbSoBaoDanh.Text = "";
             lbGioiTinh.Text = "";
             lbSoDT.Text = "";
@@ -47,7 +47,7 @@ namespace ACCI_CertificationExaminationCenter
 
         private void HienThiTB(string ThongBao)
         {
-            MessageBox.Show(ThongBao, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(ThongBao, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void find_sbd_button_Click(object sender, EventArgs e)
@@ -98,15 +98,67 @@ namespace ACCI_CertificationExaminationCenter
 
         private void save_button_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(txtDiem.Text.Trim(), out int diemThi))
+            string soBaoDanh = lbSoBaoDanh.Text.Trim();
+            string inputNgayCap = txtNgayCap.Text.Trim();
+            string inputDiem = txtDiem.Text.Trim();
+
+            if (string.IsNullOrEmpty(soBaoDanh))
             {
-                
-            }
-            else
-            {
-                MessageBox.Show("Điểm thi không hợp lệ! Vui lòng nhập số nguyên.");
+                HienThiTB("Số báo danh chưa được nhập!");
+                return;
             }
 
+            if (!capChungChi_checkBox.Checked && !string.IsNullOrEmpty(inputNgayCap))
+            {
+                HienThiTB("Ô 'Cấp chứng chỉ' chưa được tick!");
+                return;
+            }
+
+            if (capChungChi_checkBox.Checked && string.IsNullOrEmpty(inputNgayCap))
+            {
+                HienThiTB("Chưa nhập ngày cấp chứng chỉ!");
+                return;
+            }
+
+            if (!int.TryParse(inputDiem, out int diemThi))
+            {
+                HienThiTB("Điểm thi không hợp lệ! Vui lòng nhập số nguyên.");
+                return;
+            }
+
+            if (diemThi < 0 || diemThi > 100)
+            {
+                HienThiTB("Điểm thi không hợp lệ! Vui lòng nhập trong khoảng 0–100.");
+                return;
+            }
+
+            try
+            {
+                KetQuaThi_BUS bus = new KetQuaThi_BUS();
+
+                if (capChungChi_checkBox.Checked)
+                {
+                    if (!DateTime.TryParseExact(inputNgayCap, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime ngayNhanChungChi))
+                    {
+                        HienThiTB("Ngày cấp không hợp lệ! Vui lòng nhập đúng định dạng dd/MM/yyyy.");
+                        return;
+                    }
+
+                    bus.ThemKetQuaThi(soBaoDanh, diemThi, ngayNhanChungChi);
+                }
+                else
+                {
+                    bus.ThemKetQuaThi(soBaoDanh, diemThi, null);
+                }
+
+                HienThiTB("Thêm kết quả thi thành công!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
     }
 }

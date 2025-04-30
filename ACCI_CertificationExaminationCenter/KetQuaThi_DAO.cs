@@ -31,7 +31,6 @@ namespace ACCI_CertificationExaminationCenter
         {
             try
             {
-                Connect();
                 connection.InfoMessage += (sender, e) =>
                 {
                     throw new Exception(e.Message);//Để bắt lỗi
@@ -54,10 +53,40 @@ namespace ACCI_CertificationExaminationCenter
             {
                 throw new Exception(ex.Message);
             }
-            finally
+        }
+
+        public void ThemKQThi(string soBaoDanh, int diem, DateTime? ngayCapChungChi)
+        {
+            try
             {
-                Disconnect();
+
+                connection.InfoMessage += (sender, e) =>
+                {
+                    throw new Exception(e.Message);
+                };
+
+                using (SqlCommand cmd = new SqlCommand("ThemKQThi", connection))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@SoBaoDanh", soBaoDanh);
+                    cmd.Parameters.AddWithValue("@Diem", diem);
+                    cmd.Parameters.AddWithValue("@NgayCapChungChi", (object?)ngayCapChungChi ?? DBNull.Value);
+
+                    cmd.ExecuteNonQuery();
+
+                    Console.WriteLine("Đã thêm kết quả thi cho SBD: " + soBaoDanh);
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Lỗi SQL: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi: " + ex.Message);
             }
         }
+
     }
 }
