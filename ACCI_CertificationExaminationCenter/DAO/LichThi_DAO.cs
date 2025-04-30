@@ -67,7 +67,7 @@ namespace ACCI_CertificationExaminationCenter.DAO
             return dt;
         }
 
-        public DataTable LayTTLichThi(DateTime? ngayThi, TimeSpan? thoiGianThi, string? loaiDanhGia)
+        public DataTable LayTTLichThi(DateOnly? ngayThi, TimeOnly? thoiGianThi, string? loaiDanhGia)
         {
             DataTable dt = new DataTable();
             try
@@ -77,12 +77,12 @@ namespace ACCI_CertificationExaminationCenter.DAO
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 if (ngayThi.HasValue)
-                    cmd.Parameters.AddWithValue("@NgayThi", ngayThi.Value.Date);
+                    cmd.Parameters.AddWithValue("@NgayThi", ngayThi);
                 else
                     cmd.Parameters.AddWithValue("@NgayThi", DBNull.Value);
 
                 if (thoiGianThi.HasValue)
-                    cmd.Parameters.AddWithValue("@ThoiGianThi", thoiGianThi.Value);
+                    cmd.Parameters.AddWithValue("@ThoiGianThi", thoiGianThi);
                 else
                     cmd.Parameters.AddWithValue("@ThoiGianThi", DBNull.Value);
 

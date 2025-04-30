@@ -11,8 +11,8 @@ namespace ACCI_CertificationExaminationCenter.BUS
     public class LichThi_BUS
     {
         private string MaLichThi { get; set; }
-        private DateTime NgayThi { get; set; }
-        private TimeSpan ThoiGianThi { get; set; }
+        private DateOnly NgayThi { get; set; }
+        private TimeOnly ThoiGianThi { get; set; }
         private int SoLuongToiDa { get; set; }
         private int SoLuongDaDK { get; set; }
         private string LoaiDanhGia { get; set; }
@@ -29,7 +29,7 @@ namespace ACCI_CertificationExaminationCenter.BUS
             return dao.LayTTLichThi(maLichThi);
         }
 
-        public DataTable LayTTLichThi(DateTime? ngayThi, TimeSpan? thoiGianThi, string? loaiDanhGia)
+        public DataTable LayTTLichThi(DateOnly? ngayThi, TimeOnly? thoiGianThi, string? loaiDanhGia)
         {
             return dao.LayTTLichThi(ngayThi, thoiGianThi, loaiDanhGia);
         }

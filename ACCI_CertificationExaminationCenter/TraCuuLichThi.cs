@@ -29,15 +29,15 @@ namespace ACCI_CertificationExaminationCenter
 
         public void TraCuuLichThiTheoNgayGioLoai()
         {
-            DateTime? ngayThi = null;
-            TimeSpan? thoiGianThi = null;
+            DateOnly? ngayThi = null;
+            TimeOnly? thoiGianThi = null;
             string? loaiDanhGia = null;
 
 
             string ngayNhap = txtTimNgayThi.Text.Trim();
             if (!string.IsNullOrEmpty(ngayNhap))
             {
-                if (DateTime.TryParseExact(ngayNhap, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime parsedNgayThi))
+                if (DateOnly.TryParseExact(ngayNhap, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateOnly parsedNgayThi))
                 {
                     ngayThi = parsedNgayThi;
                 }
@@ -52,7 +52,7 @@ namespace ACCI_CertificationExaminationCenter
             string gioNhap = txtTimGioThi.Text.Trim();
             if (!string.IsNullOrEmpty(gioNhap))
             {
-                if (TimeSpan.TryParse(gioNhap, out TimeSpan parsedGioThi))
+                if (TimeOnly.TryParse(gioNhap, out TimeOnly parsedGioThi))
                 {
                     thoiGianThi = parsedGioThi;
                 }
