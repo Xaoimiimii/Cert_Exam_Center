@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ACCI_CertificationExaminationCenter
+namespace ACCI_CertificationExaminationCenter.DAO
 {
     internal class LichThi_DAO
     {
         private SqlConnection connection;
         private string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
 
-        private void Connect()
+        public void Connect()
         {
             if (connection == null)
                 connection = new SqlConnection(strConnection);
@@ -22,7 +22,7 @@ namespace ACCI_CertificationExaminationCenter
                 connection.Open();
         }
 
-        private void Disconnect()
+        public void Disconnect()
         {
             if (connection != null && connection.State == ConnectionState.Open)
                 connection.Close();
@@ -100,28 +100,5 @@ namespace ACCI_CertificationExaminationCenter
             }
             return dt;
         }
-
-
-
-        //public DataTable LayTTLichThi(DateTime ngayThi, TimeSpan thoiGianThi, string loaiDanhGia)
-        //{
-        //    DataTable dt = new DataTable();
-        //    try
-        //    {
-        //        Connect();
-        //        SqlCommand cmd = new SqlCommand("LayTTLichThi_Ngay_ThoiGian_LoaiDanhGia", connection);
-        //        cmd.CommandType = CommandType.StoredProcedure;
-        //        cmd.Parameters.AddWithValue("@NgayThi", ngayThi.Date);
-        //        cmd.Parameters.AddWithValue("@ThoiGianThi", thoiGianThi);
-        //        cmd.Parameters.AddWithValue("@LoaiDanhGia", loaiDanhGia);
-        //        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-        //        adapter.Fill(dt);
-        //    }
-        //    finally
-        //    {
-        //        Disconnect();
-        //    }
-        //    return dt;
-        //}
     }
 }

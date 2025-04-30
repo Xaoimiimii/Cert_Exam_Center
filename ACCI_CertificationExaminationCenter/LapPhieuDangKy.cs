@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ACCI_CertificationExaminationCenter.BUS;
 
 namespace ACCI_CertificationExaminationCenter
 {
@@ -30,11 +31,12 @@ namespace ACCI_CertificationExaminationCenter
             TraCuuLichThi form = new TraCuuLichThi();
             if (form.ShowDialog() == DialogResult.OK)
             {
-                LichThi_BUS lichThi = form.LichThiDaChon;
-                txtMaLichThi.Text = lichThi.MaLichThi;
-                txtNgayThi.Text = lichThi.NgayThi.ToString("dd/MM/yyyy");
-                txtThoiGianThi.Text = lichThi.ThoiGianThi.ToString(@"hh\:mm");
-                txtLoaiDGNL.Text = lichThi.LoaiDanhGia;
+                DataTable lichThi = form.LayLichThiDaChon();
+                DataRow dataRow = lichThi.Rows[0];
+                txtMaLichThi.Text = dataRow[0].ToString();
+                txtNgayThi.Text = Convert.ToDateTime(dataRow[1]).ToString("dd/MM/yyyy");
+                txtThoiGianThi.Text = ((TimeSpan)dataRow[2]).ToString(@"hh\:mm");
+                txtLoaiDGNL.Text = dataRow[3].ToString();
             }
         }
     }

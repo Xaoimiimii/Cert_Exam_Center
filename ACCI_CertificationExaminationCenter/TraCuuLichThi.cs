@@ -8,20 +8,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ACCI_CertificationExaminationCenter.BUS;
 
 namespace ACCI_CertificationExaminationCenter
 {
     public partial class TraCuuLichThi : Form
     {
         private LichThi_BUS bus = new LichThi_BUS();
-        public LichThi_BUS LichThiDaChon { get; private set; }
+        private DataTable LichThiDaChon;
 
         public TraCuuLichThi()
         {
             InitializeComponent();
         }
 
-        private void TraCuuLichThiTheoNgayGioLoai()
+        public DataTable LayLichThiDaChon()
+        {
+            return LichThiDaChon;
+        }
+
+        public void TraCuuLichThiTheoNgayGioLoai()
         {
             DateTime? ngayThi = null;
             TimeSpan? thoiGianThi = null;
@@ -65,12 +71,11 @@ namespace ACCI_CertificationExaminationCenter
             }
 
 
-            List<LichThi_BUS> dsLichThi = bus.LayTTLichThi(ngayThi, thoiGianThi, loaiDanhGia);
+            DataTable dtLichThi = bus.LayTTLichThi(ngayThi, thoiGianThi, loaiDanhGia);
 
-
-            if (dsLichThi != null && dsLichThi.Count > 0)
+            if (dtLichThi != null && dtLichThi.Rows.Count > 0)
             {
-                dgvDSLichThi.DataSource = dsLichThi;
+                dgvDSLichThi.DataSource = dtLichThi;
                 dgvDSLichThi.Columns["NgayThi"].DefaultCellStyle.Format = "dd/MM/yyyy";
             }
             else
@@ -80,27 +85,27 @@ namespace ACCI_CertificationExaminationCenter
         }
 
 
-        private void TraCuuLichThi_Load(object sender, EventArgs e)
+        public void TraCuuLichThi_Load(object sender, EventArgs e)
         {
-            List<LichThi_BUS> dsLichThi = bus.LayDSLichThi();
+            DataTable dsLichThi = bus.LayDSLichThi();
             dgvDSLichThi.DataSource = dsLichThi;
             dgvDSLichThi.Columns["NgayThi"].DefaultCellStyle.Format = "dd/MM/yyyy";
         }
 
-        private void dgvDSLichThi_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void dgvDSLichThi_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
 
             string selectedMaLichThi = dgvDSLichThi.Rows[e.RowIndex].Cells[0].Value.ToString();
-            LichThiDaChon = bus.LayTTLichThi(selectedMaLichThi).FirstOrDefault();
+            LichThiDaChon = bus.LayTTLichThi(selectedMaLichThi);
         }
 
-        private void btnTraCuu_Click(object sender, EventArgs e)
+        public void btnTraCuu_Click(object sender, EventArgs e)
         {
             TraCuuLichThiTheoNgayGioLoai();
         }
 
-        private void btnXacNhan_Click(object sender, EventArgs e)
+        public void btnXacNhan_Click(object sender, EventArgs e)
         {
             if (LichThiDaChon != null)
             {
@@ -113,19 +118,19 @@ namespace ACCI_CertificationExaminationCenter
             }
         }
 
-        private void btnTroVe_Click(object sender, EventArgs e)
+        public void btnTroVe_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
-        private void txtTimNgayThi_IconRightClick(object sender, EventArgs e)
+        public void txtTimNgayThi_IconRightClick(object sender, EventArgs e)
         {
             txtTimNgayThi.Text = string.Empty;
             TraCuuLichThiTheoNgayGioLoai();
         }
 
-        private void txtTimGioThi_IconRightClick(object sender, EventArgs e)
+        public void txtTimGioThi_IconRightClick(object sender, EventArgs e)
         {
             txtTimGioThi.Text = string.Empty;
             TraCuuLichThiTheoNgayGioLoai();
