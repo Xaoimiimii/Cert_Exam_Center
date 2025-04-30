@@ -11,7 +11,12 @@ namespace ACCI_CertificationExaminationCenter
     internal class LichThi_DAO
     {
         private SqlConnection connection;
-        private string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
+        //private string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
+        string strConnection = "Data Source=192.168.1.109,1433;" +
+                       "Initial Catalog=PTTK;" +
+                       "User ID=sa;" +
+                       "Password=Lucia.N123;" +
+                       "TrustServerCertificate=True;";
 
         private void Connect()
         {

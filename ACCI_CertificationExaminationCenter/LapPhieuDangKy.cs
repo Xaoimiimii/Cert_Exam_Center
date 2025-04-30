@@ -25,7 +25,7 @@ namespace ACCI_CertificationExaminationCenter
 
         }
 
-        private void select_exam_button_Click(object sender, EventArgs e)
+        private void btnTraCuuLichThi_Click(object sender, EventArgs e)
         {
             TraCuuLichThi form = new TraCuuLichThi();
             if (form.ShowDialog() == DialogResult.OK)
