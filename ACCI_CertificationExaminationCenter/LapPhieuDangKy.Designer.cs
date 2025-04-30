@@ -32,7 +32,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            txtNgaySinhTS = new TextBox();
             ts_email_panel = new Panel();
             txtEmailTS = new TextBox();
             ts_email_label = new Label();
@@ -68,6 +67,7 @@
             guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
             btnTaoPDK = new Button();
             ts_birth_panel = new Panel();
+            dtpNgaySinhTS = new DateTimePicker();
             tt_kh_title_label = new Label();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             label1 = new Label();
@@ -134,6 +134,7 @@
             cbbThemGioiTinhKH = new ComboBox();
             label14 = new Label();
             lblTBThemTS = new Label();
+            btnXoaTS = new Button();
             ts_email_panel.SuspendLayout();
             ts_address_panel.SuspendLayout();
             guna2ShadowPanel1.SuspendLayout();
@@ -165,24 +166,14 @@
             panel12.SuspendLayout();
             SuspendLayout();
             // 
-            // txtNgaySinhTS
-            // 
-            txtNgaySinhTS.Dock = DockStyle.Fill;
-            txtNgaySinhTS.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNgaySinhTS.Location = new Point(87, 0);
-            txtNgaySinhTS.Margin = new Padding(2);
-            txtNgaySinhTS.Name = "txtNgaySinhTS";
-            txtNgaySinhTS.Size = new Size(206, 30);
-            txtNgaySinhTS.TabIndex = 1;
-            // 
             // ts_email_panel
             // 
             ts_email_panel.Controls.Add(txtEmailTS);
             ts_email_panel.Controls.Add(ts_email_label);
-            ts_email_panel.Location = new Point(406, 821);
+            ts_email_panel.Location = new Point(386, 821);
             ts_email_panel.Margin = new Padding(2);
             ts_email_panel.Name = "ts_email_panel";
-            ts_email_panel.Size = new Size(548, 38);
+            ts_email_panel.Size = new Size(568, 38);
             ts_email_panel.TabIndex = 50;
             // 
             // txtEmailTS
@@ -192,7 +183,7 @@
             txtEmailTS.Location = new Point(51, 0);
             txtEmailTS.Margin = new Padding(2);
             txtEmailTS.Name = "txtEmailTS";
-            txtEmailTS.Size = new Size(497, 30);
+            txtEmailTS.Size = new Size(517, 30);
             txtEmailTS.TabIndex = 1;
             // 
             // ts_email_label
@@ -278,6 +269,7 @@
             // 
             // HoTen
             // 
+            HoTen.DataPropertyName = "HoTen";
             HoTen.HeaderText = "Họ tên";
             HoTen.MinimumWidth = 10;
             HoTen.Name = "HoTen";
@@ -285,6 +277,7 @@
             // 
             // NgaySinh
             // 
+            NgaySinh.DataPropertyName = "NgaySinh";
             NgaySinh.HeaderText = "Ngày sinh";
             NgaySinh.MinimumWidth = 10;
             NgaySinh.Name = "NgaySinh";
@@ -292,6 +285,7 @@
             // 
             // GioiTinh
             // 
+            GioiTinh.DataPropertyName = "GioiTinh";
             GioiTinh.HeaderText = "Giới tính";
             GioiTinh.MinimumWidth = 10;
             GioiTinh.Name = "GioiTinh";
@@ -299,6 +293,7 @@
             // 
             // Sdt
             // 
+            Sdt.DataPropertyName = "SoDienThoai";
             Sdt.HeaderText = "Số điện thoại";
             Sdt.MinimumWidth = 10;
             Sdt.Name = "Sdt";
@@ -306,6 +301,7 @@
             // 
             // Email
             // 
+            Email.DataPropertyName = "Email";
             Email.HeaderText = "Email";
             Email.MinimumWidth = 10;
             Email.Name = "Email";
@@ -313,6 +309,7 @@
             // 
             // DiaChi
             // 
+            DiaChi.DataPropertyName = "DiaChi";
             DiaChi.HeaderText = "Địa chỉ";
             DiaChi.MinimumWidth = 10;
             DiaChi.Name = "DiaChi";
@@ -343,13 +340,14 @@
             btnThemTS.BackColor = Color.MediumTurquoise;
             btnThemTS.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnThemTS.ForeColor = Color.Transparent;
-            btnThemTS.Location = new Point(387, 941);
+            btnThemTS.Location = new Point(216, 952);
             btnThemTS.Margin = new Padding(2);
             btnThemTS.Name = "btnThemTS";
             btnThemTS.Size = new Size(198, 49);
             btnThemTS.TabIndex = 52;
             btnThemTS.Text = "Thêm thí sinh";
             btnThemTS.UseVisualStyleBackColor = false;
+            btnThemTS.Click += btnThemTS_Click;
             // 
             // lblMaPhieuDK
             // 
@@ -545,13 +543,20 @@
             // 
             // ts_birth_panel
             // 
-            ts_birth_panel.Controls.Add(txtNgaySinhTS);
+            ts_birth_panel.Controls.Add(dtpNgaySinhTS);
             ts_birth_panel.Controls.Add(ts_birth_label);
-            ts_birth_panel.Location = new Point(662, 764);
+            ts_birth_panel.Location = new Point(621, 764);
             ts_birth_panel.Margin = new Padding(2);
             ts_birth_panel.Name = "ts_birth_panel";
-            ts_birth_panel.Size = new Size(293, 38);
+            ts_birth_panel.Size = new Size(334, 38);
             ts_birth_panel.TabIndex = 49;
+            // 
+            // dtpNgaySinhTS
+            // 
+            dtpNgaySinhTS.Location = new Point(84, 0);
+            dtpNgaySinhTS.Name = "dtpNgaySinhTS";
+            dtpNgaySinhTS.Size = new Size(250, 27);
+            dtpNgaySinhTS.TabIndex = 71;
             // 
             // tt_kh_title_label
             // 
@@ -644,7 +649,7 @@
             // 
             ts_gender_panel.Controls.Add(cbbGioiTinhTS);
             ts_gender_panel.Controls.Add(ts_gender_label);
-            ts_gender_panel.Location = new Point(406, 764);
+            ts_gender_panel.Location = new Point(386, 764);
             ts_gender_panel.Margin = new Padding(2);
             ts_gender_panel.Name = "ts_gender_panel";
             ts_gender_panel.Size = new Size(185, 38);
@@ -1346,13 +1351,26 @@
             lblTBThemTS.AutoSize = true;
             lblTBThemTS.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTBThemTS.ForeColor = Color.Red;
-            lblTBThemTS.Location = new Point(774, 861);
+            lblTBThemTS.Location = new Point(15, 921);
             lblTBThemTS.Margin = new Padding(2, 0, 2, 0);
             lblTBThemTS.Name = "lblTBThemTS";
             lblTBThemTS.Size = new Size(181, 20);
             lblTBThemTS.TabIndex = 69;
             lblTBThemTS.Text = "Không tìm thấy thông tin";
-            lblTBThemTS.Visible = false;
+            // 
+            // btnXoaTS
+            // 
+            btnXoaTS.BackColor = Color.RosyBrown;
+            btnXoaTS.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnXoaTS.ForeColor = Color.Transparent;
+            btnXoaTS.Location = new Point(565, 952);
+            btnXoaTS.Margin = new Padding(2);
+            btnXoaTS.Name = "btnXoaTS";
+            btnXoaTS.Size = new Size(198, 49);
+            btnXoaTS.TabIndex = 70;
+            btnXoaTS.Text = "Xóa thí sinh";
+            btnXoaTS.UseVisualStyleBackColor = false;
+            btnXoaTS.Click += btnXoaTS_Click;
             // 
             // LapPhieuDangKy
             // 
@@ -1360,6 +1378,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.White;
+            Controls.Add(btnXoaTS);
             Controls.Add(lblTBThemTS);
             Controls.Add(tctThongTinKH);
             Controls.Add(pbReset);
@@ -1553,5 +1572,7 @@
         private Button btnKiemTraKH;
         private Label lblTBThemKH;
         private Label lblTBThemTS;
+        private Button btnXoaTS;
+        private DateTimePicker dtpNgaySinhTS;
     }
 }

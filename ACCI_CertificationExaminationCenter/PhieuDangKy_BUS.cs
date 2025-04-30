@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACCI_CertificationExaminationCenter
 {
-    public class PhieuDangKy_BUS
+    internal class PhieuDangKy_BUS
     {
         // Fields
         private string MaPhieuDK;
