@@ -13,11 +13,13 @@ namespace ACCI_CertificationExaminationCenter
     public partial class LapPhieuDangKy : UserControl
     {
         private MainForm mainForm;
+        private PhieuDangKy_BUS bus = new PhieuDangKy_BUS();
 
         public LapPhieuDangKy(MainForm form)
         {
             InitializeComponent();
             this.mainForm = form;
+            lblMaPhieuDK.Text = bus.ThemPhieuDK("NV000001");
         }
 
         private void btnTraCuu_Click(object sender, EventArgs e)
