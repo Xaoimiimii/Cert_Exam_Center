@@ -1,7 +1,8 @@
-namespace ACCI_CertificationExaminationCenter
+﻿namespace ACCI_CertificationExaminationCenter
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Form, ILogoutable
     {
+        public event Action LogoutRequested;
         bool menuExpand = false;
         bool paymentExpand = false;
         public bool isInDashboard = false;
@@ -11,10 +12,14 @@ namespace ACCI_CertificationExaminationCenter
         public bool isInSelectExam = false;
         public bool isInExamineeResults = false;
         public bool isInCertificate = false;
+        public string tenDangNhap;
+        public string vaiTro;
 
-        public MainForm()
+        public MainForm(string username, string role)
         {
             InitializeComponent();
+            this.tenDangNhap = username;
+            this.vaiTro = role;
             LoadControl(new DashboardControl(this));
             UpdateStatus("Dashboard");
         }
@@ -78,7 +83,7 @@ namespace ACCI_CertificationExaminationCenter
             }
         }
 
-        private void menuTransition_Tick(object sender, EventArgs e)
+        public void menuTransition_Tick(object sender, EventArgs e)
         {
             if (menuExpand)
             {
@@ -100,7 +105,7 @@ namespace ACCI_CertificationExaminationCenter
             }
         }
 
-        private void paymentTransition_Tick(object sender, EventArgs e)
+        public void paymentTransition_Tick(object sender, EventArgs e)
         {
             if (paymentExpand)
             {
@@ -132,13 +137,13 @@ namespace ACCI_CertificationExaminationCenter
             }
         }
 
-        private void show_menu_pictureBox_Click(object sender, EventArgs e)
+        public void show_menu_pictureBox_Click(object sender, EventArgs e)
         {
             menuTransition.Start();
             show_menu_pictureBox.Visible = false;
         }
 
-        private void close_menu_pictureBox_Click(object sender, EventArgs e)
+        public void close_menu_pictureBox_Click(object sender, EventArgs e)
         {
             show_menu_pictureBox.Visible = true;
             menuTransition.Start();
@@ -149,22 +154,22 @@ namespace ACCI_CertificationExaminationCenter
             }
         }
 
-        private void payment_menu_flowLayoutPanel_Click(object sender, EventArgs e)
+        public void payment_menu_flowLayoutPanel_Click(object sender, EventArgs e)
         {
             paymentTransition.Start();
         }
 
-        private void payment_menu_pictureBox_Click(object sender, EventArgs e)
+        public void payment_menu_pictureBox_Click(object sender, EventArgs e)
         {
             paymentTransition.Start();
         }
 
-        private void payment_menu_label_Click(object sender, EventArgs e)
+        public void payment_menu_label_Click(object sender, EventArgs e)
         {
             paymentTransition.Start();
         }
 
-        private void dashboard_menu_flowLayoutPanel_Click(object sender, EventArgs e)
+        public void dashboard_menu_flowLayoutPanel_Click(object sender, EventArgs e)
         {
             if (isInDashboard)
             {
@@ -174,7 +179,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new DashboardControl(this));
         }
 
-        private void dashboard_menu_pictureBox_Click(object sender, EventArgs e)
+        public void dashboard_menu_pictureBox_Click(object sender, EventArgs e)
         {
             if (isInDashboard)
             {
@@ -184,7 +189,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new DashboardControl(this));
         }
 
-        private void dashboard_menu_label_Click(object sender, EventArgs e)
+        public void dashboard_menu_label_Click(object sender, EventArgs e)
         {
             if (isInDashboard)
             {
@@ -194,7 +199,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new DashboardControl(this));
         }
 
-        private void register_menu_flowLayoutPanel_Click(object sender, EventArgs e)
+        public void register_menu_flowLayoutPanel_Click(object sender, EventArgs e)
         {
             if (isInRegister)
             {
@@ -204,7 +209,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new LapPhieuDangKy(this));
         }
 
-        private void register_menu_pictureBox_Click(object sender, EventArgs e)
+        public void register_menu_pictureBox_Click(object sender, EventArgs e)
         {
             if (isInRegister)
             {
@@ -214,7 +219,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new LapPhieuDangKy(this));
         }
 
-        private void register_menu_label_Click(object sender, EventArgs e)
+        public void register_menu_label_Click(object sender, EventArgs e)
         {
             if (isInRegister)
             {
@@ -224,7 +229,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new LapPhieuDangKy(this));
         }
 
-        private void payment_register_menu_flowLayoutPanel_Click(object sender, EventArgs e)
+        public void payment_register_menu_flowLayoutPanel_Click(object sender, EventArgs e)
         {
             if (isInPaymentRegister)
             {
@@ -234,7 +239,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new ThanhToanPhieuDangKy(this));
         }
 
-        private void payment_register_menu_label_Click(object sender, EventArgs e)
+        public void payment_register_menu_label_Click(object sender, EventArgs e)
         {
             if (isInPaymentRegister)
             {
@@ -244,7 +249,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new ThanhToanPhieuDangKy(this));
         }
 
-        private void payment_register_menu_pictureBox_Click(object sender, EventArgs e)
+        public void payment_register_menu_pictureBox_Click(object sender, EventArgs e)
         {
             if (isInPaymentRegister)
             {
@@ -254,7 +259,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new ThanhToanPhieuDangKy(this));
         }
 
-        private void results_menu_flowLayoutPanel_Click(object sender, EventArgs e)
+        public void results_menu_flowLayoutPanel_Click(object sender, EventArgs e)
         {
             if (isInExamineeResults)
             {
@@ -264,7 +269,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new ExamineeResultsControl(this));
         }
 
-        private void results_menu_pictureBox_Click(object sender, EventArgs e)
+        public void results_menu_pictureBox_Click(object sender, EventArgs e)
         {
             if (isInExamineeResults)
             {
@@ -274,7 +279,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new ExamineeResultsControl(this));
         }
 
-        private void results_menu_label_Click(object sender, EventArgs e)
+        public void results_menu_label_Click(object sender, EventArgs e)
         {
             if (isInExamineeResults)
             {
@@ -284,7 +289,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new ExamineeResultsControl(this));
         }
 
-        private void certificate_menu_flowLayoutPanel_Click(object sender, EventArgs e)
+        public void certificate_menu_flowLayoutPanel_Click(object sender, EventArgs e)
         {
             if (isInCertificate)
             {
@@ -294,7 +299,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new UpdateCertificateStatusControl(this));
         }
 
-        private void certificate_menu_pictureBox_Click(object sender, EventArgs e)
+        public void certificate_menu_pictureBox_Click(object sender, EventArgs e)
         {
             if (isInCertificate)
             {
@@ -304,7 +309,7 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new UpdateCertificateStatusControl(this));
         }
 
-        private void certificate_menu_label_Click(object sender, EventArgs e)
+        public void certificate_menu_label_Click(object sender, EventArgs e)
         {
             if (isInCertificate)
             {
@@ -314,21 +319,37 @@ namespace ACCI_CertificationExaminationCenter
             LoadControl(new UpdateCertificateStatusControl(this));
         }
 
-        private void out_menu_flowLayoutPanel_Click(object sender, EventArgs e)
+        public void out_menu_flowLayoutPanel_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn đăng xuất?", "Đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                LogoutRequested?.Invoke();
+                this.Close();
+            }
         }
 
-        private void out_menu_pictureBox_Click(object sender, EventArgs e)
+        public void out_menu_pictureBox_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn đăng xuất?", "Đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                LogoutRequested?.Invoke();
+                this.Close();
+            }
         }
 
-        private void out_menu_label_Click(object sender, EventArgs e)
+        public void out_menu_label_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn đăng xuất?", "Đăng xuất", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                LogoutRequested?.Invoke();
+                this.Close();
+            }
         }
-
-
     }
 }

@@ -51,17 +51,17 @@
             guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             add_examinee_button = new Button();
             lMaPhieuDK = new Label();
-            exam_type_textBox = new TextBox();
+            txtLoaiDGNL = new TextBox();
             exam_type_panel = new Panel();
             exam_type_label = new Label();
-            time_exam_textBox = new TextBox();
+            txtThoiGianThi = new TextBox();
             time_exam_label = new Label();
             time_exam_panel = new Panel();
             ts_birth_label = new Label();
-            date_exam_textBox = new TextBox();
+            txtNgayThi = new TextBox();
             exam_id_title_label = new Label();
             date_exam_label = new Label();
-            exam_id_textBox = new TextBox();
+            txtMaLichThi = new TextBox();
             date_exam_panel = new Panel();
             exam_id_panel = new Panel();
             select_exam_button = new Button();
@@ -236,13 +236,13 @@
             guna2ShadowPanel1.BackColor = Color.Transparent;
             guna2ShadowPanel1.Controls.Add(dataGridView1);
             guna2ShadowPanel1.FillColor = Color.White;
-            guna2ShadowPanel1.Location = new Point(25, 1673);
+            guna2ShadowPanel1.Location = new Point(3, 1673);
             guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             guna2ShadowPanel1.Radius = 10;
             guna2ShadowPanel1.ShadowColor = Color.DimGray;
             guna2ShadowPanel1.ShadowShift = 16;
             guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            guna2ShadowPanel1.Size = new Size(1536, 718);
+            guna2ShadowPanel1.Size = new Size(1574, 718);
             guna2ShadowPanel1.TabIndex = 55;
             // 
             // dataGridView1
@@ -256,14 +256,14 @@
             dataGridView1.ColumnHeadersHeight = 46;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { HoTen, NgaySinh, GioiTinh, Sdt, Email, DiaChi });
             dataGridView1.GridColor = Color.PowderBlue;
-            dataGridView1.Location = new Point(3, 26);
+            dataGridView1.Location = new Point(29, 26);
             dataGridView1.MultiSelect = false;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 82;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(1503, 663);
+            dataGridView1.Size = new Size(1519, 663);
             dataGridView1.TabIndex = 0;
             // 
             // HoTen
@@ -351,19 +351,19 @@
             lMaPhieuDK.TabIndex = 63;
             lMaPhieuDK.Text = "DK293213";
             // 
-            // exam_type_textBox
+            // txtLoaiDGNL
             // 
-            exam_type_textBox.Dock = DockStyle.Fill;
-            exam_type_textBox.Enabled = false;
-            exam_type_textBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            exam_type_textBox.Location = new Point(180, 0);
-            exam_type_textBox.Name = "exam_type_textBox";
-            exam_type_textBox.Size = new Size(208, 43);
-            exam_type_textBox.TabIndex = 1;
+            txtLoaiDGNL.Dock = DockStyle.Fill;
+            txtLoaiDGNL.Enabled = false;
+            txtLoaiDGNL.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtLoaiDGNL.Location = new Point(180, 0);
+            txtLoaiDGNL.Name = "txtLoaiDGNL";
+            txtLoaiDGNL.Size = new Size(208, 43);
+            txtLoaiDGNL.TabIndex = 1;
             // 
             // exam_type_panel
             // 
-            exam_type_panel.Controls.Add(exam_type_textBox);
+            exam_type_panel.Controls.Add(txtLoaiDGNL);
             exam_type_panel.Controls.Add(exam_type_label);
             exam_type_panel.Location = new Point(1163, 903);
             exam_type_panel.Name = "exam_type_panel";
@@ -381,15 +381,15 @@
             exam_type_label.TabIndex = 0;
             exam_type_label.Text = "Loại đánh giá";
             // 
-            // time_exam_textBox
+            // txtThoiGianThi
             // 
-            time_exam_textBox.Dock = DockStyle.Fill;
-            time_exam_textBox.Enabled = false;
-            time_exam_textBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            time_exam_textBox.Location = new Point(172, 0);
-            time_exam_textBox.Name = "time_exam_textBox";
-            time_exam_textBox.Size = new Size(163, 43);
-            time_exam_textBox.TabIndex = 1;
+            txtThoiGianThi.Dock = DockStyle.Fill;
+            txtThoiGianThi.Enabled = false;
+            txtThoiGianThi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtThoiGianThi.Location = new Point(172, 0);
+            txtThoiGianThi.Name = "txtThoiGianThi";
+            txtThoiGianThi.Size = new Size(163, 43);
+            txtThoiGianThi.TabIndex = 1;
             // 
             // time_exam_label
             // 
@@ -404,7 +404,7 @@
             // 
             // time_exam_panel
             // 
-            time_exam_panel.Controls.Add(time_exam_textBox);
+            time_exam_panel.Controls.Add(txtThoiGianThi);
             time_exam_panel.Controls.Add(time_exam_label);
             time_exam_panel.Location = new Point(792, 903);
             time_exam_panel.Name = "time_exam_panel";
@@ -422,15 +422,15 @@
             ts_birth_label.TabIndex = 0;
             ts_birth_label.Text = "Ngày sinh";
             // 
-            // date_exam_textBox
+            // txtNgayThi
             // 
-            date_exam_textBox.Dock = DockStyle.Fill;
-            date_exam_textBox.Enabled = false;
-            date_exam_textBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            date_exam_textBox.Location = new Point(122, 0);
-            date_exam_textBox.Name = "date_exam_textBox";
-            date_exam_textBox.Size = new Size(228, 43);
-            date_exam_textBox.TabIndex = 1;
+            txtNgayThi.Dock = DockStyle.Fill;
+            txtNgayThi.Enabled = false;
+            txtNgayThi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNgayThi.Location = new Point(122, 0);
+            txtNgayThi.Name = "txtNgayThi";
+            txtNgayThi.Size = new Size(228, 43);
+            txtNgayThi.TabIndex = 1;
             // 
             // exam_id_title_label
             // 
@@ -454,19 +454,19 @@
             date_exam_label.TabIndex = 0;
             date_exam_label.Text = "Ngày thi";
             // 
-            // exam_id_textBox
+            // txtMaLichThi
             // 
-            exam_id_textBox.Dock = DockStyle.Fill;
-            exam_id_textBox.Enabled = false;
-            exam_id_textBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            exam_id_textBox.Location = new Point(146, 0);
-            exam_id_textBox.Name = "exam_id_textBox";
-            exam_id_textBox.Size = new Size(201, 43);
-            exam_id_textBox.TabIndex = 1;
+            txtMaLichThi.Dock = DockStyle.Fill;
+            txtMaLichThi.Enabled = false;
+            txtMaLichThi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMaLichThi.Location = new Point(146, 0);
+            txtMaLichThi.Name = "txtMaLichThi";
+            txtMaLichThi.Size = new Size(201, 43);
+            txtMaLichThi.TabIndex = 1;
             // 
             // date_exam_panel
             // 
-            date_exam_panel.Controls.Add(date_exam_textBox);
+            date_exam_panel.Controls.Add(txtNgayThi);
             date_exam_panel.Controls.Add(date_exam_label);
             date_exam_panel.Location = new Point(410, 903);
             date_exam_panel.Name = "date_exam_panel";
@@ -475,7 +475,7 @@
             // 
             // exam_id_panel
             // 
-            exam_id_panel.Controls.Add(exam_id_textBox);
+            exam_id_panel.Controls.Add(txtMaLichThi);
             exam_id_panel.Controls.Add(exam_id_title_label);
             exam_id_panel.Location = new Point(25, 903);
             exam_id_panel.Name = "exam_id_panel";
@@ -493,6 +493,7 @@
             select_exam_button.TabIndex = 58;
             select_exam_button.Text = "Tra cứu lịch thi";
             select_exam_button.UseVisualStyleBackColor = false;
+            select_exam_button.Click += select_exam_button_Click;
             // 
             // guna2Separator5
             // 
@@ -780,6 +781,7 @@
             btnTraCuu.TabIndex = 52;
             btnTraCuu.Text = "Tra cứu";
             btnTraCuu.UseVisualStyleBackColor = false;
+            btnTraCuu.Click += btnTraCuu_Click;
             // 
             // txtTimEmail
             // 
@@ -1369,17 +1371,17 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator4;
         private Button add_examinee_button;
         private Label lMaPhieuDK;
-        private TextBox exam_type_textBox;
+        private TextBox txtLoaiDGNL;
         private Panel exam_type_panel;
         private Label exam_type_label;
-        private TextBox time_exam_textBox;
+        private TextBox txtThoiGianThi;
         private Label time_exam_label;
         private Panel time_exam_panel;
         private Label ts_birth_label;
-        private TextBox date_exam_textBox;
+        private TextBox txtNgayThi;
         private Label exam_id_title_label;
         private Label date_exam_label;
-        private TextBox exam_id_textBox;
+        private TextBox txtMaLichThi;
         private Panel date_exam_panel;
         private Panel exam_id_panel;
         private Button select_exam_button;
