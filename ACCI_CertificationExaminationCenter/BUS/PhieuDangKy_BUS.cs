@@ -4,8 +4,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ACCI_CertificationExaminationCenter.DAO;
 
-namespace ACCI_CertificationExaminationCenter
+namespace ACCI_CertificationExaminationCenter.BUS
 {
     public class PhieuDangKy_BUS
     {
@@ -22,7 +23,7 @@ namespace ACCI_CertificationExaminationCenter
 
         public PhieuDangKy_BUS(string MaNhanVien)
         {
-            this.MaNVLap = MaNhanVien;
+            MaNVLap = MaNhanVien;
         }
 
 

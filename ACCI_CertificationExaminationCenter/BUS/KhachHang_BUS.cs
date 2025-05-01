@@ -4,9 +4,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ACCI_CertificationExaminationCenter.DAO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
-namespace ACCI_CertificationExaminationCenter
+namespace ACCI_CertificationExaminationCenter.BUS
 {
     internal class KhachHang_BUS
     {

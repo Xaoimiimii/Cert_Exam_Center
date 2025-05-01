@@ -6,16 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ACCI_CertificationExaminationCenter
+namespace ACCI_CertificationExaminationCenter.DAO
 {
     internal class PhieuDangKy_DAO
     {
         private SqlConnection connection;
-        string strConnection = "Data Source=192.168.1.109,1433;" +
-                       "Initial Catalog=PTTK;" +
-                       "User ID=sa;" +
-                       "Password=Lucia.N123;" +
-                       "TrustServerCertificate=True;";
+        string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
         private string strSQL;
 
         
