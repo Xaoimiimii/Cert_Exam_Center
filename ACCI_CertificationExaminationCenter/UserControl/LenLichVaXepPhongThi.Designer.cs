@@ -221,7 +221,7 @@
             exams_dataGridView.AllowUserToDeleteRows = false;
             exams_dataGridView.AllowUserToResizeRows = false;
             exams_dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            exams_dataGridView.BackgroundColor = Color.White;
+            exams_dataGridView.BackgroundColor = Color.Azure;
             exams_dataGridView.BorderStyle = BorderStyle.None;
             exams_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             exams_dataGridView.Columns.AddRange(new DataGridViewColumn[] { MaLichThi, NgayThi, ThoiGian, LoaiChungChi, SoLuongToiDa, SoLuongDaDK });
@@ -297,7 +297,7 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.BackgroundColor = Color.Azure;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6 });
@@ -427,7 +427,7 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.MediumTurquoise;
+            button4.BackColor = SystemColors.ActiveBorder;
             button4.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.Transparent;
             button4.Location = new Point(419, 969);
