@@ -87,9 +87,9 @@
             // 
             panel3.Controls.Add(dateTimePicker1);
             panel3.Controls.Add(label5);
-            panel3.Location = new Point(562, 209);
+            panel3.Location = new Point(512, 209);
             panel3.Name = "panel3";
-            panel3.Size = new Size(439, 61);
+            panel3.Size = new Size(402, 61);
             panel3.TabIndex = 81;
             // 
             // dateTimePicker1
@@ -102,7 +102,7 @@
             dateTimePicker1.MaxDate = new DateTime(2100, 12, 31, 0, 0, 0, 0);
             dateTimePicker1.MinDate = new DateTime(1900, 1, 1, 0, 0, 0, 0);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(296, 43);
+            dateTimePicker1.Size = new Size(266, 43);
             dateTimePicker1.TabIndex = 128;
             // 
             // button1
@@ -110,9 +110,9 @@
             button1.BackColor = Color.MediumTurquoise;
             button1.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.Transparent;
-            button1.Location = new Point(1300, 973);
+            button1.Location = new Point(1218, 973);
             button1.Name = "button1";
-            button1.Size = new Size(276, 78);
+            button1.Size = new Size(298, 78);
             button1.TabIndex = 80;
             button1.Text = "Thêm phân công";
             button1.UseVisualStyleBackColor = false;
@@ -124,7 +124,7 @@
             guna2Separator2.Location = new Point(0, 870);
             guna2Separator2.Margin = new Padding(0);
             guna2Separator2.Name = "guna2Separator2";
-            guna2Separator2.Size = new Size(1620, 21);
+            guna2Separator2.Size = new Size(1550, 21);
             guna2Separator2.TabIndex = 77;
             // 
             // label4
@@ -188,7 +188,7 @@
             guna2Separator1.Location = new Point(0, 100);
             guna2Separator1.Margin = new Padding(0);
             guna2Separator1.Name = "guna2Separator1";
-            guna2Separator1.Size = new Size(1620, 21);
+            guna2Separator1.Size = new Size(1550, 21);
             guna2Separator1.TabIndex = 69;
             // 
             // label1
@@ -206,9 +206,9 @@
             button2.BackColor = Color.MediumTurquoise;
             button2.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.Transparent;
-            button2.Location = new Point(1063, 188);
+            button2.Location = new Point(936, 188);
             button2.Name = "button2";
-            button2.Size = new Size(171, 78);
+            button2.Size = new Size(189, 78);
             button2.TabIndex = 82;
             button2.Text = "Tìm";
             button2.UseVisualStyleBackColor = false;
@@ -230,7 +230,7 @@
             exams_dataGridView.ReadOnly = true;
             exams_dataGridView.RowHeadersVisible = false;
             exams_dataGridView.RowHeadersWidth = 82;
-            exams_dataGridView.Size = new Size(1534, 556);
+            exams_dataGridView.Size = new Size(1474, 556);
             exams_dataGridView.TabIndex = 83;
             // 
             // MaLichThi
@@ -281,9 +281,9 @@
             button3.BackColor = Color.MediumTurquoise;
             button3.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.Transparent;
-            button3.Location = new Point(1373, 188);
+            button3.Location = new Point(1212, 188);
             button3.Name = "button3";
-            button3.Size = new Size(203, 78);
+            button3.Size = new Size(304, 78);
             button3.TabIndex = 84;
             button3.Text = "Phân công";
             button3.UseVisualStyleBackColor = false;
@@ -305,7 +305,7 @@
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.Size = new Size(1534, 475);
+            dataGridView1.Size = new Size(1474, 475);
             dataGridView1.TabIndex = 85;
             // 
             // dataGridViewTextBoxColumn1
@@ -373,7 +373,7 @@
             comboBox1.Font = new Font("Segoe UI", 10.125F);
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point(137, 0);
-            comboBox1.Margin = new Padding(5, 5, 5, 5);
+            comboBox1.Margin = new Padding(5);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(393, 45);
             comboBox1.TabIndex = 1;
@@ -393,7 +393,7 @@
             // 
             panel4.Controls.Add(comboBox2);
             panel4.Controls.Add(label6);
-            panel4.Location = new Point(661, 984);
+            panel4.Location = new Point(638, 984);
             panel4.Name = "panel4";
             panel4.Size = new Size(530, 61);
             panel4.TabIndex = 77;
@@ -404,7 +404,7 @@
             comboBox2.Font = new Font("Segoe UI", 10.125F);
             comboBox2.FormattingEnabled = true;
             comboBox2.Location = new Point(142, 0);
-            comboBox2.Margin = new Padding(5, 5, 5, 5);
+            comboBox2.Margin = new Padding(5);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(388, 45);
             comboBox2.TabIndex = 1;
@@ -425,7 +425,7 @@
             button4.BackColor = SystemColors.ActiveBorder;
             button4.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.Transparent;
-            button4.Location = new Point(680, 1606);
+            button4.Location = new Point(638, 1603);
             button4.Name = "button4";
             button4.Size = new Size(276, 78);
             button4.TabIndex = 86;
@@ -453,9 +453,9 @@
             Controls.Add(tt_kh_title_label);
             Controls.Add(guna2Separator1);
             Controls.Add(label1);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "LenLichVaXepPhongThi";
-            Size = new Size(1620, 1712);
+            Size = new Size(1550, 1712);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel2.ResumeLayout(false);
