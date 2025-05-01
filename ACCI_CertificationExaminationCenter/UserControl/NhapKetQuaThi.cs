@@ -37,7 +37,7 @@ namespace ACCI_CertificationExaminationCenter
 
         private void XoaThongTin()
         {
-            lbHoTen.Text = "Họ và tên HS";
+            lbHoTen.Text = "Họ tên thí sinh";
             lbSoBaoDanh.Text = "";
             lbGioiTinh.Text = "";
             lbSoDT.Text = "";
@@ -103,6 +103,7 @@ namespace ACCI_CertificationExaminationCenter
             {
                 XoaThongTin();
                 HienThiTB("Không tìm thấy thông tin cho số báo danh này!");
+                return;
             }
         }
 

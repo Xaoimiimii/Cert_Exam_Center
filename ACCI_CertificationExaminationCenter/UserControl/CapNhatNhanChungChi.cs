@@ -31,6 +31,17 @@ namespace ACCI_CertificationExaminationCenter
             MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void XoaThongTin()
+        {
+            lbHoTen.Text = "Họ tên thí sinh";
+            lbSoBaoDanh.Text = "";
+            lbGioiTinh.Text = "";
+            lbSoDT.Text = "";
+            lbNgayThi.Text = "";
+            lbGioThi.Text = "";
+            lbLoai.Text = "";
+            lbTrangThai.Text = "";
+        }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
@@ -66,13 +77,7 @@ namespace ACCI_CertificationExaminationCenter
             if (string.IsNullOrWhiteSpace(sbd))
             {
                 // Nếu ô tìm kiếm rỗng, làm trống các label
-                lbHoTen.Text = "Họ tên thí sinh";
-                lbSoBaoDanh.Text = "";
-                lbGioiTinh.Text = "";
-                lbSoDT.Text = "";
-                lbNgayThi.Text = "";
-                lbLoai.Text = "";
-                lbTrangThai.Text = "";
+                XoaThongTin();
                 panelKetQua.Visible = false;
                 btnCapNhat.Visible = false;
                 return;
@@ -83,30 +88,32 @@ namespace ACCI_CertificationExaminationCenter
                 btnCapNhat.Visible = false;
                 DataTable dt = ChiTietLanThi_BUS.LayTTChiTietLanThi(sbd);
 
-                DataRow row = dt.Rows[0];
-                lbHoTen.Text = row["HoTen"].ToString();
-                lbSoBaoDanh.Text = row["SoBaoDanh"].ToString();
-                lbGioiTinh.Text = row["GioiTinh"].ToString();
-                lbSoDT.Text = row["SoDienThoai"].ToString();
-                lbNgayThi.Text = Convert.ToDateTime(row["NgayThi"]).ToString("dd/MM/yyyy");
-                lbGioThi.Text = TimeOnly.FromTimeSpan((TimeSpan)row["ThoiGianThi"]).ToString("HH:mm");
-                lbLoai.Text = row["LoaiDanhGia"].ToString();
-                lbTrangThai.Text = row["TrangThai"].ToString();
+                if (dt.Rows.Count > 0)
+                {
+                    DataRow row = dt.Rows[0];
+                    lbHoTen.Text = row["HoTen"].ToString();
+                    lbSoBaoDanh.Text = row["SoBaoDanh"].ToString();
+                    lbGioiTinh.Text = row["GioiTinh"].ToString();
+                    lbSoDT.Text = row["SoDienThoai"].ToString();
+                    lbNgayThi.Text = Convert.ToDateTime(row["NgayThi"]).ToString("dd/MM/yyyy");
+                    lbGioThi.Text = TimeOnly.FromTimeSpan((TimeSpan)row["ThoiGianThi"]).ToString("HH:mm");
+                    lbLoai.Text = row["LoaiDanhGia"].ToString();
+                    lbTrangThai.Text = row["TrangThai"].ToString();
 
-                panelKetQua.Visible = true;
-                btnCapNhat.Visible = true;
+                    panelKetQua.Visible = true;
+                    btnCapNhat.Visible = true;
+                }
+                else
+                {
+                    HienThiTB("Không tìm thấy thông tin cho số báo danh này!");
+                    return;
+                }
+
             }
             catch (Exception ex)
             {
                 HienThiTB("Lỗi: " + ex.Message);
-                lbHoTen.Text = "Họ tên thí sinh";
-                lbSoBaoDanh.Text = "";
-                lbGioiTinh.Text = "";
-                lbSoDT.Text = "";
-                lbNgayThi.Text = "";
-                lbGioThi.Text = "";
-                lbLoai.Text = "";
-                lbTrangThai.Text = "";
+                XoaThongTin();
                 panelKetQua.Visible = false;
                 btnCapNhat.Visible = false;
                 return;
