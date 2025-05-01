@@ -79,37 +79,37 @@ namespace ACCI_CertificationExaminationCenter
         private void results_guna2ShadowPanel_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Results");
-            mainForm.LoadControl(new ExamineeResultsControl(mainForm));
+            mainForm.LoadControl(new NhapKetQuaThi(mainForm));
         }
 
         private void result_pictureBox_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Results");
-            mainForm.LoadControl(new ExamineeResultsControl(mainForm));
+            mainForm.LoadControl(new NhapKetQuaThi(mainForm));
         }
 
         private void results_label_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Results");
-            mainForm.LoadControl(new ExamineeResultsControl(mainForm));
+            mainForm.LoadControl(new NhapKetQuaThi(mainForm));
         }
 
         private void certificate_guna2ShadowPanel_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Certificate");
-            mainForm.LoadControl(new UpdateCertificateStatusControl(mainForm));
+            mainForm.LoadControl(new CapNhatNhanChungChi(mainForm));
         }
 
         private void certificate_pictureBox_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Certificate");
-            mainForm.LoadControl(new UpdateCertificateStatusControl(mainForm));
+            mainForm.LoadControl(new CapNhatNhanChungChi(mainForm));
         }
 
         private void certificate_label_Click(object sender, EventArgs e)
         {
             mainForm.UpdateStatus("Certificate");
-            mainForm.LoadControl(new UpdateCertificateStatusControl(mainForm));
+            mainForm.LoadControl(new CapNhatNhanChungChi(mainForm));
         }
 
         private void register_guna2ShadowPanel_MouseEnter(object sender, EventArgs e)

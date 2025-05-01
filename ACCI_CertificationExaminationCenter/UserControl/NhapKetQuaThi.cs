@@ -13,11 +13,11 @@ using ACCI_CertificationExaminationCenter.BUS;
 
 namespace ACCI_CertificationExaminationCenter
 {
-    public partial class ExamineeResultsControl : UserControl
+    public partial class NhapKetQuaThi : UserControl
     {
         private MainForm mainForm;
 
-        public ExamineeResultsControl(MainForm form)
+        public NhapKetQuaThi(MainForm form)
         {
             InitializeComponent();
             this.mainForm = form;

@@ -11,12 +11,12 @@ using ACCI_CertificationExaminationCenter.BUS;
 
 namespace ACCI_CertificationExaminationCenter
 {
-    public partial class UpdateCertificateStatusControl : UserControl
+    public partial class CapNhatNhanChungChi : UserControl
     {
         private MainForm mainForm;
         private KetQuaThi_BUS bus = new KetQuaThi_BUS();
 
-        public UpdateCertificateStatusControl(MainForm form)
+        public CapNhatNhanChungChi(MainForm form)
         {
             InitializeComponent();
             this.mainForm = form;

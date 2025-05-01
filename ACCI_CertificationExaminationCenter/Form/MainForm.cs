@@ -266,7 +266,7 @@
                 return;
             }
             UpdateStatus("ExamineeResults");
-            LoadControl(new ExamineeResultsControl(this));
+            LoadControl(new NhapKetQuaThi(this));
         }
 
         public void results_menu_pictureBox_Click(object sender, EventArgs e)
@@ -276,7 +276,7 @@
                 return;
             }
             UpdateStatus("ExamineeResults");
-            LoadControl(new ExamineeResultsControl(this));
+            LoadControl(new NhapKetQuaThi(this));
         }
 
         public void results_menu_label_Click(object sender, EventArgs e)
@@ -286,7 +286,7 @@
                 return;
             }
             UpdateStatus("ExamineeResults");
-            LoadControl(new ExamineeResultsControl(this));
+            LoadControl(new NhapKetQuaThi(this));
         }
 
         public void certificate_menu_flowLayoutPanel_Click(object sender, EventArgs e)
@@ -296,7 +296,7 @@
                 return;
             }
             UpdateStatus("Certificate");
-            LoadControl(new UpdateCertificateStatusControl(this));
+            LoadControl(new CapNhatNhanChungChi(this));
         }
 
         public void certificate_menu_pictureBox_Click(object sender, EventArgs e)
@@ -306,7 +306,7 @@
                 return;
             }
             UpdateStatus("Certificate");
-            LoadControl(new UpdateCertificateStatusControl(this));
+            LoadControl(new CapNhatNhanChungChi(this));
         }
 
         public void certificate_menu_label_Click(object sender, EventArgs e)
@@ -316,7 +316,7 @@
                 return;
             }
             UpdateStatus("Certificate");
-            LoadControl(new UpdateCertificateStatusControl(this));
+            LoadControl(new CapNhatNhanChungChi(this));
         }
 
         public void out_menu_flowLayoutPanel_Click(object sender, EventArgs e)

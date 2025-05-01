@@ -1,6 +1,6 @@
 ﻿namespace ACCI_CertificationExaminationCenter
 {
-    partial class UpdateCertificateStatusControl
+    partial class CapNhatNhanChungChi
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateCertificateStatusControl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CapNhatNhanChungChi));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             insert_result_button = new Button();
@@ -140,7 +140,6 @@
             search_sbd_guna2TextBox.Padding = new Padding(2);
             search_sbd_guna2TextBox.PlaceholderText = "";
             search_sbd_guna2TextBox.SelectedText = "";
-            search_sbd_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
             search_sbd_guna2TextBox.Size = new Size(382, 45);
             search_sbd_guna2TextBox.TabIndex = 32;
             // 
