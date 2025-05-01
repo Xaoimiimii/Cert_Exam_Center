@@ -20,6 +20,8 @@ namespace ACCI_CertificationExaminationCenter
         {
             InitializeComponent();
             this.mainForm = form;
+            panelKetQua.Visible = false;
+            btnCapNhat.Visible = false;
         }
 
 
@@ -28,9 +30,10 @@ namespace ACCI_CertificationExaminationCenter
             MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void insert_result_button_Click(object sender, EventArgs e)
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            string sbd = search_sbd_guna2TextBox.Text.Trim();
+            string sbd = txtTimSBD.Text.Trim();
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật trạng thái nhận chứng chỉ cho SBD: " + sbd + "?",
                                                   "Xác nhận",
                                                   MessageBoxButtons.YesNo,
@@ -41,7 +44,7 @@ namespace ACCI_CertificationExaminationCenter
                 try
                 {
                     bus.CapNhatTrangThaiNhan(sbd);
-                    find_sbd_button_Click(sender, e);
+                    btnTraCuuSBD_Click(sender, e);
                     HienThiTB("Cập nhật thành công");
                 }
                 catch (Exception ex)
@@ -55,49 +58,57 @@ namespace ACCI_CertificationExaminationCenter
             }
         }
 
-        private void find_sbd_button_Click(object sender, EventArgs e)
+        private void btnTraCuuSBD_Click(object sender, EventArgs e)
         {
-            string sbd = search_sbd_guna2TextBox.Text.Trim();
+            string sbd = txtTimSBD.Text.Trim();
             if (string.IsNullOrWhiteSpace(sbd))
             {
                 // Nếu ô tìm kiếm rỗng, làm trống các label
-                label3.Text = "Họ tên thí sinh";
-                found_sbd_label.Text = "";
-                found_gender_label.Text = "";
-                found_sdt_label.Text = "";
-                found_date_label.Text = "";
-                found_type_label.Text = "";
-                found_status_label.Text = "";
+                lbHoTen.Text = "Họ tên thí sinh";
+                lbSoBaoDanh.Text = "";
+                lbGioiTinh.Text = "";
+                lbSoDT.Text = "";
+                lbNgayThi.Text = "";
+                lbLoai.Text = "";
+                lbTrangThai.Text = "";
+                panelKetQua.Visible = false;
+                btnCapNhat.Visible = false;
                 return;
             }
             try
             {
+                panelKetQua.Visible = false;
+                btnCapNhat.Visible = false;
                 DataTable dt = ChiTietLanThi_BUS.LayTTChiTietLanThi(sbd);
 
                 DataRow row = dt.Rows[0];
-                label3.Text = row["HoTen"].ToString();
-                found_sbd_label.Text = row["SoBaoDanh"].ToString();
-                found_gender_label.Text = row["GioiTinh"].ToString();
-                found_sdt_label.Text = row["SoDienThoai"].ToString();
-                found_date_label.Text = Convert.ToDateTime(row["NgayThi"]).ToString("dd/MM/yyyy");
-                found_time_label.Text = TimeOnly.FromTimeSpan((TimeSpan)row["ThoiGianThi"]).ToString("HH:mm");
-                found_type_label.Text = row["LoaiDanhGia"].ToString();
-                found_status_label.Text = row["TrangThai"].ToString();
+                lbHoTen.Text = row["HoTen"].ToString();
+                lbSoBaoDanh.Text = row["SoBaoDanh"].ToString();
+                lbGioiTinh.Text = row["GioiTinh"].ToString();
+                lbSoDT.Text = row["SoDienThoai"].ToString();
+                lbNgayThi.Text = Convert.ToDateTime(row["NgayThi"]).ToString("dd/MM/yyyy");
+                lbGioThi.Text = TimeOnly.FromTimeSpan((TimeSpan)row["ThoiGianThi"]).ToString("HH:mm");
+                lbLoai.Text = row["LoaiDanhGia"].ToString();
+                lbTrangThai.Text = row["TrangThai"].ToString();
+
+                panelKetQua.Visible = true;
+                btnCapNhat.Visible = true;
             }
             catch (Exception ex)
             {
                 HienThiTB("Lỗi: " + ex.Message);
-                label3.Text = "Họ tên thí sinh";
-                found_sbd_label.Text = "";
-                found_gender_label.Text = "";
-                found_sdt_label.Text = "";
-                found_date_label.Text = "";
-                found_time_label.Text = "";
-                found_type_label.Text = "";
-                found_status_label.Text = "";
+                lbHoTen.Text = "Họ tên thí sinh";
+                lbSoBaoDanh.Text = "";
+                lbGioiTinh.Text = "";
+                lbSoDT.Text = "";
+                lbNgayThi.Text = "";
+                lbGioThi.Text = "";
+                lbLoai.Text = "";
+                lbTrangThai.Text = "";
+                panelKetQua.Visible = false;
+                btnCapNhat.Visible = false;
                 return;
             }
         }
-
     }
 }

@@ -11,7 +11,7 @@ namespace ACCI_CertificationExaminationCenter.DAO
     internal class PhieuDangKy_DAO
     {
         private SqlConnection connection;
-        string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
+        private string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
         private string strSQL;
 
         

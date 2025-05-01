@@ -21,12 +21,13 @@ namespace ACCI_CertificationExaminationCenter
         {
             InitializeComponent();
             this.mainForm = form;
-            result_guna2ShadowPanel.Visible = false;
+            panelKetQua.Visible = false;
+            panelNhapKetQua.Visible = false;
         }
 
-        private void insert_result_button_Click(object sender, EventArgs e)
+        private void btnThemKetQua_Click(object sender, EventArgs e)
         {
-            result_guna2ShadowPanel.Visible = true;
+            panelNhapKetQua.Visible = true;
         }
 
         private void ExamineeResultsControl_Load(object sender, EventArgs e)
@@ -51,9 +52,9 @@ namespace ACCI_CertificationExaminationCenter
             MessageBox.Show(ThongBao, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void find_sbd_button_Click(object sender, EventArgs e)
+        private void btnTraCuuSBD_Click(object sender, EventArgs e)
         {
-            string soBaoDanh = search_sbd_guna2TextBox.Text.Trim();
+            string soBaoDanh = txtTimSBD.Text.Trim();
             if (string.IsNullOrEmpty(soBaoDanh))
             {
                 XoaThongTin();
@@ -77,6 +78,9 @@ namespace ACCI_CertificationExaminationCenter
 
             if (dt.Rows.Count > 0)
             {
+                panelKetQua.Visible = true;
+                panelNhapKetQua.Visible = false;
+
                 DataRow row = dt.Rows[0];
 
                 lbHoTen.Text = row["HoTen"].ToString();
@@ -93,11 +97,9 @@ namespace ACCI_CertificationExaminationCenter
                 XoaThongTin();
                 HienThiTB("Không tìm thấy thông tin cho số báo danh này!");
             }
-
-
         }
 
-        private void save_button_Click(object sender, EventArgs e)
+        private void btnLuuKetQua_Click(object sender, EventArgs e)
         {
             string soBaoDanh = lbSoBaoDanh.Text.Trim();
             string inputNgayCap = txtNgayCap.Text.Trim();
@@ -159,7 +161,5 @@ namespace ACCI_CertificationExaminationCenter
                 MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
     }
 }

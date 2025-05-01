@@ -16,7 +16,7 @@ namespace ACCI_CertificationExaminationCenter
     public partial class LapPhieuDangKy : UserControl
     {
         private MainForm mainForm;
-        private PhieuDangKy_BUS phieuDK_BUS = new PhieuDangKy_BUS("NV000001");
+        private PhieuDangKy_BUS phieuDK_BUS;
         private KhachHang_BUS khachHang_BUS = new KhachHang_BUS();
         private string MaKhachHang = "";
         private string DiaChiKHBD = "";
@@ -26,6 +26,7 @@ namespace ACCI_CertificationExaminationCenter
         {
             InitializeComponent();
             this.mainForm = form;
+            phieuDK_BUS = new PhieuDangKy_BUS(mainForm.tenDangNhap);
             lblMaPhieuDK.Text = phieuDK_BUS.ThemPhieuDK();
         }
 
@@ -359,7 +360,7 @@ namespace ACCI_CertificationExaminationCenter
         {
             if (dgvThiSinh.Rows.Count > 0 && txtMaLichThi.Text != "")
             {
-               if (tctThongTinKH.SelectedIndex == 0)
+                if (tctThongTinKH.SelectedIndex == 0)
                 {
                     if (MaKhachHang != "")
                     {
@@ -431,6 +432,13 @@ namespace ACCI_CertificationExaminationCenter
                 string ThongBao = "Hãy thêm thí sinh/chọn lịch thi trước.";
                 HienThiTB(ThongBao);
             }
+        }
+
+        private void pbBack_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn quay lại?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes) mainForm.LoadControl(new TrangChu(mainForm));
+
         }
     }
 }
