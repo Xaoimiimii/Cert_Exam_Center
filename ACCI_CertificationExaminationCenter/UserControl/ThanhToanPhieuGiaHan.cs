@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace ACCI_CertificationExaminationCenter
 {
-    public partial class QuanLyNhanVien : UserControl
+    public partial class ThanhToanPhieuGiaHan : UserControl
     {
         private MainForm mainForm;
-        public QuanLyNhanVien(MainForm mainForm)
+        public ThanhToanPhieuGiaHan(MainForm form)
         {
             InitializeComponent();
-            this.mainForm = mainForm;
+            this.mainForm = form;
         }
     }
 }

@@ -22,6 +22,16 @@ namespace ACCI_CertificationExaminationCenter
             InitializeComponent();
         }
 
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+            lACCI.Location = pictureBox1.PointToClient(lACCI.PointToScreen(Point.Empty));
+            lName.Location = pictureBox1.PointToClient(lName.PointToScreen(Point.Empty));
+            lACCI.Parent = pictureBox1;
+            lName.Parent = pictureBox1;
+            lACCI.BackColor = Color.Transparent;
+            lName.BackColor = Color.Transparent;
+        }
+
         public void btnDangNhap_Click(object sender, EventArgs e)
         {
             tenDangNhap = txtTenDangNhap.Text;
@@ -64,5 +74,6 @@ namespace ACCI_CertificationExaminationCenter
         {
             return vaiTro;
         }
+
     }
 }

@@ -40,6 +40,8 @@
             panel2 = new Panel();
             txtMatKhau = new TextBox();
             label1 = new Label();
+            lACCI = new Label();
+            lName = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             guna2Panel1.SuspendLayout();
             panel1.SuspendLayout();
@@ -146,17 +148,44 @@
             label1.TabIndex = 0;
             label1.Text = "Mật khẩu:";
             // 
+            // lACCI
+            // 
+            lACCI.AutoSize = true;
+            lACCI.BackColor = Color.White;
+            lACCI.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lACCI.ForeColor = Color.White;
+            lACCI.Location = new Point(35, 950);
+            lACCI.Name = "lACCI";
+            lACCI.Size = new Size(268, 128);
+            lACCI.TabIndex = 11;
+            lACCI.Text = "ACCI";
+            // 
+            // lName
+            // 
+            lName.AutoSize = true;
+            lName.BackColor = Color.Transparent;
+            lName.Font = new Font("Segoe UI", 22.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lName.ForeColor = Color.White;
+            lName.Location = new Point(35, 1078);
+            lName.Name = "lName";
+            lName.Size = new Size(924, 78);
+            lName.TabIndex = 11;
+            lName.Text = "Trung tâm tổ chức thi chứng chỉ";
+            // 
             // DangNhap
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1724, 1209);
+            Controls.Add(lName);
+            Controls.Add(lACCI);
             Controls.Add(guna2Panel1);
             Controls.Add(pictureBox1);
             Name = "DangNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DangNhap";
+            Load += DangNhap_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
@@ -165,6 +194,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -179,5 +209,7 @@
         private Panel panel2;
         private TextBox txtMatKhau;
         private Label label1;
+        private Label lACCI;
+        private Label lName;
     }
 }

@@ -10,13 +10,23 @@ using System.Windows.Forms;
 
 namespace ACCI_CertificationExaminationCenter
 {
-    public partial class QuanLyNhanVien : UserControl
+    public partial class QuanLyKhachHang : UserControl
     {
         private MainForm mainForm;
-        public QuanLyNhanVien(MainForm mainForm)
+        public QuanLyKhachHang(MainForm mainForm)
         {
             InitializeComponent();
             this.mainForm = mainForm;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -17,17 +17,11 @@ namespace ACCI_CertificationExaminationCenter.BUS
 
         private KetQuaThi_DAO dao = new KetQuaThi_DAO();
 
-        public void CapNhatTrangThaiNhan(string sbd)
-        {
-            dao.Connect();
-            dao.CapNhatTrangThaiNhan(sbd);
-            dao.Disconnect();
-        }
 
-        public void ThemKetQuaThi(string SoBaoDanh, int Diem, DateTime? NgayNhanChungChi)
+        public void ThemKetQuaThi(string SoBaoDanh, int Diem, DateTime? NgayCapChungChi, string nhanVienNhap)
         {
             dao.Connect();
-            dao.ThemKQThi(SoBaoDanh, Diem, NgayNhanChungChi);
+            dao.ThemKQThi(SoBaoDanh, Diem, NgayCapChungChi, nhanVienNhap);
             dao.Disconnect();
         }
 

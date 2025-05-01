@@ -528,7 +528,7 @@
             // dtpNgaySinhTS
             // 
             dtpNgaySinhTS.Location = new Point(136, 0);
-            dtpNgaySinhTS.Margin = new Padding(5, 5, 5, 5);
+            dtpNgaySinhTS.Margin = new Padding(5);
             dtpNgaySinhTS.Name = "dtpNgaySinhTS";
             dtpNgaySinhTS.Size = new Size(404, 39);
             dtpNgaySinhTS.TabIndex = 71;
@@ -764,7 +764,7 @@
             tbpTraCuuKH.ForeColor = SystemColors.ActiveCaptionText;
             tbpTraCuuKH.Location = new Point(4, 54);
             tbpTraCuuKH.Name = "tbpTraCuuKH";
-            tbpTraCuuKH.Padding = new Padding(3, 3, 3, 3);
+            tbpTraCuuKH.Padding = new Padding(3);
             tbpTraCuuKH.Size = new Size(1515, 529);
             tbpTraCuuKH.TabIndex = 0;
             tbpTraCuuKH.Text = "Tra cứu";
@@ -1062,7 +1062,7 @@
             tbpThemKH.ForeColor = Color.Black;
             tbpThemKH.Location = new Point(4, 54);
             tbpThemKH.Name = "tbpThemKH";
-            tbpThemKH.Padding = new Padding(3, 3, 3, 3);
+            tbpThemKH.Padding = new Padding(3);
             tbpThemKH.Size = new Size(1515, 529);
             tbpThemKH.TabIndex = 1;
             tbpThemKH.Text = "Thêm KH";
@@ -1283,7 +1283,7 @@
             // 
             // btnXoaTS
             // 
-            btnXoaTS.BackColor = Color.RosyBrown;
+            btnXoaTS.BackColor = SystemColors.ActiveBorder;
             btnXoaTS.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnXoaTS.ForeColor = Color.Transparent;
             btnXoaTS.Location = new Point(918, 1523);
