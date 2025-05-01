@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox3 = new TextBox();
             label5 = new Label();
             panel3 = new Panel();
             button1 = new Button();
             guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             label4 = new Label();
-            textBox2 = new TextBox();
             label3 = new Label();
             panel2 = new Panel();
             tt_kh_title_label = new Label();
@@ -63,6 +61,8 @@
             comboBox2 = new ComboBox();
             label6 = new Label();
             button4 = new Button();
+            mcNgaySinh = new DateTimePicker();
+            dateTimePicker1 = new DateTimePicker();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)exams_dataGridView).BeginInit();
@@ -70,17 +70,6 @@
             panel1.SuspendLayout();
             panel4.SuspendLayout();
             SuspendLayout();
-            // 
-            // textBox3
-            // 
-            textBox3.Dock = DockStyle.Fill;
-            textBox3.Enabled = false;
-            textBox3.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(84, 0);
-            textBox3.Margin = new Padding(2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(177, 30);
-            textBox3.TabIndex = 1;
             // 
             // label5
             // 
@@ -96,12 +85,12 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(textBox3);
+            panel3.Controls.Add(dateTimePicker1);
             panel3.Controls.Add(label5);
             panel3.Location = new Point(335, 144);
             panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(261, 38);
+            panel3.Size = new Size(270, 38);
             panel3.TabIndex = 81;
             // 
             // button1
@@ -138,17 +127,6 @@
             label4.TabIndex = 76;
             label4.Text = "Chi tiết phân công coi thi";
             // 
-            // textBox2
-            // 
-            textBox2.Dock = DockStyle.Fill;
-            textBox2.Enabled = false;
-            textBox2.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(73, 0);
-            textBox2.Margin = new Padding(2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(188, 30);
-            textBox2.TabIndex = 1;
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -163,7 +141,7 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(mcNgaySinh);
             panel2.Controls.Add(label3);
             panel2.Location = new Point(26, 144);
             panel2.Margin = new Padding(2);
@@ -222,7 +200,7 @@
             exams_dataGridView.AllowUserToResizeRows = false;
             exams_dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             exams_dataGridView.BackgroundColor = Color.Azure;
-            exams_dataGridView.BorderStyle = BorderStyle.None;
+            exams_dataGridView.BorderStyle = BorderStyle.Fixed3D;
             exams_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             exams_dataGridView.Columns.AddRange(new DataGridViewColumn[] { MaLichThi, NgayThi, ThoiGian, LoaiChungChi, SoLuongToiDa, SoLuongDaDK });
             exams_dataGridView.Location = new Point(26, 216);
@@ -298,7 +276,7 @@
             dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.BackgroundColor = Color.Azure;
-            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.BorderStyle = BorderStyle.Fixed3D;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6 });
             dataGridView1.Location = new Point(26, 687);
@@ -438,6 +416,34 @@
             button4.Text = "Xóa phân công";
             button4.UseVisualStyleBackColor = false;
             // 
+            // mcNgaySinh
+            // 
+            mcNgaySinh.CalendarFont = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            mcNgaySinh.CustomFormat = "dd/MM/yyyy";
+            mcNgaySinh.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            mcNgaySinh.Format = DateTimePickerFormat.Custom;
+            mcNgaySinh.Location = new Point(77, 0);
+            mcNgaySinh.Margin = new Padding(2);
+            mcNgaySinh.MaxDate = new DateTime(2100, 12, 31, 0, 0, 0, 0);
+            mcNgaySinh.MinDate = new DateTime(1900, 1, 1, 0, 0, 0, 0);
+            mcNgaySinh.Name = "mcNgaySinh";
+            mcNgaySinh.Size = new Size(184, 30);
+            mcNgaySinh.TabIndex = 127;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.CalendarFont = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            dateTimePicker1.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new Point(84, 0);
+            dateTimePicker1.Margin = new Padding(2);
+            dateTimePicker1.MaxDate = new DateTime(2100, 12, 31, 0, 0, 0, 0);
+            dateTimePicker1.MinDate = new DateTime(1900, 1, 1, 0, 0, 0, 0);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(184, 30);
+            dateTimePicker1.TabIndex = 128;
+            // 
             // LenLichVaXepPhongThi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -475,13 +481,11 @@
         }
 
         #endregion
-        private TextBox textBox3;
         private Label label5;
         private Panel panel3;
         private Button button1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Label label4;
-        private TextBox textBox2;
         private Label label3;
         private Panel panel2;
         private Label tt_kh_title_label;
@@ -510,5 +514,7 @@
         private ComboBox comboBox2;
         private Label label6;
         private Button button4;
+        private DateTimePicker dateTimePicker1;
+        private DateTimePicker mcNgaySinh;
     }
 }
