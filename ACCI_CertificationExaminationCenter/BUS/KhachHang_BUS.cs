@@ -58,5 +58,15 @@ namespace ACCI_CertificationExaminationCenter.BUS
             dao.Disconnect();
             return MaKhacHang;
         }
+
+        public static void CapNhatTTKH(string maKH, string diaChi, string tenDonVi)
+        {
+            KhachHang_DAO dao = new KhachHang_DAO();
+            dao.Connect();
+            if (diaChi != "")
+                dao.CapNhatDiaChiKH(maKH, diaChi);
+            dao.CapNhatTenDonViKH(maKH, tenDonVi);
+            dao.Disconnect();
+        }
     }
 }
