@@ -80,6 +80,7 @@ namespace ACCI_CertificationExaminationCenter
                 XoaThongTin();
                 panelKetQua.Visible = false;
                 btnCapNhat.Visible = false;
+                HienThiTB("Ô tìm kiếm đang rỗng!");
                 return;
             }
             try
