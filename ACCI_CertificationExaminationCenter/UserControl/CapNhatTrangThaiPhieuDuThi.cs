@@ -12,12 +12,14 @@ namespace ACCI_CertificationExaminationCenter
 {
     public partial class CapNhatTrangThaiPhieuDuThi : UserControl
     {
-        public CapNhatTrangThaiPhieuDuThi()
+        private MainForm mainForm;
+        public CapNhatTrangThaiPhieuDuThi(MainForm mainForm)
         {
             InitializeComponent();
 
             cbbTrangThai.Items.Add("Đã hoàn thành bài thi");
             cbbTrangThai.Items.Add("Vắng mặt");
+            this.mainForm = mainForm;
         }
 
         private void btnCapNhatTrangThai_Click(object sender, EventArgs e)

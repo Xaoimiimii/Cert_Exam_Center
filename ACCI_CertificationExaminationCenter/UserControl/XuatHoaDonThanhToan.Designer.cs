@@ -167,9 +167,9 @@
             btnTraCuuPhieuDK.BackColor = Color.MediumTurquoise;
             btnTraCuuPhieuDK.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnTraCuuPhieuDK.ForeColor = Color.Transparent;
-            btnTraCuuPhieuDK.Location = new Point(1275, 877);
+            btnTraCuuPhieuDK.Location = new Point(1202, 877);
             btnTraCuuPhieuDK.Name = "btnTraCuuPhieuDK";
-            btnTraCuuPhieuDK.Size = new Size(320, 91);
+            btnTraCuuPhieuDK.Size = new Size(319, 91);
             btnTraCuuPhieuDK.TabIndex = 79;
             btnTraCuuPhieuDK.Text = "Tra cứu phiếu đăng ký";
             btnTraCuuPhieuDK.UseVisualStyleBackColor = false;
@@ -201,7 +201,7 @@
             guna2Separator2.Location = new Point(0, 1018);
             guna2Separator2.Margin = new Padding(0);
             guna2Separator2.Name = "guna2Separator2";
-            guna2Separator2.Size = new Size(1626, 21);
+            guna2Separator2.Size = new Size(1550, 21);
             guna2Separator2.TabIndex = 86;
             // 
             // panelMaHoaDon
@@ -257,7 +257,7 @@
             // 
             panelTongTienThanhToan.Controls.Add(txtTongTienThanhToan);
             panelTongTienThanhToan.Controls.Add(labelTongTienThanhToan);
-            panelTongTienThanhToan.Location = new Point(1143, 1278);
+            panelTongTienThanhToan.Location = new Point(1069, 1278);
             panelTongTienThanhToan.Name = "panelTongTienThanhToan";
             panelTongTienThanhToan.Size = new Size(452, 98);
             panelTongTienThanhToan.TabIndex = 89;
@@ -295,9 +295,9 @@
             // 
             panelMaGiaoDich.Controls.Add(txtMaGiaoDich);
             panelMaGiaoDich.Controls.Add(labelMaGiaoDich);
-            panelMaGiaoDich.Location = new Point(1330, 1148);
+            panelMaGiaoDich.Location = new Point(1241, 1148);
             panelMaGiaoDich.Name = "panelMaGiaoDich";
-            panelMaGiaoDich.Size = new Size(265, 98);
+            panelMaGiaoDich.Size = new Size(280, 98);
             panelMaGiaoDich.TabIndex = 90;
             // 
             // txtMaGiaoDich
@@ -305,7 +305,7 @@
             txtMaGiaoDich.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtMaGiaoDich.Location = new Point(0, 48);
             txtMaGiaoDich.Name = "txtMaGiaoDich";
-            txtMaGiaoDich.Size = new Size(257, 43);
+            txtMaGiaoDich.Size = new Size(277, 43);
             txtMaGiaoDich.TabIndex = 1;
             // 
             // labelMaGiaoDich
@@ -336,7 +336,7 @@
             guna2Separator1.Location = new Point(0, 100);
             guna2Separator1.Margin = new Padding(0);
             guna2Separator1.Name = "guna2Separator1";
-            guna2Separator1.Size = new Size(1626, 21);
+            guna2Separator1.Size = new Size(1550, 21);
             guna2Separator1.TabIndex = 77;
             // 
             // label1
@@ -345,7 +345,7 @@
             label1.Location = new Point(70, 25);
             label1.Margin = new Padding(0);
             label1.Name = "label1";
-            label1.Size = new Size(1484, 59);
+            label1.Size = new Size(1410, 59);
             label1.TabIndex = 76;
             label1.Text = "Xuất hóa đơn thanh toán";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -355,7 +355,7 @@
             btnXuatPDF.BackColor = Color.MediumTurquoise;
             btnXuatPDF.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnXuatPDF.ForeColor = Color.Transparent;
-            btnXuatPDF.Location = new Point(874, 1430);
+            btnXuatPDF.Location = new Point(836, 1427);
             btnXuatPDF.Name = "btnXuatPDF";
             btnXuatPDF.Size = new Size(406, 78);
             btnXuatPDF.TabIndex = 91;
@@ -407,14 +407,14 @@
             guna2Separator3.Location = new Point(0, 760);
             guna2Separator3.Margin = new Padding(0);
             guna2Separator3.Name = "guna2Separator3";
-            guna2Separator3.Size = new Size(1626, 21);
+            guna2Separator3.Size = new Size(1550, 21);
             guna2Separator3.TabIndex = 97;
             // 
             // panelNgayLap
             // 
             panelNgayLap.Controls.Add(txtNgayLap);
             panelNgayLap.Controls.Add(labelNgayLap);
-            panelNgayLap.Location = new Point(435, 877);
+            panelNgayLap.Location = new Point(412, 877);
             panelNgayLap.Name = "panelNgayLap";
             panelNgayLap.Size = new Size(282, 92);
             panelNgayLap.TabIndex = 99;
@@ -483,9 +483,9 @@
             // 
             panelTrangThai.Controls.Add(txtTrangThai);
             panelTrangThai.Controls.Add(labelTrangThai);
-            panelTrangThai.Location = new Point(862, 877);
+            panelTrangThai.Location = new Point(808, 877);
             panelTrangThai.Name = "panelTrangThai";
-            panelTrangThai.Size = new Size(339, 92);
+            panelTrangThai.Size = new Size(311, 92);
             panelTrangThai.TabIndex = 100;
             // 
             // txtTrangThai
@@ -513,7 +513,7 @@
             btnInHoaDon.BackColor = SystemColors.ActiveBorder;
             btnInHoaDon.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnInHoaDon.ForeColor = Color.Transparent;
-            btnInHoaDon.Location = new Point(450, 1430);
+            btnInHoaDon.Location = new Point(412, 1427);
             btnInHoaDon.Name = "btnInHoaDon";
             btnInHoaDon.Size = new Size(406, 78);
             btnInHoaDon.TabIndex = 102;
@@ -524,7 +524,7 @@
             // 
             panelNgayThanhToan.Controls.Add(txtNgayThanhToan);
             panelNgayThanhToan.Controls.Add(labelNgayThanhToan);
-            panelNgayThanhToan.Location = new Point(435, 1148);
+            panelNgayThanhToan.Location = new Point(412, 1148);
             panelNgayThanhToan.Name = "panelNgayThanhToan";
             panelNgayThanhToan.Size = new Size(282, 98);
             panelNgayThanhToan.TabIndex = 103;
@@ -581,7 +581,7 @@
             // 
             panelSoTienUuDai.Controls.Add(txtSoTienUuDai);
             panelSoTienUuDai.Controls.Add(labelSoTienUuDai);
-            panelSoTienUuDai.Location = new Point(590, 1278);
+            panelSoTienUuDai.Location = new Point(558, 1278);
             panelSoTienUuDai.Name = "panelSoTienUuDai";
             panelSoTienUuDai.Size = new Size(452, 98);
             panelSoTienUuDai.TabIndex = 105;
@@ -610,7 +610,7 @@
             // 
             panelPhuongThucThanhToan.Controls.Add(txtPhuongThucThanhToan);
             panelPhuongThucThanhToan.Controls.Add(labelPhuongThucThanhToan);
-            panelPhuongThucThanhToan.Location = new Point(862, 1148);
+            panelPhuongThucThanhToan.Location = new Point(808, 1148);
             panelPhuongThucThanhToan.Name = "panelPhuongThucThanhToan";
             panelPhuongThucThanhToan.Size = new Size(339, 98);
             panelPhuongThucThanhToan.TabIndex = 106;
@@ -682,7 +682,7 @@
             guna2Separator4.Location = new Point(0, 482);
             guna2Separator4.Margin = new Padding(0);
             guna2Separator4.Name = "guna2Separator4";
-            guna2Separator4.Size = new Size(1626, 21);
+            guna2Separator4.Size = new Size(1550, 21);
             guna2Separator4.TabIndex = 112;
             // 
             // panelDonVi
@@ -691,7 +691,7 @@
             panelDonVi.Controls.Add(labelDonVi);
             panelDonVi.Location = new Point(819, 340);
             panelDonVi.Name = "panelDonVi";
-            panelDonVi.Size = new Size(776, 92);
+            panelDonVi.Size = new Size(702, 92);
             panelDonVi.TabIndex = 113;
             // 
             // txtDonVi
@@ -700,7 +700,7 @@
             txtDonVi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtDonVi.Location = new Point(0, 48);
             txtDonVi.Name = "txtDonVi";
-            txtDonVi.Size = new Size(773, 43);
+            txtDonVi.Size = new Size(702, 43);
             txtDonVi.TabIndex = 1;
             // 
             // labelDonVi
@@ -717,7 +717,7 @@
             // pbReset
             // 
             pbReset.Image = Properties.Resources.reload_64;
-            pbReset.Location = new Point(1557, 36);
+            pbReset.Location = new Point(1483, 25);
             pbReset.Name = "pbReset";
             pbReset.Size = new Size(38, 38);
             pbReset.SizeMode = PictureBoxSizeMode.Zoom;
@@ -738,7 +738,7 @@
             // 
             panelNgayThi.Controls.Add(txtNgayThi);
             panelNgayThi.Controls.Add(labelNgayThi);
-            panelNgayThi.Location = new Point(435, 603);
+            panelNgayThi.Location = new Point(412, 603);
             panelNgayThi.Name = "panelNgayThi";
             panelNgayThi.Size = new Size(268, 92);
             panelNgayThi.TabIndex = 116;
@@ -767,7 +767,7 @@
             // 
             panelGioThi.Controls.Add(txtGioThi);
             panelGioThi.Controls.Add(labelGioThi);
-            panelGioThi.Location = new Point(862, 603);
+            panelGioThi.Location = new Point(808, 603);
             panelGioThi.Name = "panelGioThi";
             panelGioThi.Size = new Size(268, 92);
             panelGioThi.TabIndex = 117;
@@ -796,9 +796,9 @@
             // 
             panelLoaiChungChi.Controls.Add(txtLoaiChungChi);
             panelLoaiChungChi.Controls.Add(labelLoaiChungChi);
-            panelLoaiChungChi.Location = new Point(1275, 602);
+            panelLoaiChungChi.Location = new Point(1202, 602);
             panelLoaiChungChi.Name = "panelLoaiChungChi";
-            panelLoaiChungChi.Size = new Size(320, 92);
+            panelLoaiChungChi.Size = new Size(319, 92);
             panelLoaiChungChi.TabIndex = 118;
             // 
             // txtLoaiChungChi
@@ -862,7 +862,7 @@
             Controls.Add(panelSdt);
             Margin = new Padding(0);
             Name = "XuatHoaDonThanhToan";
-            Size = new Size(1626, 1572);
+            Size = new Size(1516, 1102);
             panelMaHoaDon.ResumeLayout(false);
             panelMaHoaDon.PerformLayout();
             panelHoTen.ResumeLayout(false);

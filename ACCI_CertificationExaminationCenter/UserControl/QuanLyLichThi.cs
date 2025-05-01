@@ -12,9 +12,11 @@ namespace ACCI_CertificationExaminationCenter
 {
     public partial class QuanLyLichThi : UserControl
     {
-        public QuanLyLichThi()
+        private MainForm mainForm;
+        public QuanLyLichThi(MainForm mainForm)
         {
             InitializeComponent();
+            this.mainForm = mainForm;
         }
     }
 }

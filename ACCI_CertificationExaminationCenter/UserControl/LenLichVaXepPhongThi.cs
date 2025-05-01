@@ -12,9 +12,11 @@ namespace ACCI_CertificationExaminationCenter
 {
     public partial class LenLichVaXepPhongThi : UserControl
     {
-        public LenLichVaXepPhongThi()
+        private MainForm mainForm;
+        public LenLichVaXepPhongThi(MainForm mainForm)
         {
             InitializeComponent();
+            this.mainForm = mainForm;
         }
 
         private void button1_Click(object sender, EventArgs e)

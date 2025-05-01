@@ -12,9 +12,11 @@ namespace ACCI_CertificationExaminationCenter
 {
     public partial class QuanLyPhongThi : UserControl
     {
-        public QuanLyPhongThi()
+        private MainForm mainForm;
+        public QuanLyPhongThi(MainForm mainForm)
         {
             InitializeComponent();
+            this.mainForm = mainForm;
         }
 
         private void alter_button_Click(object sender, EventArgs e)

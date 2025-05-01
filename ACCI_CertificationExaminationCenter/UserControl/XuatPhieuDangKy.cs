@@ -15,10 +15,10 @@ namespace ACCI_CertificationExaminationCenter
     {
         private MainForm mainForm;
 
-        public RegisterDetailsFormControl(MainForm mainForm)
+        public RegisterDetailsFormControl(MainForm form)
         {
             InitializeComponent();
-            this.mainForm = mainForm;
+            this.mainForm = form;
 
             CultureInfo vietnameseCulture = new CultureInfo("vi-VN");
             Thread.CurrentThread.CurrentCulture = vietnameseCulture;
