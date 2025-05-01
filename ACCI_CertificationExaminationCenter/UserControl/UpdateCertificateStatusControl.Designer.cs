@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateCertificateStatusControl));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             insert_result_button = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -123,7 +123,7 @@
             // search_sbd_guna2TextBox
             // 
             search_sbd_guna2TextBox.BorderRadius = 20;
-            search_sbd_guna2TextBox.CustomizableEdges = customizableEdges1;
+            search_sbd_guna2TextBox.CustomizableEdges = customizableEdges3;
             search_sbd_guna2TextBox.DefaultText = "";
             search_sbd_guna2TextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             search_sbd_guna2TextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -226,8 +226,7 @@
             // 
             date_label.AutoSize = true;
             date_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            date_label.Location = new Point(2, 0);
-            date_label.Margin = new Padding(2, 0, 2, 0);
+            date_label.Location = new Point(3, 0);
             date_label.Name = "date_label";
             date_label.Size = new Size(79, 23);
             date_label.TabIndex = 0;
@@ -257,8 +256,7 @@
             // 
             status_label.AutoSize = true;
             status_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            status_label.Location = new Point(2, 0);
-            status_label.Margin = new Padding(2, 0, 2, 0);
+            status_label.Location = new Point(3, 0);
             status_label.Name = "status_label";
             status_label.Size = new Size(91, 23);
             status_label.TabIndex = 0;
@@ -288,8 +286,7 @@
             // 
             sdt_label.AutoSize = true;
             sdt_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sdt_label.Location = new Point(2, 0);
-            sdt_label.Margin = new Padding(2, 0, 2, 0);
+            sdt_label.Location = new Point(3, 0);
             sdt_label.Name = "sdt_label";
             sdt_label.Size = new Size(115, 23);
             sdt_label.TabIndex = 0;
@@ -319,8 +316,7 @@
             // 
             sbd_label.AutoSize = true;
             sbd_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            sbd_label.Location = new Point(2, 0);
-            sbd_label.Margin = new Padding(2, 0, 2, 0);
+            sbd_label.Location = new Point(3, 0);
             sbd_label.Name = "sbd_label";
             sbd_label.Size = new Size(111, 23);
             sbd_label.TabIndex = 0;
@@ -350,8 +346,7 @@
             // 
             time_label.AutoSize = true;
             time_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            time_label.Location = new Point(2, 0);
-            time_label.Margin = new Padding(2, 0, 2, 0);
+            time_label.Location = new Point(3, 0);
             time_label.Name = "time_label";
             time_label.Size = new Size(65, 23);
             time_label.TabIndex = 0;
@@ -381,8 +376,7 @@
             // 
             type_label.AutoSize = true;
             type_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            type_label.Location = new Point(2, 0);
-            type_label.Margin = new Padding(2, 0, 2, 0);
+            type_label.Location = new Point(3, 0);
             type_label.Name = "type_label";
             type_label.Size = new Size(117, 23);
             type_label.TabIndex = 0;
@@ -412,8 +406,7 @@
             // 
             gender_label.AutoSize = true;
             gender_label.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            gender_label.Location = new Point(2, 0);
-            gender_label.Margin = new Padding(2, 0, 2, 0);
+            gender_label.Location = new Point(3, 0);
             gender_label.Name = "gender_label";
             gender_label.Size = new Size(79, 23);
             gender_label.TabIndex = 0;
