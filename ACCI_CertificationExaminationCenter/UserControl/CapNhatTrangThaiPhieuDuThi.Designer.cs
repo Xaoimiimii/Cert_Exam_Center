@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             btnCapNhatTrangThai = new Button();
@@ -141,6 +141,7 @@
             found_status_label.Name = "found_status_label";
             found_status_label.Size = new Size(320, 45);
             found_status_label.TabIndex = 1;
+            found_status_label.Text = "Chưa thi";
             // 
             // type_flowLayoutPanel
             // 
@@ -169,6 +170,7 @@
             found_type_label.Name = "found_type_label";
             found_type_label.Size = new Size(273, 45);
             found_type_label.TabIndex = 1;
+            found_type_label.Text = "Ngoại ngữ";
             // 
             // time_flowLayoutPanel
             // 
@@ -197,6 +199,7 @@
             found_time_label.Name = "found_time_label";
             found_time_label.Size = new Size(273, 45);
             found_time_label.TabIndex = 1;
+            found_time_label.Text = "08:00";
             // 
             // date_flowLayoutPanel
             // 
@@ -225,6 +228,7 @@
             found_date_label.Name = "found_date_label";
             found_date_label.Size = new Size(273, 45);
             found_date_label.TabIndex = 1;
+            found_date_label.Text = "01/05/2025";
             // 
             // sdt_flowLayoutPanel
             // 
@@ -253,6 +257,7 @@
             found_sdt_label.Name = "found_sdt_label";
             found_sdt_label.Size = new Size(273, 45);
             found_sdt_label.TabIndex = 1;
+            found_sdt_label.Text = "0988223882";
             // 
             // gender_flowLayoutPanel
             // 
@@ -281,6 +286,7 @@
             found_gender_label.Name = "found_gender_label";
             found_gender_label.Size = new Size(273, 45);
             found_gender_label.TabIndex = 1;
+            found_gender_label.Text = "Nữ";
             // 
             // sbd_flowLayoutPanel
             // 
@@ -309,6 +315,7 @@
             found_sbd_label.Name = "found_sbd_label";
             found_sbd_label.Size = new Size(273, 45);
             found_sbd_label.TabIndex = 1;
+            found_sbd_label.Text = "SBD00045";
             // 
             // label3
             // 
@@ -317,9 +324,9 @@
             label3.Location = new Point(31, 32);
             label3.Margin = new Padding(0);
             label3.Name = "label3";
-            label3.Size = new Size(233, 45);
+            label3.Size = new Size(263, 45);
             label3.TabIndex = 0;
-            label3.Text = "Nguyễn Văn A";
+            label3.Text = "Hồ Ánh Phương";
             // 
             // btnLuu
             // 
@@ -338,17 +345,17 @@
             // 
             res_flowLayoutPanel.Controls.Add(res_label);
             res_flowLayoutPanel.Controls.Add(cbbTrangThai);
-            res_flowLayoutPanel.Location = new Point(65, 107);
+            res_flowLayoutPanel.Location = new Point(65, 115);
             res_flowLayoutPanel.Name = "res_flowLayoutPanel";
-            res_flowLayoutPanel.Size = new Size(578, 66);
+            res_flowLayoutPanel.Size = new Size(578, 58);
             res_flowLayoutPanel.TabIndex = 34;
             // 
             // res_label
             // 
             res_label.AutoSize = true;
             res_label.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            res_label.Location = new Point(0, 14);
-            res_label.Margin = new Padding(0, 14, 0, 0);
+            res_label.Location = new Point(0, 10);
+            res_label.Margin = new Padding(0, 10, 0, 0);
             res_label.Name = "res_label";
             res_label.Size = new Size(147, 37);
             res_label.TabIndex = 0;
@@ -357,7 +364,8 @@
             // cbbTrangThai
             // 
             cbbTrangThai.BackColor = Color.Transparent;
-            cbbTrangThai.CustomizableEdges = customizableEdges5;
+            cbbTrangThai.CustomizableEdges = customizableEdges1;
+            cbbTrangThai.Dock = DockStyle.Bottom;
             cbbTrangThai.DrawMode = DrawMode.OwnerDrawFixed;
             cbbTrangThai.DropDownStyle = ComboBoxStyle.DropDownList;
             cbbTrangThai.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -365,10 +373,10 @@
             cbbTrangThai.Font = new Font("Segoe UI", 10F);
             cbbTrangThai.ForeColor = Color.FromArgb(68, 88, 112);
             cbbTrangThai.ItemHeight = 30;
-            cbbTrangThai.Location = new Point(152, 5);
-            cbbTrangThai.Margin = new Padding(5, 5, 5, 5);
+            cbbTrangThai.Location = new Point(152, 10);
+            cbbTrangThai.Margin = new Padding(5, 10, 5, 5);
             cbbTrangThai.Name = "cbbTrangThai";
-            cbbTrangThai.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            cbbTrangThai.ShadowDecoration.CustomizableEdges = customizableEdges2;
             cbbTrangThai.Size = new Size(379, 36);
             cbbTrangThai.TabIndex = 36;
             // 
@@ -446,7 +454,7 @@
             // txtSoBaoDanh
             // 
             txtSoBaoDanh.BorderRadius = 20;
-            txtSoBaoDanh.CustomizableEdges = customizableEdges7;
+            txtSoBaoDanh.CustomizableEdges = customizableEdges3;
             txtSoBaoDanh.DefaultText = "";
             txtSoBaoDanh.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSoBaoDanh.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -459,12 +467,12 @@
             txtSoBaoDanh.IconRight = Properties.Resources.close__1_;
             txtSoBaoDanh.IconRightOffset = new Point(10, 0);
             txtSoBaoDanh.Location = new Point(213, 10);
-            txtSoBaoDanh.Margin = new Padding(10, 10, 10, 10);
+            txtSoBaoDanh.Margin = new Padding(10);
             txtSoBaoDanh.Name = "txtSoBaoDanh";
-            txtSoBaoDanh.Padding = new Padding(3, 3, 3, 3);
+            txtSoBaoDanh.Padding = new Padding(3);
             txtSoBaoDanh.PlaceholderText = "";
             txtSoBaoDanh.SelectedText = "";
-            txtSoBaoDanh.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtSoBaoDanh.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtSoBaoDanh.Size = new Size(621, 72);
             txtSoBaoDanh.TabIndex = 32;
             // 
