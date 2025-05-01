@@ -540,6 +540,7 @@
             btnTaoPDK.TabIndex = 56;
             btnTaoPDK.Text = "Xác nhận tạo phiếu";
             btnTaoPDK.UseVisualStyleBackColor = false;
+            btnTaoPDK.Click += btnTaoPDK_Click;
             // 
             // ts_birth_panel
             // 
@@ -1357,6 +1358,7 @@
             lblTBThemTS.Size = new Size(181, 20);
             lblTBThemTS.TabIndex = 69;
             lblTBThemTS.Text = "Không tìm thấy thông tin";
+            lblTBThemTS.Visible = false;
             // 
             // btnXoaTS
             // 

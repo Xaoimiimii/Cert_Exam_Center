@@ -68,21 +68,39 @@ namespace ACCI_CertificationExaminationCenter
             return new DataTable();
         }
 
-        public void CapNhatMaKH(string maPhieuDK, string maKH)
+        public string DangKyLichThi(string maPhieuDK, string maLichThi)
         {
-            // TODO: Cập nhật mã khách hàng cho phiếu đăng ký
-        }
+            string ketQua = "OK";
+            SqlCommand cmd = new SqlCommand("DangKyLichThi", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@MaPhieuDK", maPhieuDK);
+            cmd.Parameters.AddWithValue("@MaLichThi", maLichThi);
 
-        public bool DangKyLichThi(string maPhieuDK, string maLichThi)
-        {
-            // TODO: Đăng ký lịch thi cho phiếu đăng ký
-            return false;
+            try
+            {
+                cmd.ExecuteNonQuery(); // SP không trả về kết quả
+            }
+            catch (SqlException ex)
+            {
+                ketQua = ex.Message; // Bắt RAISERROR bên trong SP
+            }
+
+            return ketQua;
         }
 
         public DataTable LayDSDaThanhToan(string maKH)
         {
             // TODO: Lấy danh sách phiếu đăng ký đã thanh toán
             return new DataTable();
+        }
+
+        public void CapNhatMaKH(string maPhieuDK, string maKH)
+        {
+            string strSQL = "UPDATE PhieuDangKy SET MaKhachHang = @MaKH WHERE MaPhieuDK = @MaPhieuDK";
+            SqlCommand cmd = new SqlCommand(strSQL, connection);
+            cmd.Parameters.AddWithValue("@MaKH", maKH);
+            cmd.Parameters.AddWithValue("@MaPhieuDK", maPhieuDK);
+            cmd.ExecuteNonQuery();
         }
     }
 }

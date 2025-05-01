@@ -66,22 +66,47 @@ namespace ACCI_CertificationExaminationCenter
         {
             string MaKhachHang = "";
             SqlCommand cmd = new SqlCommand("ThemKhachHang", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue("@HoTen", hoTen);
             cmd.Parameters.AddWithValue("@GioiTinh", gioiTinh);
-            cmd.Parameters.AddWithValue("@SDT", sdt);
+            cmd.Parameters.AddWithValue("@SoDienThoai", sdt);
             cmd.Parameters.AddWithValue("@Email", email);
             cmd.Parameters.AddWithValue("@DiaChi", diaChi);
-            cmd.Parameters.AddWithValue("@TenDonVi", tenDonVi);
+            cmd.Parameters.Add("@TenDonVi", SqlDbType.NVarChar, 50).Value = (object)tenDonVi ?? DBNull.Value;
+
+
+            SqlParameter outputMaKH = new SqlParameter("@MaKhachHang", SqlDbType.Char, 8);
+            outputMaKH.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(outputMaKH);
+
             cmd.ExecuteNonQuery();
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            using (SqlDataReader reader = cmd.ExecuteReader())
-            {
-                if (reader.Read())
-                {
-                    MaKhachHang = reader.GetString(0);
-                }
-            }
+
+            MaKhachHang = outputMaKH.Value.ToString();
+
             return MaKhachHang;
+        }
+
+        public void CapNhatDiaChiKH(string maKH, string diaChi)
+        {
+            strSQL = "UPDATE KHACHHANG SET DiaChi = @DiaChi WHERE MaKhachHang = @MaKH";
+            SqlCommand cmd = new SqlCommand(strSQL, connection);
+            if (string.IsNullOrWhiteSpace(diaChi))
+                cmd.Parameters.AddWithValue("@DiaChi", DBNull.Value);
+            else
+                cmd.Parameters.AddWithValue("@DiaChi", diaChi);
+
+            cmd.Parameters.AddWithValue("@MaKH", maKH);
+            cmd.ExecuteNonQuery();
+        }
+
+        public void CapNhatTenDonViKH(string maKH, string tenDonVi)
+        {
+            strSQL = "UPDATE KHACHHANG SET TenDonVi = @TenDonVi WHERE MaKhachHang = @MaKH";
+            SqlCommand cmd = new SqlCommand(strSQL, connection);
+            cmd.Parameters.AddWithValue("@TenDonVi", tenDonVi);
+            cmd.Parameters.AddWithValue("@MaKH", maKH);
+            cmd.ExecuteNonQuery();
         }
     }
 }

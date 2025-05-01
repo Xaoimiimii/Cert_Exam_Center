@@ -18,6 +18,8 @@ namespace ACCI_CertificationExaminationCenter
         private PhieuDangKy_BUS phieuDK_BUS = new PhieuDangKy_BUS("NV000001");
         private KhachHang_BUS khachHang_BUS = new KhachHang_BUS();
         private string MaKhachHang = "";
+        private string DiaChiKHBD = "";
+        private string TenDonViBD = "";
 
         public LapPhieuDangKy(MainForm form)
         {
@@ -25,6 +27,38 @@ namespace ACCI_CertificationExaminationCenter
             this.mainForm = form;
             lblMaPhieuDK.Text = phieuDK_BUS.ThemPhieuDK();
         }
+
+        public void Reload()
+        {
+            Control parent = this.Parent;
+            if (parent != null)
+            {
+                bool autoScrollEnabled = false;
+
+                if (parent is ScrollableControl scrollable)
+                {
+                    autoScrollEnabled = scrollable.AutoScroll;
+                }
+
+                parent.Controls.Clear();
+
+                LapPhieuDangKy newControl = new LapPhieuDangKy(this.mainForm);
+                newControl.Dock = DockStyle.Fill; // Đảm bảo chiếm toàn bộ panel
+
+                parent.Controls.Add(newControl);
+
+                // Bật lại AutoScroll nếu cần
+                if (parent is ScrollableControl scrollParent)
+                {
+                    scrollParent.AutoScroll = autoScrollEnabled;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không thể reload vì không tìm thấy Parent.");
+            }
+        }
+
 
         private void HienThiDongTBTTKH(string ThongBao, int tabIndex, int status)
         {
@@ -174,6 +208,8 @@ namespace ACCI_CertificationExaminationCenter
             txtTraCuuDiaChiKH.Text = "";
             txtTraCuuTenDonVi.Text = "";
             cbbTraCuuGioiTinhKH.Text = "";
+            DiaChiKHBD = "";
+            TenDonViBD = "";
 
             lblTBTraCuuKH.Visible = false;
 
@@ -208,7 +244,8 @@ namespace ACCI_CertificationExaminationCenter
                 {
                     MaKhachHang = dt.Rows[0]["MaKhachHang"].ToString();
                     ThongTinKhachHang_Load(dt);
-
+                    DiaChiKHBD = dt.Rows[0]["DiaChi"].ToString();
+                    TenDonViBD = dt.Rows[0]["TenDonVi"].ToString();
                 }
                 else
                 {
@@ -230,9 +267,10 @@ namespace ACCI_CertificationExaminationCenter
             }
             else
             {
-                DataTable dt = KhachHang_BUS.LayTTKH(txtThemSDTKH.Text, txtThemEmailKH.Text);
+                DataTable dt1 = KhachHang_BUS.LayTTKH(txtThemSDTKH.Text, "");
+                DataTable dt2 = KhachHang_BUS.LayTTKH("", txtThemEmailKH.Text);
 
-                if (dt.Rows.Count > 0)
+                if (dt1.Rows.Count > 0 || dt2.Rows.Count > 0)
                 {
                     ThongBao = "Thông tin số điện thoại/email đã bị trùng.";
                     HienThiTB(ThongBao);
@@ -248,6 +286,7 @@ namespace ACCI_CertificationExaminationCenter
 
         private void btnTraCuuLichThi_Click(object sender, EventArgs e)
         {
+            txtMaLichThi.Text = "";
             TraCuuLichThi form = new TraCuuLichThi();
             if (form.ShowDialog() == DialogResult.OK)
             {
@@ -294,7 +333,7 @@ namespace ACCI_CertificationExaminationCenter
             if (dgvThiSinh.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dgvThiSinh.SelectedRows[0];
-                
+
                 string email = selectedRow.Cells["Email"].Value.ToString();
 
                 DialogResult result = MessageBox.Show(
@@ -311,6 +350,84 @@ namespace ACCI_CertificationExaminationCenter
                     dgvThiSinh.AutoGenerateColumns = false;
                     dgvThiSinh.DataSource = dt;
                 }
+            }
+        }
+
+        private void btnTaoPDK_Click(object sender, EventArgs e)
+        {
+            if (dgvThiSinh.Rows.Count > 0 && txtMaLichThi.Text != "")
+            {
+               if (tctThongTinKH.SelectedIndex == 0)
+                {
+                    if (MaKhachHang != "")
+                    {
+                        if (DiaChiKHBD != txtTraCuuDiaChiKH.Text || TenDonViBD != txtTraCuuTenDonVi.Text)
+                        {
+                            KhachHang_BUS.CapNhatTTKH(MaKhachHang, txtTraCuuDiaChiKH.Text, txtTraCuuTenDonVi.Text);
+                        }
+
+                        string ketQua = PhieuDangKy_BUS.DangKyLichThi(lblMaPhieuDK.Text, txtMaLichThi.Text);
+                        if (ketQua == "OK")
+                        {
+                            PhieuDangKy_BUS.CapNhatMaKH(lblMaPhieuDK.Text, MaKhachHang);
+                            HienThiTB("Đăng ký thành công");
+                            Reload();
+                        }
+                        else
+                            HienThiTB(ketQua);
+                    }
+                    else
+                        HienThiTB("Thông tin khách hàng không được để trống.");
+                }
+                else if (tctThongTinKH.SelectedIndex > 0)
+                {
+                    bool FormatError = KiemTraThongTinKH();
+                    string ThongBao = "";
+
+                    if (FormatError)
+                    {
+                        ThongBao = "Thông tin chưa đúng định dạng.";
+                        HienThiDongTBTTKH(ThongBao, tctThongTinKH.SelectedIndex, 0);
+                    }
+                    else
+                    {
+                        // Kiểm tra trùng email và số điện thoại
+                        DataTable dt1 = KhachHang_BUS.LayTTKH(txtThemSDTKH.Text, "");
+                        DataTable dt2 = KhachHang_BUS.LayTTKH("", txtThemEmailKH.Text);
+
+                        HienThiTB(dt2.Rows.Count.ToString());
+
+                        if (dt1.Rows.Count > 0 || dt2.Rows.Count > 0)
+                        {
+                            ThongBao = "Thông tin số điện thoại/email đã bị trùng.";
+                            HienThiTB(ThongBao);
+                        }
+                        else
+                        {
+                            ThongBao = "Thông tin hợp lệ!";
+                            HienThiDongTBTTKH(ThongBao, tctThongTinKH.SelectedIndex, 1);
+
+                            string ketQua = PhieuDangKy_BUS.DangKyLichThi(lblMaPhieuDK.Text, txtMaLichThi.Text);
+                            if (ketQua == "OK")
+                            {
+                                KhachHang_BUS khachHang = new KhachHang_BUS(txtThemHoTenKH.Text, cbbThemGioiTinhKH.Text, txtThemSDTKH.Text, txtThemEmailKH.Text, txtThemDiaChiKH.Text, txtThemDonVi.Text);
+                                MaKhachHang = khachHang.ThemKH();
+                                PhieuDangKy_BUS.CapNhatMaKH(lblMaPhieuDK.Text, MaKhachHang);
+                                HienThiTB("Đăng ký thành công");
+                                Reload();
+                            }
+                            else
+                            {
+                                HienThiTB(ketQua);
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                string ThongBao = "Hãy thêm thí sinh/chọn lịch thi trước.";
+                HienThiTB(ThongBao);
             }
         }
     }

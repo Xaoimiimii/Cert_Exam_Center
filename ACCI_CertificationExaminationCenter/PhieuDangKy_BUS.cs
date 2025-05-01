@@ -72,21 +72,28 @@ namespace ACCI_CertificationExaminationCenter
             return new DataTable();
         }
 
-        public void CapNhatMaKH(string maPhieuDK, string maKH)
-        {
-            // TODO: Implement logic
-        }
 
-        public bool DangKyLichThi(string maLichThi)
+        public static string DangKyLichThi(string maPhieuDK, string maLichThi)
         {
-            // TODO: Implement logic
-            return false;
+            PhieuDangKy_DAO dao = new PhieuDangKy_DAO();
+            dao.Connect();
+            string ketQua = dao.DangKyLichThi(maPhieuDK, maLichThi);
+            dao.Disconnect();
+            return ketQua;
         }
 
         public DataTable LayDSDaThanhToan(string maKH)
         {
             // TODO: Implement logic
             return new DataTable();
+        }
+
+        public static void CapNhatMaKH(string maPhieuDK, string maKH)
+        {
+            PhieuDangKy_DAO dao = new PhieuDangKy_DAO();
+            dao.Connect();
+            dao.CapNhatMaKH(maPhieuDK, maKH);
+            dao.Disconnect();
         }
     }
 }
