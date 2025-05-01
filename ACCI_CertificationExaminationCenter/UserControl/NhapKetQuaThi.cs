@@ -37,7 +37,7 @@ namespace ACCI_CertificationExaminationCenter
 
         private void XoaThongTin()
         {
-            lbHoTen.Text = "Họ và tên HS";
+            lbHoTen.Text = "Họ tên thí sinh";
             lbSoBaoDanh.Text = "";
             lbGioiTinh.Text = "";
             lbSoDT.Text = "";
@@ -45,6 +45,13 @@ namespace ACCI_CertificationExaminationCenter
             lbGioThi.Text = "";
             lbLoai.Text = "";
             lbTrangThai.Text = "";
+        }
+
+        private void XoaKetQua()
+        {
+            txtDiem.Text = "";
+            capChungChi_checkBox.CheckState = CheckState.Unchecked;
+            txtNgayCap.Text = "";
         }
 
         private void HienThiTB(string ThongBao)
@@ -96,6 +103,7 @@ namespace ACCI_CertificationExaminationCenter
             {
                 XoaThongTin();
                 HienThiTB("Không tìm thấy thông tin cho số báo danh này!");
+                return;
             }
         }
 
@@ -105,6 +113,7 @@ namespace ACCI_CertificationExaminationCenter
             string inputNgayCap = txtNgayCap.Text.Trim();
             string inputDiem = txtDiem.Text.Trim();
 
+            
             if (string.IsNullOrEmpty(soBaoDanh))
             {
                 HienThiTB("Số báo danh chưa được nhập!");
@@ -135,9 +144,16 @@ namespace ACCI_CertificationExaminationCenter
                 return;
             }
 
+            if (lbTrangThai.Text.Trim() != "Hoàn thành bài thi")
+            {
+                HienThiTB("Số báo danh này chưa hoàn thành bài thi!");
+                return;
+            }
+
             try
             {
                 KetQuaThi_BUS bus = new KetQuaThi_BUS();
+                string nhanVienNhap = mainForm.tenDangNhap;
 
                 if (capChungChi_checkBox.Checked)
                 {
@@ -147,17 +163,26 @@ namespace ACCI_CertificationExaminationCenter
                         return;
                     }
 
-                    bus.ThemKetQuaThi(soBaoDanh, diemThi, ngayNhanChungChi);
+                    bus.ThemKetQuaThi(soBaoDanh, diemThi, ngayNhanChungChi, nhanVienNhap);
                 }
                 else
                 {
-                    bus.ThemKetQuaThi(soBaoDanh, diemThi, null);
+                    bus.ThemKetQuaThi(soBaoDanh, diemThi, null, nhanVienNhap);
                 }
+
+                XoaKetQua();
+                panelNhapKetQua.Visible = false;
+                XoaThongTin();
+                panelKetQua.Visible = false;
 
                 HienThiTB("Thêm kết quả thi thành công!");
             }
             catch (Exception ex)
             {
+                XoaKetQua();
+                panelNhapKetQua.Visible = false;
+                XoaThongTin();
+                panelKetQua.Visible = false;
                 MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
