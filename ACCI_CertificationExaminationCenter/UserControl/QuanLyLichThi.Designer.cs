@@ -255,7 +255,6 @@
             sdt_label.Size = new Size(106, 23);
             sdt_label.TabIndex = 85;
             sdt_label.Text = "Thời gian thi";
-            sdt_label.Click += this.sdt_label_Click;
             // 
             // txtSoDT
             // 
