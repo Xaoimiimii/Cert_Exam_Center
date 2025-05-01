@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ACCI_CertificationExaminationCenter.DAO;
 
-namespace ACCI_CertificationExaminationCenter
+namespace ACCI_CertificationExaminationCenter.BUS
 {
     public class PhieuDuThi_BUS
     {
@@ -16,11 +17,11 @@ namespace ACCI_CertificationExaminationCenter
         private string MaPhong { get; set; }
         private string TrangThai { get; set; }
 
-        private PhieuDuThi_DAO dao = new PhieuDuThi_DAO();  
-        public void CapNhatTrangThai(string sbd, string trangThai)
+        private PhieuDuThi_DAO dao = new PhieuDuThi_DAO();
+        public void CapNhatTrangThai(string sbd, string trangThai, string nhanVienCapNhat)
         {
             dao.Connect();
-            dao.CapNhatTrangThai(sbd, trangThai);
+            dao.CapNhatTrangThai(sbd, trangThai, nhanVienCapNhat);
             dao.Disconnect();
         }
 

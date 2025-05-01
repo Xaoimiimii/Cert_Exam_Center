@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,7 +15,7 @@ namespace ACCI_CertificationExaminationCenter
     public partial class CapNhatNhanChungChi : UserControl
     {
         private MainForm mainForm;
-        private KetQuaThi_BUS bus = new KetQuaThi_BUS();
+        private PhieuDuThi_BUS bus = new PhieuDuThi_BUS();
 
         public CapNhatNhanChungChi(MainForm form)
         {
@@ -34,6 +35,7 @@ namespace ACCI_CertificationExaminationCenter
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
             string sbd = txtTimSBD.Text.Trim();
+            string nhanVienCapNhat = mainForm.tenDangNhap;
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật trạng thái nhận chứng chỉ cho SBD: " + sbd + "?",
                                                   "Xác nhận",
                                                   MessageBoxButtons.YesNo,
@@ -43,7 +45,7 @@ namespace ACCI_CertificationExaminationCenter
             {
                 try
                 {
-                    bus.CapNhatTrangThaiNhan(sbd);
+                    bus.CapNhatTrangThai(sbd, "Đã nhận bằng", nhanVienCapNhat);
                     btnTraCuuSBD_Click(sender, e);
                     HienThiTB("Cập nhật thành công");
                 }

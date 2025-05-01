@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ACCI_CertificationExaminationCenter
+namespace ACCI_CertificationExaminationCenter.DAO
 {
     internal class PhieuDuThi_DAO
     {
@@ -27,7 +27,7 @@ namespace ACCI_CertificationExaminationCenter
                 connection.Close();
         }
 
-        public void CapNhatTrangThai(string sbd, string trangThai)
+        public void CapNhatTrangThai(string sbd, string trangThai, string nhanVienCapNhat)
         {
             try
             {
@@ -41,6 +41,7 @@ namespace ACCI_CertificationExaminationCenter
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@SBD", sbd);
                     cmd.Parameters.AddWithValue("@TrangThai", trangThai);
+                    cmd.Parameters.AddWithValue("@NhanVienCapNhat", nhanVienCapNhat);
 
                     cmd.ExecuteNonQuery();
                     Console.WriteLine("Đã cập nhật trạng thái nhận chứng chỉ cho SBD: " + sbd);
