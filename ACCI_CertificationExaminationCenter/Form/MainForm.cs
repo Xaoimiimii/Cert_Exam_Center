@@ -20,7 +20,7 @@
             InitializeComponent();
             this.tenDangNhap = username;
             this.vaiTro = role;
-            LoadControl(new DashboardControl(this));
+            LoadControl(new TrangChu(this));
             UpdateStatus("Dashboard");
         }
 
@@ -176,7 +176,7 @@
                 return;
             }
             UpdateStatus("Dashboard");
-            LoadControl(new DashboardControl(this));
+            LoadControl(new TrangChu(this));
         }
 
         public void dashboard_menu_pictureBox_Click(object sender, EventArgs e)
@@ -186,7 +186,7 @@
                 return;
             }
             UpdateStatus("Dashboard");
-            LoadControl(new DashboardControl(this));
+            LoadControl(new TrangChu(this));
         }
 
         public void dashboard_menu_label_Click(object sender, EventArgs e)
@@ -196,7 +196,7 @@
                 return;
             }
             UpdateStatus("Dashboard");
-            LoadControl(new DashboardControl(this));
+            LoadControl(new TrangChu(this));
         }
 
         public void register_menu_flowLayoutPanel_Click(object sender, EventArgs e)

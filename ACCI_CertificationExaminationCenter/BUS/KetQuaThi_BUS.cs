@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ACCI_CertificationExaminationCenter.DAO;
 
-namespace ACCI_CertificationExaminationCenter
+namespace ACCI_CertificationExaminationCenter.BUS
 {
     public class KetQuaThi_BUS
     {
@@ -12,7 +13,7 @@ namespace ACCI_CertificationExaminationCenter
         private string SoBaoDanh { get; set; }
         private int DiemBaiThi { get; set; }
         private DateTime NgayThi { get; set; }
-        private Boolean KetQua { get; set; }
+        private bool KetQua { get; set; }
 
         private KetQuaThi_DAO dao = new KetQuaThi_DAO();
 

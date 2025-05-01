@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using Microsoft.Data.SqlClient;
 
-namespace ACCI_CertificationExaminationCenter
+namespace ACCI_CertificationExaminationCenter.DAO
 {
     internal class ChiTietLanThi_DAO
     {
@@ -15,7 +15,7 @@ namespace ACCI_CertificationExaminationCenter
 
         public void Connect ()
         {
-            this.connection = new SqlConnection (strConnection);
+            connection = new SqlConnection (strConnection);
             if (connection.State == ConnectionState.Closed)
                 connection.Open();
         }

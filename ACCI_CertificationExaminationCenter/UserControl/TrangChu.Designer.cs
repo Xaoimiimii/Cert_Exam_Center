@@ -2,7 +2,7 @@
 
 namespace ACCI_CertificationExaminationCenter
 {
-    partial class DashboardControl
+    partial class TrangChu
     {
         /// <summary> 
         /// Required designer variable.
