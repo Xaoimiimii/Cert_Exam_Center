@@ -102,7 +102,7 @@
             guna2ShadowPanel1.ShadowColor = Color.DimGray;
             guna2ShadowPanel1.ShadowShift = 16;
             guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            guna2ShadowPanel1.Size = new Size(1534, 714);
+            guna2ShadowPanel1.Size = new Size(1480, 714);
             guna2ShadowPanel1.TabIndex = 54;
             // 
             // dataGridView1
@@ -123,7 +123,7 @@
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 82;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(1514, 662);
+            dataGridView1.Size = new Size(1453, 662);
             dataGridView1.TabIndex = 0;
             // 
             // HoTen
@@ -205,7 +205,7 @@
             exam_type_panel.Controls.Add(exam_type_label);
             exam_type_panel.Location = new Point(1164, 541);
             exam_type_panel.Name = "exam_type_panel";
-            exam_type_panel.Size = new Size(388, 45);
+            exam_type_panel.Size = new Size(325, 45);
             exam_type_panel.TabIndex = 61;
             // 
             // exam_type_label_value
@@ -369,14 +369,14 @@
             guna2Separator1.Location = new Point(0, 93);
             guna2Separator1.Margin = new Padding(0);
             guna2Separator1.Name = "guna2Separator1";
-            guna2Separator1.Size = new Size(1580, 21);
+            guna2Separator1.Size = new Size(1516, 21);
             guna2Separator1.TabIndex = 33;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(24, 19);
+            label1.Location = new Point(25, 25);
             label1.Margin = new Padding(0);
             label1.Name = "label1";
             label1.Size = new Size(471, 59);
@@ -389,7 +389,7 @@
             kh_phone_panel.Controls.Add(kh_phone_title_label);
             kh_phone_panel.Location = new Point(1076, 203);
             kh_phone_panel.Name = "kh_phone_panel";
-            kh_phone_panel.Size = new Size(476, 45);
+            kh_phone_panel.Size = new Size(413, 45);
             kh_phone_panel.TabIndex = 36;
             // 
             // label5
@@ -451,7 +451,7 @@
             kh_address_panel.Controls.Add(kh_address_label);
             kh_address_panel.Location = new Point(660, 278);
             kh_address_panel.Name = "kh_address_panel";
-            kh_address_panel.Size = new Size(890, 45);
+            kh_address_panel.Size = new Size(829, 45);
             kh_address_panel.TabIndex = 38;
             // 
             // label7
@@ -514,7 +514,7 @@
             guna2Separator3.Location = new Point(0, 626);
             guna2Separator3.Margin = new Padding(0);
             guna2Separator3.Name = "guna2Separator3";
-            guna2Separator3.Size = new Size(1580, 21);
+            guna2Separator3.Size = new Size(1516, 21);
             guna2Separator3.TabIndex = 43;
             // 
             // tt_lt_title_label
@@ -534,7 +534,7 @@
             guna2Separator2.Location = new Point(0, 429);
             guna2Separator2.Margin = new Padding(0);
             guna2Separator2.Name = "guna2Separator2";
-            guna2Separator2.Size = new Size(1580, 21);
+            guna2Separator2.Size = new Size(1516, 21);
             guna2Separator2.TabIndex = 41;
             // 
             // kh_gender_label
@@ -569,12 +569,12 @@
             // 
             // select_exam_button
             // 
-            select_exam_button.BackColor = Color.MediumTurquoise;
+            select_exam_button.BackColor = SystemColors.ActiveBorder;
             select_exam_button.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             select_exam_button.ForeColor = Color.Transparent;
-            select_exam_button.Location = new Point(410, 1496);
+            select_exam_button.Location = new Point(457, 1496);
             select_exam_button.Name = "select_exam_button";
-            select_exam_button.Size = new Size(213, 78);
+            select_exam_button.Size = new Size(326, 78);
             select_exam_button.TabIndex = 62;
             select_exam_button.Text = "Tải PDF";
             select_exam_button.UseVisualStyleBackColor = false;
@@ -584,9 +584,9 @@
             button1.BackColor = Color.MediumTurquoise;
             button1.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.Transparent;
-            button1.Location = new Point(972, 1496);
+            button1.Location = new Point(791, 1496);
             button1.Name = "button1";
-            button1.Size = new Size(213, 78);
+            button1.Size = new Size(330, 78);
             button1.TabIndex = 63;
             button1.Text = "In phiếu";
             button1.UseVisualStyleBackColor = false;
@@ -595,6 +595,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.White;
             Controls.Add(button1);
             Controls.Add(select_exam_button);
@@ -619,9 +620,9 @@
             Controls.Add(tt_lt_title_label);
             Controls.Add(guna2Separator2);
             Controls.Add(kh_gender_panel);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "RegisterDetailsFormControl";
-            Size = new Size(1580, 1664);
+            Size = new Size(1456, 1101);
             guna2ShadowPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             exam_type_panel.ResumeLayout(false);

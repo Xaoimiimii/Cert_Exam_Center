@@ -230,10 +230,12 @@
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
+            dataGridView1.GridColor = SystemColors.InactiveCaption;
             dataGridView1.Location = new Point(30, 203);
             dataGridView1.Margin = new Padding(6);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 82;
             dataGridView1.Size = new Size(1278, 282);
             dataGridView1.TabIndex = 62;

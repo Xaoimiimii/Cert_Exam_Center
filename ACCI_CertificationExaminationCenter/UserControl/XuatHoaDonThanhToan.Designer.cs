@@ -862,7 +862,7 @@
             Controls.Add(panelSdt);
             Margin = new Padding(0);
             Name = "XuatHoaDonThanhToan";
-            Size = new Size(1516, 1102);
+            Size = new Size(1380, 966);
             panelMaHoaDon.ResumeLayout(false);
             panelMaHoaDon.PerformLayout();
             panelHoTen.ResumeLayout(false);
