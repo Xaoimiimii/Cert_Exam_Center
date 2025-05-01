@@ -32,16 +32,16 @@
             label2 = new Label();
             guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             panelSoTienTamTinh = new Panel();
-            txtSoTienTamTinh = new TextBox();
+            txtMaHoaDon = new TextBox();
             labelSoTienTamTinh = new Label();
             labelSdt = new Label();
             panelTongTienThanhToan = new Panel();
             txtTongTienThanhToan = new TextBox();
             labelTongTienThanhToan = new Label();
             panelMaGiaoDich = new Panel();
-            textBox1 = new TextBox();
+            txtMaGiaoDich = new TextBox();
             labelMaGiaoDich = new Label();
-            btnLapHoaDon = new Button();
+            btnXacNhanThanhToan = new Button();
             panelSdt = new Panel();
             panelMaPhieuDK = new Panel();
             txtMaPhieuDK = new TextBox();
@@ -62,9 +62,9 @@
             panelHoTen = new Panel();
             txtHoTen = new TextBox();
             labelHoTen = new Label();
-            radioBtnTienMat = new RadioButton();
-            radioBtnChuyenKhoan = new RadioButton();
-            button1 = new Button();
+            rbtnTienMat = new RadioButton();
+            rbtnChuyenKhoan = new RadioButton();
+            btnLapHoaDon = new Button();
             panelLoaiChungChi = new Panel();
             txtLoaiChungChi = new TextBox();
             labelLoaiChungChi = new Label();
@@ -129,22 +129,22 @@
             // 
             // panelSoTienTamTinh
             // 
-            panelSoTienTamTinh.Controls.Add(txtSoTienTamTinh);
+            panelSoTienTamTinh.Controls.Add(txtMaHoaDon);
             panelSoTienTamTinh.Controls.Add(labelSoTienTamTinh);
             panelSoTienTamTinh.Location = new Point(25, 713);
             panelSoTienTamTinh.Name = "panelSoTienTamTinh";
             panelSoTienTamTinh.Size = new Size(432, 60);
             panelSoTienTamTinh.TabIndex = 67;
             // 
-            // txtSoTienTamTinh
+            // txtMaHoaDon
             // 
-            txtSoTienTamTinh.Dock = DockStyle.Fill;
-            txtSoTienTamTinh.Enabled = false;
-            txtSoTienTamTinh.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSoTienTamTinh.Location = new Point(165, 0);
-            txtSoTienTamTinh.Name = "txtSoTienTamTinh";
-            txtSoTienTamTinh.Size = new Size(267, 43);
-            txtSoTienTamTinh.TabIndex = 1;
+            txtMaHoaDon.Dock = DockStyle.Fill;
+            txtMaHoaDon.Enabled = false;
+            txtMaHoaDon.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMaHoaDon.Location = new Point(165, 0);
+            txtMaHoaDon.Name = "txtMaHoaDon";
+            txtMaHoaDon.Size = new Size(267, 43);
+            txtMaHoaDon.TabIndex = 1;
             // 
             // labelSoTienTamTinh
             // 
@@ -200,21 +200,21 @@
             // 
             // panelMaGiaoDich
             // 
-            panelMaGiaoDich.Controls.Add(textBox1);
+            panelMaGiaoDich.Controls.Add(txtMaGiaoDich);
             panelMaGiaoDich.Controls.Add(labelMaGiaoDich);
             panelMaGiaoDich.Location = new Point(607, 875);
             panelMaGiaoDich.Name = "panelMaGiaoDich";
             panelMaGiaoDich.Size = new Size(432, 60);
             panelMaGiaoDich.TabIndex = 70;
             // 
-            // textBox1
+            // txtMaGiaoDich
             // 
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(175, 0);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(257, 43);
-            textBox1.TabIndex = 1;
+            txtMaGiaoDich.Dock = DockStyle.Fill;
+            txtMaGiaoDich.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMaGiaoDich.Location = new Point(175, 0);
+            txtMaGiaoDich.Name = "txtMaGiaoDich";
+            txtMaGiaoDich.Size = new Size(257, 43);
+            txtMaGiaoDich.TabIndex = 1;
             // 
             // labelMaGiaoDich
             // 
@@ -227,17 +227,17 @@
             labelMaGiaoDich.TabIndex = 0;
             labelMaGiaoDich.Text = "Mã giao dịch";
             // 
-            // btnLapHoaDon
+            // btnXacNhanThanhToan
             // 
-            btnLapHoaDon.BackColor = Color.MediumTurquoise;
-            btnLapHoaDon.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLapHoaDon.ForeColor = Color.Transparent;
-            btnLapHoaDon.Location = new Point(483, 1000);
-            btnLapHoaDon.Name = "btnLapHoaDon";
-            btnLapHoaDon.Size = new Size(660, 78);
-            btnLapHoaDon.TabIndex = 71;
-            btnLapHoaDon.Text = "Xác nhận thanh toán";
-            btnLapHoaDon.UseVisualStyleBackColor = false;
+            btnXacNhanThanhToan.BackColor = Color.MediumTurquoise;
+            btnXacNhanThanhToan.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnXacNhanThanhToan.ForeColor = Color.Transparent;
+            btnXacNhanThanhToan.Location = new Point(483, 1000);
+            btnXacNhanThanhToan.Name = "btnXacNhanThanhToan";
+            btnXacNhanThanhToan.Size = new Size(660, 78);
+            btnXacNhanThanhToan.TabIndex = 71;
+            btnXacNhanThanhToan.Text = "Xác nhận thanh toán";
+            btnXacNhanThanhToan.UseVisualStyleBackColor = false;
             // 
             // panelSdt
             // 
@@ -441,41 +441,41 @@
             labelHoTen.TabIndex = 0;
             labelHoTen.Text = "Họ tên";
             // 
-            // radioBtnTienMat
+            // rbtnTienMat
             // 
-            radioBtnTienMat.AutoSize = true;
-            radioBtnTienMat.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioBtnTienMat.Location = new Point(25, 808);
-            radioBtnTienMat.Name = "radioBtnTienMat";
-            radioBtnTienMat.Size = new Size(297, 41);
-            radioBtnTienMat.TabIndex = 73;
-            radioBtnTienMat.TabStop = true;
-            radioBtnTienMat.Text = "Thanh toán tiền mặt";
-            radioBtnTienMat.UseVisualStyleBackColor = true;
+            rbtnTienMat.AutoSize = true;
+            rbtnTienMat.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rbtnTienMat.Location = new Point(25, 808);
+            rbtnTienMat.Name = "rbtnTienMat";
+            rbtnTienMat.Size = new Size(297, 41);
+            rbtnTienMat.TabIndex = 73;
+            rbtnTienMat.TabStop = true;
+            rbtnTienMat.Text = "Thanh toán tiền mặt";
+            rbtnTienMat.UseVisualStyleBackColor = true;
             // 
-            // radioBtnChuyenKhoan
+            // rbtnChuyenKhoan
             // 
-            radioBtnChuyenKhoan.AutoSize = true;
-            radioBtnChuyenKhoan.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioBtnChuyenKhoan.Location = new Point(25, 875);
-            radioBtnChuyenKhoan.Name = "radioBtnChuyenKhoan";
-            radioBtnChuyenKhoan.Size = new Size(367, 41);
-            radioBtnChuyenKhoan.TabIndex = 74;
-            radioBtnChuyenKhoan.TabStop = true;
-            radioBtnChuyenKhoan.Text = "Thanh toán chuyển khoản";
-            radioBtnChuyenKhoan.UseVisualStyleBackColor = true;
+            rbtnChuyenKhoan.AutoSize = true;
+            rbtnChuyenKhoan.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rbtnChuyenKhoan.Location = new Point(25, 875);
+            rbtnChuyenKhoan.Name = "rbtnChuyenKhoan";
+            rbtnChuyenKhoan.Size = new Size(367, 41);
+            rbtnChuyenKhoan.TabIndex = 74;
+            rbtnChuyenKhoan.TabStop = true;
+            rbtnChuyenKhoan.Text = "Thanh toán chuyển khoản";
+            rbtnChuyenKhoan.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnLapHoaDon
             // 
-            button1.BackColor = Color.MediumTurquoise;
-            button1.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Transparent;
-            button1.Location = new Point(1295, 703);
-            button1.Name = "button1";
-            button1.Size = new Size(300, 80);
-            button1.TabIndex = 75;
-            button1.Text = "Tạo hóa đơn";
-            button1.UseVisualStyleBackColor = false;
+            btnLapHoaDon.BackColor = Color.MediumTurquoise;
+            btnLapHoaDon.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLapHoaDon.ForeColor = Color.Transparent;
+            btnLapHoaDon.Location = new Point(1295, 703);
+            btnLapHoaDon.Name = "btnLapHoaDon";
+            btnLapHoaDon.Size = new Size(300, 80);
+            btnLapHoaDon.TabIndex = 75;
+            btnLapHoaDon.Text = "Tạo hóa đơn";
+            btnLapHoaDon.UseVisualStyleBackColor = false;
             // 
             // panelLoaiChungChi
             // 
@@ -628,15 +628,15 @@
             Controls.Add(panelGioThi);
             Controls.Add(panelNgayThi);
             Controls.Add(panelMaLichThi);
-            Controls.Add(button1);
-            Controls.Add(radioBtnChuyenKhoan);
-            Controls.Add(radioBtnTienMat);
+            Controls.Add(btnLapHoaDon);
+            Controls.Add(rbtnChuyenKhoan);
+            Controls.Add(rbtnTienMat);
             Controls.Add(label2);
             Controls.Add(guna2Separator2);
             Controls.Add(panelSoTienTamTinh);
             Controls.Add(panelTongTienThanhToan);
             Controls.Add(panelMaGiaoDich);
-            Controls.Add(btnLapHoaDon);
+            Controls.Add(btnXacNhanThanhToan);
             Controls.Add(panelSdt);
             Controls.Add(panelMaPhieuDK);
             Controls.Add(select_exam_button);
@@ -688,16 +688,16 @@
         private Label label2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Panel panelSoTienTamTinh;
-        private TextBox txtSoTienTamTinh;
+        private TextBox txtMaHoaDon;
         private Label labelSoTienTamTinh;
         private Label labelSdt;
         private Panel panelTongTienThanhToan;
         private TextBox txtTongTienThanhToan;
         private Label labelTongTienThanhToan;
         private Panel panelMaGiaoDich;
-        private TextBox textBox1;
+        private TextBox txtMaGiaoDich;
         private Label labelMaGiaoDich;
-        private Button btnLapHoaDon;
+        private Button btnXacNhanThanhToan;
         private Panel panelSdt;
         private Panel panelMaPhieuDK;
         private TextBox txtMaPhieuDK;
@@ -718,9 +718,9 @@
         private Panel panelHoTen;
         private TextBox txtHoTen;
         private Label labelHoTen;
-        private RadioButton radioBtnTienMat;
-        private RadioButton radioBtnChuyenKhoan;
-        private Button button1;
+        private RadioButton rbtnTienMat;
+        private RadioButton rbtnChuyenKhoan;
+        private Button btnLapHoaDon;
         private Panel panelLoaiChungChi;
         private TextBox txtLoaiChungChi;
         private Label labelLoaiChungChi;

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            select_exam_button = new Button();
+            btnTraCuuPhieuDK = new Button();
             tt_lt_title_label = new Label();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             label1 = new Label();
@@ -47,7 +47,7 @@
             txtTongTienThanhToan = new TextBox();
             labelTongTienThanhToan = new Label();
             panel1 = new Panel();
-            textBox1 = new TextBox();
+            txtChietKhau = new TextBox();
             label3 = new Label();
             btnLapHoaDon = new Button();
             panelLoaiChungChi = new Panel();
@@ -101,17 +101,17 @@
             ((System.ComponentModel.ISupportInitialize)pbBack).BeginInit();
             SuspendLayout();
             // 
-            // select_exam_button
+            // btnTraCuuPhieuDK
             // 
-            select_exam_button.BackColor = Color.MediumTurquoise;
-            select_exam_button.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            select_exam_button.ForeColor = Color.Transparent;
-            select_exam_button.Location = new Point(607, 498);
-            select_exam_button.Name = "select_exam_button";
-            select_exam_button.Size = new Size(406, 78);
-            select_exam_button.TabIndex = 35;
-            select_exam_button.Text = "Tra cứu phiếu đăng ký";
-            select_exam_button.UseVisualStyleBackColor = false;
+            btnTraCuuPhieuDK.BackColor = Color.MediumTurquoise;
+            btnTraCuuPhieuDK.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTraCuuPhieuDK.ForeColor = Color.Transparent;
+            btnTraCuuPhieuDK.Location = new Point(607, 498);
+            btnTraCuuPhieuDK.Name = "btnTraCuuPhieuDK";
+            btnTraCuuPhieuDK.Size = new Size(406, 78);
+            btnTraCuuPhieuDK.TabIndex = 35;
+            btnTraCuuPhieuDK.Text = "Tra cứu phiếu đăng ký";
+            btnTraCuuPhieuDK.UseVisualStyleBackColor = false;
             // 
             // tt_lt_title_label
             // 
@@ -287,22 +287,22 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtChietKhau);
             panel1.Controls.Add(label3);
             panel1.Location = new Point(520, 760);
             panel1.Name = "panel1";
             panel1.Size = new Size(432, 60);
             panel1.TabIndex = 52;
             // 
-            // textBox1
+            // txtChietKhau
             // 
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Enabled = false;
-            textBox1.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(148, 0);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(284, 43);
-            textBox1.TabIndex = 1;
+            txtChietKhau.Dock = DockStyle.Fill;
+            txtChietKhau.Enabled = false;
+            txtChietKhau.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtChietKhau.Location = new Point(148, 0);
+            txtChietKhau.Name = "txtChietKhau";
+            txtChietKhau.Size = new Size(284, 43);
+            txtChietKhau.TabIndex = 1;
             // 
             // label3
             // 
@@ -672,7 +672,7 @@
             Controls.Add(panelSlgThiSinh);
             Controls.Add(label2);
             Controls.Add(guna2Separator2);
-            Controls.Add(select_exam_button);
+            Controls.Add(btnTraCuuPhieuDK);
             Controls.Add(tt_lt_title_label);
             Controls.Add(guna2Separator1);
             Controls.Add(label1);
@@ -727,7 +727,7 @@
         private TextBox date_exam_textBox;
         private Label date_exam_label;
         private Panel exam_id_panel;
-        private Button select_exam_button;
+        private Button btnTraCuuPhieuDK;
         private Label tt_lt_title_label;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Label label1;
@@ -746,7 +746,7 @@
         private TextBox txtTongTienThanhToan;
         private Label labelTongTienThanhToan;
         private Panel panel1;
-        private TextBox textBox1;
+        private TextBox txtChietKhau;
         private Label label3;
         private Button btnLapHoaDon;
         private Panel panelLoaiChungChi;

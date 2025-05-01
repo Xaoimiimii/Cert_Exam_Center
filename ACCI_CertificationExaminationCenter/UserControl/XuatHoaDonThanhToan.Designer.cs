@@ -46,7 +46,7 @@
             labelTongTienThanhToan = new Label();
             panelMaKH = new Panel();
             panelMaGiaoDich = new Panel();
-            textBox1 = new TextBox();
+            txtMaGiaoDich = new TextBox();
             labelMaGiaoDich = new Label();
             tt_lt_title_label = new Label();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -293,20 +293,20 @@
             // 
             // panelMaGiaoDich
             // 
-            panelMaGiaoDich.Controls.Add(textBox1);
+            panelMaGiaoDich.Controls.Add(txtMaGiaoDich);
             panelMaGiaoDich.Controls.Add(labelMaGiaoDich);
             panelMaGiaoDich.Location = new Point(1330, 1148);
             panelMaGiaoDich.Name = "panelMaGiaoDich";
             panelMaGiaoDich.Size = new Size(265, 98);
             panelMaGiaoDich.TabIndex = 90;
             // 
-            // textBox1
+            // txtMaGiaoDich
             // 
-            textBox1.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(0, 48);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(257, 43);
-            textBox1.TabIndex = 1;
+            txtMaGiaoDich.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMaGiaoDich.Location = new Point(0, 48);
+            txtMaGiaoDich.Name = "txtMaGiaoDich";
+            txtMaGiaoDich.Size = new Size(257, 43);
+            txtMaGiaoDich.TabIndex = 1;
             // 
             // labelMaGiaoDich
             // 
@@ -926,7 +926,7 @@
         private Label labelTongTienThanhToan;
         private Panel panelMaKH;
         private Panel panelMaGiaoDich;
-        private TextBox textBox1;
+        private TextBox txtMaGiaoDich;
         private Label labelMaGiaoDich;
         private Label tt_lt_title_label;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;

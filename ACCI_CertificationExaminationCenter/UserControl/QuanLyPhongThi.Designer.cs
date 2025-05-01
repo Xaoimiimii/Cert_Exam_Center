@@ -32,25 +32,25 @@ namespace ACCI_CertificationExaminationCenter
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             label1 = new Label();
-            search_student_guna2TextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            txtMaPhongThi = new Guna.UI2.WinForms.Guna2TextBox();
             search_student_label = new Label();
-            student_dataGridView = new DataGridView();
+            dgvDSPhongThi = new DataGridView();
             gioiTinh_label = new Label();
-            txtViTri = new TextBox();
+            txtViTriPhongThi = new TextBox();
             lbViTri = new Label();
-            add_button = new Button();
-            alter_button = new Button();
-            confirm_button = new Button();
-            search_student_button = new Button();
+            btnThem = new Button();
+            btnXoa = new Button();
+            btnCapNhat = new Button();
+            btnTraCuu = new Button();
             info_panel = new Panel();
             numSoLuongToiDa = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)student_dataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvDSPhongThi).BeginInit();
             info_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numSoLuongToiDa).BeginInit();
             SuspendLayout();
@@ -75,29 +75,29 @@ namespace ACCI_CertificationExaminationCenter
             label1.TabIndex = 9;
             label1.Text = "Quản lý phòng thi";
             // 
-            // search_student_guna2TextBox
+            // txtMaPhongThi
             // 
-            search_student_guna2TextBox.BorderRadius = 20;
-            search_student_guna2TextBox.CustomizableEdges = customizableEdges1;
-            search_student_guna2TextBox.DefaultText = "";
-            search_student_guna2TextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            search_student_guna2TextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            search_student_guna2TextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            search_student_guna2TextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            search_student_guna2TextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            search_student_guna2TextBox.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            search_student_guna2TextBox.HoverState.BorderColor = Color.Gray;
-            search_student_guna2TextBox.IconLeftOffset = new Point(10, 0);
-            search_student_guna2TextBox.IconRight = Properties.Resources.close__1_;
-            search_student_guna2TextBox.IconRightOffset = new Point(10, 0);
-            search_student_guna2TextBox.Location = new Point(223, 138);
-            search_student_guna2TextBox.Margin = new Padding(6, 6, 6, 6);
-            search_student_guna2TextBox.Name = "search_student_guna2TextBox";
-            search_student_guna2TextBox.PlaceholderText = "";
-            search_student_guna2TextBox.SelectedText = "";
-            search_student_guna2TextBox.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            search_student_guna2TextBox.Size = new Size(460, 51);
-            search_student_guna2TextBox.TabIndex = 43;
+            txtMaPhongThi.BorderRadius = 20;
+            txtMaPhongThi.CustomizableEdges = customizableEdges5;
+            txtMaPhongThi.DefaultText = "";
+            txtMaPhongThi.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtMaPhongThi.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtMaPhongThi.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtMaPhongThi.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtMaPhongThi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtMaPhongThi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMaPhongThi.HoverState.BorderColor = Color.Gray;
+            txtMaPhongThi.IconLeftOffset = new Point(10, 0);
+            txtMaPhongThi.IconRight = Properties.Resources.close__1_;
+            txtMaPhongThi.IconRightOffset = new Point(10, 0);
+            txtMaPhongThi.Location = new Point(223, 138);
+            txtMaPhongThi.Margin = new Padding(6, 6, 6, 6);
+            txtMaPhongThi.Name = "txtMaPhongThi";
+            txtMaPhongThi.PlaceholderText = "";
+            txtMaPhongThi.SelectedText = "";
+            txtMaPhongThi.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtMaPhongThi.Size = new Size(460, 51);
+            txtMaPhongThi.TabIndex = 43;
             // 
             // search_student_label
             // 
@@ -110,21 +110,21 @@ namespace ACCI_CertificationExaminationCenter
             search_student_label.TabIndex = 42;
             search_student_label.Text = "Mã phòng thi";
             // 
-            // student_dataGridView
+            // dgvDSPhongThi
             // 
-            student_dataGridView.AllowUserToResizeRows = false;
-            student_dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            student_dataGridView.BackgroundColor = Color.Azure;
-            student_dataGridView.BorderStyle = BorderStyle.Fixed3D;
-            student_dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            student_dataGridView.Location = new Point(24, 213);
-            student_dataGridView.Margin = new Padding(0);
-            student_dataGridView.MultiSelect = false;
-            student_dataGridView.Name = "student_dataGridView";
-            student_dataGridView.RowHeadersVisible = false;
-            student_dataGridView.RowHeadersWidth = 82;
-            student_dataGridView.Size = new Size(1566, 499);
-            student_dataGridView.TabIndex = 45;
+            dgvDSPhongThi.AllowUserToResizeRows = false;
+            dgvDSPhongThi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvDSPhongThi.BackgroundColor = Color.Azure;
+            dgvDSPhongThi.BorderStyle = BorderStyle.Fixed3D;
+            dgvDSPhongThi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDSPhongThi.Location = new Point(24, 213);
+            dgvDSPhongThi.Margin = new Padding(0);
+            dgvDSPhongThi.MultiSelect = false;
+            dgvDSPhongThi.Name = "dgvDSPhongThi";
+            dgvDSPhongThi.RowHeadersVisible = false;
+            dgvDSPhongThi.RowHeadersWidth = 82;
+            dgvDSPhongThi.Size = new Size(1566, 578);
+            dgvDSPhongThi.TabIndex = 45;
             // 
             // gioiTinh_label
             // 
@@ -137,13 +137,13 @@ namespace ACCI_CertificationExaminationCenter
             gioiTinh_label.TabIndex = 81;
             gioiTinh_label.Text = "Số lượng tham gia tối đa";
             // 
-            // txtViTri
+            // txtViTriPhongThi
             // 
-            txtViTri.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtViTri.Location = new Point(49, 122);
-            txtViTri.Name = "txtViTri";
-            txtViTri.Size = new Size(607, 43);
-            txtViTri.TabIndex = 86;
+            txtViTriPhongThi.Font = new Font("Segoe UI", 10.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtViTriPhongThi.Location = new Point(49, 122);
+            txtViTriPhongThi.Name = "txtViTriPhongThi";
+            txtViTriPhongThi.Size = new Size(607, 43);
+            txtViTriPhongThi.TabIndex = 86;
             // 
             // lbViTri
             // 
@@ -156,68 +156,68 @@ namespace ACCI_CertificationExaminationCenter
             lbViTri.TabIndex = 85;
             lbViTri.Text = "Vị trí";
             // 
-            // add_button
+            // btnThem
             // 
-            add_button.BackColor = Color.DarkTurquoise;
-            add_button.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            add_button.ForeColor = Color.Transparent;
-            add_button.Location = new Point(49, 243);
-            add_button.Name = "add_button";
-            add_button.Size = new Size(351, 87);
-            add_button.TabIndex = 93;
-            add_button.Text = "Thêm phòng thi";
-            add_button.UseVisualStyleBackColor = false;
+            btnThem.BackColor = Color.DarkTurquoise;
+            btnThem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnThem.ForeColor = Color.Transparent;
+            btnThem.Location = new Point(49, 243);
+            btnThem.Name = "btnThem";
+            btnThem.Size = new Size(351, 87);
+            btnThem.TabIndex = 93;
+            btnThem.Text = "Thêm phòng thi";
+            btnThem.UseVisualStyleBackColor = false;
             // 
-            // alter_button
+            // btnXoa
             // 
-            alter_button.BackColor = SystemColors.ActiveBorder;
-            alter_button.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            alter_button.ForeColor = Color.Transparent;
-            alter_button.Location = new Point(609, 243);
-            alter_button.Name = "alter_button";
-            alter_button.Size = new Size(351, 87);
-            alter_button.TabIndex = 94;
-            alter_button.Text = "Xóa phòng thi";
-            alter_button.UseVisualStyleBackColor = false;
-            alter_button.Click += alter_button_Click;
+            btnXoa.BackColor = SystemColors.ActiveBorder;
+            btnXoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnXoa.ForeColor = Color.Transparent;
+            btnXoa.Location = new Point(609, 243);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(351, 87);
+            btnXoa.TabIndex = 94;
+            btnXoa.Text = "Xóa phòng thi";
+            btnXoa.UseVisualStyleBackColor = false;
+            btnXoa.Click += alter_button_Click;
             // 
-            // confirm_button
+            // btnCapNhat
             // 
-            confirm_button.BackColor = Color.DarkTurquoise;
-            confirm_button.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            confirm_button.ForeColor = Color.Transparent;
-            confirm_button.Location = new Point(1154, 243);
-            confirm_button.Name = "confirm_button";
-            confirm_button.Size = new Size(351, 87);
-            confirm_button.TabIndex = 95;
-            confirm_button.Text = "Cập nhật";
-            confirm_button.UseVisualStyleBackColor = false;
+            btnCapNhat.BackColor = Color.DarkTurquoise;
+            btnCapNhat.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCapNhat.ForeColor = Color.Transparent;
+            btnCapNhat.Location = new Point(1154, 243);
+            btnCapNhat.Name = "btnCapNhat";
+            btnCapNhat.Size = new Size(351, 87);
+            btnCapNhat.TabIndex = 95;
+            btnCapNhat.Text = "Cập nhật";
+            btnCapNhat.UseVisualStyleBackColor = false;
             // 
-            // search_student_button
+            // btnTraCuu
             // 
-            search_student_button.BackColor = Color.DarkTurquoise;
-            search_student_button.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            search_student_button.ForeColor = Color.Transparent;
-            search_student_button.Location = new Point(728, 139);
-            search_student_button.Name = "search_student_button";
-            search_student_button.Size = new Size(140, 50);
-            search_student_button.TabIndex = 44;
-            search_student_button.Text = "Tra cứu";
-            search_student_button.UseVisualStyleBackColor = false;
+            btnTraCuu.BackColor = Color.DarkTurquoise;
+            btnTraCuu.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTraCuu.ForeColor = Color.Transparent;
+            btnTraCuu.Location = new Point(726, 127);
+            btnTraCuu.Name = "btnTraCuu";
+            btnTraCuu.Size = new Size(185, 70);
+            btnTraCuu.TabIndex = 44;
+            btnTraCuu.Text = "Tra cứu";
+            btnTraCuu.UseVisualStyleBackColor = false;
             // 
             // info_panel
             // 
             info_panel.Controls.Add(numSoLuongToiDa);
             info_panel.Controls.Add(gioiTinh_label);
-            info_panel.Controls.Add(confirm_button);
-            info_panel.Controls.Add(alter_button);
-            info_panel.Controls.Add(add_button);
+            info_panel.Controls.Add(btnCapNhat);
+            info_panel.Controls.Add(btnXoa);
+            info_panel.Controls.Add(btnThem);
             info_panel.Controls.Add(lbViTri);
-            info_panel.Controls.Add(txtViTri);
-            info_panel.Location = new Point(24, 733);
+            info_panel.Controls.Add(txtViTriPhongThi);
+            info_panel.Location = new Point(24, 799);
             info_panel.Margin = new Padding(0);
             info_panel.Name = "info_panel";
-            info_panel.Size = new Size(1566, 420);
+            info_panel.Size = new Size(1566, 354);
             info_panel.TabIndex = 101;
             // 
             // numSoLuongToiDa
@@ -225,12 +225,12 @@ namespace ACCI_CertificationExaminationCenter
             numSoLuongToiDa.BackColor = Color.Transparent;
             numSoLuongToiDa.BorderColor = Color.Silver;
             numSoLuongToiDa.BorderRadius = 10;
-            numSoLuongToiDa.CustomizableEdges = customizableEdges3;
+            numSoLuongToiDa.CustomizableEdges = customizableEdges7;
             numSoLuongToiDa.Font = new Font("Segoe UI", 9F);
             numSoLuongToiDa.Location = new Point(904, 122);
             numSoLuongToiDa.Margin = new Padding(5, 6, 5, 6);
             numSoLuongToiDa.Name = "numSoLuongToiDa";
-            numSoLuongToiDa.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            numSoLuongToiDa.ShadowDecoration.CustomizableEdges = customizableEdges8;
             numSoLuongToiDa.Size = new Size(327, 48);
             numSoLuongToiDa.TabIndex = 96;
             numSoLuongToiDa.UpDownButtonFillColor = Color.DarkTurquoise;
@@ -241,16 +241,16 @@ namespace ACCI_CertificationExaminationCenter
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(info_panel);
-            Controls.Add(student_dataGridView);
-            Controls.Add(search_student_button);
-            Controls.Add(search_student_guna2TextBox);
+            Controls.Add(dgvDSPhongThi);
+            Controls.Add(btnTraCuu);
+            Controls.Add(txtMaPhongThi);
             Controls.Add(search_student_label);
             Controls.Add(guna2Separator1);
             Controls.Add(label1);
             Margin = new Padding(0);
             Name = "QuanLyPhongThi";
             Size = new Size(1618, 1170);
-            ((System.ComponentModel.ISupportInitialize)student_dataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvDSPhongThi).EndInit();
             info_panel.ResumeLayout(false);
             info_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numSoLuongToiDa).EndInit();
@@ -262,18 +262,18 @@ namespace ACCI_CertificationExaminationCenter
 
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox search_student_guna2TextBox;
+        private Guna.UI2.WinForms.Guna2TextBox txtMaPhongThi;
         private Label search_student_label;
-        private DataGridView student_dataGridView;
+        private DataGridView dgvDSPhongThi;
         private Label gioiTinh_label;
         private Label tinhTrang_label;
-        private TextBox txtViTri;
+        private TextBox txtViTriPhongThi;
         private Label lbViTri;
         private ComboBox tinhTrang_comboBox;
-        private Button add_button;
-        private Button alter_button;
-        private Button confirm_button;
-        private Button search_student_button;
+        private Button btnThem;
+        private Button btnXoa;
+        private Button btnCapNhat;
+        private Button btnTraCuu;
         private Panel info_panel;
         private Guna.UI2.WinForms.Guna2NumericUpDown numSoLuongToiDa;
     }
