@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ACCI_CertificationExaminationCenter.DAO
 {
-    internal class KetQuaThi_DAO
+    public class KetQuaThi_DAO
     {
         private SqlConnection connection;
         private string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
