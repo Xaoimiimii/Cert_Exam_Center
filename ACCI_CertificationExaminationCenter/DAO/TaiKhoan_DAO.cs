@@ -10,10 +10,10 @@ namespace ACCI_CertificationExaminationCenter.DAO
 {
     internal class TaiKhoan_DAO
     {
-        private static SqlConnection connection;
-        private static string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
+        private SqlConnection connection;
+        private string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
 
-        public static void Connect()
+        public void Connect()
         {
             if (connection == null)
                 connection = new SqlConnection(strConnection);
@@ -22,13 +22,13 @@ namespace ACCI_CertificationExaminationCenter.DAO
                 connection.Open();
         }
 
-        public static void Disconnect()
+        public void Disconnect()
         {
             if (connection != null && connection.State == ConnectionState.Open)
                 connection.Close();
         }
 
-        public static bool KiemTraTaiKhoan(string tenDangNhap, string matKhau)
+        public bool KiemTraTaiKhoan(string tenDangNhap, string matKhau)
         {
             SqlCommand cmd = new SqlCommand("KiemTraTaiKhoan", connection);
             cmd.CommandType = CommandType.StoredProcedure;

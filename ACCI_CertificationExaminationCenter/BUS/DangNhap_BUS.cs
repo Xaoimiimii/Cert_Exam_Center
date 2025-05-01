@@ -14,18 +14,20 @@ namespace ACCI_CertificationExaminationCenter.BUS
         {
             bool result = false;
 
-            TaiKhoan_DAO.Connect();
-            result = TaiKhoan_DAO.KiemTraTaiKhoan(tenDangNhap, matKhau);
-            TaiKhoan_DAO.Disconnect();
+            TaiKhoan_DAO taiKhoan_DAO = new TaiKhoan_DAO();
+            taiKhoan_DAO.Connect();
+            result = taiKhoan_DAO.KiemTraTaiKhoan(tenDangNhap, matKhau);
+            taiKhoan_DAO.Disconnect();
 
             return result;
         }
 
         public static string LayVaiTro(string tenDangNhap)
         {
-            NhanVien_DAO.Connect();
-            DataTable dt = NhanVien_DAO.LayTTNhanVien(tenDangNhap);
-            NhanVien_DAO.Disconnect();
+            NhanVien_DAO nhanVien_DAO = new NhanVien_DAO();
+            nhanVien_DAO.Connect();
+            DataTable dt = nhanVien_DAO.LayTTNhanVien(tenDangNhap);
+            nhanVien_DAO.Disconnect();
 
             if (dt.Rows.Count > 0) return dt.Rows[0][7].ToString();
             else return "";

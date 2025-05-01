@@ -19,25 +19,28 @@ namespace ACCI_CertificationExaminationCenter.BUS
 
         public static DataTable LayDSLichThi()
         {
-            LichThi_DAO.Connect();
-            DataTable dt = LichThi_DAO.LayDSLichThi();
-            LichThi_DAO.Disconnect();
+            LichThi_DAO dao = new LichThi_DAO();
+            dao.Connect();
+            DataTable dt = dao.LayDSLichThi();
+            dao.Disconnect();
             return dt;
         }
 
         public static DataTable LayTTLichThi(string maLichThi)
         {
-            LichThi_DAO.Connect();
-            DataTable dt = LichThi_DAO.LayTTLichThi(maLichThi);
-            LichThi_DAO.Disconnect();
+            LichThi_DAO dao = new LichThi_DAO();
+            dao.Connect();
+            DataTable dt = dao.LayTTLichThi(maLichThi);
+            dao.Disconnect();
             return dt;
         }
 
         public static DataTable LayTTLichThi(DateOnly? ngayThi, TimeOnly? thoiGianThi, string? loaiDanhGia)
         {
-            LichThi_DAO.Connect();
-            DataTable dt = LichThi_DAO.LayTTLichThi(ngayThi, thoiGianThi, loaiDanhGia);
-            LichThi_DAO.Disconnect();
+            LichThi_DAO dao = new LichThi_DAO();
+            dao.Connect();
+            DataTable dt = dao.LayTTLichThi(ngayThi, thoiGianThi, loaiDanhGia);
+            dao.Disconnect();
             return dt;
         }
     }

@@ -10,10 +10,10 @@ namespace ACCI_CertificationExaminationCenter.DAO
 {
     internal class LichThi_DAO
     {
-        private static SqlConnection connection;
-        private static string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
+        private SqlConnection connection;
+        private string strConnection = "Data Source=LAPTOP-OJ43E27H;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
 
-        public static void Connect()
+        public void Connect()
         {
             if (connection == null)
                 connection = new SqlConnection(strConnection);
@@ -22,13 +22,13 @@ namespace ACCI_CertificationExaminationCenter.DAO
                 connection.Open();
         }
 
-        public static void Disconnect()
+        public void Disconnect()
         {
             if (connection != null && connection.State == ConnectionState.Open)
                 connection.Close();
         }
 
-        public static DataTable LayDSLichThi()
+        public DataTable LayDSLichThi()
         {
             SqlCommand cmd = new SqlCommand("LayDSLichThi", connection);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -39,7 +39,7 @@ namespace ACCI_CertificationExaminationCenter.DAO
         }
 
 
-        public static DataTable LayTTLichThi(string maLichThi)
+        public DataTable LayTTLichThi(string maLichThi)
         {
             SqlCommand cmd = new SqlCommand("LayTTLichThi_MaLichThi", connection);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -50,7 +50,7 @@ namespace ACCI_CertificationExaminationCenter.DAO
             return dt;
         }
 
-        public static DataTable LayTTLichThi(DateOnly? ngayThi, TimeOnly? thoiGianThi, string? loaiDanhGia)
+        public DataTable LayTTLichThi(DateOnly? ngayThi, TimeOnly? thoiGianThi, string? loaiDanhGia)
         {
             SqlCommand cmd = new SqlCommand("LayTTLichThi_Ngay_ThoiGian_LoaiDanhGia", connection);
             cmd.CommandType = CommandType.StoredProcedure;
