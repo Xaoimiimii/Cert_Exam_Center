@@ -1,14 +1,14 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data;
-using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ACCI_CertificationExaminationCenter.DAO
 {
-    public class KetQuaThi_DAO
+    internal class PhieuDuThi_DAO
     {
         private SqlConnection connection;
         private string strConnection = "Data Source=.;Initial Catalog=PTTK;Integrated Security=True;TrustServerCertificate=True";
@@ -27,40 +27,34 @@ namespace ACCI_CertificationExaminationCenter.DAO
                 connection.Close();
         }
 
-
-        public void ThemKQThi(string soBaoDanh, int diem, DateTime? ngayCapChungChi, string nhanVienNhap)
+        public void CapNhatTrangThai(string sbd, string trangThai, string nhanVienCapNhat)
         {
             try
             {
-
                 connection.InfoMessage += (sender, e) =>
                 {
-                    throw new Exception(e.Message);
+                    throw new Exception(e.Message);//Để bắt lỗi
                 };
 
-                using (SqlCommand cmd = new SqlCommand("ThemKQThi", connection))
+                using (SqlCommand cmd = new SqlCommand("CapNhatTrangThai", connection))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-
-                    cmd.Parameters.AddWithValue("@SoBaoDanh", soBaoDanh);
-                    cmd.Parameters.AddWithValue("@Diem", diem);
-                    cmd.Parameters.AddWithValue("@NgayCapChungChi", (object?)ngayCapChungChi ?? DBNull.Value);
-                    cmd.Parameters.AddWithValue("@NhanVienNhap", nhanVienNhap);
+                    cmd.Parameters.AddWithValue("@SBD", sbd);
+                    cmd.Parameters.AddWithValue("@TrangThai", trangThai);
+                    cmd.Parameters.AddWithValue("@NhanVienCapNhat", nhanVienCapNhat);
 
                     cmd.ExecuteNonQuery();
-
-                    Console.WriteLine("Đã thêm kết quả thi cho SBD: " + soBaoDanh);
+                    Console.WriteLine("Đã cập nhật trạng thái nhận chứng chỉ cho SBD: " + sbd);
                 }
             }
             catch (SqlException ex)
             {
-                throw new Exception("Lỗi SQL: " + ex.Message);
+                throw new Exception(ex.Message);
             }
             catch (Exception ex)
             {
-                throw new Exception("Lỗi: " + ex.Message);
+                throw new Exception(ex.Message);
             }
         }
-
     }
 }
