@@ -261,8 +261,8 @@
         {
             if (menuExpand)
             {
-                nav_NVTiepNhan.Width -= 10;
-                if (nav_NVTiepNhan.Width <= 98)
+                thanhDieuHuong.Width -= 20;
+                if (thanhDieuHuong.Width <= 98)
                 {
                     menuTransition.Stop();
                     menuExpand = false;
@@ -270,8 +270,8 @@
             }
             else
             {
-                nav_NVTiepNhan.Width += 10;
-                if (nav_NVTiepNhan.Width >= 420)
+                thanhDieuHuong.Width += 20;
+                if (thanhDieuHuong.Width >= 420)
                 {
                     menuTransition.Stop();
                     menuExpand = true;
