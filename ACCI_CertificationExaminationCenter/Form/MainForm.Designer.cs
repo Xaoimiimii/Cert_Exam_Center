@@ -30,7 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            nav_NVTiepNhan = new FlowLayoutPanel();
+            thanhDieuHuong = new FlowLayoutPanel();
             menu_group_panel = new Panel();
             close_menu_pictureBox = new PictureBox();
             show_menu_pictureBox = new PictureBox();
@@ -91,7 +91,7 @@
             main_panel = new Panel();
             status_bar_panel = new Panel();
             lCapNhatPhieuDuThi = new Label();
-            nav_NVTiepNhan.SuspendLayout();
+            thanhDieuHuong.SuspendLayout();
             menu_group_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)close_menu_pictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)show_menu_pictureBox).BeginInit();
@@ -132,17 +132,17 @@
             ((System.ComponentModel.ISupportInitialize)out_menu_pictureBox).BeginInit();
             SuspendLayout();
             // 
-            // nav_NVTiepNhan
+            // thanhDieuHuong
             // 
-            nav_NVTiepNhan.BackColor = SystemColors.ActiveCaptionText;
-            nav_NVTiepNhan.Controls.Add(menu_group_panel);
-            nav_NVTiepNhan.Controls.Add(dashboard_menu_group_flowLayoutPanel);
-            nav_NVTiepNhan.Controls.Add(out_menu_flowLayoutPanel);
-            nav_NVTiepNhan.Dock = DockStyle.Left;
-            nav_NVTiepNhan.Location = new Point(0, 0);
-            nav_NVTiepNhan.Name = "nav_NVTiepNhan";
-            nav_NVTiepNhan.Size = new Size(98, 1209);
-            nav_NVTiepNhan.TabIndex = 0;
+            thanhDieuHuong.BackColor = SystemColors.ActiveCaptionText;
+            thanhDieuHuong.Controls.Add(menu_group_panel);
+            thanhDieuHuong.Controls.Add(dashboard_menu_group_flowLayoutPanel);
+            thanhDieuHuong.Controls.Add(out_menu_flowLayoutPanel);
+            thanhDieuHuong.Dock = DockStyle.Left;
+            thanhDieuHuong.Location = new Point(0, 0);
+            thanhDieuHuong.Name = "thanhDieuHuong";
+            thanhDieuHuong.Size = new Size(98, 1209);
+            thanhDieuHuong.TabIndex = 0;
             // 
             // menu_group_panel
             // 
@@ -151,13 +151,13 @@
             menu_group_panel.Location = new Point(3, 3);
             menu_group_panel.Margin = new Padding(3, 3, 3, 64);
             menu_group_panel.Name = "menu_group_panel";
-            menu_group_panel.Size = new Size(417, 61);
+            menu_group_panel.Size = new Size(420, 61);
             menu_group_panel.TabIndex = 2;
             // 
             // close_menu_pictureBox
             // 
             close_menu_pictureBox.Image = Properties.Resources.close1;
-            close_menu_pictureBox.Location = new Point(362, 19);
+            close_menu_pictureBox.Location = new Point(364, 19);
             close_menu_pictureBox.Name = "close_menu_pictureBox";
             close_menu_pictureBox.Size = new Size(32, 32);
             close_menu_pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -200,7 +200,7 @@
             dashboard_menu_group_flowLayoutPanel.Location = new Point(0, 128);
             dashboard_menu_group_flowLayoutPanel.Margin = new Padding(0, 0, 0, 40);
             dashboard_menu_group_flowLayoutPanel.Name = "dashboard_menu_group_flowLayoutPanel";
-            dashboard_menu_group_flowLayoutPanel.Size = new Size(403, 1280);
+            dashboard_menu_group_flowLayoutPanel.Size = new Size(420, 1280);
             dashboard_menu_group_flowLayoutPanel.TabIndex = 4;
             // 
             // dashboard_menu_flowLayoutPanel
@@ -211,7 +211,7 @@
             dashboard_menu_flowLayoutPanel.Location = new Point(0, 0);
             dashboard_menu_flowLayoutPanel.Margin = new Padding(0);
             dashboard_menu_flowLayoutPanel.Name = "dashboard_menu_flowLayoutPanel";
-            dashboard_menu_flowLayoutPanel.Size = new Size(318, 80);
+            dashboard_menu_flowLayoutPanel.Size = new Size(420, 80);
             dashboard_menu_flowLayoutPanel.TabIndex = 1;
             dashboard_menu_flowLayoutPanel.WrapContents = false;
             dashboard_menu_flowLayoutPanel.Click += dashboard_menu_flowLayoutPanel_Click;
@@ -249,7 +249,7 @@
             register_menu_flowLayoutPanel.Location = new Point(0, 80);
             register_menu_flowLayoutPanel.Margin = new Padding(0);
             register_menu_flowLayoutPanel.Name = "register_menu_flowLayoutPanel";
-            register_menu_flowLayoutPanel.Size = new Size(318, 80);
+            register_menu_flowLayoutPanel.Size = new Size(420, 80);
             register_menu_flowLayoutPanel.TabIndex = 5;
             register_menu_flowLayoutPanel.WrapContents = false;
             register_menu_flowLayoutPanel.Click += register_menu_flowLayoutPanel_Click;
@@ -287,7 +287,7 @@
             panelXuatPhieuDK.Location = new Point(0, 160);
             panelXuatPhieuDK.Margin = new Padding(0);
             panelXuatPhieuDK.Name = "panelXuatPhieuDK";
-            panelXuatPhieuDK.Size = new Size(380, 80);
+            panelXuatPhieuDK.Size = new Size(420, 80);
             panelXuatPhieuDK.TabIndex = 10;
             panelXuatPhieuDK.WrapContents = false;
             panelXuatPhieuDK.Click += panelXuatPhieuDK_Click;
@@ -325,7 +325,7 @@
             panelGiaHanNgayThi.Location = new Point(0, 240);
             panelGiaHanNgayThi.Margin = new Padding(0);
             panelGiaHanNgayThi.Name = "panelGiaHanNgayThi";
-            panelGiaHanNgayThi.Size = new Size(380, 80);
+            panelGiaHanNgayThi.Size = new Size(420, 80);
             panelGiaHanNgayThi.TabIndex = 11;
             panelGiaHanNgayThi.WrapContents = false;
             panelGiaHanNgayThi.Click += panelGiaHanNgayThi_Click;
@@ -363,7 +363,7 @@
             certificate_menu_flowLayoutPanel.Location = new Point(0, 320);
             certificate_menu_flowLayoutPanel.Margin = new Padding(0);
             certificate_menu_flowLayoutPanel.Name = "certificate_menu_flowLayoutPanel";
-            certificate_menu_flowLayoutPanel.Size = new Size(357, 80);
+            certificate_menu_flowLayoutPanel.Size = new Size(420, 80);
             certificate_menu_flowLayoutPanel.TabIndex = 9;
             certificate_menu_flowLayoutPanel.WrapContents = false;
             certificate_menu_flowLayoutPanel.Click += certificate_menu_flowLayoutPanel_Click;
@@ -401,7 +401,7 @@
             panelLapHoaDon.Location = new Point(0, 400);
             panelLapHoaDon.Margin = new Padding(0);
             panelLapHoaDon.Name = "panelLapHoaDon";
-            panelLapHoaDon.Size = new Size(380, 80);
+            panelLapHoaDon.Size = new Size(420, 80);
             panelLapHoaDon.TabIndex = 11;
             panelLapHoaDon.WrapContents = false;
             panelLapHoaDon.Click += panelLapHoaDon_Click;
@@ -439,7 +439,7 @@
             panelThanhToanDangKy.Location = new Point(0, 480);
             panelThanhToanDangKy.Margin = new Padding(0);
             panelThanhToanDangKy.Name = "panelThanhToanDangKy";
-            panelThanhToanDangKy.Size = new Size(380, 80);
+            panelThanhToanDangKy.Size = new Size(420, 80);
             panelThanhToanDangKy.TabIndex = 11;
             panelThanhToanDangKy.WrapContents = false;
             panelThanhToanDangKy.Click += panelThanhToanDangKy_Click;
@@ -477,7 +477,7 @@
             panelThanhToanGiaHan.Location = new Point(0, 560);
             panelThanhToanGiaHan.Margin = new Padding(0);
             panelThanhToanGiaHan.Name = "panelThanhToanGiaHan";
-            panelThanhToanGiaHan.Size = new Size(380, 80);
+            panelThanhToanGiaHan.Size = new Size(420, 80);
             panelThanhToanGiaHan.TabIndex = 12;
             panelThanhToanGiaHan.WrapContents = false;
             panelThanhToanGiaHan.Click += panelThanhToanGiaHan_Click;
@@ -515,7 +515,7 @@
             panelXuatHoaDon.Location = new Point(0, 640);
             panelXuatHoaDon.Margin = new Padding(0);
             panelXuatHoaDon.Name = "panelXuatHoaDon";
-            panelXuatHoaDon.Size = new Size(380, 80);
+            panelXuatHoaDon.Size = new Size(420, 80);
             panelXuatHoaDon.TabIndex = 13;
             panelXuatHoaDon.WrapContents = false;
             panelXuatHoaDon.Click += panelXuatHoaDon_Click;
@@ -553,7 +553,7 @@
             results_menu_flowLayoutPanel.Location = new Point(0, 720);
             results_menu_flowLayoutPanel.Margin = new Padding(0);
             results_menu_flowLayoutPanel.Name = "results_menu_flowLayoutPanel";
-            results_menu_flowLayoutPanel.Size = new Size(380, 80);
+            results_menu_flowLayoutPanel.Size = new Size(420, 80);
             results_menu_flowLayoutPanel.TabIndex = 8;
             results_menu_flowLayoutPanel.WrapContents = false;
             results_menu_flowLayoutPanel.Click += results_menu_flowLayoutPanel_Click;
@@ -591,7 +591,7 @@
             panelLenLichPhongThi.Location = new Point(0, 800);
             panelLenLichPhongThi.Margin = new Padding(0);
             panelLenLichPhongThi.Name = "panelLenLichPhongThi";
-            panelLenLichPhongThi.Size = new Size(380, 80);
+            panelLenLichPhongThi.Size = new Size(420, 80);
             panelLenLichPhongThi.TabIndex = 9;
             panelLenLichPhongThi.WrapContents = false;
             panelLenLichPhongThi.Click += panelLenLichPhongThi_Click;
@@ -629,7 +629,7 @@
             panelQLNhanVien.Location = new Point(0, 880);
             panelQLNhanVien.Margin = new Padding(0);
             panelQLNhanVien.Name = "panelQLNhanVien";
-            panelQLNhanVien.Size = new Size(403, 80);
+            panelQLNhanVien.Size = new Size(420, 80);
             panelQLNhanVien.TabIndex = 11;
             panelQLNhanVien.WrapContents = false;
             panelQLNhanVien.Click += panelQLNhanVien_Click;
@@ -667,7 +667,7 @@
             panelQLLichThi.Location = new Point(0, 960);
             panelQLLichThi.Margin = new Padding(0);
             panelQLLichThi.Name = "panelQLLichThi";
-            panelQLLichThi.Size = new Size(403, 80);
+            panelQLLichThi.Size = new Size(420, 80);
             panelQLLichThi.TabIndex = 12;
             panelQLLichThi.WrapContents = false;
             panelQLLichThi.Click += panelQLLichThi_Click;
@@ -705,7 +705,7 @@
             panelQLPhongThi.Location = new Point(0, 1040);
             panelQLPhongThi.Margin = new Padding(0);
             panelQLPhongThi.Name = "panelQLPhongThi";
-            panelQLPhongThi.Size = new Size(403, 80);
+            panelQLPhongThi.Size = new Size(420, 80);
             panelQLPhongThi.TabIndex = 12;
             panelQLPhongThi.WrapContents = false;
             panelQLPhongThi.Click += panelQLPhongThi_Click;
@@ -743,7 +743,7 @@
             panelQLKhachHang.Location = new Point(0, 1120);
             panelQLKhachHang.Margin = new Padding(0);
             panelQLKhachHang.Name = "panelQLKhachHang";
-            panelQLKhachHang.Size = new Size(403, 80);
+            panelQLKhachHang.Size = new Size(420, 80);
             panelQLKhachHang.TabIndex = 13;
             panelQLKhachHang.WrapContents = false;
             panelQLKhachHang.Click += panelQLKhachHang_Click;
@@ -781,7 +781,7 @@
             panelCapNhatPhieuDuThi.Location = new Point(0, 1200);
             panelCapNhatPhieuDuThi.Margin = new Padding(0);
             panelCapNhatPhieuDuThi.Name = "panelCapNhatPhieuDuThi";
-            panelCapNhatPhieuDuThi.Size = new Size(403, 80);
+            panelCapNhatPhieuDuThi.Size = new Size(420, 80);
             panelCapNhatPhieuDuThi.TabIndex = 12;
             panelCapNhatPhieuDuThi.WrapContents = false;
             panelCapNhatPhieuDuThi.Click += panelCapNhatPhieuDuThi_Click;
@@ -887,15 +887,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1724, 1209);
-            Controls.Add(nav_NVTiepNhan);
+            Controls.Add(thanhDieuHuong);
             Controls.Add(main_panel);
             Controls.Add(status_bar_panel);
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang chủ";
             Load += MainForm_Load;
-            nav_NVTiepNhan.ResumeLayout(false);
-            nav_NVTiepNhan.PerformLayout();
+            thanhDieuHuong.ResumeLayout(false);
+            thanhDieuHuong.PerformLayout();
             menu_group_panel.ResumeLayout(false);
             menu_group_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)close_menu_pictureBox).EndInit();
@@ -958,7 +958,7 @@
         #endregion
 
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private FlowLayoutPanel nav_NVTiepNhan;
+        private FlowLayoutPanel thanhDieuHuong;
         private PictureBox show_menu_pictureBox;
         private Panel menu_group_panel;
         private PictureBox close_menu_pictureBox;
